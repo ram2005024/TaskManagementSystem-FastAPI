@@ -311,6 +311,126 @@
         "documentation": {}
     },
     {
+        "label": "Table",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "DateTime",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "func",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Date",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "DateTime",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "func",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
         "label": "Column",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
@@ -351,6 +471,22 @@
         "documentation": {}
     },
     {
+        "label": "Enum",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Table",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
         "label": "create_engine",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
@@ -375,11 +511,11 @@
         "documentation": {}
     },
     {
-        "label": "func",
-        "importPath": "sqlalchemy.sql",
-        "description": "sqlalchemy.sql",
+        "label": "UUID",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
         "isExtraImport": true,
-        "detail": "sqlalchemy.sql",
+        "detail": "sqlalchemy.dialects.postgresql",
         "documentation": {}
     },
     {
@@ -391,12 +527,43 @@
         "documentation": {}
     },
     {
-        "label": "uuid",
-        "kind": 6,
+        "label": "UUID",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
         "isExtraImport": true,
-        "importPath": "uuid",
-        "description": "uuid",
-        "detail": "uuid",
+        "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "app.database.db",
+        "description": "app.database.db",
+        "isExtraImport": true,
+        "detail": "app.database.db",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "app.database.db",
+        "description": "app.database.db",
+        "isExtraImport": true,
+        "detail": "app.database.db",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "app.database.db",
+        "description": "app.database.db",
+        "isExtraImport": true,
+        "detail": "app.database.db",
         "documentation": {}
     },
     {
@@ -421,6 +588,22 @@
         "description": "app.database.db",
         "isExtraImport": true,
         "detail": "app.database.db",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
         "documentation": {}
     },
     {
@@ -461,6 +644,63 @@
         "description": "sqlalchemy.orm",
         "isExtraImport": true,
         "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "uuid",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "uuid",
+        "description": "uuid",
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "func",
+        "importPath": "sqlalchemy.sql",
+        "description": "sqlalchemy.sql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.sql",
+        "documentation": {}
+    },
+    {
+        "label": "user_projects",
+        "importPath": "app.database.models.association",
+        "description": "app.database.models.association",
+        "isExtraImport": true,
+        "detail": "app.database.models.association",
+        "documentation": {}
+    },
+    {
+        "label": "user_tasks",
+        "importPath": "app.database.models.association",
+        "description": "app.database.models.association",
+        "isExtraImport": true,
+        "detail": "app.database.models.association",
         "documentation": {}
     },
     {
@@ -716,11 +956,27 @@
         "documentation": {}
     },
     {
+        "label": "project",
+        "importPath": "app.database.models",
+        "description": "app.database.models",
+        "isExtraImport": true,
+        "detail": "app.database.models",
+        "documentation": {}
+    },
+    {
+        "label": "task",
+        "importPath": "app.database.models",
+        "description": "app.database.models",
+        "isExtraImport": true,
+        "detail": "app.database.models",
+        "documentation": {}
+    },
+    {
         "label": "bin_dir",
         "kind": 5,
         "importPath": ".venv.Scripts.activate_this",
         "description": ".venv.Scripts.activate_this",
-        "peekOfCode": "bin_dir = os.path.dirname(abs_file)\nbase = bin_dir[: -len(\"Scripts\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"loginsystem\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))",
+        "peekOfCode": "bin_dir = os.path.dirname(abs_file)\nbase = bin_dir[: -len(\"Scripts\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"TaskManagementSystem\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))",
         "detail": ".venv.Scripts.activate_this",
         "documentation": {}
     },
@@ -729,7 +985,7 @@
         "kind": 5,
         "importPath": ".venv.Scripts.activate_this",
         "description": ".venv.Scripts.activate_this",
-        "peekOfCode": "base = bin_dir[: -len(\"Scripts\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"loginsystem\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)",
+        "peekOfCode": "base = bin_dir[: -len(\"Scripts\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"TaskManagementSystem\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)",
         "detail": ".venv.Scripts.activate_this",
         "documentation": {}
     },
@@ -738,7 +994,7 @@
         "kind": 5,
         "importPath": ".venv.Scripts.activate_this",
         "description": ".venv.Scripts.activate_this",
-        "peekOfCode": "os.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"loginsystem\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix",
+        "peekOfCode": "os.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"TaskManagementSystem\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix",
         "detail": ".venv.Scripts.activate_this",
         "documentation": {}
     },
@@ -747,7 +1003,7 @@
         "kind": 5,
         "importPath": ".venv.Scripts.activate_this",
         "description": ".venv.Scripts.activate_this",
-        "peekOfCode": "os.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"loginsystem\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"TaskManagementSystem\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
         "detail": ".venv.Scripts.activate_this",
         "documentation": {}
     },
@@ -756,7 +1012,7 @@
         "kind": 5,
         "importPath": ".venv.Scripts.activate_this",
         "description": ".venv.Scripts.activate_this",
-        "peekOfCode": "os.environ[\"VIRTUAL_ENV_PROMPT\"] = \"loginsystem\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV_PROMPT\"] = \"TaskManagementSystem\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
         "detail": ".venv.Scripts.activate_this",
         "documentation": {}
     },
@@ -887,11 +1143,83 @@
         "documentation": {}
     },
     {
+        "label": "user_tasks",
+        "kind": 5,
+        "importPath": "app.database.models.association",
+        "description": "app.database.models.association",
+        "peekOfCode": "user_tasks = Table(\n    \"user_tasks\",\n    Base.metadata,\n    Column(\"user_id\", UUID(as_uuid=True), ForeignKey(\"users.id\"), primary_key=True),\n    Column(\"task_id\", UUID(as_uuid=True), ForeignKey(\"tasks.id\"), primary_key=True),\n)\n# For user and projects\nuser_projects = Table(\n    \"user_projects\",\n    Base.metadata,",
+        "detail": "app.database.models.association",
+        "documentation": {}
+    },
+    {
+        "label": "user_projects",
+        "kind": 5,
+        "importPath": "app.database.models.association",
+        "description": "app.database.models.association",
+        "peekOfCode": "user_projects = Table(\n    \"user_projects\",\n    Base.metadata,\n    Column(\"user_id\", UUID(as_uuid=True), ForeignKey(\"users.id\"), primary_key=True),\n    Column(\n        \"project_id\", UUID(as_uuid=True), ForeignKey(\"projects.id\"), primary_key=True\n    ),\n)",
+        "detail": "app.database.models.association",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectStatus",
+        "kind": 6,
+        "importPath": "app.database.models.project",
+        "description": "app.database.models.project",
+        "peekOfCode": "class ProjectStatus(str, Enum):\n    done = \"Done\",\n    running = \"Running\"\n    failed = \"Failed\"\nclass ProjectUrgency(str, Enum):\n    high = \"High\",\n    low = \"Low\",\n    medium = \"Medium\"\nclass Project(Base):\n    __tablename__ = \"projects\"",
+        "detail": "app.database.models.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectUrgency",
+        "kind": 6,
+        "importPath": "app.database.models.project",
+        "description": "app.database.models.project",
+        "peekOfCode": "class ProjectUrgency(str, Enum):\n    high = \"High\",\n    low = \"Low\",\n    medium = \"Medium\"\nclass Project(Base):\n    __tablename__ = \"projects\"\n    # Fields\n    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    project_name = Column(String, nullable=False)\n    project_type = Column(String)",
+        "detail": "app.database.models.project",
+        "documentation": {}
+    },
+    {
+        "label": "Project",
+        "kind": 6,
+        "importPath": "app.database.models.project",
+        "description": "app.database.models.project",
+        "peekOfCode": "class Project(Base):\n    __tablename__ = \"projects\"\n    # Fields\n    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    project_name = Column(String, nullable=False)\n    project_type = Column(String)\n    status = Column(\n        SQLEnum(ProjectStatus, name=\"project_status\"), default=ProjectStatus.running\n    )\n    created_at = Column(DateTime, server_default=func.now())",
+        "detail": "app.database.models.project",
+        "documentation": {}
+    },
+    {
+        "label": "TaskStatus",
+        "kind": 6,
+        "importPath": "app.database.models.task",
+        "description": "app.database.models.task",
+        "peekOfCode": "class TaskStatus(str, Enum):\n    pending = \"Pending\",\n    completed = \"Completed\"\nclass Task(Base):\n    __tablename__ = \"tasks\"\n    # Fields\n    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    task_type = Column(String)\n    created_at = Column(DateTime, server_default=func.now())\n    updated_at = Column(DateTime, onupdate=func.now())",
+        "detail": "app.database.models.task",
+        "documentation": {}
+    },
+    {
+        "label": "Task",
+        "kind": 6,
+        "importPath": "app.database.models.task",
+        "description": "app.database.models.task",
+        "peekOfCode": "class Task(Base):\n    __tablename__ = \"tasks\"\n    # Fields\n    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    task_type = Column(String)\n    created_at = Column(DateTime, server_default=func.now())\n    updated_at = Column(DateTime, onupdate=func.now())\n    task_name = Column(String, nullable=False)\n    task_description = Column(String)\n    project_id = Column(",
+        "detail": "app.database.models.task",
+        "documentation": {}
+    },
+    {
+        "label": "UserRole",
+        "kind": 6,
+        "importPath": "app.database.models.user",
+        "description": "app.database.models.user",
+        "peekOfCode": "class UserRole(str, Enum):\n    member = \"Member\",\n    admin = \"Admin\"\n    manager = \"Manager\"\n# Make a user model\nclass User(Base):\n    __tablename__ = \"users\"\n    # Fields\n    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    username = Column(String, unique=True, index=True)",
+        "detail": "app.database.models.user",
+        "documentation": {}
+    },
+    {
         "label": "User",
         "kind": 6,
         "importPath": "app.database.models.user",
         "description": "app.database.models.user",
-        "peekOfCode": "class User(Base):\n    __tablename__ = \"users\"\n    # Fields\n    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    username = Column(String, unique=True, index=True)\n    email = Column(String, unique=True, index=True)\n    hashed_pwd = Column(String)\n    is_authenticated = Column(Boolean, default=False)\n    profile = relationship(\"Profile\", back_populates=\"user\", uselist=False)\n# Make a profile model for the user",
+        "peekOfCode": "class User(Base):\n    __tablename__ = \"users\"\n    # Fields\n    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    username = Column(String, unique=True, index=True)\n    email = Column(String, unique=True, index=True)\n    hashed_pwd = Column(String)\n    is_authenticated = Column(Boolean, default=False)\n    role = Column(SQLEnum(UserRole, name=\"user_roles\"), default=UserRole.member)\n    isActive = Column(Boolean, default=True)",
         "detail": "app.database.models.user",
         "documentation": {}
     },
@@ -900,7 +1228,7 @@
         "kind": 6,
         "importPath": "app.database.models.user",
         "description": "app.database.models.user",
-        "peekOfCode": "class Profile(Base):\n    __tablename__ = \"profiles\"\n    # Fields\n    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    user_id = Column(UUID(as_uuid=True), ForeignKey(\"users.id\"))\n    bio = Column(String, nullable=True)\n    user_image = Column(String)\n    full_name = Column(String)\n    created_at = Column(DateTime, server_default=func.now())\n    updated_at = Column(DateTime, server_default=func.now(), onupdate=func.now())",
+        "peekOfCode": "class Profile(Base):\n    __tablename__ = \"profiles\"\n    # Fields\n    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    user_id = Column(\n        UUID(as_uuid=True),\n        ForeignKey(\"users.id\", ondelete=\"CASCADE\"),\n    )\n    bio = Column(String, nullable=True)\n    user_image = Column(String)",
         "detail": "app.database.models.user",
         "documentation": {}
     },
@@ -1060,19 +1388,19 @@
     {
         "label": "upgrade",
         "kind": 2,
-        "importPath": "migrations.versions.f43403626d07_user_and_profile_model_created",
-        "description": "migrations.versions.f43403626d07_user_and_profile_model_created",
-        "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table('users',\n    sa.Column('id', sa.UUID(), nullable=False),\n    sa.Column('username', sa.String(), nullable=True),\n    sa.Column('email', sa.String(), nullable=True),\n    sa.Column('hashed_pwd', sa.String(), nullable=True),\n    sa.Column('is_authenticated', sa.Boolean(), nullable=True),\n    sa.PrimaryKeyConstraint('id')",
-        "detail": "migrations.versions.f43403626d07_user_and_profile_model_created",
+        "importPath": "migrations.versions.4e9abcdff489_initial",
+        "description": "migrations.versions.4e9abcdff489_initial",
+        "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table('projects',\n    sa.Column('id', sa.UUID(), nullable=False),\n    sa.Column('project_name', sa.String(), nullable=False),\n    sa.Column('project_type', sa.String(), nullable=True),\n    sa.Column('status', sa.Enum('done', 'running', 'failed', name='project_status'), nullable=True),\n    sa.Column('created_at', sa.DateTime(), server_default=sa.text('now()'), nullable=True),\n    sa.Column('end_on', sa.Date(), nullable=False),",
+        "detail": "migrations.versions.4e9abcdff489_initial",
         "documentation": {}
     },
     {
         "label": "downgrade",
         "kind": 2,
-        "importPath": "migrations.versions.f43403626d07_user_and_profile_model_created",
-        "description": "migrations.versions.f43403626d07_user_and_profile_model_created",
-        "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_table('profiles')\n    op.drop_index(op.f('ix_users_username'), table_name='users')\n    op.drop_index(op.f('ix_users_email'), table_name='users')\n    op.drop_table('users')\n    # ### end Alembic commands ###",
-        "detail": "migrations.versions.f43403626d07_user_and_profile_model_created",
+        "importPath": "migrations.versions.4e9abcdff489_initial",
+        "description": "migrations.versions.4e9abcdff489_initial",
+        "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_table('user_tasks')\n    op.drop_table('user_projects')\n    op.drop_table('tasks')\n    op.drop_table('profiles')\n    op.drop_index(op.f('ix_users_username'), table_name='users')\n    op.drop_index(op.f('ix_users_email'), table_name='users')\n    op.drop_table('users')",
+        "detail": "migrations.versions.4e9abcdff489_initial",
         "documentation": {}
     },
     {
