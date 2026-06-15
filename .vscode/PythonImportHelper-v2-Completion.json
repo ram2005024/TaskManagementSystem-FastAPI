@@ -1,0 +1,1114 @@
+[
+    {
+        "label": "runpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "runpy",
+        "description": "runpy",
+        "detail": "runpy",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "site",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "site",
+        "description": "site",
+        "detail": "site",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "SettingsConfigDict",
+        "importPath": "pydantic_settings",
+        "description": "pydantic_settings",
+        "isExtraImport": true,
+        "detail": "pydantic_settings",
+        "documentation": {}
+    },
+    {
+        "label": "BaseSettings",
+        "importPath": "pydantic_settings",
+        "description": "pydantic_settings",
+        "isExtraImport": true,
+        "detail": "pydantic_settings",
+        "documentation": {}
+    },
+    {
+        "label": "cloudinary",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "cloudinary",
+        "description": "cloudinary",
+        "detail": "cloudinary",
+        "documentation": {}
+    },
+    {
+        "label": "redis",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "redis",
+        "description": "redis",
+        "detail": "redis",
+        "documentation": {}
+    },
+    {
+        "label": "PasswordHash",
+        "importPath": "pwdlib",
+        "description": "pwdlib",
+        "isExtraImport": true,
+        "detail": "pwdlib",
+        "documentation": {}
+    },
+    {
+        "label": "jwt",
+        "importPath": "jose",
+        "description": "jose",
+        "isExtraImport": true,
+        "detail": "jose",
+        "documentation": {}
+    },
+    {
+        "label": "JWTError",
+        "importPath": "jose",
+        "description": "jose",
+        "isExtraImport": true,
+        "detail": "jose",
+        "documentation": {}
+    },
+    {
+        "label": "ExpiredSignatureError",
+        "importPath": "jose",
+        "description": "jose",
+        "isExtraImport": true,
+        "detail": "jose",
+        "documentation": {}
+    },
+    {
+        "label": "jwt",
+        "importPath": "jose",
+        "description": "jose",
+        "isExtraImport": true,
+        "detail": "jose",
+        "documentation": {}
+    },
+    {
+        "label": "JWTError",
+        "importPath": "jose",
+        "description": "jose",
+        "isExtraImport": true,
+        "detail": "jose",
+        "documentation": {}
+    },
+    {
+        "label": "ExpiredSignatureError",
+        "importPath": "jose",
+        "description": "jose",
+        "isExtraImport": true,
+        "detail": "jose",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "app.core.config",
+        "description": "app.core.config",
+        "isExtraImport": true,
+        "detail": "app.core.config",
+        "documentation": {}
+    },
+    {
+        "label": "redis",
+        "importPath": "app.core.config",
+        "description": "app.core.config",
+        "isExtraImport": true,
+        "detail": "app.core.config",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "app.core.config",
+        "description": "app.core.config",
+        "isExtraImport": true,
+        "detail": "app.core.config",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "app.core.config",
+        "description": "app.core.config",
+        "isExtraImport": true,
+        "detail": "app.core.config",
+        "documentation": {}
+    },
+    {
+        "label": "redis",
+        "importPath": "app.core.config",
+        "description": "app.core.config",
+        "isExtraImport": true,
+        "detail": "app.core.config",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "app.core.config",
+        "description": "app.core.config",
+        "isExtraImport": true,
+        "detail": "app.core.config",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "JSONResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
+        "isExtraImport": true,
+        "detail": "fastapi.responses",
+        "documentation": {}
+    },
+    {
+        "label": "JSONResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
+        "isExtraImport": true,
+        "detail": "fastapi.responses",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Request",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "UploadFile",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "File",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Form",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Request",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "UploadFile",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "sqlalchemy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Boolean",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "DateTime",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "create_engine",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "engine_from_config",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "pool",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "func",
+        "importPath": "sqlalchemy.sql",
+        "description": "sqlalchemy.sql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.sql",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "uuid",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "uuid",
+        "description": "uuid",
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "app.database.db",
+        "description": "app.database.db",
+        "isExtraImport": true,
+        "detail": "app.database.db",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "importPath": "app.database.db",
+        "description": "app.database.db",
+        "isExtraImport": true,
+        "detail": "app.database.db",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "app.database.db",
+        "description": "app.database.db",
+        "isExtraImport": true,
+        "detail": "app.database.db",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "sessionmaker",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "declarative_base",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "UserLogin",
+        "importPath": "app.schemas.user",
+        "description": "app.schemas.user",
+        "isExtraImport": true,
+        "detail": "app.schemas.user",
+        "documentation": {}
+    },
+    {
+        "label": "UserRegister",
+        "importPath": "app.schemas.user",
+        "description": "app.schemas.user",
+        "isExtraImport": true,
+        "detail": "app.schemas.user",
+        "documentation": {}
+    },
+    {
+        "label": "UserLogin",
+        "importPath": "app.schemas.user",
+        "description": "app.schemas.user",
+        "isExtraImport": true,
+        "detail": "app.schemas.user",
+        "documentation": {}
+    },
+    {
+        "label": "UserRegister",
+        "importPath": "app.schemas.user",
+        "description": "app.schemas.user",
+        "isExtraImport": true,
+        "detail": "app.schemas.user",
+        "documentation": {}
+    },
+    {
+        "label": "create_user",
+        "importPath": "app.services.user",
+        "description": "app.services.user",
+        "isExtraImport": true,
+        "detail": "app.services.user",
+        "documentation": {}
+    },
+    {
+        "label": "verify_credentials",
+        "importPath": "app.services.user",
+        "description": "app.services.user",
+        "isExtraImport": true,
+        "detail": "app.services.user",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi.exceptions",
+        "description": "fastapi.exceptions",
+        "isExtraImport": true,
+        "detail": "fastapi.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "blacklist_token",
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "isExtraImport": true,
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "create_access",
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "isExtraImport": true,
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "create_refresh",
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "isExtraImport": true,
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "isblacklisted",
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "isExtraImport": true,
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "create_access",
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "isExtraImport": true,
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "create_refresh",
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "isExtraImport": true,
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "hashPwd",
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "isExtraImport": true,
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "verifyPwd",
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "isExtraImport": true,
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "EmailStr",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "field_validator",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "cloudinary.uploader",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "cloudinary.uploader",
+        "description": "cloudinary.uploader",
+        "detail": "cloudinary.uploader",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.database.models.user",
+        "description": "app.database.models.user",
+        "isExtraImport": true,
+        "detail": "app.database.models.user",
+        "documentation": {}
+    },
+    {
+        "label": "Profile",
+        "importPath": "app.database.models.user",
+        "description": "app.database.models.user",
+        "isExtraImport": true,
+        "detail": "app.database.models.user",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "string",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "string",
+        "description": "string",
+        "detail": "string",
+        "documentation": {}
+    },
+    {
+        "label": "authRouter",
+        "importPath": "app.routers.auth",
+        "description": "app.routers.auth",
+        "isExtraImport": true,
+        "detail": "app.routers.auth",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
+        "label": "context",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
+        "label": "fileConfig",
+        "importPath": "logging.config",
+        "description": "logging.config",
+        "isExtraImport": true,
+        "detail": "logging.config",
+        "documentation": {}
+    },
+    {
+        "label": "user",
+        "importPath": "app.database.models",
+        "description": "app.database.models",
+        "isExtraImport": true,
+        "detail": "app.database.models",
+        "documentation": {}
+    },
+    {
+        "label": "bin_dir",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "bin_dir = os.path.dirname(abs_file)\nbase = bin_dir[: -len(\"Scripts\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"loginsystem\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "base",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "base = bin_dir[: -len(\"Scripts\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"loginsystem\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"PATH\"]",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"loginsystem\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV\"]",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"loginsystem\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV_PROMPT\"]",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV_PROMPT\"] = \"loginsystem\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "prev_length",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "prev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.path[:]",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "sys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.real_prefix",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "sys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.prefix",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "sys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "Settings",
+        "kind": 6,
+        "importPath": "app.core.config",
+        "description": "app.core.config",
+        "peekOfCode": "class Settings(BaseSettings):\n    DATABASE_URL: str\n    CLOUD_NAME: str\n    CLOUD_KEY: int\n    CLOUD_SECRET: str\n    SECRET_KEY: str\n    ALGORITHM: str\n    ACCESS_EXPIRY: int\n    REFRESH_EXPIRY: int\n    model_config = SettingsConfigDict(env_file=\".env\")",
+        "detail": "app.core.config",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "kind": 5,
+        "importPath": "app.core.config",
+        "description": "app.core.config",
+        "peekOfCode": "settings = Settings()\n# Cloudinary Setting\ncloudinary.config(\n    cloud_name=settings.CLOUD_NAME,\n    api_key=settings.CLOUD_KEY,\n    api_secret=settings.CLOUD_SECRET,\n)\n# Redis settings\nredis = redis.Redis(host=\"localhost\", port=6379, db=0, decode_responses=True)",
+        "detail": "app.core.config",
+        "documentation": {}
+    },
+    {
+        "label": "redis",
+        "kind": 5,
+        "importPath": "app.core.config",
+        "description": "app.core.config",
+        "peekOfCode": "redis = redis.Redis(host=\"localhost\", port=6379, db=0, decode_responses=True)",
+        "detail": "app.core.config",
+        "documentation": {}
+    },
+    {
+        "label": "hashPwd",
+        "kind": 2,
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "peekOfCode": "def hashPwd(pwd: str):\n    return hashed_pwd.hash(pwd)\ndef verifyPwd(plain: str, hashed: str):\n    return hashed_pwd.verify(plain, hashed)\n# Create access token\ndef create_access(data: dict):\n    copied = data.copy()\n    exp = datetime.utcnow() + timedelta(minutes=settings.ACCESS_EXPIRY)\n    copied.update({\"exp\": exp, \"type\": \"access\"})\n    return jwt.encode(copied, settings.SECRET_KEY, settings.ALGORITHM)",
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "verifyPwd",
+        "kind": 2,
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "peekOfCode": "def verifyPwd(plain: str, hashed: str):\n    return hashed_pwd.verify(plain, hashed)\n# Create access token\ndef create_access(data: dict):\n    copied = data.copy()\n    exp = datetime.utcnow() + timedelta(minutes=settings.ACCESS_EXPIRY)\n    copied.update({\"exp\": exp, \"type\": \"access\"})\n    return jwt.encode(copied, settings.SECRET_KEY, settings.ALGORITHM)\n# Create refresh token\ndef create_refresh(data: dict):",
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "create_access",
+        "kind": 2,
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "peekOfCode": "def create_access(data: dict):\n    copied = data.copy()\n    exp = datetime.utcnow() + timedelta(minutes=settings.ACCESS_EXPIRY)\n    copied.update({\"exp\": exp, \"type\": \"access\"})\n    return jwt.encode(copied, settings.SECRET_KEY, settings.ALGORITHM)\n# Create refresh token\ndef create_refresh(data: dict):\n    copied = data.copy()\n    exp = datetime.utcnow() + timedelta(days=settings.REFRESH_EXPIRY)\n    copied.update({\"exp\": exp, \"type\": \"refresh\"})",
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "create_refresh",
+        "kind": 2,
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "peekOfCode": "def create_refresh(data: dict):\n    copied = data.copy()\n    exp = datetime.utcnow() + timedelta(days=settings.REFRESH_EXPIRY)\n    copied.update({\"exp\": exp, \"type\": \"refresh\"})\n    return jwt.encode(copied, settings.SECRET_KEY, settings.ALGORITHM)\n# Blacklist the token\ndef blacklist_token(token: str, exp: int) -> bool:\n    return redis.setex(f\"blacklist-{token}\", exp, \"true\")\n# Check the blacklist token\ndef isblacklisted(token: str):",
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "blacklist_token",
+        "kind": 2,
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "peekOfCode": "def blacklist_token(token: str, exp: int) -> bool:\n    return redis.setex(f\"blacklist-{token}\", exp, \"true\")\n# Check the blacklist token\ndef isblacklisted(token: str):\n    return redis.exists(f\"blacklist-{token}\")\n# Blacklist middleware\nasync def blacklist_middleware(request: Request, call_next):\n    pass_path = [\"/auth/login\", \"/auth/register\", \"/auth/refresh\", \"/auth/logout\"]\n    if request.url.path in pass_path:\n        return await call_next(request)",
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "isblacklisted",
+        "kind": 2,
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "peekOfCode": "def isblacklisted(token: str):\n    return redis.exists(f\"blacklist-{token}\")\n# Blacklist middleware\nasync def blacklist_middleware(request: Request, call_next):\n    pass_path = [\"/auth/login\", \"/auth/register\", \"/auth/refresh\", \"/auth/logout\"]\n    if request.url.path in pass_path:\n        return await call_next(request)\n    auth_header = request.headers.get(\"Authorization\")\n    if not auth_header:\n        return JSONResponse(",
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "hashed_pwd",
+        "kind": 5,
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "peekOfCode": "hashed_pwd = PasswordHash.recommended()\ndef hashPwd(pwd: str):\n    return hashed_pwd.hash(pwd)\ndef verifyPwd(plain: str, hashed: str):\n    return hashed_pwd.verify(plain, hashed)\n# Create access token\ndef create_access(data: dict):\n    copied = data.copy()\n    exp = datetime.utcnow() + timedelta(minutes=settings.ACCESS_EXPIRY)\n    copied.update({\"exp\": exp, \"type\": \"access\"})",
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 6,
+        "importPath": "app.database.models.user",
+        "description": "app.database.models.user",
+        "peekOfCode": "class User(Base):\n    __tablename__ = \"users\"\n    # Fields\n    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    username = Column(String, unique=True, index=True)\n    email = Column(String, unique=True, index=True)\n    hashed_pwd = Column(String)\n    is_authenticated = Column(Boolean, default=False)\n    profile = relationship(\"Profile\", back_populates=\"user\", uselist=False)\n# Make a profile model for the user",
+        "detail": "app.database.models.user",
+        "documentation": {}
+    },
+    {
+        "label": "Profile",
+        "kind": 6,
+        "importPath": "app.database.models.user",
+        "description": "app.database.models.user",
+        "peekOfCode": "class Profile(Base):\n    __tablename__ = \"profiles\"\n    # Fields\n    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    user_id = Column(UUID(as_uuid=True), ForeignKey(\"users.id\"))\n    bio = Column(String, nullable=True)\n    user_image = Column(String)\n    full_name = Column(String)\n    created_at = Column(DateTime, server_default=func.now())\n    updated_at = Column(DateTime, server_default=func.now(), onupdate=func.now())",
+        "detail": "app.database.models.user",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "kind": 2,
+        "importPath": "app.database.db",
+        "description": "app.database.db",
+        "peekOfCode": "def get_db():\n    db = SessionHandler()\n    try:\n        yield db\n    finally:\n        db.close()",
+        "detail": "app.database.db",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
+        "kind": 5,
+        "importPath": "app.database.db",
+        "description": "app.database.db",
+        "peekOfCode": "engine = create_engine(settings.DATABASE_URL)\n# Make a session\nSessionHandler = sessionmaker(bind=engine, autocommit=False, autoflush=False)\nBase = declarative_base()\n# Function to start the session with the database\ndef get_db():\n    db = SessionHandler()\n    try:\n        yield db\n    finally:",
+        "detail": "app.database.db",
+        "documentation": {}
+    },
+    {
+        "label": "SessionHandler",
+        "kind": 5,
+        "importPath": "app.database.db",
+        "description": "app.database.db",
+        "peekOfCode": "SessionHandler = sessionmaker(bind=engine, autocommit=False, autoflush=False)\nBase = declarative_base()\n# Function to start the session with the database\ndef get_db():\n    db = SessionHandler()\n    try:\n        yield db\n    finally:\n        db.close()",
+        "detail": "app.database.db",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "kind": 5,
+        "importPath": "app.database.db",
+        "description": "app.database.db",
+        "peekOfCode": "Base = declarative_base()\n# Function to start the session with the database\ndef get_db():\n    db = SessionHandler()\n    try:\n        yield db\n    finally:\n        db.close()",
+        "detail": "app.database.db",
+        "documentation": {}
+    },
+    {
+        "label": "register",
+        "kind": 2,
+        "importPath": "app.routers.auth",
+        "description": "app.routers.auth",
+        "peekOfCode": "def register(\n    email: str = Form(...),\n    first_name: str = Form(...),\n    last_name: str = Form(...),\n    password: str = Form(...),\n    user_image: UploadFile = File(None),\n    db: Session = Depends(get_db),\n):\n    userdata = UserRegister(\n        email=email, password=password, first_name=first_name, last_name=last_name",
+        "detail": "app.routers.auth",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "kind": 2,
+        "importPath": "app.routers.auth",
+        "description": "app.routers.auth",
+        "peekOfCode": "def login(\n    data: UserLogin,\n    db: Session = Depends(get_db),\n):\n    user, error = verify_credentials(data, db)\n    if error:\n        return JSONResponse(\n            status_code=status.HTTP_401_UNAUTHORIZED, content={\"detail\": error}\n        )\n    # Generate the access and refresh token",
+        "detail": "app.routers.auth",
+        "documentation": {}
+    },
+    {
+        "label": "refresh",
+        "kind": 2,
+        "importPath": "app.routers.auth",
+        "description": "app.routers.auth",
+        "peekOfCode": "def refresh(request: Request):\n    old_token = request.cookies.get(\"refresh\")\n    if not old_token:\n        return JSONResponse(\n            status_code=status.HTTP_401_UNAUTHORIZED,\n            content={\"detail\": \"Token doesn't exist\"},\n        )\n    # Check if refresh token exist in redis or not\n    if not redis.exists(f\"token-{old_token}\"):\n        return JSONResponse(",
+        "detail": "app.routers.auth",
+        "documentation": {}
+    },
+    {
+        "label": "logout",
+        "kind": 2,
+        "importPath": "app.routers.auth",
+        "description": "app.routers.auth",
+        "peekOfCode": "def logout(request: Request):\n    header = request.headers.get(\"Authorization\")\n    if header:\n        access = header.split(\" \")[1]\n        refresh = request.cookies.get(\"refresh\")\n        try:\n            payload = jwt.decode(\n                access, settings.SECRET_KEY, algorithms=[settings.ALGORITHM]\n            )\n            ttl = payload[\"exp\"] - int(time.time())",
+        "detail": "app.routers.auth",
+        "documentation": {}
+    },
+    {
+        "label": "authRouter",
+        "kind": 5,
+        "importPath": "app.routers.auth",
+        "description": "app.routers.auth",
+        "peekOfCode": "authRouter = APIRouter(prefix=\"/auth\", tags=[\"auth\"])\n@authRouter.post(\"/register\")\ndef register(\n    email: str = Form(...),\n    first_name: str = Form(...),\n    last_name: str = Form(...),\n    password: str = Form(...),\n    user_image: UploadFile = File(None),\n    db: Session = Depends(get_db),\n):",
+        "detail": "app.routers.auth",
+        "documentation": {}
+    },
+    {
+        "label": "UserLogin",
+        "kind": 6,
+        "importPath": "app.schemas.user",
+        "description": "app.schemas.user",
+        "peekOfCode": "class UserLogin(BaseModel):\n    email: EmailStr\n    password: str\n# User register Schema\nclass UserRegister(BaseModel):\n    email: EmailStr\n    password: str\n    first_name: str\n    last_name: str\n    @field_validator(\"password\")",
+        "detail": "app.schemas.user",
+        "documentation": {}
+    },
+    {
+        "label": "UserRegister",
+        "kind": 6,
+        "importPath": "app.schemas.user",
+        "description": "app.schemas.user",
+        "peekOfCode": "class UserRegister(BaseModel):\n    email: EmailStr\n    password: str\n    first_name: str\n    last_name: str\n    @field_validator(\"password\")\n    def check_password(cls, v):\n        if len(v) < 8:\n            raise ValueError(\"Password length must be at least 8 character\")\n        return v",
+        "detail": "app.schemas.user",
+        "documentation": {}
+    },
+    {
+        "label": "upload_image",
+        "kind": 2,
+        "importPath": "app.services.user",
+        "description": "app.services.user",
+        "peekOfCode": "def upload_image(file: UploadFile, user_id: str):\n    upload = cloudinary.uploader.upload(\n        file.file, folder=f\"user/{user_id}\", public_id=\"profile\", overwrite=True\n    )\n    return upload[\"secure_url\"]\n# Generate the username\ndef generate_username(fname: str, db: Session):\n    while True:\n        prefix = \"\".join(random.choices(string.digits, k=4))\n        base = fname.lower() + prefix",
+        "detail": "app.services.user",
+        "documentation": {}
+    },
+    {
+        "label": "generate_username",
+        "kind": 2,
+        "importPath": "app.services.user",
+        "description": "app.services.user",
+        "peekOfCode": "def generate_username(fname: str, db: Session):\n    while True:\n        prefix = \"\".join(random.choices(string.digits, k=4))\n        base = fname.lower() + prefix\n        user = db.query(User).filter(User.username == base).first()\n        if not user:\n            return base\n# Create the user\ndef create_user(data: UserRegister, file: UploadFile | None, db: Session):\n    # Check the email is not in database or not",
+        "detail": "app.services.user",
+        "documentation": {}
+    },
+    {
+        "label": "create_user",
+        "kind": 2,
+        "importPath": "app.services.user",
+        "description": "app.services.user",
+        "peekOfCode": "def create_user(data: UserRegister, file: UploadFile | None, db: Session):\n    # Check the email is not in database or not\n    exist = db.query(User).filter(User.email == data.email).first()\n    if exist:\n        return None, \"Email already exists\"\n    # Generate the username for the new user\n    username = generate_username(data.first_name, db)\n    password = hashPwd(data.password)\n    user = User(username=username, email=data.email, hashed_pwd=password)\n    db.add(user)",
+        "detail": "app.services.user",
+        "documentation": {}
+    },
+    {
+        "label": "verify_credentials",
+        "kind": 2,
+        "importPath": "app.services.user",
+        "description": "app.services.user",
+        "peekOfCode": "def verify_credentials(userdata: UserLogin, db: Session):\n    exist = db.query(User).filter(User.email == userdata.email).first()\n    if not exist:\n        return None, \"User doesn't exist with this email\"\n    # Verify the password\n    isMatched = verifyPwd(userdata.password, exist.hashed_pwd)\n    if not isMatched:\n        return None, \"Invalid credentials\"\n    return exist, None",
+        "detail": "app.services.user",
+        "documentation": {}
+    },
+    {
+        "label": "default",
+        "kind": 2,
+        "importPath": "app.main",
+        "description": "app.main",
+        "peekOfCode": "def default():\n    return {\"message\": \"Hello World I am into the world of fastapi\"}",
+        "detail": "app.main",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "app.main",
+        "description": "app.main",
+        "peekOfCode": "app = FastAPI()\napp.include_router(authRouter)\napp.middleware(\"http\")(blacklist_middleware)\n@app.get(\"/\")\ndef default():\n    return {\"message\": \"Hello World I am into the world of fastapi\"}",
+        "detail": "app.main",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
+        "importPath": "migrations.versions.f43403626d07_user_and_profile_model_created",
+        "description": "migrations.versions.f43403626d07_user_and_profile_model_created",
+        "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table('users',\n    sa.Column('id', sa.UUID(), nullable=False),\n    sa.Column('username', sa.String(), nullable=True),\n    sa.Column('email', sa.String(), nullable=True),\n    sa.Column('hashed_pwd', sa.String(), nullable=True),\n    sa.Column('is_authenticated', sa.Boolean(), nullable=True),\n    sa.PrimaryKeyConstraint('id')",
+        "detail": "migrations.versions.f43403626d07_user_and_profile_model_created",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "migrations.versions.f43403626d07_user_and_profile_model_created",
+        "description": "migrations.versions.f43403626d07_user_and_profile_model_created",
+        "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_table('profiles')\n    op.drop_index(op.f('ix_users_username'), table_name='users')\n    op.drop_index(op.f('ix_users_email'), table_name='users')\n    op.drop_table('users')\n    # ### end Alembic commands ###",
+        "detail": "migrations.versions.f43403626d07_user_and_profile_model_created",
+        "documentation": {}
+    },
+    {
+        "label": "run_migrations_offline",
+        "kind": 2,
+        "importPath": "migrations.env",
+        "description": "migrations.env",
+        "peekOfCode": "def run_migrations_offline() -> None:\n    \"\"\"Run migrations in 'offline' mode.\n    This configures the context with just a URL\n    and not an Engine, though an Engine is acceptable\n    here as well.  By skipping the Engine creation\n    we don't even need a DBAPI to be available.\n    Calls to context.execute() here emit the given string to the\n    script output.\n    \"\"\"\n    url = config.get_main_option(\"sqlalchemy.url\")",
+        "detail": "migrations.env",
+        "documentation": {}
+    },
+    {
+        "label": "run_migrations_online",
+        "kind": 2,
+        "importPath": "migrations.env",
+        "description": "migrations.env",
+        "peekOfCode": "def run_migrations_online() -> None:\n    \"\"\"Run migrations in 'online' mode.\n    In this scenario we need to create an Engine\n    and associate a connection with the context.\n    \"\"\"\n    connectable = engine_from_config(\n        config.get_section(config.config_ini_section, {}),\n        prefix=\"sqlalchemy.\",\n        poolclass=pool.NullPool,\n    )",
+        "detail": "migrations.env",
+        "documentation": {}
+    },
+    {
+        "label": "config",
+        "kind": 5,
+        "importPath": "migrations.env",
+        "description": "migrations.env",
+        "peekOfCode": "config = context.config\n# Interpret the config file for Python logging.\n# This line sets up loggers basically.\nif config.config_file_name is not None:\n    fileConfig(config.config_file_name)\n# add your model's MetaData object here\n# for 'autogenerate' support\n# from myapp import mymodel\n# target_metadata = mymodel.Base.metadata\ntarget_metadata = Base.metadata",
+        "detail": "migrations.env",
+        "documentation": {}
+    },
+    {
+        "label": "target_metadata",
+        "kind": 5,
+        "importPath": "migrations.env",
+        "description": "migrations.env",
+        "peekOfCode": "target_metadata = Base.metadata\n# other values from the config, defined by the needs of env.py,\n# can be acquired:\n# my_important_option = config.get_main_option(\"my_important_option\")\n# ... etc.\ndef run_migrations_offline() -> None:\n    \"\"\"Run migrations in 'offline' mode.\n    This configures the context with just a URL\n    and not an Engine, though an Engine is acceptable\n    here as well.  By skipping the Engine creation",
+        "detail": "migrations.env",
+        "documentation": {}
+    }
+]

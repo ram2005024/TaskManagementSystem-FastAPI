@@ -1,0 +1,12 @@
+from fastapi import FastAPI
+from app.routers.auth import authRouter
+from .core.security import blacklist_middleware
+
+app = FastAPI()
+app.include_router(authRouter)
+app.middleware("http")(blacklist_middleware)
+
+
+@app.get("/")
+def default():
+    return {"message": "Hello World I am into the world of fastapi"}
