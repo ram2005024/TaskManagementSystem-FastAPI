@@ -1,4 +1,4 @@
-from pydantic import BaseModel
+from pydantic import BaseModel,field_validator
 from uuid import UUID
 from datetime import datetime
 from typing import TYPE_CHECKING
@@ -11,7 +11,11 @@ class TaskBase(BaseModel):
     task_name:str
     task_type:str|None=None
     task_description:str|None=None
-
+    @field_validator("task_name")
+    def check_task_name(cls,v):
+        if len(v)<5:
+            raise ValueError("Task name should have atleast 5 characters")
+        return v
 # For task create
 class TaskCreate(TaskBase):
     project_id:str
@@ -47,6 +51,6 @@ class TaskUpdate(BaseModel):
     task_name:str|None=None
     task_description:str|None=None
     status:str|None=None
-    user_id:list[UUID]
+    user_ids:list[UUID]
     
     

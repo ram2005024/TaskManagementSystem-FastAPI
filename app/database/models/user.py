@@ -14,7 +14,7 @@ import uuid
 from sqlalchemy.orm import relationship
 from enum import Enum
 from app.database.db import Base
-from app.database.models.association import user_projects, user_tasks
+from app.database.models.association import user_projects, user_tasks,user_companies
 
 
 # Make a role ENUM
@@ -42,11 +42,8 @@ class User(Base):
         "Profile", back_populates="user", uselist=False, cascade="all, delete-orphan"
     )
     manager_company=relationship("Company",back_populates="manager",uselist=False)
-    company_id=Column(UUID(as_uuid=True),ForeignKey("companies.id",ondelete="SET NULL"),unique=True,nullable=True)
-    company=relationship("Company",back_populates="enrolled_users")
-    __tableargs__=(
-        UniqueConstraint("company_id","user_id",name="unique_user_company")
-    )
+    companies=relationship("Company",secondary=user_companies,back_populates="enrolled_users")
+    user_requests=relationship("JoinRequest",back_populates="user")
 # Make a profile model for the user
 class Profile(Base):
     __tablename__ = "profiles"

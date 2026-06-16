@@ -42,7 +42,7 @@ def create_user(data: UserRegister, file: UploadFile | None, db: Session):
     db.refresh(user)
     # If the user has uploaded the image then generate the url and save the image url
     user_image = ""
-    if file:
+    if file.filename:
         user_image = upload_image(file, user.id)
     # Make the profile for the user
     profile = Profile(

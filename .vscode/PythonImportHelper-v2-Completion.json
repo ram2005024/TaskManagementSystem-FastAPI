@@ -431,6 +431,30 @@
         "documentation": {}
     },
     {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
         "label": "String",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
@@ -671,6 +695,22 @@
         "documentation": {}
     },
     {
+        "label": "UUID",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "app.database.db",
+        "description": "app.database.db",
+        "isExtraImport": true,
+        "detail": "app.database.db",
+        "documentation": {}
+    },
+    {
         "label": "Base",
         "importPath": "app.database.db",
         "description": "app.database.db",
@@ -759,6 +799,14 @@
         "documentation": {}
     },
     {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
         "label": "sessionmaker",
         "importPath": "sqlalchemy.orm",
         "description": "sqlalchemy.orm",
@@ -808,6 +856,46 @@
         "documentation": {}
     },
     {
+        "label": "user_companies",
+        "importPath": "app.database.models.association",
+        "description": "app.database.models.association",
+        "isExtraImport": true,
+        "detail": "app.database.models.association",
+        "documentation": {}
+    },
+    {
+        "label": "user_projects",
+        "importPath": "app.database.models.association",
+        "description": "app.database.models.association",
+        "isExtraImport": true,
+        "detail": "app.database.models.association",
+        "documentation": {}
+    },
+    {
+        "label": "user_tasks",
+        "importPath": "app.database.models.association",
+        "description": "app.database.models.association",
+        "isExtraImport": true,
+        "detail": "app.database.models.association",
+        "documentation": {}
+    },
+    {
+        "label": "user_companies",
+        "importPath": "app.database.models.association",
+        "description": "app.database.models.association",
+        "isExtraImport": true,
+        "detail": "app.database.models.association",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
         "label": "Enum",
         "importPath": "enum",
         "description": "enum",
@@ -837,22 +925,6 @@
         "description": "sqlalchemy.sql",
         "isExtraImport": true,
         "detail": "sqlalchemy.sql",
-        "documentation": {}
-    },
-    {
-        "label": "user_projects",
-        "importPath": "app.database.models.association",
-        "description": "app.database.models.association",
-        "isExtraImport": true,
-        "detail": "app.database.models.association",
-        "documentation": {}
-    },
-    {
-        "label": "user_tasks",
-        "importPath": "app.database.models.association",
-        "description": "app.database.models.association",
-        "isExtraImport": true,
-        "detail": "app.database.models.association",
         "documentation": {}
     },
     {
@@ -1001,7 +1073,7 @@
         "documentation": {}
     },
     {
-        "label": "BaseModel",
+        "label": "field_validator",
         "importPath": "pydantic",
         "description": "pydantic",
         "isExtraImport": true,
@@ -1018,6 +1090,38 @@
     },
     {
         "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "field_validator",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "field_validator",
         "importPath": "pydantic",
         "description": "pydantic",
         "isExtraImport": true,
@@ -1089,31 +1193,7 @@
         "documentation": {}
     },
     {
-        "label": "Sequence",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Union",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Sequence",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Union",
+        "label": "TYPE_CHECKING",
         "importPath": "typing",
         "description": "typing",
         "isExtraImport": true,
@@ -1166,6 +1246,22 @@
         "description": "app.schemas.profile",
         "isExtraImport": true,
         "detail": "app.schemas.profile",
+        "documentation": {}
+    },
+    {
+        "label": "ReadMultipleJoinRequest",
+        "importPath": "app.schemas.join_requests",
+        "description": "app.schemas.join_requests",
+        "isExtraImport": true,
+        "detail": "app.schemas.join_requests",
+        "documentation": {}
+    },
+    {
+        "label": "ReadSingleJoinRequest",
+        "importPath": "app.schemas.join_requests",
+        "description": "app.schemas.join_requests",
+        "isExtraImport": true,
+        "detail": "app.schemas.join_requests",
         "documentation": {}
     },
     {
@@ -1237,22 +1333,6 @@
         "documentation": {}
     },
     {
-        "label": "op",
-        "importPath": "alembic",
-        "description": "alembic",
-        "isExtraImport": true,
-        "detail": "alembic",
-        "documentation": {}
-    },
-    {
-        "label": "op",
-        "importPath": "alembic",
-        "description": "alembic",
-        "isExtraImport": true,
-        "detail": "alembic",
-        "documentation": {}
-    },
-    {
         "label": "context",
         "importPath": "alembic",
         "description": "alembic",
@@ -1269,35 +1349,11 @@
         "documentation": {}
     },
     {
-        "label": "user",
-        "importPath": "app.database.models",
-        "description": "app.database.models",
+        "label": "models",
+        "importPath": "app.database",
+        "description": "app.database",
         "isExtraImport": true,
-        "detail": "app.database.models",
-        "documentation": {}
-    },
-    {
-        "label": "project",
-        "importPath": "app.database.models",
-        "description": "app.database.models",
-        "isExtraImport": true,
-        "detail": "app.database.models",
-        "documentation": {}
-    },
-    {
-        "label": "task",
-        "importPath": "app.database.models",
-        "description": "app.database.models",
-        "isExtraImport": true,
-        "detail": "app.database.models",
-        "documentation": {}
-    },
-    {
-        "label": "company",
-        "importPath": "app.database.models",
-        "description": "app.database.models",
-        "isExtraImport": true,
-        "detail": "app.database.models",
+        "detail": "app.database",
         "documentation": {}
     },
     {
@@ -1485,7 +1541,7 @@
         "kind": 5,
         "importPath": "app.database.models.association",
         "description": "app.database.models.association",
-        "peekOfCode": "user_projects = Table(\n    \"user_projects\",\n    Base.metadata,\n    Column(\"user_id\", UUID(as_uuid=True), ForeignKey(\"users.id\"), primary_key=True),\n    Column(\n        \"project_id\", UUID(as_uuid=True), ForeignKey(\"projects.id\"), primary_key=True\n    ),\n)",
+        "peekOfCode": "user_projects = Table(\n    \"user_projects\",\n    Base.metadata,\n    Column(\"user_id\", UUID(as_uuid=True), ForeignKey(\"users.id\"), primary_key=True),\n    Column(\n        \"project_id\", UUID(as_uuid=True), ForeignKey(\"projects.id\"), primary_key=True\n    ),\n)\n# For user and companies Many to many\nuser_companies=Table(",
         "detail": "app.database.models.association",
         "documentation": {}
     },
@@ -1494,8 +1550,26 @@
         "kind": 6,
         "importPath": "app.database.models.company",
         "description": "app.database.models.company",
-        "peekOfCode": "class Company(Base):\n    __tablename__=\"companies\"\n    # Fields\n    id=Column(UUID(as_uuid=True),primary_key=True,default=uuid.uuid4)\n    company_name=Column(String,nullable=False,unique=True)\n    issue_date=Column(DateTime,server_default=func.now())\n    projects=relationship(\"Project\",back_populates=\"company\")\n    company_description=Column(String)\n    company_banner=Column(String)\n    company_type=Column(String)",
+        "peekOfCode": "class Company(Base):\n    __tablename__=\"companies\"\n    # Fields\n    id=Column(UUID(as_uuid=True),primary_key=True,default=uuid.uuid4)\n    company_name=Column(String,nullable=False,unique=True,index=True)\n    issue_date=Column(DateTime,server_default=func.now())\n    projects=relationship(\"Project\",back_populates=\"company\")\n    company_description=Column(String)\n    company_banner=Column(String)\n    company_type=Column(String)",
         "detail": "app.database.models.company",
+        "documentation": {}
+    },
+    {
+        "label": "StatusEnum",
+        "kind": 6,
+        "importPath": "app.database.models.join_requests",
+        "description": "app.database.models.join_requests",
+        "peekOfCode": "class StatusEnum(str,Enum):\n    approved=\"APPROVED\"\n    pending=\"PENDING\"\nclass JoinRequest(Base):\n    __tablename__=\"joinrequests\"\n    # Fields\n    id=Column(UUID(as_uuid=True),primary_key=True,default=uuid.uuid4)\n    user_id=Column(UUID(as_uuid=True),ForeignKey(\"users.id\",ondelete=\"CASCADE\"),unique=True)\n    company_id=Column(UUID(as_uuid=True),ForeignKey(\"companies.id\",ondelete=\"CASCADE\"),unique=True)\n    user=relationship(\"User\",back_populates=\"user_requests\")",
+        "detail": "app.database.models.join_requests",
+        "documentation": {}
+    },
+    {
+        "label": "JoinRequest",
+        "kind": 6,
+        "importPath": "app.database.models.join_requests",
+        "description": "app.database.models.join_requests",
+        "peekOfCode": "class JoinRequest(Base):\n    __tablename__=\"joinrequests\"\n    # Fields\n    id=Column(UUID(as_uuid=True),primary_key=True,default=uuid.uuid4)\n    user_id=Column(UUID(as_uuid=True),ForeignKey(\"users.id\",ondelete=\"CASCADE\"),unique=True)\n    company_id=Column(UUID(as_uuid=True),ForeignKey(\"companies.id\",ondelete=\"CASCADE\"),unique=True)\n    user=relationship(\"User\",back_populates=\"user_requests\")\n    company=relationship(\"Company\",back_populates=\"company_requests\")\n    status=Column(SQLEnum(StatusEnum,name=\"join_request_enum\"),default=StatusEnum.pending)",
+        "detail": "app.database.models.join_requests",
         "documentation": {}
     },
     {
@@ -1656,7 +1730,7 @@
         "kind": 6,
         "importPath": "app.schemas.company",
         "description": "app.schemas.company",
-        "peekOfCode": "class CompanyBase(BaseModel):\n    company_name:str\n    company_description:str|None=None\n    company_banner:str|None=None\n    company_type:str|None=None\n    logo:str|None=None\n# Create Company\nclass CompanyCreate(CompanyBase):\n    pass\n# Read  company",
+        "peekOfCode": "class CompanyBase(BaseModel):\n    company_name:str\n    company_description:str|None=None\n    company_banner:str|None=None\n    company_type:str|None=None\n    logo:str|None=None\n    @field_validator(\"company_name\")\n    def check_company_name(cls,v):\n        if len(v)<5:\n            raise ValueError(\"Company name should have atleast 5 characters\")",
         "detail": "app.schemas.company",
         "documentation": {}
     },
@@ -1674,7 +1748,7 @@
         "kind": 6,
         "importPath": "app.schemas.company",
         "description": "app.schemas.company",
-        "peekOfCode": "class CompanyReadSingle(CompanyBase):\n    id:str\n    issue_date:datetime\n    updated_at:datetime\n    is_active:bool\n    projects:list[\"ProjectReadSingle\"]=[]\n    manager:\"UserRead |None\"=None\n    enrolled_users:list[\"UserRead\"]=[]\n    class Config:\n        form_attributes=True",
+        "peekOfCode": "class CompanyReadSingle(CompanyBase):\n    id:str\n    issue_date:datetime\n    updated_at:datetime\n    is_active:bool\n    projects:list[\"ProjectReadSingle\"]=[]\n    manager:\"UserRead |None\"=None\n    enrolled_users:list[\"UserRead\"]=[]\n    company_requests:list[\"ReadMultipleJoinRequest\"]=[]\n    class Config:",
         "detail": "app.schemas.company",
         "documentation": {}
     },
@@ -1697,6 +1771,42 @@
         "documentation": {}
     },
     {
+        "label": "JoinRequestCreate",
+        "kind": 6,
+        "importPath": "app.schemas.join_requests",
+        "description": "app.schemas.join_requests",
+        "peekOfCode": "class JoinRequestCreate(BaseModel):\n    user_id:str\n    company_id:str\n# Read schema\nclass ReadSingleJoinRequest(BaseModel):\n    id:str\n    user:\"UserRead|None\"=None\n    company:\"CompanyReadSingle|None\"=None\n    status:str|None=None\n    class Config:",
+        "detail": "app.schemas.join_requests",
+        "documentation": {}
+    },
+    {
+        "label": "ReadSingleJoinRequest",
+        "kind": 6,
+        "importPath": "app.schemas.join_requests",
+        "description": "app.schemas.join_requests",
+        "peekOfCode": "class ReadSingleJoinRequest(BaseModel):\n    id:str\n    user:\"UserRead|None\"=None\n    company:\"CompanyReadSingle|None\"=None\n    status:str|None=None\n    class Config:\n        form_attributes=True\n# Read schema\nclass ReadMultipleJoinRequest(BaseModel):\n    requests:list[ReadSingleJoinRequest]=[]",
+        "detail": "app.schemas.join_requests",
+        "documentation": {}
+    },
+    {
+        "label": "ReadMultipleJoinRequest",
+        "kind": 6,
+        "importPath": "app.schemas.join_requests",
+        "description": "app.schemas.join_requests",
+        "peekOfCode": "class ReadMultipleJoinRequest(BaseModel):\n    requests:list[ReadSingleJoinRequest]=[]\n    class Config:\n        form_attributes=True\n# Update schema\nclass UpdateJoinRequest(BaseModel):\n    id:str\n    user_id:str\n    company_id:str\n    status:str",
+        "detail": "app.schemas.join_requests",
+        "documentation": {}
+    },
+    {
+        "label": "UpdateJoinRequest",
+        "kind": 6,
+        "importPath": "app.schemas.join_requests",
+        "description": "app.schemas.join_requests",
+        "peekOfCode": "class UpdateJoinRequest(BaseModel):\n    id:str\n    user_id:str\n    company_id:str\n    status:str\n    class Config:\n        form_attributes=True",
+        "detail": "app.schemas.join_requests",
+        "documentation": {}
+    },
+    {
         "label": "ProfileRead",
         "kind": 6,
         "importPath": "app.schemas.profile",
@@ -1710,7 +1820,7 @@
         "kind": 6,
         "importPath": "app.schemas.project",
         "description": "app.schemas.project",
-        "peekOfCode": "class ProjectBase(BaseModel):\n    project_name:str\n    project_type:str|None=None\n    project_description:str|None=None\n    company_id:str\n# For Creating the project\nclass ProjectCreate(ProjectBase):\n    end_on:date\n# For reading the single project\nclass ProjectReadSingle(ProjectCreate):",
+        "peekOfCode": "class ProjectBase(BaseModel):\n    project_name:str\n    project_type:str|None=None\n    project_description:str|None=None\n    company_id:str\n    @field_validator(\"project_name\")\n    def check_project_name(cls,v):\n        if len(v)<5:\n            raise ValueError(\"Project name should have atleast 5 characters\")\n        return v",
         "detail": "app.schemas.project",
         "documentation": {}
     },
@@ -1764,7 +1874,7 @@
         "kind": 6,
         "importPath": "app.schemas.task",
         "description": "app.schemas.task",
-        "peekOfCode": "class TaskBase(BaseModel):\n    task_name:str\n    task_type:str|None=None\n    task_description:str|None=None\n# For task create\nclass TaskCreate(TaskBase):\n    project_id:str\n    status:str\n    user_ids:list[UUID]\n# For task read single",
+        "peekOfCode": "class TaskBase(BaseModel):\n    task_name:str\n    task_type:str|None=None\n    task_description:str|None=None\n    @field_validator(\"task_name\")\n    def check_task_name(cls,v):\n        if len(v)<5:\n            raise ValueError(\"Task name should have atleast 5 characters\")\n        return v\n# For task create",
         "detail": "app.schemas.task",
         "documentation": {}
     },
@@ -1800,7 +1910,7 @@
         "kind": 6,
         "importPath": "app.schemas.task",
         "description": "app.schemas.task",
-        "peekOfCode": "class TaskUpdate(BaseModel):\n    id:str\n    task_type:str|None=None\n    task_name:str|None=None\n    task_description:str|None=None\n    status:str|None=None\n    user_id:list[UUID]",
+        "peekOfCode": "class TaskUpdate(BaseModel):\n    id:str\n    task_type:str|None=None\n    task_name:str|None=None\n    task_description:str|None=None\n    status:str|None=None\n    user_ids:list[UUID]",
         "detail": "app.schemas.task",
         "documentation": {}
     },
@@ -1827,7 +1937,16 @@
         "kind": 6,
         "importPath": "app.schemas.user",
         "description": "app.schemas.user",
-        "peekOfCode": "class UserRead(BaseModel):\n    id:str\n    username:str\n    email:str\n    is_authenticated:bool\n    role:str\n    projects:list[\"ProjectReadSingle\"]=[]\n    tasks:list[\"TaskReadSingle\"]=[]\n    profile:\"ProfileRead\"\n    manager_company:\"CompanyReadSingle |None\"=None",
+        "peekOfCode": "class UserRead(BaseModel):\n    id:str\n    username:str\n    email:str\n    user_requests:list[\"ReadMultipleJoinRequest\"]=[]\n    is_authenticated:bool\n    role:str\n    projects:list[\"ProjectReadSingle\"]=[]\n    tasks:list[\"TaskReadSingle\"]=[]\n    profile:\"ProfileRead\"",
+        "detail": "app.schemas.user",
+        "documentation": {}
+    },
+    {
+        "label": "UserUpdate",
+        "kind": 6,
+        "importPath": "app.schemas.user",
+        "description": "app.schemas.user",
+        "peekOfCode": "class UserUpdate(BaseModel):\n    id:str\n    is_authenticated:bool|None=None\n    role:str|None=None\n    isActive:bool|None=None\n    class Config:\n        form_attributes=True",
         "detail": "app.schemas.user",
         "documentation": {}
     },
@@ -1888,55 +2007,19 @@
     {
         "label": "upgrade",
         "kind": 2,
-        "importPath": "migrations.versions.136e876a6375_added_the_contraints_and_index",
-        "description": "migrations.versions.136e876a6375_added_the_contraints_and_index",
-        "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_unique_constraint(None, 'companies', ['company_name'])\n    op.create_index(op.f('ix_projects_status'), 'projects', ['status'], unique=False)\n    op.create_unique_constraint(None, 'projects', ['project_name'])\n    op.create_index(op.f('ix_tasks_status'), 'tasks', ['status'], unique=False)\n    # ### end Alembic commands ###\ndef downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"",
-        "detail": "migrations.versions.136e876a6375_added_the_contraints_and_index",
+        "importPath": "migrations.versions.7362f21c97aa_initial",
+        "description": "migrations.versions.7362f21c97aa_initial",
+        "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table('users',\n    sa.Column('id', sa.UUID(), nullable=False),\n    sa.Column('username', sa.String(), nullable=True),\n    sa.Column('email', sa.String(), nullable=True),\n    sa.Column('hashed_pwd', sa.String(), nullable=True),\n    sa.Column('is_authenticated', sa.Boolean(), nullable=True),\n    sa.Column('role', sa.Enum('member', 'admin', 'manager', name='user_roles'), nullable=True),",
+        "detail": "migrations.versions.7362f21c97aa_initial",
         "documentation": {}
     },
     {
         "label": "downgrade",
         "kind": 2,
-        "importPath": "migrations.versions.136e876a6375_added_the_contraints_and_index",
-        "description": "migrations.versions.136e876a6375_added_the_contraints_and_index",
-        "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_index(op.f('ix_tasks_status'), table_name='tasks')\n    op.drop_constraint(None, 'projects', type_='unique')\n    op.drop_index(op.f('ix_projects_status'), table_name='projects')\n    op.drop_constraint(None, 'companies', type_='unique')\n    # ### end Alembic commands ###",
-        "detail": "migrations.versions.136e876a6375_added_the_contraints_and_index",
-        "documentation": {}
-    },
-    {
-        "label": "upgrade",
-        "kind": 2,
-        "importPath": "migrations.versions.4e9abcdff489_initial",
-        "description": "migrations.versions.4e9abcdff489_initial",
-        "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table('projects',\n    sa.Column('id', sa.UUID(), nullable=False),\n    sa.Column('project_name', sa.String(), nullable=False),\n    sa.Column('project_type', sa.String(), nullable=True),\n    sa.Column('status', sa.Enum('done', 'running', 'failed', name='project_status'), nullable=True),\n    sa.Column('created_at', sa.DateTime(), server_default=sa.text('now()'), nullable=True),\n    sa.Column('end_on', sa.Date(), nullable=False),",
-        "detail": "migrations.versions.4e9abcdff489_initial",
-        "documentation": {}
-    },
-    {
-        "label": "downgrade",
-        "kind": 2,
-        "importPath": "migrations.versions.4e9abcdff489_initial",
-        "description": "migrations.versions.4e9abcdff489_initial",
-        "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_table('user_tasks')\n    op.drop_table('user_projects')\n    op.drop_table('tasks')\n    op.drop_table('profiles')\n    op.drop_index(op.f('ix_users_username'), table_name='users')\n    op.drop_index(op.f('ix_users_email'), table_name='users')\n    op.drop_table('users')",
-        "detail": "migrations.versions.4e9abcdff489_initial",
-        "documentation": {}
-    },
-    {
-        "label": "upgrade",
-        "kind": 2,
-        "importPath": "migrations.versions.dfcf5ec8800e_added_the_company_model",
-        "description": "migrations.versions.dfcf5ec8800e_added_the_company_model",
-        "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table('companies',\n    sa.Column('id', sa.UUID(), nullable=False),\n    sa.Column('company_name', sa.String(), nullable=False),\n    sa.Column('issue_date', sa.DateTime(), server_default=sa.text('now()'), nullable=True),\n    sa.Column('company_description', sa.String(), nullable=True),\n    sa.Column('company_banner', sa.String(), nullable=True),\n    sa.Column('company_type', sa.String(), nullable=True),",
-        "detail": "migrations.versions.dfcf5ec8800e_added_the_company_model",
-        "documentation": {}
-    },
-    {
-        "label": "downgrade",
-        "kind": 2,
-        "importPath": "migrations.versions.dfcf5ec8800e_added_the_company_model",
-        "description": "migrations.versions.dfcf5ec8800e_added_the_company_model",
-        "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_constraint(None, 'users', type_='foreignkey')\n    op.drop_constraint(None, 'users', type_='unique')\n    op.drop_column('users', 'company_id')\n    op.drop_constraint(None, 'projects', type_='foreignkey')\n    op.drop_column('projects', 'company_id')\n    op.drop_table('companies')\n    # ### end Alembic commands ###",
-        "detail": "migrations.versions.dfcf5ec8800e_added_the_company_model",
+        "importPath": "migrations.versions.7362f21c97aa_initial",
+        "description": "migrations.versions.7362f21c97aa_initial",
+        "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_table('user_tasks')\n    op.drop_table('user_projects')\n    op.drop_index(op.f('ix_tasks_status'), table_name='tasks')\n    op.drop_table('tasks')\n    op.drop_table('user_companies')\n    op.drop_index(op.f('ix_projects_status'), table_name='projects')\n    op.drop_table('projects')",
+        "detail": "migrations.versions.7362f21c97aa_initial",
         "documentation": {}
     },
     {

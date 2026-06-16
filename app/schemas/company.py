@@ -1,11 +1,11 @@
-from pydantic import BaseModel
+from pydantic import BaseModel,field_validator
 from datetime import datetime
-
 from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
     from app.schemas.project import ProjectReadSingle
     from app.schemas.user import UserRead
+    from app.schemas.join_requests import ReadMultipleJoinRequest
 
 class CompanyBase(BaseModel):
     company_name:str
@@ -13,6 +13,12 @@ class CompanyBase(BaseModel):
     company_banner:str|None=None
     company_type:str|None=None
     logo:str|None=None
+
+    @field_validator("company_name")
+    def check_company_name(cls,v):
+        if len(v)<5:
+            raise ValueError("Company name should have atleast 5 characters")
+        return v
     
 # Create Company
 class CompanyCreate(CompanyBase):
@@ -27,7 +33,7 @@ class CompanyReadSingle(CompanyBase):
     projects:list["ProjectReadSingle"]=[]
     manager:"UserRead |None"=None
     enrolled_users:list["UserRead"]=[]
-
+    company_requests:list["ReadMultipleJoinRequest"]=[]
     class Config:
         form_attributes=True
 

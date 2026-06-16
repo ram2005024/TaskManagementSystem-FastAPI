@@ -6,7 +6,7 @@ if TYPE_CHECKING:
     from app.schemas.task import TaskReadSingle
     from app.schemas.company import CompanyReadSingle
     from app.schemas.profile import ProfileRead
-
+    from app.schemas.join_requests import ReadMultipleJoinRequest
 
 
 
@@ -35,6 +35,7 @@ class UserRead(BaseModel):
     id:str
     username:str
     email:str
+    user_requests:list["ReadMultipleJoinRequest"]=[]
     is_authenticated:bool
     role:str
     projects:list["ProjectReadSingle"]=[]
@@ -45,3 +46,13 @@ class UserRead(BaseModel):
     
     class Config:
         form_attributes:True
+        
+# User update
+class UserUpdate(BaseModel):
+    id:str
+    is_authenticated:bool|None=None
+    role:str|None=None
+    isActive:bool|None=None
+    
+    class Config:
+        form_attributes=True

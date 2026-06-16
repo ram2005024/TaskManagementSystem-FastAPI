@@ -1,4 +1,4 @@
-from pydantic import BaseModel
+from pydantic import BaseModel,field_validator
 from datetime import date,datetime
 from typing import TYPE_CHECKING
 
@@ -13,6 +13,12 @@ class ProjectBase(BaseModel):
     project_description:str|None=None
     company_id:str
 
+    @field_validator("project_name")
+    def check_project_name(cls,v):
+        if len(v)<5:
+            raise ValueError("Project name should have atleast 5 characters")
+        return v
+    
 # For Creating the project
 class ProjectCreate(ProjectBase):
     end_on:date
