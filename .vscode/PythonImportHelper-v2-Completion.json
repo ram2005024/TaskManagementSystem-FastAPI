@@ -383,6 +383,14 @@
         "documentation": {}
     },
     {
+        "label": "UniqueConstraint",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
         "label": "Column",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
@@ -439,6 +447,14 @@
         "documentation": {}
     },
     {
+        "label": "UniqueConstraint",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
         "label": "Column",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
@@ -480,6 +496,14 @@
     },
     {
         "label": "func",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "UniqueConstraint",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
         "isExtraImport": true,
@@ -536,6 +560,14 @@
     },
     {
         "label": "Table",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "UniqueConstraint",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
         "isExtraImport": true,
@@ -1020,6 +1052,30 @@
         "documentation": {}
     },
     {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
         "label": "op",
         "importPath": "alembic",
         "description": "alembic",
@@ -1277,7 +1333,7 @@
         "kind": 6,
         "importPath": "app.database.models.company",
         "description": "app.database.models.company",
-        "peekOfCode": "class Company(Base):\n    __tablename__=\"companies\"\n    # Fields\n    id=Column(UUID(as_uuid=True),primary_key=True,default=uuid.uuid4)\n    company_name=Column(String,nullable=False)\n    issue_date=Column(DateTime,server_default=func.now())\n    projects=relationship(\"Project\",back_populates=\"company\")\n    company_description=Column(String)\n    company_banner=Column(String)\n    company_type=Column(String)",
+        "peekOfCode": "class Company(Base):\n    __tablename__=\"companies\"\n    # Fields\n    id=Column(UUID(as_uuid=True),primary_key=True,default=uuid.uuid4)\n    company_name=Column(String,nullable=False,unique=True)\n    issue_date=Column(DateTime,server_default=func.now())\n    projects=relationship(\"Project\",back_populates=\"company\")\n    company_description=Column(String)\n    company_banner=Column(String)\n    company_type=Column(String)",
         "detail": "app.database.models.company",
         "documentation": {}
     },
@@ -1295,7 +1351,7 @@
         "kind": 6,
         "importPath": "app.database.models.project",
         "description": "app.database.models.project",
-        "peekOfCode": "class ProjectUrgency(str, Enum):\n    high = \"High\",\n    low = \"Low\",\n    medium = \"Medium\"\nclass Project(Base):\n    __tablename__ = \"projects\"\n    # Fields\n    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    project_name = Column(String, nullable=False)\n    project_type = Column(String)",
+        "peekOfCode": "class ProjectUrgency(str, Enum):\n    high = \"High\",\n    low = \"Low\",\n    medium = \"Medium\"\nclass Project(Base):\n    __tablename__ = \"projects\"\n    # Fields\n    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    project_name = Column(String, nullable=False,unique=True)\n    project_type = Column(String)",
         "detail": "app.database.models.project",
         "documentation": {}
     },
@@ -1304,7 +1360,7 @@
         "kind": 6,
         "importPath": "app.database.models.project",
         "description": "app.database.models.project",
-        "peekOfCode": "class Project(Base):\n    __tablename__ = \"projects\"\n    # Fields\n    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    project_name = Column(String, nullable=False)\n    project_type = Column(String)\n    status = Column(\n        SQLEnum(ProjectStatus, name=\"project_status\"), default=ProjectStatus.running\n    )\n    created_at = Column(DateTime, server_default=func.now())",
+        "peekOfCode": "class Project(Base):\n    __tablename__ = \"projects\"\n    # Fields\n    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    project_name = Column(String, nullable=False,unique=True)\n    project_type = Column(String)\n    status = Column(\n        SQLEnum(ProjectStatus, name=\"project_status\"), default=ProjectStatus.running,index=True\n    )\n    created_at = Column(DateTime, server_default=func.now())",
         "detail": "app.database.models.project",
         "documentation": {}
     },
@@ -1504,6 +1560,24 @@
         "description": "app.main",
         "peekOfCode": "app = FastAPI()\napp.include_router(authRouter)\napp.middleware(\"http\")(blacklist_middleware)\n@app.get(\"/\")\ndef default():\n    return {\"message\": \"Hello World I am into the world of fastapi\"}",
         "detail": "app.main",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
+        "importPath": "migrations.versions.136e876a6375_added_the_contraints_and_index",
+        "description": "migrations.versions.136e876a6375_added_the_contraints_and_index",
+        "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_unique_constraint(None, 'companies', ['company_name'])\n    op.create_index(op.f('ix_projects_status'), 'projects', ['status'], unique=False)\n    op.create_unique_constraint(None, 'projects', ['project_name'])\n    op.create_index(op.f('ix_tasks_status'), 'tasks', ['status'], unique=False)\n    # ### end Alembic commands ###\ndef downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"",
+        "detail": "migrations.versions.136e876a6375_added_the_contraints_and_index",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "migrations.versions.136e876a6375_added_the_contraints_and_index",
+        "description": "migrations.versions.136e876a6375_added_the_contraints_and_index",
+        "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_index(op.f('ix_tasks_status'), table_name='tasks')\n    op.drop_constraint(None, 'projects', type_='unique')\n    op.drop_index(op.f('ix_projects_status'), table_name='projects')\n    op.drop_constraint(None, 'companies', type_='unique')\n    # ### end Alembic commands ###",
+        "detail": "migrations.versions.136e876a6375_added_the_contraints_and_index",
         "documentation": {}
     },
     {

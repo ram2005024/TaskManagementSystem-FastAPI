@@ -1,4 +1,4 @@
-from sqlalchemy import Column, String, Enum as SQLEnum, DateTime, func, Date,ForeignKey
+from sqlalchemy import Column, String, Enum as SQLEnum, DateTime, func, Date,ForeignKey,UniqueConstraint
 from app.database.db import Base
 from sqlalchemy.orm import relationship
 import uuid
@@ -25,10 +25,10 @@ class Project(Base):
 
     # Fields
     id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
-    project_name = Column(String, nullable=False)
+    project_name = Column(String, nullable=False,unique=True)
     project_type = Column(String)
     status = Column(
-        SQLEnum(ProjectStatus, name="project_status"), default=ProjectStatus.running
+        SQLEnum(ProjectStatus, name="project_status"), default=ProjectStatus.running,index=True
     )
     created_at = Column(DateTime, server_default=func.now())
     end_on = Column(Date, nullable=False)
@@ -41,3 +41,6 @@ class Project(Base):
     )
     company_id=Column(UUID(as_uuid=True),ForeignKey("companies.id",ondelete="CASCADE"))
     company=relationship("Company",back_populates="projects")
+    __tableargs__=(
+        UniqueConstraint("project_name","company_id",name="unique_company_project")
+    )

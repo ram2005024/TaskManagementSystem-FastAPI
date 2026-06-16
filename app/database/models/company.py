@@ -1,4 +1,4 @@
-from sqlalchemy import Column,String,DateTime,func,Boolean,ForeignKey
+from sqlalchemy import Column,String,DateTime,func,Boolean,ForeignKey,UniqueConstraint
 from app.database.db import Base
 from sqlalchemy.dialects.postgresql import UUID
 from sqlalchemy.orm import relationship
@@ -7,7 +7,7 @@ class Company(Base):
     __tablename__="companies"
     # Fields
     id=Column(UUID(as_uuid=True),primary_key=True,default=uuid.uuid4)
-    company_name=Column(String,nullable=False)
+    company_name=Column(String,nullable=False,unique=True)
     issue_date=Column(DateTime,server_default=func.now())
     projects=relationship("Project",back_populates="company")
     company_description=Column(String)
@@ -19,3 +19,6 @@ class Company(Base):
     enrolled_users=relationship("User",back_populates="company")
     updated_at=Column(DateTime,onupdate=func.now())
     logo=Column(String)
+    __tableargs__=(
+        UniqueConstraint("company_name","manager_id",name="unique_company_manager")
+    )

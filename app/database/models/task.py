@@ -1,4 +1,4 @@
-from sqlalchemy import Column, String, ForeignKey, Enum as SQLEnum, DateTime, func
+from sqlalchemy import Column, String, ForeignKey, Enum as SQLEnum, DateTime, func,UniqueConstraint
 from app.database.db import Base
 from sqlalchemy.orm import relationship
 import uuid
@@ -28,5 +28,8 @@ class Task(Base):
         ForeignKey("projects.id", ondelete="CASCADE"),
     )
     project = relationship("Project", back_populates="tasks")
-    status = Column(SQLEnum(TaskStatus, name="task_status"), default=TaskStatus.pending)
+    status = Column(SQLEnum(TaskStatus, name="task_status"), default=TaskStatus.pending,index=True)
     users = relationship("User", secondary=user_tasks, back_populates="tasks")
+    __tableargs__=(
+        UniqueConstraint("task_name","project_id",name="unique_task_project")
+    )
