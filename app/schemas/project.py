@@ -1,7 +1,7 @@
 from pydantic import BaseModel,field_validator
 from datetime import date,datetime
 from typing import TYPE_CHECKING
-
+from uuid import UUID
 if TYPE_CHECKING:
     from app.schemas.company import CompanyReadSingle
     from app.schemas.task import TaskReadSingle
@@ -32,16 +32,16 @@ class ProjectReadSingle(ProjectCreate):
     updated_at:datetime
     created_at:datetime
     status:str
-    id:str
+    id:UUID
     
     class Config:
-        form_attributes=True
+        from_attributes=True
 
 # For reading the mulitiple projects
 class ProjectReadMultiple(ProjectBase):
     pass
     class Config:
-        form_attributes=True
+        from_attributes=True
 
 # For updating the project
 class ProjectUpdate(ProjectReadSingle):
@@ -53,8 +53,8 @@ class ProjectUpdate(ProjectReadSingle):
     urgency:str|None=None
 
     class Config:
-        form_attributes=True
+        from_attributes=True
     
 class ProjectDelete(BaseModel):
-    id:str
+    id:UUID
 

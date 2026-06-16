@@ -262,6 +262,22 @@
         "documentation": {}
     },
     {
+        "label": "UploadFile",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Request",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
         "label": "APIRouter",
         "importPath": "fastapi",
         "description": "fastapi",
@@ -318,6 +334,70 @@
         "documentation": {}
     },
     {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Request",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Form",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "File",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "UploadFile",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "UploadFile",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
         "label": "UploadFile",
         "importPath": "fastapi",
         "description": "fastapi",
@@ -331,6 +411,182 @@
         "description": "fastapi",
         "isExtraImport": true,
         "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "sessionmaker",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "declarative_base",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "CompanyCreate",
+        "importPath": "app.schemas.company",
+        "description": "app.schemas.company",
+        "isExtraImport": true,
+        "detail": "app.schemas.company",
+        "documentation": {}
+    },
+    {
+        "label": "CompanyCreate",
+        "importPath": "app.schemas.company",
+        "description": "app.schemas.company",
+        "isExtraImport": true,
+        "detail": "app.schemas.company",
+        "documentation": {}
+    },
+    {
+        "label": "CompanyReadSingle",
+        "importPath": "app.schemas.company",
+        "description": "app.schemas.company",
+        "isExtraImport": true,
+        "detail": "app.schemas.company",
+        "documentation": {}
+    },
+    {
+        "label": "CompanyReadSingle",
+        "importPath": "app.schemas.company",
+        "description": "app.schemas.company",
+        "isExtraImport": true,
+        "detail": "app.schemas.company",
+        "documentation": {}
+    },
+    {
+        "label": "CompanyBasic",
+        "importPath": "app.schemas.company",
+        "description": "app.schemas.company",
+        "isExtraImport": true,
+        "detail": "app.schemas.company",
+        "documentation": {}
+    },
+    {
+        "label": "Company",
+        "importPath": "app.database.models",
+        "description": "app.database.models",
+        "isExtraImport": true,
+        "detail": "app.database.models",
+        "documentation": {}
+    },
+    {
+        "label": "upload_image",
+        "importPath": "app.utils.upload_image",
+        "description": "app.utils.upload_image",
+        "isExtraImport": true,
+        "detail": "app.utils.upload_image",
+        "documentation": {}
+    },
+    {
+        "label": "upload_image",
+        "importPath": "app.utils.upload_image",
+        "description": "app.utils.upload_image",
+        "isExtraImport": true,
+        "detail": "app.utils.upload_image",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.database.models.user",
+        "description": "app.database.models.user",
+        "isExtraImport": true,
+        "detail": "app.database.models.user",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.database.models.user",
+        "description": "app.database.models.user",
+        "isExtraImport": true,
+        "detail": "app.database.models.user",
+        "documentation": {}
+    },
+    {
+        "label": "Profile",
+        "importPath": "app.database.models.user",
+        "description": "app.database.models.user",
+        "isExtraImport": true,
+        "detail": "app.database.models.user",
         "documentation": {}
     },
     {
@@ -759,6 +1015,14 @@
         "documentation": {}
     },
     {
+        "label": "get_db",
+        "importPath": "app.database.db",
+        "description": "app.database.db",
+        "isExtraImport": true,
+        "detail": "app.database.db",
+        "documentation": {}
+    },
+    {
         "label": "Base",
         "importPath": "app.database.db",
         "description": "app.database.db",
@@ -767,83 +1031,51 @@
         "documentation": {}
     },
     {
-        "label": "relationship",
-        "importPath": "sqlalchemy.orm",
-        "description": "sqlalchemy.orm",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.orm",
-        "documentation": {}
-    },
-    {
-        "label": "relationship",
-        "importPath": "sqlalchemy.orm",
-        "description": "sqlalchemy.orm",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.orm",
-        "documentation": {}
-    },
-    {
-        "label": "relationship",
-        "importPath": "sqlalchemy.orm",
-        "description": "sqlalchemy.orm",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.orm",
-        "documentation": {}
-    },
-    {
-        "label": "relationship",
-        "importPath": "sqlalchemy.orm",
-        "description": "sqlalchemy.orm",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.orm",
-        "documentation": {}
-    },
-    {
-        "label": "relationship",
-        "importPath": "sqlalchemy.orm",
-        "description": "sqlalchemy.orm",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.orm",
-        "documentation": {}
-    },
-    {
-        "label": "sessionmaker",
-        "importPath": "sqlalchemy.orm",
-        "description": "sqlalchemy.orm",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.orm",
-        "documentation": {}
-    },
-    {
-        "label": "declarative_base",
-        "importPath": "sqlalchemy.orm",
-        "description": "sqlalchemy.orm",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.orm",
-        "documentation": {}
-    },
-    {
-        "label": "Session",
-        "importPath": "sqlalchemy.orm",
-        "description": "sqlalchemy.orm",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.orm",
-        "documentation": {}
-    },
-    {
-        "label": "Session",
-        "importPath": "sqlalchemy.orm",
-        "description": "sqlalchemy.orm",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.orm",
-        "documentation": {}
-    },
-    {
         "label": "uuid",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "uuid",
         "description": "uuid",
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
         "detail": "uuid",
         "documentation": {}
     },
@@ -952,6 +1184,14 @@
         "documentation": {}
     },
     {
+        "label": "UserReadBasic",
+        "importPath": "app.schemas.user",
+        "description": "app.schemas.user",
+        "isExtraImport": true,
+        "detail": "app.schemas.user",
+        "documentation": {}
+    },
+    {
         "label": "UserLogin",
         "importPath": "app.schemas.user",
         "description": "app.schemas.user",
@@ -981,6 +1221,14 @@
         "description": "app.services.user",
         "isExtraImport": true,
         "detail": "app.services.user",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi.exceptions",
+        "description": "fastapi.exceptions",
+        "isExtraImport": true,
+        "detail": "fastapi.exceptions",
         "documentation": {}
     },
     {
@@ -1062,6 +1310,14 @@
         "importPath": "time",
         "description": "time",
         "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "create_company",
+        "importPath": "app.crud.company",
+        "description": "app.crud.company",
+        "isExtraImport": true,
+        "detail": "app.crud.company",
         "documentation": {}
     },
     {
@@ -1217,11 +1473,11 @@
         "documentation": {}
     },
     {
-        "label": "CompanyReadSingle",
-        "importPath": "app.schemas.company",
-        "description": "app.schemas.company",
+        "label": "Company",
+        "importPath": "app.database.models.company",
+        "description": "app.database.models.company",
         "isExtraImport": true,
-        "detail": "app.schemas.company",
+        "detail": "app.database.models.company",
         "documentation": {}
     },
     {
@@ -1249,6 +1505,14 @@
         "documentation": {}
     },
     {
+        "label": "ProfileBasic",
+        "importPath": "app.schemas.profile",
+        "description": "app.schemas.profile",
+        "isExtraImport": true,
+        "detail": "app.schemas.profile",
+        "documentation": {}
+    },
+    {
         "label": "ReadMultipleJoinRequest",
         "importPath": "app.schemas.join_requests",
         "description": "app.schemas.join_requests",
@@ -1262,31 +1526,6 @@
         "description": "app.schemas.join_requests",
         "isExtraImport": true,
         "detail": "app.schemas.join_requests",
-        "documentation": {}
-    },
-    {
-        "label": "cloudinary.uploader",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "cloudinary.uploader",
-        "description": "cloudinary.uploader",
-        "detail": "cloudinary.uploader",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "app.database.models.user",
-        "description": "app.database.models.user",
-        "isExtraImport": true,
-        "detail": "app.database.models.user",
-        "documentation": {}
-    },
-    {
-        "label": "Profile",
-        "importPath": "app.database.models.user",
-        "description": "app.database.models.user",
-        "isExtraImport": true,
-        "detail": "app.database.models.user",
         "documentation": {}
     },
     {
@@ -1308,12 +1547,29 @@
         "documentation": {}
     },
     {
+        "label": "cloudinary.uploader",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "cloudinary.uploader",
+        "description": "cloudinary.uploader",
+        "detail": "cloudinary.uploader",
+        "documentation": {}
+    },
+    {
         "label": "app.schemas.rebuild",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "app.schemas.rebuild",
         "description": "app.schemas.rebuild",
         "detail": "app.schemas.rebuild",
+        "documentation": {}
+    },
+    {
+        "label": "company_router",
+        "importPath": "app.routers.company",
+        "description": "app.routers.company",
+        "isExtraImport": true,
+        "detail": "app.routers.company",
         "documentation": {}
     },
     {
@@ -1528,6 +1784,15 @@
         "documentation": {}
     },
     {
+        "label": "create_company",
+        "kind": 2,
+        "importPath": "app.crud.company",
+        "description": "app.crud.company",
+        "peekOfCode": "def create_company(data:CompanyCreate,logo:UploadFile,db:Session):\n    # Handle the image upload\n    try:\n        company=Company(company_name=data.company_name,\n                        company_description=data.company_description,\n                        company_banner=data.company_banner,\n                        company_type=data.company_type,\n                        manager_id=data.manager_id,\n                        )\n        db.add(company)",
+        "detail": "app.crud.company",
+        "documentation": {}
+    },
+    {
         "label": "user_tasks",
         "kind": 5,
         "importPath": "app.database.models.association",
@@ -1726,11 +1991,29 @@
         "documentation": {}
     },
     {
+        "label": "register_company",
+        "kind": 2,
+        "importPath": "app.routers.company",
+        "description": "app.routers.company",
+        "peekOfCode": "def register_company(request:Request,company_name:str=Form(...),company_description:str|None=Form(None),company_banner:str|None=Form(None),company_type:str|None=Form(None),logo:UploadFile|None=File(None),db:Session=Depends(get_db)):\n    data=CompanyCreate(\n        company_name=company_name,\n        company_description=company_description,\n        company_banner=company_banner,\n        company_type=company_type,\n        manager_id=request.state.user_id\n    )\n    company,error=create_company(data,logo,db)\n    if error:",
+        "detail": "app.routers.company",
+        "documentation": {}
+    },
+    {
         "label": "CompanyBase",
         "kind": 6,
         "importPath": "app.schemas.company",
         "description": "app.schemas.company",
-        "peekOfCode": "class CompanyBase(BaseModel):\n    company_name:str\n    company_description:str|None=None\n    company_banner:str|None=None\n    company_type:str|None=None\n    logo:str|None=None\n    @field_validator(\"company_name\")\n    def check_company_name(cls,v):\n        if len(v)<5:\n            raise ValueError(\"Company name should have atleast 5 characters\")",
+        "peekOfCode": "class CompanyBase(BaseModel):\n    company_name:str\n    company_description:str|None=None\n    company_banner:str|None=None\n    company_type:str|None=None\n    @field_validator(\"company_name\")\n    def check_company_name(cls,v):\n        if len(v)<5:\n            raise ValueError(\"Company name should have atleast 5 characters\")\n        return v",
+        "detail": "app.schemas.company",
+        "documentation": {}
+    },
+    {
+        "label": "CompanyBasic",
+        "kind": 6,
+        "importPath": "app.schemas.company",
+        "description": "app.schemas.company",
+        "peekOfCode": "class CompanyBasic(CompanyBase):\n    logo:str|None=None\n# Create Company\nclass CompanyCreate(CompanyBase):\n    manager_id:UUID\n# Read  company\nclass CompanyReadSingle(CompanyBase):\n    id:UUID\n    logo:str|None=None\n    issue_date:datetime",
         "detail": "app.schemas.company",
         "documentation": {}
     },
@@ -1739,7 +2022,7 @@
         "kind": 6,
         "importPath": "app.schemas.company",
         "description": "app.schemas.company",
-        "peekOfCode": "class CompanyCreate(CompanyBase):\n    pass\n# Read  company\nclass CompanyReadSingle(CompanyBase):\n    id:str\n    issue_date:datetime\n    updated_at:datetime\n    is_active:bool\n    projects:list[\"ProjectReadSingle\"]=[]\n    manager:\"UserRead |None\"=None",
+        "peekOfCode": "class CompanyCreate(CompanyBase):\n    manager_id:UUID\n# Read  company\nclass CompanyReadSingle(CompanyBase):\n    id:UUID\n    logo:str|None=None\n    issue_date:datetime\n    updated_at:datetime\n    is_active:bool\n    projects:list[\"ProjectReadSingle\"]=[]",
         "detail": "app.schemas.company",
         "documentation": {}
     },
@@ -1748,7 +2031,7 @@
         "kind": 6,
         "importPath": "app.schemas.company",
         "description": "app.schemas.company",
-        "peekOfCode": "class CompanyReadSingle(CompanyBase):\n    id:str\n    issue_date:datetime\n    updated_at:datetime\n    is_active:bool\n    projects:list[\"ProjectReadSingle\"]=[]\n    manager:\"UserRead |None\"=None\n    enrolled_users:list[\"UserRead\"]=[]\n    company_requests:list[\"ReadMultipleJoinRequest\"]=[]\n    class Config:",
+        "peekOfCode": "class CompanyReadSingle(CompanyBase):\n    id:UUID\n    logo:str|None=None\n    issue_date:datetime\n    updated_at:datetime\n    is_active:bool\n    projects:list[\"ProjectReadSingle\"]=[]\n    manager:\"UserReadBasic |None\"=None\n    enrolled_users:list[\"UserReadBasic\"]=[]\n    company_requests:list[\"ReadMultipleJoinRequest\"]=[]",
         "detail": "app.schemas.company",
         "documentation": {}
     },
@@ -1757,7 +2040,7 @@
         "kind": 6,
         "importPath": "app.schemas.company",
         "description": "app.schemas.company",
-        "peekOfCode": "class CompanyReadMultiple(CompanyBase):\n    enrolled_users:list[\"UserRead\"]=[]\n    class Config:\n        form_attributes=True\n# Update the company\nclass CompanyUpdate(BaseModel):\n    id:str\n    company_name:str|None=None\n    company_description:str|None=None\n    company_banner:str|None=None",
+        "peekOfCode": "class CompanyReadMultiple(CompanyBase):\n    enrolled_users:list[\"UserReadBasic\"]=[]\n    logo:str|None=None\n    class Config:\n        from_attributes=True\n# Update the company\nclass CompanyUpdate(BaseModel):\n    id:UUID\n    company_name:str|None=None\n    company_description:str|None=None",
         "detail": "app.schemas.company",
         "documentation": {}
     },
@@ -1766,7 +2049,7 @@
         "kind": 6,
         "importPath": "app.schemas.company",
         "description": "app.schemas.company",
-        "peekOfCode": "class CompanyUpdate(BaseModel):\n    id:str\n    company_name:str|None=None\n    company_description:str|None=None\n    company_banner:str|None=None\n    company_type:str|None=None\n    logo:str|None=None\n    class Config:\n        form_attributes=True",
+        "peekOfCode": "class CompanyUpdate(BaseModel):\n    id:UUID\n    company_name:str|None=None\n    company_description:str|None=None\n    company_banner:str|None=None\n    company_type:str|None=None\n    class Config:\n        from_attributes=True",
         "detail": "app.schemas.company",
         "documentation": {}
     },
@@ -1775,7 +2058,7 @@
         "kind": 6,
         "importPath": "app.schemas.join_requests",
         "description": "app.schemas.join_requests",
-        "peekOfCode": "class JoinRequestCreate(BaseModel):\n    user_id:str\n    company_id:str\n# Read schema\nclass ReadSingleJoinRequest(BaseModel):\n    id:str\n    user:\"UserRead|None\"=None\n    company:\"CompanyReadSingle|None\"=None\n    status:str|None=None\n    class Config:",
+        "peekOfCode": "class JoinRequestCreate(BaseModel):\n    user_id:UUID\n    company_id:UUID\n# Read schema\nclass ReadSingleJoinRequest(BaseModel):\n    id:UUID\n    user:\"UserRead|None\"=None\n    company:\"CompanyBasic|None\"=None\n    status:str|None=None\n    class Config:",
         "detail": "app.schemas.join_requests",
         "documentation": {}
     },
@@ -1784,7 +2067,7 @@
         "kind": 6,
         "importPath": "app.schemas.join_requests",
         "description": "app.schemas.join_requests",
-        "peekOfCode": "class ReadSingleJoinRequest(BaseModel):\n    id:str\n    user:\"UserRead|None\"=None\n    company:\"CompanyReadSingle|None\"=None\n    status:str|None=None\n    class Config:\n        form_attributes=True\n# Read schema\nclass ReadMultipleJoinRequest(BaseModel):\n    requests:list[ReadSingleJoinRequest]=[]",
+        "peekOfCode": "class ReadSingleJoinRequest(BaseModel):\n    id:UUID\n    user:\"UserRead|None\"=None\n    company:\"CompanyBasic|None\"=None\n    status:str|None=None\n    class Config:\n        from_attributes=True\n# Read schema\nclass ReadMultipleJoinRequest(BaseModel):\n    requests:list[ReadSingleJoinRequest]=[]",
         "detail": "app.schemas.join_requests",
         "documentation": {}
     },
@@ -1793,7 +2076,7 @@
         "kind": 6,
         "importPath": "app.schemas.join_requests",
         "description": "app.schemas.join_requests",
-        "peekOfCode": "class ReadMultipleJoinRequest(BaseModel):\n    requests:list[ReadSingleJoinRequest]=[]\n    class Config:\n        form_attributes=True\n# Update schema\nclass UpdateJoinRequest(BaseModel):\n    id:str\n    user_id:str\n    company_id:str\n    status:str",
+        "peekOfCode": "class ReadMultipleJoinRequest(BaseModel):\n    requests:list[ReadSingleJoinRequest]=[]\n    class Config:\n        from_attributes=True\n# Update schema\nclass UpdateJoinRequest(BaseModel):\n    id:UUID\n    user_id:UUID\n    company_id:UUID\n    status:str",
         "detail": "app.schemas.join_requests",
         "documentation": {}
     },
@@ -1802,7 +2085,7 @@
         "kind": 6,
         "importPath": "app.schemas.join_requests",
         "description": "app.schemas.join_requests",
-        "peekOfCode": "class UpdateJoinRequest(BaseModel):\n    id:str\n    user_id:str\n    company_id:str\n    status:str\n    class Config:\n        form_attributes=True",
+        "peekOfCode": "class UpdateJoinRequest(BaseModel):\n    id:UUID\n    user_id:UUID\n    company_id:UUID\n    status:str\n    class Config:\n        from_attributes=True",
         "detail": "app.schemas.join_requests",
         "documentation": {}
     },
@@ -1811,7 +2094,16 @@
         "kind": 6,
         "importPath": "app.schemas.profile",
         "description": "app.schemas.profile",
-        "peekOfCode": "class ProfileRead(BaseModel):\n    user_id:str\n    bio:str|None=None\n    user_image:str|None=None\n    full_name:str\n    user:\"UserRead\"\n    class Config:\n        form_attributes:True",
+        "peekOfCode": "class ProfileRead(BaseModel):\n    user_id:UUID\n    bio:str|None=None\n    user_image:str|None=None\n    full_name:str\n    user:\"UserRead\"\n    class Config:\n        from_attributes:True\nclass ProfileBasic(BaseModel):\n    user_id:UUID",
+        "detail": "app.schemas.profile",
+        "documentation": {}
+    },
+    {
+        "label": "ProfileBasic",
+        "kind": 6,
+        "importPath": "app.schemas.profile",
+        "description": "app.schemas.profile",
+        "peekOfCode": "class ProfileBasic(BaseModel):\n    user_id:UUID\n    bio:str|None=None\n    user_image:str|None=None\n    full_name:str   \n    class Config:\n        from_attributes:True",
         "detail": "app.schemas.profile",
         "documentation": {}
     },
@@ -1838,7 +2130,7 @@
         "kind": 6,
         "importPath": "app.schemas.project",
         "description": "app.schemas.project",
-        "peekOfCode": "class ProjectReadSingle(ProjectCreate):\n    tasks:list[\"TaskReadSingle\"]=[]\n    users:list[\"UserRead\"]=[]\n    company:list[\"CompanyReadSingle\"]=[]\n    urgency:str\n    updated_at:datetime\n    created_at:datetime\n    status:str\n    id:str\n    class Config:",
+        "peekOfCode": "class ProjectReadSingle(ProjectCreate):\n    tasks:list[\"TaskReadSingle\"]=[]\n    users:list[\"UserRead\"]=[]\n    company:list[\"CompanyReadSingle\"]=[]\n    urgency:str\n    updated_at:datetime\n    created_at:datetime\n    status:str\n    id:UUID\n    class Config:",
         "detail": "app.schemas.project",
         "documentation": {}
     },
@@ -1847,7 +2139,7 @@
         "kind": 6,
         "importPath": "app.schemas.project",
         "description": "app.schemas.project",
-        "peekOfCode": "class ProjectReadMultiple(ProjectBase):\n    pass\n    class Config:\n        form_attributes=True\n# For updating the project\nclass ProjectUpdate(ProjectReadSingle):\n    project_name:str|None=None\n    project_type:str|None=None\n    project_description:str|None=None\n    status:str|None=None",
+        "peekOfCode": "class ProjectReadMultiple(ProjectBase):\n    pass\n    class Config:\n        from_attributes=True\n# For updating the project\nclass ProjectUpdate(ProjectReadSingle):\n    project_name:str|None=None\n    project_type:str|None=None\n    project_description:str|None=None\n    status:str|None=None",
         "detail": "app.schemas.project",
         "documentation": {}
     },
@@ -1856,7 +2148,7 @@
         "kind": 6,
         "importPath": "app.schemas.project",
         "description": "app.schemas.project",
-        "peekOfCode": "class ProjectUpdate(ProjectReadSingle):\n    project_name:str|None=None\n    project_type:str|None=None\n    project_description:str|None=None\n    status:str|None=None\n    end_one:date|None=None\n    urgency:str|None=None\n    class Config:\n        form_attributes=True\nclass ProjectDelete(BaseModel):",
+        "peekOfCode": "class ProjectUpdate(ProjectReadSingle):\n    project_name:str|None=None\n    project_type:str|None=None\n    project_description:str|None=None\n    status:str|None=None\n    end_one:date|None=None\n    urgency:str|None=None\n    class Config:\n        from_attributes=True\nclass ProjectDelete(BaseModel):",
         "detail": "app.schemas.project",
         "documentation": {}
     },
@@ -1865,7 +2157,7 @@
         "kind": 6,
         "importPath": "app.schemas.project",
         "description": "app.schemas.project",
-        "peekOfCode": "class ProjectDelete(BaseModel):\n    id:str",
+        "peekOfCode": "class ProjectDelete(BaseModel):\n    id:UUID",
         "detail": "app.schemas.project",
         "documentation": {}
     },
@@ -1883,7 +2175,7 @@
         "kind": 6,
         "importPath": "app.schemas.task",
         "description": "app.schemas.task",
-        "peekOfCode": "class TaskCreate(TaskBase):\n    project_id:str\n    status:str\n    user_ids:list[UUID]\n# For task read single\nclass TaskReadSingle(TaskBase):\n    id:str\n    created_at:datetime\n    updated_at:datetime\n    project:\"ProjectReadSingle\"",
+        "peekOfCode": "class TaskCreate(TaskBase):\n    project_id:UUID\n    status:str\n    user_ids:list[UUID]\n# For task read single\nclass TaskReadSingle(TaskBase):\n    id:UUID\n    created_at:datetime\n    updated_at:datetime\n    project:\"ProjectReadSingle\"",
         "detail": "app.schemas.task",
         "documentation": {}
     },
@@ -1892,7 +2184,7 @@
         "kind": 6,
         "importPath": "app.schemas.task",
         "description": "app.schemas.task",
-        "peekOfCode": "class TaskReadSingle(TaskBase):\n    id:str\n    created_at:datetime\n    updated_at:datetime\n    project:\"ProjectReadSingle\"\n    status:str\n    users:list[\"UserRead\"]\n    class Config:\n        form_attributes:True\n# For task read single",
+        "peekOfCode": "class TaskReadSingle(TaskBase):\n    id:UUID\n    created_at:datetime\n    updated_at:datetime\n    project:\"ProjectReadSingle\"\n    status:str\n    users:list[\"UserRead\"]\n    class Config:\n        from_attributes:True\n# For task read single",
         "detail": "app.schemas.task",
         "documentation": {}
     },
@@ -1901,7 +2193,7 @@
         "kind": 6,
         "importPath": "app.schemas.task",
         "description": "app.schemas.task",
-        "peekOfCode": "class TaskReadMultiple(TaskBase):\n    id:str\n    created_at:datetime\n    status:str\n    users:list[\"UserRead\"]\n    class Config:\n        form_attributes:True\n# For task update\nclass TaskUpdate(BaseModel):\n    id:str",
+        "peekOfCode": "class TaskReadMultiple(TaskBase):\n    id:UUID\n    created_at:datetime\n    status:str\n    users:list[\"UserRead\"]\n    class Config:\n        from_attributes:True\n# For task update\nclass TaskUpdate(BaseModel):\n    id:UUID",
         "detail": "app.schemas.task",
         "documentation": {}
     },
@@ -1910,7 +2202,7 @@
         "kind": 6,
         "importPath": "app.schemas.task",
         "description": "app.schemas.task",
-        "peekOfCode": "class TaskUpdate(BaseModel):\n    id:str\n    task_type:str|None=None\n    task_name:str|None=None\n    task_description:str|None=None\n    status:str|None=None\n    user_ids:list[UUID]",
+        "peekOfCode": "class TaskUpdate(BaseModel):\n    id:UUID\n    task_type:str|None=None\n    task_name:str|None=None\n    task_description:str|None=None\n    status:str|None=None\n    user_ids:list[UUID]",
         "detail": "app.schemas.task",
         "documentation": {}
     },
@@ -1937,7 +2229,7 @@
         "kind": 6,
         "importPath": "app.schemas.user",
         "description": "app.schemas.user",
-        "peekOfCode": "class UserRead(BaseModel):\n    id:str\n    username:str\n    email:str\n    user_requests:list[\"ReadMultipleJoinRequest\"]=[]\n    is_authenticated:bool\n    role:str\n    projects:list[\"ProjectReadSingle\"]=[]\n    tasks:list[\"TaskReadSingle\"]=[]\n    profile:\"ProfileRead\"",
+        "peekOfCode": "class UserRead(BaseModel):\n    id:UUID\n    username:str\n    email:str\n    user_requests:list[\"ReadMultipleJoinRequest\"]=[]\n    is_authenticated:bool\n    role:str\n    projects:list[\"ProjectReadSingle\"]=[]\n    tasks:list[\"TaskReadSingle\"]=[]\n    profile:\"ProfileRead\"",
         "detail": "app.schemas.user",
         "documentation": {}
     },
@@ -1946,17 +2238,17 @@
         "kind": 6,
         "importPath": "app.schemas.user",
         "description": "app.schemas.user",
-        "peekOfCode": "class UserUpdate(BaseModel):\n    id:str\n    is_authenticated:bool|None=None\n    role:str|None=None\n    isActive:bool|None=None\n    class Config:\n        form_attributes=True",
+        "peekOfCode": "class UserUpdate(BaseModel):\n    id:UUID\n    is_authenticated:bool|None=None\n    role:str|None=None\n    isActive:bool|None=None\n    class Config:\n        from_attributes=True\n# Class User read basic\n# Class user read single----\nclass UserReadBasic(BaseModel):",
         "detail": "app.schemas.user",
         "documentation": {}
     },
     {
-        "label": "upload_image",
-        "kind": 2,
-        "importPath": "app.services.user",
-        "description": "app.services.user",
-        "peekOfCode": "def upload_image(file: UploadFile, user_id: str):\n    upload = cloudinary.uploader.upload(\n        file.file, folder=f\"user/{user_id}\", public_id=\"profile\", overwrite=True\n    )\n    return upload[\"secure_url\"]\n# Generate the username\ndef generate_username(fname: str, db: Session):\n    while True:\n        prefix = \"\".join(random.choices(string.digits, k=4))\n        base = fname.lower() + prefix",
-        "detail": "app.services.user",
+        "label": "UserReadBasic",
+        "kind": 6,
+        "importPath": "app.schemas.user",
+        "description": "app.schemas.user",
+        "peekOfCode": "class UserReadBasic(BaseModel):\n    id:UUID\n    username:str\n    email:str\n    is_authenticated:bool\n    role:str\n    profile:\"ProfileBasic\"\n    class Config:\n        from_attributes:True",
+        "detail": "app.schemas.user",
         "documentation": {}
     },
     {
@@ -1987,6 +2279,15 @@
         "documentation": {}
     },
     {
+        "label": "upload_image",
+        "kind": 2,
+        "importPath": "app.utils.upload_image",
+        "description": "app.utils.upload_image",
+        "peekOfCode": "def upload_image(file: UploadFile,type:str,type_id:str):\n    upload = cloudinary.uploader.upload(\n        file.file, folder=f\"{type}/{type_id}\", public_id=f\"{type}\", overwrite=True\n    )\n    return upload[\"secure_url\"]",
+        "detail": "app.utils.upload_image",
+        "documentation": {}
+    },
+    {
         "label": "default",
         "kind": 2,
         "importPath": "app.main",
@@ -2000,7 +2301,7 @@
         "kind": 5,
         "importPath": "app.main",
         "description": "app.main",
-        "peekOfCode": "app = FastAPI()\napp.include_router(authRouter)\napp.middleware(\"http\")(blacklist_middleware)\n@app.get(\"/\")\ndef default():\n    return {\"message\": \"Hello World I am into the world of fastapi\"}",
+        "peekOfCode": "app = FastAPI()\napp.include_router(authRouter)\napp.include_router(company_router)\napp.middleware(\"http\")(blacklist_middleware)\n@app.get(\"/\")\ndef default():\n    return {\"message\": \"Hello World I am into the world of fastapi\"}",
         "detail": "app.main",
         "documentation": {}
     },

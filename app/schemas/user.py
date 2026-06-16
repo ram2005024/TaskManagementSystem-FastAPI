@@ -1,12 +1,13 @@
 from pydantic import BaseModel, EmailStr, field_validator
 from typing import TYPE_CHECKING
-
+from uuid import UUID
 if TYPE_CHECKING:
     from app.schemas.project import ProjectReadSingle
     from app.schemas.task import TaskReadSingle
     from app.schemas.company import CompanyReadSingle
-    from app.schemas.profile import ProfileRead
+    from app.schemas.profile import ProfileRead,ProfileBasic
     from app.schemas.join_requests import ReadMultipleJoinRequest
+    
 
 
 
@@ -32,7 +33,7 @@ class UserRegister(BaseModel):
 
 # Class user read single----
 class UserRead(BaseModel):
-    id:str
+    id:UUID
     username:str
     email:str
     user_requests:list["ReadMultipleJoinRequest"]=[]
@@ -45,14 +46,27 @@ class UserRead(BaseModel):
     company:"CompanyReadSingle"
     
     class Config:
-        form_attributes:True
+        from_attributes:True
         
 # User update
 class UserUpdate(BaseModel):
-    id:str
+    id:UUID
     is_authenticated:bool|None=None
     role:str|None=None
     isActive:bool|None=None
     
     class Config:
-        form_attributes=True
+        from_attributes=True
+
+# Class User read basic
+# Class user read single----
+class UserReadBasic(BaseModel):
+    id:UUID
+    username:str
+    email:str
+    is_authenticated:bool
+    role:str
+    profile:"ProfileBasic"
+    
+    class Config:
+        from_attributes:True

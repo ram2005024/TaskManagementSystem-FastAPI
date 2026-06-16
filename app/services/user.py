@@ -1,20 +1,15 @@
-import cloudinary.uploader
 from fastapi import UploadFile
 from app.database.models.user import User, Profile
 from sqlalchemy.orm import Session
 from app.schemas.user import UserLogin, UserRegister
 import random
+from app.utils.upload_image import upload_image
 import string
 from app.core.security import create_access, create_refresh, hashPwd, verifyPwd
 
 # To upload the image to cloudinary
 
 
-def upload_image(file: UploadFile, user_id: str):
-    upload = cloudinary.uploader.upload(
-        file.file, folder=f"user/{user_id}", public_id="profile", overwrite=True
-    )
-    return upload["secure_url"]
 
 
 # Generate the username
@@ -43,7 +38,7 @@ def create_user(data: UserRegister, file: UploadFile | None, db: Session):
     # If the user has uploaded the image then generate the url and save the image url
     user_image = ""
     if file.filename:
-        user_image = upload_image(file, user.id)
+        user_image = upload_image(file,"user", user.id)
     # Make the profile for the user
     profile = Profile(
         user_id=user.id,
