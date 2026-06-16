@@ -198,6 +198,38 @@
         "documentation": {}
     },
     {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "date",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
         "label": "JSONResponse",
         "importPath": "fastapi.responses",
         "description": "fastapi.responses",
@@ -768,6 +800,14 @@
         "documentation": {}
     },
     {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
         "label": "Enum",
         "importPath": "enum",
         "description": "enum",
@@ -825,6 +865,14 @@
     },
     {
         "label": "UserRegister",
+        "importPath": "app.schemas.user",
+        "description": "app.schemas.user",
+        "isExtraImport": true,
+        "detail": "app.schemas.user",
+        "documentation": {}
+    },
+    {
+        "label": "UserRead",
         "importPath": "app.schemas.user",
         "description": "app.schemas.user",
         "isExtraImport": true,
@@ -953,6 +1001,38 @@
         "documentation": {}
     },
     {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
         "label": "EmailStr",
         "importPath": "pydantic",
         "description": "pydantic",
@@ -966,6 +1046,126 @@
         "description": "pydantic",
         "isExtraImport": true,
         "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "TYPE_CHECKING",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "TYPE_CHECKING",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "TYPE_CHECKING",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "TYPE_CHECKING",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "TYPE_CHECKING",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "CompanyReadSingle",
+        "importPath": "app.schemas.company",
+        "description": "app.schemas.company",
+        "isExtraImport": true,
+        "detail": "app.schemas.company",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectReadSingle",
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "isExtraImport": true,
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "TaskReadSingle",
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "isExtraImport": true,
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "ProfileRead",
+        "importPath": "app.schemas.profile",
+        "description": "app.schemas.profile",
+        "isExtraImport": true,
+        "detail": "app.schemas.profile",
         "documentation": {}
     },
     {
@@ -1012,59 +1212,20 @@
         "documentation": {}
     },
     {
+        "label": "app.schemas.rebuild",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "app.schemas.rebuild",
+        "description": "app.schemas.rebuild",
+        "detail": "app.schemas.rebuild",
+        "documentation": {}
+    },
+    {
         "label": "authRouter",
         "importPath": "app.routers.auth",
         "description": "app.routers.auth",
         "isExtraImport": true,
         "detail": "app.routers.auth",
-        "documentation": {}
-    },
-    {
-        "label": "Sequence",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Union",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Sequence",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Union",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Sequence",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Union",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
         "documentation": {}
     },
     {
@@ -1491,6 +1652,159 @@
         "documentation": {}
     },
     {
+        "label": "CompanyBase",
+        "kind": 6,
+        "importPath": "app.schemas.company",
+        "description": "app.schemas.company",
+        "peekOfCode": "class CompanyBase(BaseModel):\n    company_name:str\n    company_description:str|None=None\n    company_banner:str|None=None\n    company_type:str|None=None\n    logo:str|None=None\n# Create Company\nclass CompanyCreate(CompanyBase):\n    pass\n# Read  company",
+        "detail": "app.schemas.company",
+        "documentation": {}
+    },
+    {
+        "label": "CompanyCreate",
+        "kind": 6,
+        "importPath": "app.schemas.company",
+        "description": "app.schemas.company",
+        "peekOfCode": "class CompanyCreate(CompanyBase):\n    pass\n# Read  company\nclass CompanyReadSingle(CompanyBase):\n    id:str\n    issue_date:datetime\n    updated_at:datetime\n    is_active:bool\n    projects:list[\"ProjectReadSingle\"]=[]\n    manager:\"UserRead |None\"=None",
+        "detail": "app.schemas.company",
+        "documentation": {}
+    },
+    {
+        "label": "CompanyReadSingle",
+        "kind": 6,
+        "importPath": "app.schemas.company",
+        "description": "app.schemas.company",
+        "peekOfCode": "class CompanyReadSingle(CompanyBase):\n    id:str\n    issue_date:datetime\n    updated_at:datetime\n    is_active:bool\n    projects:list[\"ProjectReadSingle\"]=[]\n    manager:\"UserRead |None\"=None\n    enrolled_users:list[\"UserRead\"]=[]\n    class Config:\n        form_attributes=True",
+        "detail": "app.schemas.company",
+        "documentation": {}
+    },
+    {
+        "label": "CompanyReadMultiple",
+        "kind": 6,
+        "importPath": "app.schemas.company",
+        "description": "app.schemas.company",
+        "peekOfCode": "class CompanyReadMultiple(CompanyBase):\n    enrolled_users:list[\"UserRead\"]=[]\n    class Config:\n        form_attributes=True\n# Update the company\nclass CompanyUpdate(BaseModel):\n    id:str\n    company_name:str|None=None\n    company_description:str|None=None\n    company_banner:str|None=None",
+        "detail": "app.schemas.company",
+        "documentation": {}
+    },
+    {
+        "label": "CompanyUpdate",
+        "kind": 6,
+        "importPath": "app.schemas.company",
+        "description": "app.schemas.company",
+        "peekOfCode": "class CompanyUpdate(BaseModel):\n    id:str\n    company_name:str|None=None\n    company_description:str|None=None\n    company_banner:str|None=None\n    company_type:str|None=None\n    logo:str|None=None\n    class Config:\n        form_attributes=True",
+        "detail": "app.schemas.company",
+        "documentation": {}
+    },
+    {
+        "label": "ProfileRead",
+        "kind": 6,
+        "importPath": "app.schemas.profile",
+        "description": "app.schemas.profile",
+        "peekOfCode": "class ProfileRead(BaseModel):\n    user_id:str\n    bio:str|None=None\n    user_image:str|None=None\n    full_name:str\n    user:\"UserRead\"\n    class Config:\n        form_attributes:True",
+        "detail": "app.schemas.profile",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectBase",
+        "kind": 6,
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "peekOfCode": "class ProjectBase(BaseModel):\n    project_name:str\n    project_type:str|None=None\n    project_description:str|None=None\n    company_id:str\n# For Creating the project\nclass ProjectCreate(ProjectBase):\n    end_on:date\n# For reading the single project\nclass ProjectReadSingle(ProjectCreate):",
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectCreate",
+        "kind": 6,
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "peekOfCode": "class ProjectCreate(ProjectBase):\n    end_on:date\n# For reading the single project\nclass ProjectReadSingle(ProjectCreate):\n    tasks:list[\"TaskReadSingle\"]=[]\n    users:list[\"UserRead\"]=[]\n    company:list[\"CompanyReadSingle\"]=[]\n    urgency:str\n    updated_at:datetime\n    created_at:datetime",
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectReadSingle",
+        "kind": 6,
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "peekOfCode": "class ProjectReadSingle(ProjectCreate):\n    tasks:list[\"TaskReadSingle\"]=[]\n    users:list[\"UserRead\"]=[]\n    company:list[\"CompanyReadSingle\"]=[]\n    urgency:str\n    updated_at:datetime\n    created_at:datetime\n    status:str\n    id:str\n    class Config:",
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectReadMultiple",
+        "kind": 6,
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "peekOfCode": "class ProjectReadMultiple(ProjectBase):\n    pass\n    class Config:\n        form_attributes=True\n# For updating the project\nclass ProjectUpdate(ProjectReadSingle):\n    project_name:str|None=None\n    project_type:str|None=None\n    project_description:str|None=None\n    status:str|None=None",
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectUpdate",
+        "kind": 6,
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "peekOfCode": "class ProjectUpdate(ProjectReadSingle):\n    project_name:str|None=None\n    project_type:str|None=None\n    project_description:str|None=None\n    status:str|None=None\n    end_one:date|None=None\n    urgency:str|None=None\n    class Config:\n        form_attributes=True\nclass ProjectDelete(BaseModel):",
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectDelete",
+        "kind": 6,
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "peekOfCode": "class ProjectDelete(BaseModel):\n    id:str",
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "TaskBase",
+        "kind": 6,
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "peekOfCode": "class TaskBase(BaseModel):\n    task_name:str\n    task_type:str|None=None\n    task_description:str|None=None\n# For task create\nclass TaskCreate(TaskBase):\n    project_id:str\n    status:str\n    user_ids:list[UUID]\n# For task read single",
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskCreate",
+        "kind": 6,
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "peekOfCode": "class TaskCreate(TaskBase):\n    project_id:str\n    status:str\n    user_ids:list[UUID]\n# For task read single\nclass TaskReadSingle(TaskBase):\n    id:str\n    created_at:datetime\n    updated_at:datetime\n    project:\"ProjectReadSingle\"",
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskReadSingle",
+        "kind": 6,
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "peekOfCode": "class TaskReadSingle(TaskBase):\n    id:str\n    created_at:datetime\n    updated_at:datetime\n    project:\"ProjectReadSingle\"\n    status:str\n    users:list[\"UserRead\"]\n    class Config:\n        form_attributes:True\n# For task read single",
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskReadMultiple",
+        "kind": 6,
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "peekOfCode": "class TaskReadMultiple(TaskBase):\n    id:str\n    created_at:datetime\n    status:str\n    users:list[\"UserRead\"]\n    class Config:\n        form_attributes:True\n# For task update\nclass TaskUpdate(BaseModel):\n    id:str",
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskUpdate",
+        "kind": 6,
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "peekOfCode": "class TaskUpdate(BaseModel):\n    id:str\n    task_type:str|None=None\n    task_name:str|None=None\n    task_description:str|None=None\n    status:str|None=None\n    user_id:list[UUID]",
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
         "label": "UserLogin",
         "kind": 6,
         "importPath": "app.schemas.user",
@@ -1505,6 +1819,15 @@
         "importPath": "app.schemas.user",
         "description": "app.schemas.user",
         "peekOfCode": "class UserRegister(BaseModel):\n    email: EmailStr\n    password: str\n    first_name: str\n    last_name: str\n    @field_validator(\"password\")\n    def check_password(cls, v):\n        if len(v) < 8:\n            raise ValueError(\"Password length must be at least 8 character\")\n        return v",
+        "detail": "app.schemas.user",
+        "documentation": {}
+    },
+    {
+        "label": "UserRead",
+        "kind": 6,
+        "importPath": "app.schemas.user",
+        "description": "app.schemas.user",
+        "peekOfCode": "class UserRead(BaseModel):\n    id:str\n    username:str\n    email:str\n    is_authenticated:bool\n    role:str\n    projects:list[\"ProjectReadSingle\"]=[]\n    tasks:list[\"TaskReadSingle\"]=[]\n    profile:\"ProfileRead\"\n    manager_company:\"CompanyReadSingle |None\"=None",
         "detail": "app.schemas.user",
         "documentation": {}
     },
