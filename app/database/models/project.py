@@ -1,4 +1,4 @@
-from sqlalchemy import Column, String, Enum as SQLEnum, DateTime, func, Date
+from sqlalchemy import Column, String, Enum as SQLEnum, DateTime, func, Date,ForeignKey
 from app.database.db import Base
 from sqlalchemy.orm import relationship
 import uuid
@@ -39,3 +39,5 @@ class Project(Base):
     urgency = Column(
         SQLEnum(ProjectUrgency, name="project_urgency"), default=ProjectUrgency.medium
     )
+    company_id=Column(UUID(as_uuid=True),ForeignKey("companies.id",ondelete="CASCADE"))
+    company=relationship("Company",back_populates="projects")

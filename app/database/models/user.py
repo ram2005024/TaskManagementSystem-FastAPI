@@ -40,7 +40,9 @@ class User(Base):
     profile = relationship(
         "Profile", back_populates="user", uselist=False, cascade="all, delete-orphan"
     )
-
+    manager_company=relationship("Company",back_populates="manager",uselist=False)
+    company_id=Column(UUID(as_uuid=True),ForeignKey("companies.id",ondelete="SET NULL"),unique=True,nullable=True)
+    company=relationship("Company",back_populates="enrolled_users")
 
 # Make a profile model for the user
 class Profile(Base):

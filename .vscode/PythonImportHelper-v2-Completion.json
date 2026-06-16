@@ -351,6 +351,54 @@
         "documentation": {}
     },
     {
+        "label": "DateTime",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "func",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Boolean",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
         "label": "Enum",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
@@ -376,6 +424,14 @@
     },
     {
         "label": "Date",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
         "isExtraImport": true,
@@ -543,6 +599,22 @@
         "documentation": {}
     },
     {
+        "label": "UUID",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "app.database.db",
+        "description": "app.database.db",
+        "isExtraImport": true,
+        "detail": "app.database.db",
+        "documentation": {}
+    },
+    {
         "label": "Base",
         "importPath": "app.database.db",
         "description": "app.database.db",
@@ -588,6 +660,14 @@
         "description": "app.database.db",
         "isExtraImport": true,
         "detail": "app.database.db",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
         "documentation": {}
     },
     {
@@ -924,6 +1004,30 @@
         "documentation": {}
     },
     {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
         "label": "op",
         "importPath": "alembic",
         "description": "alembic",
@@ -965,6 +1069,14 @@
     },
     {
         "label": "task",
+        "importPath": "app.database.models",
+        "description": "app.database.models",
+        "isExtraImport": true,
+        "detail": "app.database.models",
+        "documentation": {}
+    },
+    {
+        "label": "company",
         "importPath": "app.database.models",
         "description": "app.database.models",
         "isExtraImport": true,
@@ -1158,6 +1270,15 @@
         "description": "app.database.models.association",
         "peekOfCode": "user_projects = Table(\n    \"user_projects\",\n    Base.metadata,\n    Column(\"user_id\", UUID(as_uuid=True), ForeignKey(\"users.id\"), primary_key=True),\n    Column(\n        \"project_id\", UUID(as_uuid=True), ForeignKey(\"projects.id\"), primary_key=True\n    ),\n)",
         "detail": "app.database.models.association",
+        "documentation": {}
+    },
+    {
+        "label": "Company",
+        "kind": 6,
+        "importPath": "app.database.models.company",
+        "description": "app.database.models.company",
+        "peekOfCode": "class Company(Base):\n    __tablename__=\"companies\"\n    # Fields\n    id=Column(UUID(as_uuid=True),primary_key=True,default=uuid.uuid4)\n    company_name=Column(String,nullable=False)\n    issue_date=Column(DateTime,server_default=func.now())\n    projects=relationship(\"Project\",back_populates=\"company\")\n    company_description=Column(String)\n    company_banner=Column(String)\n    company_type=Column(String)",
+        "detail": "app.database.models.company",
         "documentation": {}
     },
     {
@@ -1401,6 +1522,24 @@
         "description": "migrations.versions.4e9abcdff489_initial",
         "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_table('user_tasks')\n    op.drop_table('user_projects')\n    op.drop_table('tasks')\n    op.drop_table('profiles')\n    op.drop_index(op.f('ix_users_username'), table_name='users')\n    op.drop_index(op.f('ix_users_email'), table_name='users')\n    op.drop_table('users')",
         "detail": "migrations.versions.4e9abcdff489_initial",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
+        "importPath": "migrations.versions.dfcf5ec8800e_added_the_company_model",
+        "description": "migrations.versions.dfcf5ec8800e_added_the_company_model",
+        "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table('companies',\n    sa.Column('id', sa.UUID(), nullable=False),\n    sa.Column('company_name', sa.String(), nullable=False),\n    sa.Column('issue_date', sa.DateTime(), server_default=sa.text('now()'), nullable=True),\n    sa.Column('company_description', sa.String(), nullable=True),\n    sa.Column('company_banner', sa.String(), nullable=True),\n    sa.Column('company_type', sa.String(), nullable=True),",
+        "detail": "migrations.versions.dfcf5ec8800e_added_the_company_model",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "migrations.versions.dfcf5ec8800e_added_the_company_model",
+        "description": "migrations.versions.dfcf5ec8800e_added_the_company_model",
+        "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_constraint(None, 'users', type_='foreignkey')\n    op.drop_constraint(None, 'users', type_='unique')\n    op.drop_column('users', 'company_id')\n    op.drop_constraint(None, 'projects', type_='foreignkey')\n    op.drop_column('projects', 'company_id')\n    op.drop_table('companies')\n    # ### end Alembic commands ###",
+        "detail": "migrations.versions.dfcf5ec8800e_added_the_company_model",
         "documentation": {}
     },
     {
