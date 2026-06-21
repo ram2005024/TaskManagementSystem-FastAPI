@@ -48,7 +48,8 @@ def isblacklisted(token: str):
 
 # Blacklist middleware
 async def blacklist_middleware(request: Request, call_next):
-    pass_path = ["/auth/login", "/auth/register", "/auth/refresh", "/auth/logout"]
+    pass_path = ["/auth/login", "/auth/register", "/auth/refresh", "/auth/logout","/docs",   "/redoc",
+        "/openapi.json"]
     if request.url.path in pass_path:
         return await call_next(request)
     auth_header = request.headers.get("Authorization")

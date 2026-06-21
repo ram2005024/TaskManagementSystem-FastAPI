@@ -1,6 +1,6 @@
-from pydantic_settings import SettingsConfigDict, BaseSettings
 import cloudinary
 import redis
+from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
 class Settings(BaseSettings):

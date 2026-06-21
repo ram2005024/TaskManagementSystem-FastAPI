@@ -44,22 +44,6 @@
         "documentation": {}
     },
     {
-        "label": "SettingsConfigDict",
-        "importPath": "pydantic_settings",
-        "description": "pydantic_settings",
-        "isExtraImport": true,
-        "detail": "pydantic_settings",
-        "documentation": {}
-    },
-    {
-        "label": "BaseSettings",
-        "importPath": "pydantic_settings",
-        "description": "pydantic_settings",
-        "isExtraImport": true,
-        "detail": "pydantic_settings",
-        "documentation": {}
-    },
-    {
         "label": "cloudinary",
         "kind": 6,
         "isExtraImport": true,
@@ -75,6 +59,22 @@
         "importPath": "redis",
         "description": "redis",
         "detail": "redis",
+        "documentation": {}
+    },
+    {
+        "label": "BaseSettings",
+        "importPath": "pydantic_settings",
+        "description": "pydantic_settings",
+        "isExtraImport": true,
+        "detail": "pydantic_settings",
+        "documentation": {}
+    },
+    {
+        "label": "SettingsConfigDict",
+        "importPath": "pydantic_settings",
+        "description": "pydantic_settings",
+        "isExtraImport": true,
+        "detail": "pydantic_settings",
         "documentation": {}
     },
     {
@@ -262,7 +262,7 @@
         "documentation": {}
     },
     {
-        "label": "UploadFile",
+        "label": "Request",
         "importPath": "fastapi",
         "description": "fastapi",
         "isExtraImport": true,
@@ -270,7 +270,7 @@
         "documentation": {}
     },
     {
-        "label": "Request",
+        "label": "UploadFile",
         "importPath": "fastapi",
         "description": "fastapi",
         "isExtraImport": true,
@@ -350,7 +350,7 @@
         "documentation": {}
     },
     {
-        "label": "Request",
+        "label": "File",
         "importPath": "fastapi",
         "description": "fastapi",
         "isExtraImport": true,
@@ -366,7 +366,7 @@
         "documentation": {}
     },
     {
-        "label": "File",
+        "label": "Request",
         "importPath": "fastapi",
         "description": "fastapi",
         "isExtraImport": true,
@@ -382,7 +382,15 @@
         "documentation": {}
     },
     {
-        "label": "status",
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
         "importPath": "fastapi",
         "description": "fastapi",
         "isExtraImport": true,
@@ -411,6 +419,103 @@
         "description": "fastapi",
         "isExtraImport": true,
         "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "uuid",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "uuid",
+        "description": "uuid",
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
         "documentation": {}
     },
     {
@@ -502,43 +607,11 @@
         "documentation": {}
     },
     {
-        "label": "CompanyCreate",
-        "importPath": "app.schemas.company",
-        "description": "app.schemas.company",
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
         "isExtraImport": true,
-        "detail": "app.schemas.company",
-        "documentation": {}
-    },
-    {
-        "label": "CompanyCreate",
-        "importPath": "app.schemas.company",
-        "description": "app.schemas.company",
-        "isExtraImport": true,
-        "detail": "app.schemas.company",
-        "documentation": {}
-    },
-    {
-        "label": "CompanyReadSingle",
-        "importPath": "app.schemas.company",
-        "description": "app.schemas.company",
-        "isExtraImport": true,
-        "detail": "app.schemas.company",
-        "documentation": {}
-    },
-    {
-        "label": "CompanyReadSingle",
-        "importPath": "app.schemas.company",
-        "description": "app.schemas.company",
-        "isExtraImport": true,
-        "detail": "app.schemas.company",
-        "documentation": {}
-    },
-    {
-        "label": "CompanyBasic",
-        "importPath": "app.schemas.company",
-        "description": "app.schemas.company",
-        "isExtraImport": true,
-        "detail": "app.schemas.company",
+        "detail": "sqlalchemy.orm",
         "documentation": {}
     },
     {
@@ -550,19 +623,11 @@
         "documentation": {}
     },
     {
-        "label": "upload_image",
-        "importPath": "app.utils.upload_image",
-        "description": "app.utils.upload_image",
+        "label": "User",
+        "importPath": "app.database.models.user",
+        "description": "app.database.models.user",
         "isExtraImport": true,
-        "detail": "app.utils.upload_image",
-        "documentation": {}
-    },
-    {
-        "label": "upload_image",
-        "importPath": "app.utils.upload_image",
-        "description": "app.utils.upload_image",
-        "isExtraImport": true,
-        "detail": "app.utils.upload_image",
+        "detail": "app.database.models.user",
         "documentation": {}
     },
     {
@@ -590,6 +655,174 @@
         "documentation": {}
     },
     {
+        "label": "CompanyCreate",
+        "importPath": "app.schemas.company",
+        "description": "app.schemas.company",
+        "isExtraImport": true,
+        "detail": "app.schemas.company",
+        "documentation": {}
+    },
+    {
+        "label": "CompanyUpdate",
+        "importPath": "app.schemas.company",
+        "description": "app.schemas.company",
+        "isExtraImport": true,
+        "detail": "app.schemas.company",
+        "documentation": {}
+    },
+    {
+        "label": "CompanyCreate",
+        "importPath": "app.schemas.company",
+        "description": "app.schemas.company",
+        "isExtraImport": true,
+        "detail": "app.schemas.company",
+        "documentation": {}
+    },
+    {
+        "label": "CompanyReadMultiple",
+        "importPath": "app.schemas.company",
+        "description": "app.schemas.company",
+        "isExtraImport": true,
+        "detail": "app.schemas.company",
+        "documentation": {}
+    },
+    {
+        "label": "CompanyReadSingle",
+        "importPath": "app.schemas.company",
+        "description": "app.schemas.company",
+        "isExtraImport": true,
+        "detail": "app.schemas.company",
+        "documentation": {}
+    },
+    {
+        "label": "CompanyUpdate",
+        "importPath": "app.schemas.company",
+        "description": "app.schemas.company",
+        "isExtraImport": true,
+        "detail": "app.schemas.company",
+        "documentation": {}
+    },
+    {
+        "label": "CompanyBasic",
+        "importPath": "app.schemas.company",
+        "description": "app.schemas.company",
+        "isExtraImport": true,
+        "detail": "app.schemas.company",
+        "documentation": {}
+    },
+    {
+        "label": "CompanyReadMultiple",
+        "importPath": "app.schemas.company",
+        "description": "app.schemas.company",
+        "isExtraImport": true,
+        "detail": "app.schemas.company",
+        "documentation": {}
+    },
+    {
+        "label": "CompanyReadSingle",
+        "importPath": "app.schemas.company",
+        "description": "app.schemas.company",
+        "isExtraImport": true,
+        "detail": "app.schemas.company",
+        "documentation": {}
+    },
+    {
+        "label": "upload_image",
+        "importPath": "app.utils.upload_image",
+        "description": "app.utils.upload_image",
+        "isExtraImport": true,
+        "detail": "app.utils.upload_image",
+        "documentation": {}
+    },
+    {
+        "label": "upload_image",
+        "importPath": "app.utils.upload_image",
+        "description": "app.utils.upload_image",
+        "isExtraImport": true,
+        "detail": "app.utils.upload_image",
+        "documentation": {}
+    },
+    {
+        "label": "Company",
+        "importPath": "app.database.models.company",
+        "description": "app.database.models.company",
+        "isExtraImport": true,
+        "detail": "app.database.models.company",
+        "documentation": {}
+    },
+    {
+        "label": "Project",
+        "importPath": "app.database.models.project",
+        "description": "app.database.models.project",
+        "isExtraImport": true,
+        "detail": "app.database.models.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectCreate",
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "isExtraImport": true,
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectUpdate",
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "isExtraImport": true,
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectCreate",
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "isExtraImport": true,
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectReadMultiple",
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "isExtraImport": true,
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectReadSingle",
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "isExtraImport": true,
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectUpdate",
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "isExtraImport": true,
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectReadMultiple",
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "isExtraImport": true,
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectReadSingle",
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "isExtraImport": true,
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
         "label": "sqlalchemy",
         "kind": 6,
         "isExtraImport": true,
@@ -599,7 +832,7 @@
         "documentation": {}
     },
     {
-        "label": "Table",
+        "label": "Column",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
         "isExtraImport": true,
@@ -615,7 +848,7 @@
         "documentation": {}
     },
     {
-        "label": "Column",
+        "label": "Table",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
         "isExtraImport": true,
@@ -711,15 +944,7 @@
         "documentation": {}
     },
     {
-        "label": "String",
-        "importPath": "sqlalchemy",
-        "description": "sqlalchemy",
-        "isExtraImport": true,
-        "detail": "sqlalchemy",
-        "documentation": {}
-    },
-    {
-        "label": "Enum",
+        "label": "Date",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
         "isExtraImport": true,
@@ -735,22 +960,6 @@
         "documentation": {}
     },
     {
-        "label": "func",
-        "importPath": "sqlalchemy",
-        "description": "sqlalchemy",
-        "isExtraImport": true,
-        "detail": "sqlalchemy",
-        "documentation": {}
-    },
-    {
-        "label": "Date",
-        "importPath": "sqlalchemy",
-        "description": "sqlalchemy",
-        "isExtraImport": true,
-        "detail": "sqlalchemy",
-        "documentation": {}
-    },
-    {
         "label": "ForeignKey",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
@@ -759,7 +968,31 @@
         "documentation": {}
     },
     {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
         "label": "UniqueConstraint",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "func",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
         "isExtraImport": true,
@@ -1023,7 +1256,7 @@
         "documentation": {}
     },
     {
-        "label": "Base",
+        "label": "get_db",
         "importPath": "app.database.db",
         "description": "app.database.db",
         "isExtraImport": true,
@@ -1031,60 +1264,11 @@
         "documentation": {}
     },
     {
-        "label": "uuid",
-        "kind": 6,
+        "label": "Base",
+        "importPath": "app.database.db",
+        "description": "app.database.db",
         "isExtraImport": true,
-        "importPath": "uuid",
-        "description": "uuid",
-        "detail": "uuid",
-        "documentation": {}
-    },
-    {
-        "label": "UUID",
-        "importPath": "uuid",
-        "description": "uuid",
-        "isExtraImport": true,
-        "detail": "uuid",
-        "documentation": {}
-    },
-    {
-        "label": "UUID",
-        "importPath": "uuid",
-        "description": "uuid",
-        "isExtraImport": true,
-        "detail": "uuid",
-        "documentation": {}
-    },
-    {
-        "label": "UUID",
-        "importPath": "uuid",
-        "description": "uuid",
-        "isExtraImport": true,
-        "detail": "uuid",
-        "documentation": {}
-    },
-    {
-        "label": "UUID",
-        "importPath": "uuid",
-        "description": "uuid",
-        "isExtraImport": true,
-        "detail": "uuid",
-        "documentation": {}
-    },
-    {
-        "label": "UUID",
-        "importPath": "uuid",
-        "description": "uuid",
-        "isExtraImport": true,
-        "detail": "uuid",
-        "documentation": {}
-    },
-    {
-        "label": "UUID",
-        "importPath": "uuid",
-        "description": "uuid",
-        "isExtraImport": true,
-        "detail": "uuid",
+        "detail": "app.database.db",
         "documentation": {}
     },
     {
@@ -1117,6 +1301,14 @@
         "description": "app.database.models.association",
         "isExtraImport": true,
         "detail": "app.database.models.association",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
         "documentation": {}
     },
     {
@@ -1240,6 +1432,14 @@
         "documentation": {}
     },
     {
+        "label": "HTTPException",
+        "importPath": "fastapi.exceptions",
+        "description": "fastapi.exceptions",
+        "isExtraImport": true,
+        "detail": "fastapi.exceptions",
+        "documentation": {}
+    },
+    {
         "label": "blacklist_token",
         "importPath": "app.core.security",
         "description": "app.core.security",
@@ -1313,11 +1513,252 @@
         "documentation": {}
     },
     {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
         "label": "create_company",
         "importPath": "app.crud.company",
         "description": "app.crud.company",
         "isExtraImport": true,
         "detail": "app.crud.company",
+        "documentation": {}
+    },
+    {
+        "label": "delete_company",
+        "importPath": "app.crud.company",
+        "description": "app.crud.company",
+        "isExtraImport": true,
+        "detail": "app.crud.company",
+        "documentation": {}
+    },
+    {
+        "label": "get_company_list",
+        "importPath": "app.crud.company",
+        "description": "app.crud.company",
+        "isExtraImport": true,
+        "detail": "app.crud.company",
+        "documentation": {}
+    },
+    {
+        "label": "get_company_single",
+        "importPath": "app.crud.company",
+        "description": "app.crud.company",
+        "isExtraImport": true,
+        "detail": "app.crud.company",
+        "documentation": {}
+    },
+    {
+        "label": "update_company",
+        "importPath": "app.crud.company",
+        "description": "app.crud.company",
+        "isExtraImport": true,
+        "detail": "app.crud.company",
+        "documentation": {}
+    },
+    {
+        "label": "create_project",
+        "importPath": "app.crud.project",
+        "description": "app.crud.project",
+        "isExtraImport": true,
+        "detail": "app.crud.project",
+        "documentation": {}
+    },
+    {
+        "label": "delete_project",
+        "importPath": "app.crud.project",
+        "description": "app.crud.project",
+        "isExtraImport": true,
+        "detail": "app.crud.project",
+        "documentation": {}
+    },
+    {
+        "label": "read_project",
+        "importPath": "app.crud.project",
+        "description": "app.crud.project",
+        "isExtraImport": true,
+        "detail": "app.crud.project",
+        "documentation": {}
+    },
+    {
+        "label": "read_projects",
+        "importPath": "app.crud.project",
+        "description": "app.crud.project",
+        "isExtraImport": true,
+        "detail": "app.crud.project",
+        "documentation": {}
+    },
+    {
+        "label": "update_project",
+        "importPath": "app.crud.project",
+        "description": "app.crud.project",
+        "isExtraImport": true,
+        "detail": "app.crud.project",
+        "documentation": {}
+    },
+    {
+        "label": "TYPE_CHECKING",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "TYPE_CHECKING",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "TYPE_CHECKING",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "TYPE_CHECKING",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "TYPE_CHECKING",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "TYPE_CHECKING",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
         "documentation": {}
     },
     {
@@ -1409,110 +1850,6 @@
         "documentation": {}
     },
     {
-        "label": "TYPE_CHECKING",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "TYPE_CHECKING",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "TYPE_CHECKING",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "TYPE_CHECKING",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "TYPE_CHECKING",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "TYPE_CHECKING",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Sequence",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Union",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Company",
-        "importPath": "app.database.models.company",
-        "description": "app.database.models.company",
-        "isExtraImport": true,
-        "detail": "app.database.models.company",
-        "documentation": {}
-    },
-    {
-        "label": "ProjectReadSingle",
-        "importPath": "app.schemas.project",
-        "description": "app.schemas.project",
-        "isExtraImport": true,
-        "detail": "app.schemas.project",
-        "documentation": {}
-    },
-    {
-        "label": "TaskReadSingle",
-        "importPath": "app.schemas.task",
-        "description": "app.schemas.task",
-        "isExtraImport": true,
-        "detail": "app.schemas.task",
-        "documentation": {}
-    },
-    {
-        "label": "ProfileRead",
-        "importPath": "app.schemas.profile",
-        "description": "app.schemas.profile",
-        "isExtraImport": true,
-        "detail": "app.schemas.profile",
-        "documentation": {}
-    },
-    {
-        "label": "ProfileBasic",
-        "importPath": "app.schemas.profile",
-        "description": "app.schemas.profile",
-        "isExtraImport": true,
-        "detail": "app.schemas.profile",
-        "documentation": {}
-    },
-    {
         "label": "ReadMultipleJoinRequest",
         "importPath": "app.schemas.join_requests",
         "description": "app.schemas.join_requests",
@@ -1526,6 +1863,30 @@
         "description": "app.schemas.join_requests",
         "isExtraImport": true,
         "detail": "app.schemas.join_requests",
+        "documentation": {}
+    },
+    {
+        "label": "ProfileBasic",
+        "importPath": "app.schemas.profile",
+        "description": "app.schemas.profile",
+        "isExtraImport": true,
+        "detail": "app.schemas.profile",
+        "documentation": {}
+    },
+    {
+        "label": "ProfileRead",
+        "importPath": "app.schemas.profile",
+        "description": "app.schemas.profile",
+        "isExtraImport": true,
+        "detail": "app.schemas.profile",
+        "documentation": {}
+    },
+    {
+        "label": "TaskReadSingle",
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "isExtraImport": true,
+        "detail": "app.schemas.task",
         "documentation": {}
     },
     {
@@ -1565,6 +1926,14 @@
         "documentation": {}
     },
     {
+        "label": "authRouter",
+        "importPath": "app.routers.auth",
+        "description": "app.routers.auth",
+        "isExtraImport": true,
+        "detail": "app.routers.auth",
+        "documentation": {}
+    },
+    {
         "label": "company_router",
         "importPath": "app.routers.company",
         "description": "app.routers.company",
@@ -1573,11 +1942,59 @@
         "documentation": {}
     },
     {
-        "label": "authRouter",
-        "importPath": "app.routers.auth",
-        "description": "app.routers.auth",
+        "label": "projectRouter",
+        "importPath": "app.routers.projects",
+        "description": "app.routers.projects",
         "isExtraImport": true,
-        "detail": "app.routers.auth",
+        "detail": "app.routers.projects",
+        "documentation": {}
+    },
+    {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
         "documentation": {}
     },
     {
@@ -1761,7 +2178,7 @@
         "kind": 2,
         "importPath": "app.core.security",
         "description": "app.core.security",
-        "peekOfCode": "def blacklist_token(token: str, exp: int) -> bool:\n    return redis.setex(f\"blacklist-{token}\", exp, \"true\")\n# Check the blacklist token\ndef isblacklisted(token: str):\n    return redis.exists(f\"blacklist-{token}\")\n# Blacklist middleware\nasync def blacklist_middleware(request: Request, call_next):\n    pass_path = [\"/auth/login\", \"/auth/register\", \"/auth/refresh\", \"/auth/logout\"]\n    if request.url.path in pass_path:\n        return await call_next(request)",
+        "peekOfCode": "def blacklist_token(token: str, exp: int) -> bool:\n    return redis.setex(f\"blacklist-{token}\", exp, \"true\")\n# Check the blacklist token\ndef isblacklisted(token: str):\n    return redis.exists(f\"blacklist-{token}\")\n# Blacklist middleware\nasync def blacklist_middleware(request: Request, call_next):\n    pass_path = [\"/auth/login\", \"/auth/register\", \"/auth/refresh\", \"/auth/logout\",\"/docs\",   \"/redoc\",\n        \"/openapi.json\"]\n    if request.url.path in pass_path:",
         "detail": "app.core.security",
         "documentation": {}
     },
@@ -1770,7 +2187,7 @@
         "kind": 2,
         "importPath": "app.core.security",
         "description": "app.core.security",
-        "peekOfCode": "def isblacklisted(token: str):\n    return redis.exists(f\"blacklist-{token}\")\n# Blacklist middleware\nasync def blacklist_middleware(request: Request, call_next):\n    pass_path = [\"/auth/login\", \"/auth/register\", \"/auth/refresh\", \"/auth/logout\"]\n    if request.url.path in pass_path:\n        return await call_next(request)\n    auth_header = request.headers.get(\"Authorization\")\n    if not auth_header:\n        return JSONResponse(",
+        "peekOfCode": "def isblacklisted(token: str):\n    return redis.exists(f\"blacklist-{token}\")\n# Blacklist middleware\nasync def blacklist_middleware(request: Request, call_next):\n    pass_path = [\"/auth/login\", \"/auth/register\", \"/auth/refresh\", \"/auth/logout\",\"/docs\",   \"/redoc\",\n        \"/openapi.json\"]\n    if request.url.path in pass_path:\n        return await call_next(request)\n    auth_header = request.headers.get(\"Authorization\")\n    if not auth_header:",
         "detail": "app.core.security",
         "documentation": {}
     },
@@ -1788,8 +2205,89 @@
         "kind": 2,
         "importPath": "app.crud.company",
         "description": "app.crud.company",
-        "peekOfCode": "def create_company(data:CompanyCreate,logo:UploadFile,db:Session):\n    # Handle the image upload\n    try:\n        company=Company(company_name=data.company_name,\n                        company_description=data.company_description,\n                        company_banner=data.company_banner,\n                        company_type=data.company_type,\n                        manager_id=data.manager_id,\n                        )\n        db.add(company)",
+        "peekOfCode": "def create_company(\n    data: CompanyCreate, logo: UploadFile, db: Session, request: Request\n):\n    # Handle the image upload\n    try:\n        company = Company(\n            company_name=data.company_name,\n            company_description=data.company_description,\n            company_banner=data.company_banner,\n            company_type=data.company_type,",
         "detail": "app.crud.company",
+        "documentation": {}
+    },
+    {
+        "label": "get_company_list",
+        "kind": 2,
+        "importPath": "app.crud.company",
+        "description": "app.crud.company",
+        "peekOfCode": "def get_company_list(db: Session, request: Request):\n    try:\n        user = db.query(User).filter(User.id == request.state.user_id).first()\n        companies = user.companies\n        return companies, None\n    except Exception as e:\n        return None, f\"Error occured: {e}\"\n# GET Single\ndef get_company_single(db: Session, request: Request, c_id: UUID):\n    try:",
+        "detail": "app.crud.company",
+        "documentation": {}
+    },
+    {
+        "label": "get_company_single",
+        "kind": 2,
+        "importPath": "app.crud.company",
+        "description": "app.crud.company",
+        "peekOfCode": "def get_company_single(db: Session, request: Request, c_id: UUID):\n    try:\n        company = db.query(Company).filter(Company.id == c_id).first()\n        return company, None\n    except Exception as e:\n        return None, f\"Error occured: {e}\"\n# Update company info\ndef update_company(c_id: UUID, db: Session, data: CompanyUpdate, file: UploadFile):\n    new_url = \"\"\n    try:",
+        "detail": "app.crud.company",
+        "documentation": {}
+    },
+    {
+        "label": "update_company",
+        "kind": 2,
+        "importPath": "app.crud.company",
+        "description": "app.crud.company",
+        "peekOfCode": "def update_company(c_id: UUID, db: Session, data: CompanyUpdate, file: UploadFile):\n    new_url = \"\"\n    try:\n        if file and file.filename:\n            new_url = upload_image(file, \"company\", c_id)\n        company = db.query(Company).filter(Company.id == c_id).first()\n        for key, value in data.model_dump(exclude_unset=True).items():\n            if value is not None:\n                setattr(company, key, value)\n        if new_url:",
+        "detail": "app.crud.company",
+        "documentation": {}
+    },
+    {
+        "label": "delete_company",
+        "kind": 2,
+        "importPath": "app.crud.company",
+        "description": "app.crud.company",
+        "peekOfCode": "def delete_company(c_id: UUID, db: Session):\n    try:\n        company = db.query(Company).filter(Company.id == c_id).first()\n        if not company:\n            return None, \"Company doesn't exist.\"\n        db.delete(company)\n        db.commit()\n        return True, None\n    except Exception as e:\n        db.rollback()",
+        "detail": "app.crud.company",
+        "documentation": {}
+    },
+    {
+        "label": "create_project",
+        "kind": 2,
+        "importPath": "app.crud.project",
+        "description": "app.crud.project",
+        "peekOfCode": "def create_project(db: Session, data: ProjectCreate):\n    try:\n        project = Project(\n            project_name=data.project_name,\n            project_type=data.project_type,\n            project_description=data.project_description,\n            company_id=data.company_id,\n            end_on=data.end_on,\n            urgency=data.urgency,\n        )",
+        "detail": "app.crud.project",
+        "documentation": {}
+    },
+    {
+        "label": "read_project",
+        "kind": 2,
+        "importPath": "app.crud.project",
+        "description": "app.crud.project",
+        "peekOfCode": "def read_project(db: Session, project_id: UUID):\n    project = db.query(Project).filter(Project.id == project_id).first()\n    if project is None:\n        raise ValueError(\"Project doesn't exist\")\n    return project\n# Read the the project detail(Multiple)\ndef read_projects(db: Session):\n    return db.query(Project).all()\n# Update the project\ndef update_project(db: Session, project_id: UUID, data: ProjectUpdate):",
+        "detail": "app.crud.project",
+        "documentation": {}
+    },
+    {
+        "label": "read_projects",
+        "kind": 2,
+        "importPath": "app.crud.project",
+        "description": "app.crud.project",
+        "peekOfCode": "def read_projects(db: Session):\n    return db.query(Project).all()\n# Update the project\ndef update_project(db: Session, project_id: UUID, data: ProjectUpdate):\n    try:\n        project = db.query(Project).filter(Project.id == project_id).first()\n        if project is None:\n            raise ValueError(\"Project doesnot exist.\")\n        for key, value in data.model_dump(exclude_unset=True).items():\n            setattr(project, key, value)",
+        "detail": "app.crud.project",
+        "documentation": {}
+    },
+    {
+        "label": "update_project",
+        "kind": 2,
+        "importPath": "app.crud.project",
+        "description": "app.crud.project",
+        "peekOfCode": "def update_project(db: Session, project_id: UUID, data: ProjectUpdate):\n    try:\n        project = db.query(Project).filter(Project.id == project_id).first()\n        if project is None:\n            raise ValueError(\"Project doesnot exist.\")\n        for key, value in data.model_dump(exclude_unset=True).items():\n            setattr(project, key, value)\n        db.add(project)\n        db.commit()\n        db.refresh(project)",
+        "detail": "app.crud.project",
+        "documentation": {}
+    },
+    {
+        "label": "delete_project",
+        "kind": 2,
+        "importPath": "app.crud.project",
+        "description": "app.crud.project",
+        "peekOfCode": "def delete_project(db: Session, project_id: UUID):\n    try:\n        project = db.query(Project).filter(Project.id == project_id).first()\n        if project is None:\n            raise ValueError(\"Project you are trying to delete doesnot exist.\")\n        db.delete(project)\n        db.commit()\n        return True\n    except Exception as e:\n        db.rollback()",
+        "detail": "app.crud.project",
         "documentation": {}
     },
     {
@@ -1797,7 +2295,7 @@
         "kind": 5,
         "importPath": "app.database.models.association",
         "description": "app.database.models.association",
-        "peekOfCode": "user_tasks = Table(\n    \"user_tasks\",\n    Base.metadata,\n    Column(\"user_id\", UUID(as_uuid=True), ForeignKey(\"users.id\"), primary_key=True),\n    Column(\"task_id\", UUID(as_uuid=True), ForeignKey(\"tasks.id\"), primary_key=True),\n)\n# For user and projects\nuser_projects = Table(\n    \"user_projects\",\n    Base.metadata,",
+        "peekOfCode": "user_tasks = Table(\n    \"user_tasks\",\n    Base.metadata,\n    Column(\n        \"user_id\",\n        UUID(as_uuid=True),\n        ForeignKey(\"users.id\", ondelete=\"CASCADE\"),\n        primary_key=True,\n    ),\n    Column(",
         "detail": "app.database.models.association",
         "documentation": {}
     },
@@ -1806,7 +2304,16 @@
         "kind": 5,
         "importPath": "app.database.models.association",
         "description": "app.database.models.association",
-        "peekOfCode": "user_projects = Table(\n    \"user_projects\",\n    Base.metadata,\n    Column(\"user_id\", UUID(as_uuid=True), ForeignKey(\"users.id\"), primary_key=True),\n    Column(\n        \"project_id\", UUID(as_uuid=True), ForeignKey(\"projects.id\"), primary_key=True\n    ),\n)\n# For user and companies Many to many\nuser_companies=Table(",
+        "peekOfCode": "user_projects = Table(\n    \"user_projects\",\n    Base.metadata,\n    Column(\n        \"user_id\",\n        UUID(as_uuid=True),\n        ForeignKey(\"users.id\", ondelete=\"CASCADE\"),\n        primary_key=True,\n    ),\n    Column(",
+        "detail": "app.database.models.association",
+        "documentation": {}
+    },
+    {
+        "label": "user_companies",
+        "kind": 5,
+        "importPath": "app.database.models.association",
+        "description": "app.database.models.association",
+        "peekOfCode": "user_companies = Table(\n    \"user_companies\",\n    Base.metadata,\n    Column(\n        \"user_id\",\n        UUID(as_uuid=True),\n        ForeignKey(\"users.id\", ondelete=\"CASCADE\"),\n        primary_key=True,\n    ),\n    Column(",
         "detail": "app.database.models.association",
         "documentation": {}
     },
@@ -1842,7 +2349,7 @@
         "kind": 6,
         "importPath": "app.database.models.project",
         "description": "app.database.models.project",
-        "peekOfCode": "class ProjectStatus(str, Enum):\n    done = \"Done\",\n    running = \"Running\"\n    failed = \"Failed\"\nclass ProjectUrgency(str, Enum):\n    high = \"High\",\n    low = \"Low\",\n    medium = \"Medium\"\nclass Project(Base):\n    __tablename__ = \"projects\"",
+        "peekOfCode": "class ProjectStatus(str, Enum):\n    done = (\"Done\",)\n    running = \"Running\"\n    failed = \"Failed\"\nclass ProjectUrgency(str, Enum):\n    high = (\"High\",)\n    low = (\"Low\",)\n    medium = \"Medium\"\nclass Project(Base):\n    __tablename__ = \"projects\"",
         "detail": "app.database.models.project",
         "documentation": {}
     },
@@ -1851,7 +2358,7 @@
         "kind": 6,
         "importPath": "app.database.models.project",
         "description": "app.database.models.project",
-        "peekOfCode": "class ProjectUrgency(str, Enum):\n    high = \"High\",\n    low = \"Low\",\n    medium = \"Medium\"\nclass Project(Base):\n    __tablename__ = \"projects\"\n    # Fields\n    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    project_name = Column(String, nullable=False,unique=True)\n    project_type = Column(String)",
+        "peekOfCode": "class ProjectUrgency(str, Enum):\n    high = (\"High\",)\n    low = (\"Low\",)\n    medium = \"Medium\"\nclass Project(Base):\n    __tablename__ = \"projects\"\n    # Fields\n    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    project_name = Column(String, nullable=False, unique=True)\n    project_type = Column(String)",
         "detail": "app.database.models.project",
         "documentation": {}
     },
@@ -1860,7 +2367,7 @@
         "kind": 6,
         "importPath": "app.database.models.project",
         "description": "app.database.models.project",
-        "peekOfCode": "class Project(Base):\n    __tablename__ = \"projects\"\n    # Fields\n    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    project_name = Column(String, nullable=False,unique=True)\n    project_type = Column(String)\n    status = Column(\n        SQLEnum(ProjectStatus, name=\"project_status\"), default=ProjectStatus.running,index=True\n    )\n    created_at = Column(DateTime, server_default=func.now())",
+        "peekOfCode": "class Project(Base):\n    __tablename__ = \"projects\"\n    # Fields\n    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    project_name = Column(String, nullable=False, unique=True)\n    project_type = Column(String)\n    status = Column(\n        SQLEnum(ProjectStatus, name=\"project_status\"),\n        default=ProjectStatus.running,\n        index=True,",
         "detail": "app.database.models.project",
         "documentation": {}
     },
@@ -1995,8 +2502,107 @@
         "kind": 2,
         "importPath": "app.routers.company",
         "description": "app.routers.company",
-        "peekOfCode": "def register_company(request:Request,company_name:str=Form(...),company_description:str|None=Form(None),company_banner:str|None=Form(None),company_type:str|None=Form(None),logo:UploadFile|None=File(None),db:Session=Depends(get_db)):\n    data=CompanyCreate(\n        company_name=company_name,\n        company_description=company_description,\n        company_banner=company_banner,\n        company_type=company_type,\n        manager_id=request.state.user_id\n    )\n    company,error=create_company(data,logo,db)\n    if error:",
+        "peekOfCode": "def register_company(\n    request: Request,\n    data: str = Form(...),\n    file: UploadFile | None = File(None),\n    db: Session = Depends(get_db),\n):\n    create_data = CompanyCreate(**json.loads(data))\n    company, error = create_company(create_data, file, db, request)\n    if error:\n        raise HTTPException(status_code=400, detail=error)",
         "detail": "app.routers.company",
+        "documentation": {}
+    },
+    {
+        "label": "read_list_company",
+        "kind": 2,
+        "importPath": "app.routers.company",
+        "description": "app.routers.company",
+        "peekOfCode": "def read_list_company(request: Request, db: Session = Depends(get_db)):\n    companies, error = get_company_list(db, request)\n    if error:\n        raise HTTPException(status_code=400, detail=error)\n    return companies\n# Get the single  company\n@company_router.get(\"/{company_id}\", response_model=CompanyReadSingle)\ndef read_single_company(\n    company_id: UUID, request: Request, db: Session = Depends(get_db)\n):",
+        "detail": "app.routers.company",
+        "documentation": {}
+    },
+    {
+        "label": "read_single_company",
+        "kind": 2,
+        "importPath": "app.routers.company",
+        "description": "app.routers.company",
+        "peekOfCode": "def read_single_company(\n    company_id: UUID, request: Request, db: Session = Depends(get_db)\n):\n    company, error = get_company_single(db, request, company_id)\n    if error:\n        raise HTTPException(status_code=400, detail=error)\n    return company\n# Update the   company\n@company_router.put(\"/{company_id}\", response_model=CompanyReadSingle)\ndef UpdateCompany(",
+        "detail": "app.routers.company",
+        "documentation": {}
+    },
+    {
+        "label": "UpdateCompany",
+        "kind": 2,
+        "importPath": "app.routers.company",
+        "description": "app.routers.company",
+        "peekOfCode": "def UpdateCompany(\n    company_id: UUID,\n    data: str = Form(...),\n    file: UploadFile = File(None),\n    db: Session = Depends(get_db),\n):\n    company_update = CompanyUpdate(**json.loads(data))\n    company, error = update_company(company_id, db, company_update, file)\n    if error:\n        raise HTTPException(status_code=400, detail=error)",
+        "detail": "app.routers.company",
+        "documentation": {}
+    },
+    {
+        "label": "DeleteCompany",
+        "kind": 2,
+        "importPath": "app.routers.company",
+        "description": "app.routers.company",
+        "peekOfCode": "def DeleteCompany(company_id: UUID, db: Session = Depends(get_db)):\n    deleted, error = delete_company(company_id, db)\n    if error:\n        raise HTTPException(status_code=400, detail=error)\n    return {\"message\": \"Company deleted successfully\"}",
+        "detail": "app.routers.company",
+        "documentation": {}
+    },
+    {
+        "label": "company_router",
+        "kind": 5,
+        "importPath": "app.routers.company",
+        "description": "app.routers.company",
+        "peekOfCode": "company_router = APIRouter(prefix=\"/company\", tags=[\"company_endpoint\"])\n# Create the company\n@company_router.post(\"/\", response_model=CompanyReadSingle)\ndef register_company(\n    request: Request,\n    data: str = Form(...),\n    file: UploadFile | None = File(None),\n    db: Session = Depends(get_db),\n):\n    create_data = CompanyCreate(**json.loads(data))",
+        "detail": "app.routers.company",
+        "documentation": {}
+    },
+    {
+        "label": "create_project_endpoint",
+        "kind": 2,
+        "importPath": "app.routers.projects",
+        "description": "app.routers.projects",
+        "peekOfCode": "def create_project_endpoint(data: ProjectCreate, db: Session = Depends(get_db)):\n    try:\n        project = create_project(db, data)\n        return project\n    except ValueError as e:\n        raise HTTPException(status_code=400, detail=str(e))\n    except RuntimeError as e:\n        raise HTTPException(status_code=500, detail=str(e))\n# Update endpoint\n@projectRouter.put(\"/{project_id}\", response_model=ProjectReadSingle)",
+        "detail": "app.routers.projects",
+        "documentation": {}
+    },
+    {
+        "label": "update_project_endpoint",
+        "kind": 2,
+        "importPath": "app.routers.projects",
+        "description": "app.routers.projects",
+        "peekOfCode": "def update_project_endpoint(\n    project_id: UUID, data: ProjectUpdate, db: Session = Depends(get_db)\n):\n    try:\n        project = update_project(db, project_id, data)\n        return project\n    except ValueError as e:\n        return HTTPException(status_code=400, detail=e)\n    except RuntimeError as e:\n        return HTTPException(status_code=500, detail=e)",
+        "detail": "app.routers.projects",
+        "documentation": {}
+    },
+    {
+        "label": "read_project_endpoint",
+        "kind": 2,
+        "importPath": "app.routers.projects",
+        "description": "app.routers.projects",
+        "peekOfCode": "def read_project_endpoint(project_id: UUID, db: Session = Depends(get_db)):\n    try:\n        project = read_project(db, project_id)\n        return project\n    except Exception as e:\n        return HTTPException(status_code=400, detail=e)\n# Read multiple projects endpoint\n@projectRouter.get(\"/\", response_model=list[ProjectReadMultiple])\ndef read_projects_endpoint(db: Session = Depends(get_db)):\n    projects = read_projects(db)",
+        "detail": "app.routers.projects",
+        "documentation": {}
+    },
+    {
+        "label": "read_projects_endpoint",
+        "kind": 2,
+        "importPath": "app.routers.projects",
+        "description": "app.routers.projects",
+        "peekOfCode": "def read_projects_endpoint(db: Session = Depends(get_db)):\n    projects = read_projects(db)\n    return projects\n# Delete the project\n@projectRouter.delete(\"/{project_id}\")\ndef delete_project_endpoint(project_id: UUID, db: Session = Depends(get_db)):\n    try:\n        deleted = delete_project(db, project_id)\n        if deleted:\n            return {\"message\": \"Project deleted successfully\"}",
+        "detail": "app.routers.projects",
+        "documentation": {}
+    },
+    {
+        "label": "delete_project_endpoint",
+        "kind": 2,
+        "importPath": "app.routers.projects",
+        "description": "app.routers.projects",
+        "peekOfCode": "def delete_project_endpoint(project_id: UUID, db: Session = Depends(get_db)):\n    try:\n        deleted = delete_project(db, project_id)\n        if deleted:\n            return {\"message\": \"Project deleted successfully\"}\n    except ValueError as e:\n        return HTTPException(status_code=400, detail=e)\n    except RuntimeError as e:\n        return HTTPException(status_code=500, detail=e)",
+        "detail": "app.routers.projects",
+        "documentation": {}
+    },
+    {
+        "label": "projectRouter",
+        "kind": 5,
+        "importPath": "app.routers.projects",
+        "description": "app.routers.projects",
+        "peekOfCode": "projectRouter = APIRouter(prefix=\"/project\", tags=[\"projects\"])\n# Create endpoint\n@projectRouter.post(\"/\", response_model=ProjectReadMultiple)\ndef create_project_endpoint(data: ProjectCreate, db: Session = Depends(get_db)):\n    try:\n        project = create_project(db, data)\n        return project\n    except ValueError as e:\n        raise HTTPException(status_code=400, detail=str(e))\n    except RuntimeError as e:",
+        "detail": "app.routers.projects",
         "documentation": {}
     },
     {
@@ -2004,7 +2610,7 @@
         "kind": 6,
         "importPath": "app.schemas.company",
         "description": "app.schemas.company",
-        "peekOfCode": "class CompanyBase(BaseModel):\n    company_name:str\n    company_description:str|None=None\n    company_banner:str|None=None\n    company_type:str|None=None\n    @field_validator(\"company_name\")\n    def check_company_name(cls,v):\n        if len(v)<5:\n            raise ValueError(\"Company name should have atleast 5 characters\")\n        return v",
+        "peekOfCode": "class CompanyBase(BaseModel):\n    company_name: str\n    company_description: str | None = None\n    company_banner: str | None = None\n    company_type: str | None = None\n    @field_validator(\"company_name\")\n    def check_company_name(cls, v):\n        if len(v) < 5:\n            raise ValueError(\"Company name should have atleast 5 characters\")\n        return v",
         "detail": "app.schemas.company",
         "documentation": {}
     },
@@ -2013,7 +2619,7 @@
         "kind": 6,
         "importPath": "app.schemas.company",
         "description": "app.schemas.company",
-        "peekOfCode": "class CompanyBasic(CompanyBase):\n    logo:str|None=None\n# Create Company\nclass CompanyCreate(CompanyBase):\n    manager_id:UUID\n# Read  company\nclass CompanyReadSingle(CompanyBase):\n    id:UUID\n    logo:str|None=None\n    issue_date:datetime",
+        "peekOfCode": "class CompanyBasic(CompanyBase):\n    logo: str | None = None\n# Create Company\nclass CompanyCreate(CompanyBase):\n    pass\n# Read  company\nclass CompanyReadSingle(CompanyBase):\n    id: UUID\n    logo: str | None = None\n    issue_date: datetime",
         "detail": "app.schemas.company",
         "documentation": {}
     },
@@ -2022,7 +2628,7 @@
         "kind": 6,
         "importPath": "app.schemas.company",
         "description": "app.schemas.company",
-        "peekOfCode": "class CompanyCreate(CompanyBase):\n    manager_id:UUID\n# Read  company\nclass CompanyReadSingle(CompanyBase):\n    id:UUID\n    logo:str|None=None\n    issue_date:datetime\n    updated_at:datetime\n    is_active:bool\n    projects:list[\"ProjectReadSingle\"]=[]",
+        "peekOfCode": "class CompanyCreate(CompanyBase):\n    pass\n# Read  company\nclass CompanyReadSingle(CompanyBase):\n    id: UUID\n    logo: str | None = None\n    issue_date: datetime\n    updated_at: datetime\n    is_active: bool\n    projects: list[\"ProjectReadMultiple\"] = []",
         "detail": "app.schemas.company",
         "documentation": {}
     },
@@ -2031,7 +2637,7 @@
         "kind": 6,
         "importPath": "app.schemas.company",
         "description": "app.schemas.company",
-        "peekOfCode": "class CompanyReadSingle(CompanyBase):\n    id:UUID\n    logo:str|None=None\n    issue_date:datetime\n    updated_at:datetime\n    is_active:bool\n    projects:list[\"ProjectReadSingle\"]=[]\n    manager:\"UserReadBasic |None\"=None\n    enrolled_users:list[\"UserReadBasic\"]=[]\n    company_requests:list[\"ReadMultipleJoinRequest\"]=[]",
+        "peekOfCode": "class CompanyReadSingle(CompanyBase):\n    id: UUID\n    logo: str | None = None\n    issue_date: datetime\n    updated_at: datetime\n    is_active: bool\n    projects: list[\"ProjectReadMultiple\"] = []\n    manager: \"UserReadBasic |None\" = None\n    enrolled_users: list[\"UserReadBasic\"] = []\n    company_requests: list[\"ReadMultipleJoinRequest\"] = []",
         "detail": "app.schemas.company",
         "documentation": {}
     },
@@ -2040,7 +2646,7 @@
         "kind": 6,
         "importPath": "app.schemas.company",
         "description": "app.schemas.company",
-        "peekOfCode": "class CompanyReadMultiple(CompanyBase):\n    enrolled_users:list[\"UserReadBasic\"]=[]\n    logo:str|None=None\n    class Config:\n        from_attributes=True\n# Update the company\nclass CompanyUpdate(BaseModel):\n    id:UUID\n    company_name:str|None=None\n    company_description:str|None=None",
+        "peekOfCode": "class CompanyReadMultiple(CompanyBase):\n    id: UUID\n    enrolled_users: list[\"UserReadBasic\"] = []\n    logo: str | None = None\n    class Config:\n        from_attributes = True\n# Update the company\nclass CompanyUpdate(BaseModel):\n    company_name: str | None = None\n    company_description: str | None = None",
         "detail": "app.schemas.company",
         "documentation": {}
     },
@@ -2049,7 +2655,7 @@
         "kind": 6,
         "importPath": "app.schemas.company",
         "description": "app.schemas.company",
-        "peekOfCode": "class CompanyUpdate(BaseModel):\n    id:UUID\n    company_name:str|None=None\n    company_description:str|None=None\n    company_banner:str|None=None\n    company_type:str|None=None\n    class Config:\n        from_attributes=True",
+        "peekOfCode": "class CompanyUpdate(BaseModel):\n    company_name: str | None = None\n    company_description: str | None = None\n    company_banner: str | None = None\n    company_type: str | None = None\n    class Config:\n        from_attributes = True",
         "detail": "app.schemas.company",
         "documentation": {}
     },
@@ -2108,11 +2714,20 @@
         "documentation": {}
     },
     {
+        "label": "ProjectUrgency",
+        "kind": 6,
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "peekOfCode": "class ProjectUrgency(str, Enum):\n    high = \"High\"\n    low = \"Low\"\n    medium = \"Medium\"\n# Base Project Model\nclass ProjectBase(BaseModel):\n    project_name: str\n    project_type: str | None = None\n    project_description: str | None = None\n    company_id: UUID",
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
         "label": "ProjectBase",
         "kind": 6,
         "importPath": "app.schemas.project",
         "description": "app.schemas.project",
-        "peekOfCode": "class ProjectBase(BaseModel):\n    project_name:str\n    project_type:str|None=None\n    project_description:str|None=None\n    company_id:str\n    @field_validator(\"project_name\")\n    def check_project_name(cls,v):\n        if len(v)<5:\n            raise ValueError(\"Project name should have atleast 5 characters\")\n        return v",
+        "peekOfCode": "class ProjectBase(BaseModel):\n    project_name: str\n    project_type: str | None = None\n    project_description: str | None = None\n    company_id: UUID\n    @field_validator(\"project_name\")\n    def check_project_name(cls, v):\n        if len(v) < 5:\n            raise ValueError(\"Project name should have atleast 5 characters\")\n        return v",
         "detail": "app.schemas.project",
         "documentation": {}
     },
@@ -2121,7 +2736,7 @@
         "kind": 6,
         "importPath": "app.schemas.project",
         "description": "app.schemas.project",
-        "peekOfCode": "class ProjectCreate(ProjectBase):\n    end_on:date\n# For reading the single project\nclass ProjectReadSingle(ProjectCreate):\n    tasks:list[\"TaskReadSingle\"]=[]\n    users:list[\"UserRead\"]=[]\n    company:list[\"CompanyReadSingle\"]=[]\n    urgency:str\n    updated_at:datetime\n    created_at:datetime",
+        "peekOfCode": "class ProjectCreate(ProjectBase):\n    end_on: date\n    user_ids: list[UUID]\n    urgency: ProjectUrgency\n# For reading the single project\nclass ProjectReadSingle(ProjectBase):\n    tasks: list[\"TaskReadSingle\"] = []\n    users: list[\"UserReadBasic\"] = []\n    company: \"CompanyReadSingle\"\n    urgency: str",
         "detail": "app.schemas.project",
         "documentation": {}
     },
@@ -2130,7 +2745,7 @@
         "kind": 6,
         "importPath": "app.schemas.project",
         "description": "app.schemas.project",
-        "peekOfCode": "class ProjectReadSingle(ProjectCreate):\n    tasks:list[\"TaskReadSingle\"]=[]\n    users:list[\"UserRead\"]=[]\n    company:list[\"CompanyReadSingle\"]=[]\n    urgency:str\n    updated_at:datetime\n    created_at:datetime\n    status:str\n    id:UUID\n    class Config:",
+        "peekOfCode": "class ProjectReadSingle(ProjectBase):\n    tasks: list[\"TaskReadSingle\"] = []\n    users: list[\"UserReadBasic\"] = []\n    company: \"CompanyReadSingle\"\n    urgency: str\n    updated_at: datetime\n    created_at: datetime\n    status: str\n    id: UUID\n    class Config:",
         "detail": "app.schemas.project",
         "documentation": {}
     },
@@ -2139,7 +2754,7 @@
         "kind": 6,
         "importPath": "app.schemas.project",
         "description": "app.schemas.project",
-        "peekOfCode": "class ProjectReadMultiple(ProjectBase):\n    pass\n    class Config:\n        from_attributes=True\n# For updating the project\nclass ProjectUpdate(ProjectReadSingle):\n    project_name:str|None=None\n    project_type:str|None=None\n    project_description:str|None=None\n    status:str|None=None",
+        "peekOfCode": "class ProjectReadMultiple(ProjectBase):\n    id: UUID\n    urgency: str\n    created_at: datetime\n    updated_at: datetime\n    class Config:\n        from_attributes = True\n# For updating the project\nclass ProjectUpdate(BaseModel):\n    project_name: str | None = None",
         "detail": "app.schemas.project",
         "documentation": {}
     },
@@ -2148,7 +2763,7 @@
         "kind": 6,
         "importPath": "app.schemas.project",
         "description": "app.schemas.project",
-        "peekOfCode": "class ProjectUpdate(ProjectReadSingle):\n    project_name:str|None=None\n    project_type:str|None=None\n    project_description:str|None=None\n    status:str|None=None\n    end_one:date|None=None\n    urgency:str|None=None\n    class Config:\n        from_attributes=True\nclass ProjectDelete(BaseModel):",
+        "peekOfCode": "class ProjectUpdate(BaseModel):\n    project_name: str | None = None\n    project_type: str | None = None\n    project_description: str | None = None\n    status: str | None = None\n    end_on: date | None = None\n    urgency: str | None = None\n    class Config:\n        from_attributes = True\nclass ProjectDelete(BaseModel):",
         "detail": "app.schemas.project",
         "documentation": {}
     },
@@ -2157,7 +2772,7 @@
         "kind": 6,
         "importPath": "app.schemas.project",
         "description": "app.schemas.project",
-        "peekOfCode": "class ProjectDelete(BaseModel):\n    id:UUID",
+        "peekOfCode": "class ProjectDelete(BaseModel):\n    id: UUID",
         "detail": "app.schemas.project",
         "documentation": {}
     },
@@ -2283,7 +2898,7 @@
         "kind": 2,
         "importPath": "app.utils.upload_image",
         "description": "app.utils.upload_image",
-        "peekOfCode": "def upload_image(file: UploadFile,type:str,type_id:str):\n    upload = cloudinary.uploader.upload(\n        file.file, folder=f\"{type}/{type_id}\", public_id=f\"{type}\", overwrite=True\n    )\n    return upload[\"secure_url\"]",
+        "peekOfCode": "def upload_image(file: UploadFile, type: str, type_id: str):\n    upload = cloudinary.uploader.upload(\n        file.file, folder=f\"{type}/{type_id}\", public_id=f\"{type}\", overwrite=True\n    )\n    return upload[\"secure_url\"]",
         "detail": "app.utils.upload_image",
         "documentation": {}
     },
@@ -2301,8 +2916,62 @@
         "kind": 5,
         "importPath": "app.main",
         "description": "app.main",
-        "peekOfCode": "app = FastAPI()\napp.include_router(authRouter)\napp.include_router(company_router)\napp.middleware(\"http\")(blacklist_middleware)\n@app.get(\"/\")\ndef default():\n    return {\"message\": \"Hello World I am into the world of fastapi\"}",
+        "peekOfCode": "app = FastAPI()\napp.include_router(authRouter)\napp.include_router(company_router)\napp.include_router(projectRouter)\napp.middleware(\"http\")(blacklist_middleware)\n@app.get(\"/\")\ndef default():\n    return {\"message\": \"Hello World I am into the world of fastapi\"}",
         "detail": "app.main",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
+        "importPath": "migrations.versions.080ff4087503_default_value_for_updated_at_inside_the_",
+        "description": "migrations.versions.080ff4087503_default_value_for_updated_at_inside_the_",
+        "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    pass\n    # ### end Alembic commands ###\ndef downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    pass\n    # ### end Alembic commands ###",
+        "detail": "migrations.versions.080ff4087503_default_value_for_updated_at_inside_the_",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "migrations.versions.080ff4087503_default_value_for_updated_at_inside_the_",
+        "description": "migrations.versions.080ff4087503_default_value_for_updated_at_inside_the_",
+        "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    pass\n    # ### end Alembic commands ###",
+        "detail": "migrations.versions.080ff4087503_default_value_for_updated_at_inside_the_",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
+        "importPath": "migrations.versions.0a122c412afe_cascade_delete_on_user_companies_table",
+        "description": "migrations.versions.0a122c412afe_cascade_delete_on_user_companies_table",
+        "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_constraint(op.f('user_companies_company_id_fkey'), 'user_companies', type_='foreignkey')\n    op.drop_constraint(op.f('user_companies_user_id_fkey'), 'user_companies', type_='foreignkey')\n    op.create_foreign_key(None, 'user_companies', 'companies', ['company_id'], ['id'], ondelete='CASCADE')\n    op.create_foreign_key(None, 'user_companies', 'users', ['user_id'], ['id'], ondelete='CASCADE')\n    # ### end Alembic commands ###\ndef downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"",
+        "detail": "migrations.versions.0a122c412afe_cascade_delete_on_user_companies_table",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "migrations.versions.0a122c412afe_cascade_delete_on_user_companies_table",
+        "description": "migrations.versions.0a122c412afe_cascade_delete_on_user_companies_table",
+        "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_constraint(None, 'user_companies', type_='foreignkey')\n    op.drop_constraint(None, 'user_companies', type_='foreignkey')\n    op.create_foreign_key(op.f('user_companies_user_id_fkey'), 'user_companies', 'users', ['user_id'], ['id'])\n    op.create_foreign_key(op.f('user_companies_company_id_fkey'), 'user_companies', 'companies', ['company_id'], ['id'])\n    # ### end Alembic commands ###",
+        "detail": "migrations.versions.0a122c412afe_cascade_delete_on_user_companies_table",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
+        "importPath": "migrations.versions.52e00db337bc_default_value_for_updated_at_inside_the_",
+        "description": "migrations.versions.52e00db337bc_default_value_for_updated_at_inside_the_",
+        "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    pass\n    # ### end Alembic commands ###\ndef downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    pass\n    # ### end Alembic commands ###",
+        "detail": "migrations.versions.52e00db337bc_default_value_for_updated_at_inside_the_",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "migrations.versions.52e00db337bc_default_value_for_updated_at_inside_the_",
+        "description": "migrations.versions.52e00db337bc_default_value_for_updated_at_inside_the_",
+        "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    pass\n    # ### end Alembic commands ###",
+        "detail": "migrations.versions.52e00db337bc_default_value_for_updated_at_inside_the_",
         "documentation": {}
     },
     {
@@ -2321,6 +2990,60 @@
         "description": "migrations.versions.7362f21c97aa_initial",
         "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_table('user_tasks')\n    op.drop_table('user_projects')\n    op.drop_index(op.f('ix_tasks_status'), table_name='tasks')\n    op.drop_table('tasks')\n    op.drop_table('user_companies')\n    op.drop_index(op.f('ix_projects_status'), table_name='projects')\n    op.drop_table('projects')",
         "detail": "migrations.versions.7362f21c97aa_initial",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
+        "importPath": "migrations.versions.9f2a5effdce3_manage_the_cascade_delete_on_assoc_table",
+        "description": "migrations.versions.9f2a5effdce3_manage_the_cascade_delete_on_assoc_table",
+        "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_constraint(op.f('user_projects_project_id_fkey'), 'user_projects', type_='foreignkey')\n    op.drop_constraint(op.f('user_projects_user_id_fkey'), 'user_projects', type_='foreignkey')\n    op.create_foreign_key(None, 'user_projects', 'projects', ['project_id'], ['id'], ondelete='CASCADE')\n    op.create_foreign_key(None, 'user_projects', 'users', ['user_id'], ['id'], ondelete='CASCADE')\n    op.drop_constraint(op.f('user_tasks_task_id_fkey'), 'user_tasks', type_='foreignkey')\n    op.drop_constraint(op.f('user_tasks_user_id_fkey'), 'user_tasks', type_='foreignkey')\n    op.create_foreign_key(None, 'user_tasks', 'tasks', ['task_id'], ['id'], ondelete='CASCADE')",
+        "detail": "migrations.versions.9f2a5effdce3_manage_the_cascade_delete_on_assoc_table",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "migrations.versions.9f2a5effdce3_manage_the_cascade_delete_on_assoc_table",
+        "description": "migrations.versions.9f2a5effdce3_manage_the_cascade_delete_on_assoc_table",
+        "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_constraint(None, 'user_tasks', type_='foreignkey')\n    op.drop_constraint(None, 'user_tasks', type_='foreignkey')\n    op.create_foreign_key(op.f('user_tasks_user_id_fkey'), 'user_tasks', 'users', ['user_id'], ['id'])\n    op.create_foreign_key(op.f('user_tasks_task_id_fkey'), 'user_tasks', 'tasks', ['task_id'], ['id'])\n    op.drop_constraint(None, 'user_projects', type_='foreignkey')\n    op.drop_constraint(None, 'user_projects', type_='foreignkey')\n    op.create_foreign_key(op.f('user_projects_user_id_fkey'), 'user_projects', 'users', ['user_id'], ['id'])",
+        "detail": "migrations.versions.9f2a5effdce3_manage_the_cascade_delete_on_assoc_table",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
+        "importPath": "migrations.versions.af0a48376906_deleted_user_company_when_the_company_",
+        "description": "migrations.versions.af0a48376906_deleted_user_company_when_the_company_",
+        "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    pass\n    # ### end Alembic commands ###\ndef downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    pass\n    # ### end Alembic commands ###",
+        "detail": "migrations.versions.af0a48376906_deleted_user_company_when_the_company_",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "migrations.versions.af0a48376906_deleted_user_company_when_the_company_",
+        "description": "migrations.versions.af0a48376906_deleted_user_company_when_the_company_",
+        "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    pass\n    # ### end Alembic commands ###",
+        "detail": "migrations.versions.af0a48376906_deleted_user_company_when_the_company_",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
+        "importPath": "migrations.versions.bdd7bee68d1a_rearranged",
+        "description": "migrations.versions.bdd7bee68d1a_rearranged",
+        "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    pass\n    # ### end Alembic commands ###\ndef downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    pass\n    # ### end Alembic commands ###",
+        "detail": "migrations.versions.bdd7bee68d1a_rearranged",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "migrations.versions.bdd7bee68d1a_rearranged",
+        "description": "migrations.versions.bdd7bee68d1a_rearranged",
+        "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    pass\n    # ### end Alembic commands ###",
+        "detail": "migrations.versions.bdd7bee68d1a_rearranged",
         "documentation": {}
     },
     {
