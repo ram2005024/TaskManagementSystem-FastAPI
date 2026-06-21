@@ -56,6 +56,6 @@ class Project(Base):
         UUID(as_uuid=True), ForeignKey("companies.id", ondelete="CASCADE")
     )
     company = relationship("Company", back_populates="projects")
-    __tableargs__ = UniqueConstraint(
-        "project_name", "company_id", name="unique_company_project"
+    __table_args__ = (
+        UniqueConstraint("project_name", "company_id", name="unique_company_project"),
     )

@@ -1,30 +1,25 @@
-from sqlalchemy import (
-    Column,
-    String,
-    Boolean,
-    ForeignKey,
-    DateTime,
-    Enum as SQLEnum,
-    Table,
-    UniqueConstraint
-)
-from sqlalchemy.sql import func
-from sqlalchemy.dialects.postgresql import UUID
 import uuid
-from sqlalchemy.orm import relationship
 from enum import Enum
+
+from sqlalchemy import Boolean, Column, DateTime, ForeignKey, String
+from sqlalchemy import Enum as SQLEnum
+from sqlalchemy.dialects.postgresql import UUID
+from sqlalchemy.orm import relationship
+from sqlalchemy.sql import func
+
 from app.database.db import Base
-from app.database.models.association import user_projects, user_tasks,user_companies
+from app.database.models.association import user_companies, user_projects, user_tasks
 
 
 # Make a role ENUM
 class UserRole(str, Enum):
-    member = "Member",
+    member = ("Member",)
     admin = "Admin"
     manager = "Manager"
 
+    # Make a user model
 
-# Make a user model
+
 class User(Base):
     __tablename__ = "users"
 
@@ -37,13 +32,18 @@ class User(Base):
     role = Column(SQLEnum(UserRole, name="user_roles"), default=UserRole.member)
     isActive = Column(Boolean, default=True)
     projects = relationship("Project", secondary=user_projects, back_populates="users")
+
     tasks = relationship("Task", secondary=user_tasks, back_populates="users")
     profile = relationship(
         "Profile", back_populates="user", uselist=False, cascade="all, delete-orphan"
     )
-    manager_company=relationship("Company",back_populates="manager",uselist=False)
-    companies=relationship("Company",secondary=user_companies,back_populates="enrolled_users")
-    user_requests=relationship("JoinRequest",back_populates="user")
+    manager_company = relationship("Company", back_populates="manager", uselist=False)
+    companies = relationship(
+        "Company", secondary=user_companies, back_populates="enrolled_users"
+    )
+    user_requests = relationship("JoinRequest", back_populates="user")
+
+
 # Make a profile model for the user
 class Profile(Base):
     __tablename__ = "profiles"

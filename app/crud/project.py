@@ -1,5 +1,6 @@
 from uuid import UUID
 
+from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm import Session
 
 from app.database.models.company import Company
@@ -40,6 +41,9 @@ def create_project(db: Session, data: ProjectCreate):
         db.commit()
         db.refresh(project)
         return project
+    except IntegrityError:
+        db.rollback()
+        raise ValueError("Same project already exists for the company")
     except Exception as e:
         db.rollback()
         raise RuntimeError(f"Error occured: {e}")

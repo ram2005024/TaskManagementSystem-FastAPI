@@ -20,7 +20,7 @@ from app.schemas.company import (
     CompanyUpdate,
 )
 
-company_router = APIRouter(prefix="/company", tags=["company_endpoint"])
+company_router = APIRouter(prefix="/company", tags=["company_endpoints"])
 
 
 # Create the company

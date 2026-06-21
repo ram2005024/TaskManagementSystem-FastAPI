@@ -1,23 +1,23 @@
-from fastapi import APIRouter, UploadFile, File, Form
-from app.schemas.user import UserLogin, UserRegister
-from fastapi import Depends, Request
-from sqlalchemy.orm import Session
-from jose import jwt, JWTError, ExpiredSignatureError
-from app.services.user import create_user, verify_credentials
-from app.database.db import get_db
+import time
+
+from fastapi import APIRouter, Depends, File, Form, Request, UploadFile, status
 from fastapi.exceptions import HTTPException
 from fastapi.responses import JSONResponse
-from fastapi import status
+from jose import ExpiredSignatureError, JWTError, jwt
+from sqlalchemy.orm import Session
+
+from app.core.config import redis, settings
 from app.core.security import (
     blacklist_token,
     create_access,
     create_refresh,
     isblacklisted,
 )
-from app.core.config import redis, settings
-import time
+from app.database.db import get_db
+from app.schemas.user import UserLogin, UserRegister
+from app.services.user import create_user, verify_credentials
 
-authRouter = APIRouter(prefix="/auth", tags=["auth"])
+authRouter = APIRouter(prefix="/auth", tags=["auth_endpoints"])
 
 
 @authRouter.post("/register")

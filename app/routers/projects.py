@@ -19,7 +19,7 @@ from app.schemas.project import (
     ProjectUpdate,
 )
 
-projectRouter = APIRouter(prefix="/project", tags=["projects"])
+projectRouter = APIRouter(prefix="/project", tags=["project_endpoints"])
 
 
 # Create endpoint
@@ -43,9 +43,9 @@ def update_project_endpoint(
         project = update_project(db, project_id, data)
         return project
     except ValueError as e:
-        return HTTPException(status_code=400, detail=e)
+        raise HTTPException(status_code=400, detail=e)
     except RuntimeError as e:
-        return HTTPException(status_code=500, detail=e)
+        raise HTTPException(status_code=500, detail=e)
 
 
 # Read endpoint
@@ -55,7 +55,7 @@ def read_project_endpoint(project_id: UUID, db: Session = Depends(get_db)):
         project = read_project(db, project_id)
         return project
     except Exception as e:
-        return HTTPException(status_code=400, detail=e)
+        raise HTTPException(status_code=400, detail=e)
 
 
 # Read multiple projects endpoint
@@ -73,6 +73,6 @@ def delete_project_endpoint(project_id: UUID, db: Session = Depends(get_db)):
         if deleted:
             return {"message": "Project deleted successfully"}
     except ValueError as e:
-        return HTTPException(status_code=400, detail=e)
+        raise HTTPException(status_code=400, detail=e)
     except RuntimeError as e:
-        return HTTPException(status_code=500, detail=e)
+        raise HTTPException(status_code=500, detail=e)

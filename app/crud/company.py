@@ -1,6 +1,7 @@
 from uuid import UUID
 
 from fastapi import Request, UploadFile
+from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm import Session
 
 from app.database.models import Company
@@ -43,6 +44,9 @@ def create_company(
         db.add(user)
         db.commit()
         return company, None
+    except IntegrityError:
+        db.rollback()
+        return None, "Manager already exists for this company"
     except Exception as e:
         db.rollback()
         return None, f"Error occured {e}"
