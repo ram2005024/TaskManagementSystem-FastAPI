@@ -102,22 +102,6 @@
         "documentation": {}
     },
     {
-        "label": "status",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
-        "documentation": {}
-    },
-    {
-        "label": "Request",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
-        "documentation": {}
-    },
-    {
         "label": "UploadFile",
         "importPath": "fastapi",
         "description": "fastapi",
@@ -350,31 +334,7 @@
         "documentation": {}
     },
     {
-        "label": "JSONResponse",
-        "importPath": "fastapi.responses",
-        "description": "fastapi.responses",
-        "isExtraImport": true,
-        "detail": "fastapi.responses",
-        "documentation": {}
-    },
-    {
         "label": "jwt",
-        "importPath": "jose",
-        "description": "jose",
-        "isExtraImport": true,
-        "detail": "jose",
-        "documentation": {}
-    },
-    {
-        "label": "ExpiredSignatureError",
-        "importPath": "jose",
-        "description": "jose",
-        "isExtraImport": true,
-        "detail": "jose",
-        "documentation": {}
-    },
-    {
-        "label": "JWTError",
         "importPath": "jose",
         "description": "jose",
         "isExtraImport": true,
@@ -2650,7 +2610,7 @@
         "kind": 2,
         "importPath": "app.core.security",
         "description": "app.core.security",
-        "peekOfCode": "def blacklist_token(token: str, exp: int) -> bool:\n    return redis.setex(f\"blacklist-{token}\", exp, \"true\")\n# Check the blacklist token\ndef isblacklisted(token: str):\n    return redis.exists(f\"blacklist-{token}\")\n# Blacklist middleware\nasync def blacklist_middleware(request: Request, call_next):\n    pass_path = [\n        \"/auth/login\",\n        \"/auth/register\",",
+        "peekOfCode": "def blacklist_token(token: str, exp: int) -> bool:\n    return redis.setex(f\"blacklist-{token}\", exp, \"true\")\n# Check the blacklist token\ndef isblacklisted(token: str):\n    return redis.exists(f\"blacklist-{token}\")",
         "detail": "app.core.security",
         "documentation": {}
     },
@@ -2659,7 +2619,7 @@
         "kind": 2,
         "importPath": "app.core.security",
         "description": "app.core.security",
-        "peekOfCode": "def isblacklisted(token: str):\n    return redis.exists(f\"blacklist-{token}\")\n# Blacklist middleware\nasync def blacklist_middleware(request: Request, call_next):\n    pass_path = [\n        \"/auth/login\",\n        \"/auth/register\",\n        \"/auth/refresh\",\n        \"/auth/logout\",\n        \"/docs\",",
+        "peekOfCode": "def isblacklisted(token: str):\n    return redis.exists(f\"blacklist-{token}\")",
         "detail": "app.core.security",
         "documentation": {}
     },
