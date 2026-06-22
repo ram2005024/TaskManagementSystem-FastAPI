@@ -21,25 +21,25 @@ def create_company(
             company_description=data.company_description,
             company_banner=data.company_banner,
             company_type=data.company_type,
-            manager_id=request.state.user_id,
+            manager_id=request.state.user["user_id"],
         )
         db.add(company)
         db.commit()
         db.refresh(company)
         # Add manager in enrolled company users
-        manager = db.query(User).filter(User.id == request.state.user_id).first()
+        manager = db.query(User).filter(User.id == company.manager_id).first()
         if manager:
             company.enrolled_users.append(manager)
             db.commit()
 
         image_url = ""
-        if logo.filename:
+        if logo and logo.filename:
             image_url: str = upload_image(logo, "company", str(company.id))
 
         company.logo = image_url  # type: ignore
         db.commit()
         # Change the role of the user as Manager for the company
-        user = db.query(User).filter(User.id == request.state.user_id).first()
+        user = db.query(User).filter(User.id == request.state.user["user_id"]).first()
         user.role = "Manager"
         db.add(user)
         db.commit()
@@ -49,13 +49,13 @@ def create_company(
         return None, "Manager already exists for this company"
     except Exception as e:
         db.rollback()
-        return None, f"Error occured {e}"
+        return None, f"Error occured  {e}"
 
 
 # GET LIST
 def get_company_list(db: Session, request: Request):
     try:
-        user = db.query(User).filter(User.id == request.state.user_id).first()
+        user = db.query(User).filter(User.id == request.state.user["user_id"]).first()
         companies = user.companies
         return companies, None
 

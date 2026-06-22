@@ -33,8 +33,8 @@ def register(
         email=email, password=password, first_name=first_name, last_name=last_name
     )
     user, error = create_user(userdata, user_image, db)
-    if error:
-        raise HTTPException(status_code=400, detail=error)
+    if error or not user:
+        raise HTTPException(status_code=400, detail=error or "Failed to create user")
 
     return {"message": "User created successfully", "username": user.username}
 
@@ -45,14 +45,19 @@ def login(
     db: Session = Depends(get_db),
 ):
     user, error = verify_credentials(data, db)
-    if error:
+    if error or not user:
         return JSONResponse(
             status_code=status.HTTP_401_UNAUTHORIZED, content={"detail": error}
         )
     # Generate the access and refresh token
-    data = {"id": str(user.id), "username": user.username}
-    access_token = create_access(data)
-    refresh_token = create_refresh(data)
+    token_data = {
+        "id": str(user.id),
+        "username": user.username,
+        "is_authenticated": user.is_authenticated,
+        "role": user.role,
+    }
+    access_token = create_access(token_data)
+    refresh_token = create_refresh(token_data)
     response = JSONResponse(
         status_code=status.HTTP_200_OK,
         content={"message": "Login successful", "access": access_token},
@@ -60,7 +65,7 @@ def login(
     # Set the refresh token in redis too
     redis.setex(f"token-{refresh_token}", settings.REFRESH_EXPIRY * 24 * 3600, "true")
     response.set_cookie(
-        "refresh", refresh_token, httponly=True, secure=False, samesite="None"
+        "refresh", refresh_token, httponly=True, secure=False, samesite="none"
     )
 
     return response
@@ -106,7 +111,7 @@ def refresh(request: Request):
             status_code=status.HTTP_200_OK, content={"access": new_access}
         )
         response.set_cookie(
-            "refresh", new_refresh, httponly=True, secure=False, samesite="None"
+            "refresh", new_refresh, httponly=True, secure=False, samesite="none"
         )
     except ExpiredSignatureError:
         return JSONResponse(

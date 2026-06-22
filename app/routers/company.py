@@ -13,12 +13,14 @@ from app.crud.company import (
     update_company,
 )
 from app.database.db import get_db
+from app.dependencies.auth import get_user
 from app.schemas.company import (
     CompanyCreate,
     CompanyReadMultiple,
     CompanyReadSingle,
     CompanyUpdate,
 )
+from app.services.company import find_company_by_name
 
 company_router = APIRouter(prefix="/company", tags=["company_endpoints"])
 
@@ -30,6 +32,7 @@ def register_company(
     data: str = Form(...),
     file: UploadFile | None = File(None),
     db: Session = Depends(get_db),
+    user: dict = Depends(get_user),
 ):
     create_data = CompanyCreate(**json.loads(data))
     company, error = create_company(create_data, file, db, request)
@@ -80,3 +83,12 @@ def DeleteCompany(company_id: UUID, db: Session = Depends(get_db)):
     if error:
         raise HTTPException(status_code=400, detail=error)
     return {"message": "Company deleted successfully"}
+
+
+# Search company by name
+@company_router.get("/companies/search", response_model=list[CompanyReadMultiple])
+def search_company_by_name(query: str, db: Session = Depends(get_db)):
+    try:
+        return find_company_by_name(query, db)
+    except RuntimeError as e:
+        raise HTTPException(status_code=500, detail=str(e))

@@ -1,50 +1,13 @@
-from datetime import datetime, timedelta
-
+# Blacklist middleware
 from fastapi import Request, status
 from fastapi.responses import JSONResponse
-from jose import ExpiredSignatureError, JWTError, jwt
-from pwdlib import PasswordHash
+from jose import jwt
+from jose.exceptions import ExpiredSignatureError, JWTError
 
-from app.core.config import redis, settings
-
-hashed_pwd = PasswordHash.recommended()
-
-
-def hashPwd(pwd: str):
-    return hashed_pwd.hash(pwd)
+from app.core.config import settings
+from app.core.security import isblacklisted
 
 
-def verifyPwd(plain: str, hashed: str):
-    return hashed_pwd.verify(plain, hashed)
-
-
-# Create access token
-def create_access(data: dict):
-    copied = data.copy()
-    exp = datetime.utcnow() + timedelta(minutes=settings.ACCESS_EXPIRY)
-    copied.update({"exp": exp, "type": "access"})
-    return jwt.encode(copied, settings.SECRET_KEY, settings.ALGORITHM)
-
-
-# Create refresh token
-def create_refresh(data: dict):
-    copied = data.copy()
-    exp = datetime.utcnow() + timedelta(days=settings.REFRESH_EXPIRY)
-    copied.update({"exp": exp, "type": "refresh"})
-    return jwt.encode(copied, settings.SECRET_KEY, settings.ALGORITHM)
-
-
-# Blacklist the token
-def blacklist_token(token: str, exp: int) -> bool:
-    return redis.setex(f"blacklist-{token}", exp, "true")
-
-
-# Check the blacklist token
-def isblacklisted(token: str):
-    return redis.exists(f"blacklist-{token}")
-
-
-# Blacklist middleware
 async def blacklist_middleware(request: Request, call_next):
     pass_path = [
         "/auth/login",
@@ -84,5 +47,10 @@ async def blacklist_middleware(request: Request, call_next):
             status_code=status.HTTP_401_UNAUTHORIZED,
             content={"detail": "Invalid token"},
         )
-    request.state.user_id = payload["id"]
+    request.state.user = {
+        "user_id": payload["id"],
+        "username": payload["username"],
+        "is_authenticated": payload["is_authenticated"],
+        "role": payload["role"],
+    }
     return await call_next(request)

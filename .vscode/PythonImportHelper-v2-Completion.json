@@ -78,23 +78,287 @@
         "documentation": {}
     },
     {
-        "label": "PasswordHash",
-        "importPath": "pwdlib",
-        "description": "pwdlib",
+        "label": "Request",
+        "importPath": "fastapi",
+        "description": "fastapi",
         "isExtraImport": true,
-        "detail": "pwdlib",
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Request",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Request",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "UploadFile",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Request",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Request",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Request",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "File",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Form",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Request",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "UploadFile",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "File",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Form",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Request",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "UploadFile",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Request",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "UploadFile",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "UploadFile",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "JSONResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
+        "isExtraImport": true,
+        "detail": "fastapi.responses",
+        "documentation": {}
+    },
+    {
+        "label": "JSONResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
+        "isExtraImport": true,
+        "detail": "fastapi.responses",
+        "documentation": {}
+    },
+    {
+        "label": "JSONResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
+        "isExtraImport": true,
+        "detail": "fastapi.responses",
         "documentation": {}
     },
     {
         "label": "jwt",
-        "importPath": "jose",
-        "description": "jose",
-        "isExtraImport": true,
-        "detail": "jose",
-        "documentation": {}
-    },
-    {
-        "label": "JWTError",
         "importPath": "jose",
         "description": "jose",
         "isExtraImport": true,
@@ -110,6 +374,22 @@
         "documentation": {}
     },
     {
+        "label": "JWTError",
+        "importPath": "jose",
+        "description": "jose",
+        "isExtraImport": true,
+        "detail": "jose",
+        "documentation": {}
+    },
+    {
+        "label": "jwt",
+        "importPath": "jose",
+        "description": "jose",
+        "isExtraImport": true,
+        "detail": "jose",
+        "documentation": {}
+    },
+    {
         "label": "ExpiredSignatureError",
         "importPath": "jose",
         "description": "jose",
@@ -131,6 +411,22 @@
         "description": "jose",
         "isExtraImport": true,
         "detail": "jose",
+        "documentation": {}
+    },
+    {
+        "label": "ExpiredSignatureError",
+        "importPath": "jose.exceptions",
+        "description": "jose.exceptions",
+        "isExtraImport": true,
+        "detail": "jose.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "JWTError",
+        "importPath": "jose.exceptions",
+        "description": "jose.exceptions",
+        "isExtraImport": true,
+        "detail": "jose.exceptions",
         "documentation": {}
     },
     {
@@ -179,6 +475,78 @@
         "description": "app.core.config",
         "isExtraImport": true,
         "detail": "app.core.config",
+        "documentation": {}
+    },
+    {
+        "label": "isblacklisted",
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "isExtraImport": true,
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "blacklist_token",
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "isExtraImport": true,
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "create_access",
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "isExtraImport": true,
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "create_refresh",
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "isExtraImport": true,
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "isblacklisted",
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "isExtraImport": true,
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "create_access",
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "isExtraImport": true,
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "create_refresh",
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "isExtraImport": true,
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "hashPwd",
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "isExtraImport": true,
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "verifyPwd",
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "isExtraImport": true,
+        "detail": "app.core.security",
         "documentation": {}
     },
     {
@@ -230,211 +598,11 @@
         "documentation": {}
     },
     {
-        "label": "JSONResponse",
-        "importPath": "fastapi.responses",
-        "description": "fastapi.responses",
+        "label": "PasswordHash",
+        "importPath": "pwdlib",
+        "description": "pwdlib",
         "isExtraImport": true,
-        "detail": "fastapi.responses",
-        "documentation": {}
-    },
-    {
-        "label": "JSONResponse",
-        "importPath": "fastapi.responses",
-        "description": "fastapi.responses",
-        "isExtraImport": true,
-        "detail": "fastapi.responses",
-        "documentation": {}
-    },
-    {
-        "label": "status",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
-        "documentation": {}
-    },
-    {
-        "label": "Request",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
-        "documentation": {}
-    },
-    {
-        "label": "Request",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
-        "documentation": {}
-    },
-    {
-        "label": "UploadFile",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
-        "documentation": {}
-    },
-    {
-        "label": "APIRouter",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
-        "documentation": {}
-    },
-    {
-        "label": "Depends",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
-        "documentation": {}
-    },
-    {
-        "label": "File",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
-        "documentation": {}
-    },
-    {
-        "label": "Form",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
-        "documentation": {}
-    },
-    {
-        "label": "Request",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
-        "documentation": {}
-    },
-    {
-        "label": "UploadFile",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
-        "documentation": {}
-    },
-    {
-        "label": "status",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
-        "documentation": {}
-    },
-    {
-        "label": "APIRouter",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
-        "documentation": {}
-    },
-    {
-        "label": "Depends",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
-        "documentation": {}
-    },
-    {
-        "label": "File",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
-        "documentation": {}
-    },
-    {
-        "label": "Form",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
-        "documentation": {}
-    },
-    {
-        "label": "Request",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
-        "documentation": {}
-    },
-    {
-        "label": "UploadFile",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
-        "documentation": {}
-    },
-    {
-        "label": "APIRouter",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
-        "documentation": {}
-    },
-    {
-        "label": "Depends",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
-        "documentation": {}
-    },
-    {
-        "label": "APIRouter",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
-        "documentation": {}
-    },
-    {
-        "label": "Depends",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
-        "documentation": {}
-    },
-    {
-        "label": "UploadFile",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
-        "documentation": {}
-    },
-    {
-        "label": "UploadFile",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
-        "documentation": {}
-    },
-    {
-        "label": "FastAPI",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
+        "detail": "pwdlib",
         "documentation": {}
     },
     {
@@ -543,6 +711,22 @@
         "documentation": {}
     },
     {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "IntegrityError",
+        "importPath": "sqlalchemy.exc",
+        "description": "sqlalchemy.exc",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.exc",
+        "documentation": {}
+    },
+    {
         "label": "IntegrityError",
         "importPath": "sqlalchemy.exc",
         "description": "sqlalchemy.exc",
@@ -559,7 +743,7 @@
         "documentation": {}
     },
     {
-        "label": "IntegrityError",
+        "label": "SQLAlchemyError",
         "importPath": "sqlalchemy.exc",
         "description": "sqlalchemy.exc",
         "isExtraImport": true,
@@ -640,6 +824,22 @@
     },
     {
         "label": "declarative_base",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
         "importPath": "sqlalchemy.orm",
         "description": "sqlalchemy.orm",
         "isExtraImport": true,
@@ -820,6 +1020,78 @@
         "description": "app.utils.upload_image",
         "isExtraImport": true,
         "detail": "app.utils.upload_image",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi.exceptions",
+        "description": "fastapi.exceptions",
+        "isExtraImport": true,
+        "detail": "fastapi.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi.exceptions",
+        "description": "fastapi.exceptions",
+        "isExtraImport": true,
+        "detail": "fastapi.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi.exceptions",
+        "description": "fastapi.exceptions",
+        "isExtraImport": true,
+        "detail": "fastapi.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi.exceptions",
+        "description": "fastapi.exceptions",
+        "isExtraImport": true,
+        "detail": "fastapi.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi.exceptions",
+        "description": "fastapi.exceptions",
+        "isExtraImport": true,
+        "detail": "fastapi.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi.exceptions",
+        "description": "fastapi.exceptions",
+        "isExtraImport": true,
+        "detail": "fastapi.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi.exceptions",
+        "description": "fastapi.exceptions",
+        "isExtraImport": true,
+        "detail": "fastapi.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "Company",
+        "importPath": "app.database.models.company",
+        "description": "app.database.models.company",
+        "isExtraImport": true,
+        "detail": "app.database.models.company",
+        "documentation": {}
+    },
+    {
+        "label": "Company",
+        "importPath": "app.database.models.company",
+        "description": "app.database.models.company",
+        "isExtraImport": true,
+        "detail": "app.database.models.company",
         "documentation": {}
     },
     {
@@ -1416,6 +1688,14 @@
         "documentation": {}
     },
     {
+        "label": "get_db",
+        "importPath": "app.database.db",
+        "description": "app.database.db",
+        "isExtraImport": true,
+        "detail": "app.database.db",
+        "documentation": {}
+    },
+    {
         "label": "Base",
         "importPath": "app.database.db",
         "description": "app.database.db",
@@ -1512,108 +1792,28 @@
         "documentation": {}
     },
     {
+        "label": "get_user",
+        "importPath": "app.dependencies.auth",
+        "description": "app.dependencies.auth",
+        "isExtraImport": true,
+        "detail": "app.dependencies.auth",
+        "documentation": {}
+    },
+    {
+        "label": "get_user",
+        "importPath": "app.dependencies.auth",
+        "description": "app.dependencies.auth",
+        "isExtraImport": true,
+        "detail": "app.dependencies.auth",
+        "documentation": {}
+    },
+    {
         "label": "time",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "time",
         "description": "time",
         "detail": "time",
-        "documentation": {}
-    },
-    {
-        "label": "HTTPException",
-        "importPath": "fastapi.exceptions",
-        "description": "fastapi.exceptions",
-        "isExtraImport": true,
-        "detail": "fastapi.exceptions",
-        "documentation": {}
-    },
-    {
-        "label": "HTTPException",
-        "importPath": "fastapi.exceptions",
-        "description": "fastapi.exceptions",
-        "isExtraImport": true,
-        "detail": "fastapi.exceptions",
-        "documentation": {}
-    },
-    {
-        "label": "HTTPException",
-        "importPath": "fastapi.exceptions",
-        "description": "fastapi.exceptions",
-        "isExtraImport": true,
-        "detail": "fastapi.exceptions",
-        "documentation": {}
-    },
-    {
-        "label": "HTTPException",
-        "importPath": "fastapi.exceptions",
-        "description": "fastapi.exceptions",
-        "isExtraImport": true,
-        "detail": "fastapi.exceptions",
-        "documentation": {}
-    },
-    {
-        "label": "blacklist_token",
-        "importPath": "app.core.security",
-        "description": "app.core.security",
-        "isExtraImport": true,
-        "detail": "app.core.security",
-        "documentation": {}
-    },
-    {
-        "label": "create_access",
-        "importPath": "app.core.security",
-        "description": "app.core.security",
-        "isExtraImport": true,
-        "detail": "app.core.security",
-        "documentation": {}
-    },
-    {
-        "label": "create_refresh",
-        "importPath": "app.core.security",
-        "description": "app.core.security",
-        "isExtraImport": true,
-        "detail": "app.core.security",
-        "documentation": {}
-    },
-    {
-        "label": "isblacklisted",
-        "importPath": "app.core.security",
-        "description": "app.core.security",
-        "isExtraImport": true,
-        "detail": "app.core.security",
-        "documentation": {}
-    },
-    {
-        "label": "create_access",
-        "importPath": "app.core.security",
-        "description": "app.core.security",
-        "isExtraImport": true,
-        "detail": "app.core.security",
-        "documentation": {}
-    },
-    {
-        "label": "create_refresh",
-        "importPath": "app.core.security",
-        "description": "app.core.security",
-        "isExtraImport": true,
-        "detail": "app.core.security",
-        "documentation": {}
-    },
-    {
-        "label": "hashPwd",
-        "importPath": "app.core.security",
-        "description": "app.core.security",
-        "isExtraImport": true,
-        "detail": "app.core.security",
-        "documentation": {}
-    },
-    {
-        "label": "verifyPwd",
-        "importPath": "app.core.security",
-        "description": "app.core.security",
-        "isExtraImport": true,
-        "detail": "app.core.security",
         "documentation": {}
     },
     {
@@ -1730,6 +1930,14 @@
         "documentation": {}
     },
     {
+        "label": "find_company_by_name",
+        "importPath": "app.services.company",
+        "description": "app.services.company",
+        "isExtraImport": true,
+        "detail": "app.services.company",
+        "documentation": {}
+    },
+    {
         "label": "create_project",
         "importPath": "app.crud.project",
         "description": "app.crud.project",
@@ -1767,6 +1975,14 @@
         "description": "app.crud.project",
         "isExtraImport": true,
         "detail": "app.crud.project",
+        "documentation": {}
+    },
+    {
+        "label": "company_user_role_required",
+        "importPath": "app.dependencies.company",
+        "description": "app.dependencies.company",
+        "isExtraImport": true,
+        "detail": "app.dependencies.company",
         "documentation": {}
     },
     {
@@ -2434,7 +2650,7 @@
         "kind": 2,
         "importPath": "app.core.security",
         "description": "app.core.security",
-        "peekOfCode": "def blacklist_token(token: str, exp: int) -> bool:\n    return redis.setex(f\"blacklist-{token}\", exp, \"true\")\n# Check the blacklist token\ndef isblacklisted(token: str):\n    return redis.exists(f\"blacklist-{token}\")\n# Blacklist middleware\nasync def blacklist_middleware(request: Request, call_next):\n    pass_path = [\"/auth/login\", \"/auth/register\", \"/auth/refresh\", \"/auth/logout\",\"/docs\",   \"/redoc\",\n        \"/openapi.json\"]\n    if request.url.path in pass_path:",
+        "peekOfCode": "def blacklist_token(token: str, exp: int) -> bool:\n    return redis.setex(f\"blacklist-{token}\", exp, \"true\")\n# Check the blacklist token\ndef isblacklisted(token: str):\n    return redis.exists(f\"blacklist-{token}\")\n# Blacklist middleware\nasync def blacklist_middleware(request: Request, call_next):\n    pass_path = [\n        \"/auth/login\",\n        \"/auth/register\",",
         "detail": "app.core.security",
         "documentation": {}
     },
@@ -2443,7 +2659,7 @@
         "kind": 2,
         "importPath": "app.core.security",
         "description": "app.core.security",
-        "peekOfCode": "def isblacklisted(token: str):\n    return redis.exists(f\"blacklist-{token}\")\n# Blacklist middleware\nasync def blacklist_middleware(request: Request, call_next):\n    pass_path = [\"/auth/login\", \"/auth/register\", \"/auth/refresh\", \"/auth/logout\",\"/docs\",   \"/redoc\",\n        \"/openapi.json\"]\n    if request.url.path in pass_path:\n        return await call_next(request)\n    auth_header = request.headers.get(\"Authorization\")\n    if not auth_header:",
+        "peekOfCode": "def isblacklisted(token: str):\n    return redis.exists(f\"blacklist-{token}\")\n# Blacklist middleware\nasync def blacklist_middleware(request: Request, call_next):\n    pass_path = [\n        \"/auth/login\",\n        \"/auth/register\",\n        \"/auth/refresh\",\n        \"/auth/logout\",\n        \"/docs\",",
         "detail": "app.core.security",
         "documentation": {}
     },
@@ -2470,7 +2686,7 @@
         "kind": 2,
         "importPath": "app.crud.company",
         "description": "app.crud.company",
-        "peekOfCode": "def get_company_list(db: Session, request: Request):\n    try:\n        user = db.query(User).filter(User.id == request.state.user_id).first()\n        companies = user.companies\n        return companies, None\n    except Exception as e:\n        return None, f\"Error occured: {e}\"\n# GET Single\ndef get_company_single(db: Session, request: Request, c_id: UUID):\n    try:",
+        "peekOfCode": "def get_company_list(db: Session, request: Request):\n    try:\n        user = db.query(User).filter(User.id == request.state.user[\"user_id\"]).first()\n        companies = user.companies\n        return companies, None\n    except Exception as e:\n        return None, f\"Error occured: {e}\"\n# GET Single\ndef get_company_single(db: Session, request: Request, c_id: UUID):\n    try:",
         "detail": "app.crud.company",
         "documentation": {}
     },
@@ -2515,7 +2731,7 @@
         "kind": 2,
         "importPath": "app.crud.project",
         "description": "app.crud.project",
-        "peekOfCode": "def read_project(db: Session, project_id: UUID):\n    project = db.query(Project).filter(Project.id == project_id).first()\n    if project is None:\n        raise ValueError(\"Project doesn't exist\")\n    return project\n# Read the the project detail(Multiple)\ndef read_projects(db: Session):\n    return db.query(Project).all()\n# Update the project\ndef update_project(db: Session, project_id: UUID, data: ProjectUpdate):",
+        "peekOfCode": "def read_project(db: Session, c_id, project_id: UUID):\n    try:\n        project = (\n            db.query(Project)\n            .filter(Project.company_id == c_id, Project.id == project_id)\n            .one_or_none()\n        )\n        if project is None:\n            raise HTTPException(status_code=404, detail=\"Project does not exist\")\n        return project",
         "detail": "app.crud.project",
         "documentation": {}
     },
@@ -2524,7 +2740,7 @@
         "kind": 2,
         "importPath": "app.crud.project",
         "description": "app.crud.project",
-        "peekOfCode": "def read_projects(db: Session):\n    return db.query(Project).all()\n# Update the project\ndef update_project(db: Session, project_id: UUID, data: ProjectUpdate):\n    try:\n        project = db.query(Project).filter(Project.id == project_id).first()\n        if project is None:\n            raise ValueError(\"Project doesnot exist.\")\n        for key, value in data.model_dump(exclude_unset=True).items():\n            setattr(project, key, value)",
+        "peekOfCode": "def read_projects(c_id: UUID, request: Request, db: Session):\n    # Check if the company exists or not\n    try:\n        projects = db.query(Project).filter(Project.company_id == c_id).all()\n        return projects\n    except Exception:\n        db.rollback()\n        raise HTTPException(status_code=500, detail=\"Server error\")\n# Update the project\ndef update_project(db: Session, project_id: UUID, data: ProjectUpdate):",
         "detail": "app.crud.project",
         "documentation": {}
     },
@@ -2542,7 +2758,7 @@
         "kind": 2,
         "importPath": "app.crud.project",
         "description": "app.crud.project",
-        "peekOfCode": "def delete_project(db: Session, project_id: UUID):\n    try:\n        project = db.query(Project).filter(Project.id == project_id).first()\n        if project is None:\n            raise ValueError(\"Project you are trying to delete doesnot exist.\")\n        db.delete(project)\n        db.commit()\n        return True\n    except Exception as e:\n        db.rollback()",
+        "peekOfCode": "def delete_project(db: Session, project_id: UUID):\n    try:\n        project = db.query(Project).filter(Project.id == project_id).first()\n        if project is None:\n            raise ValueError(\"Project you are trying to delete does not exist.\")\n        db.delete(project)\n        db.commit()\n        return True\n    except Exception as e:\n        db.rollback()",
         "detail": "app.crud.project",
         "documentation": {}
     },
@@ -2754,6 +2970,33 @@
         "documentation": {}
     },
     {
+        "label": "get_user",
+        "kind": 2,
+        "importPath": "app.dependencies.auth",
+        "description": "app.dependencies.auth",
+        "peekOfCode": "def get_user(request: Request):\n    user = getattr(request.state, \"user\", None)\n    if not user:\n        raise HTTPException(status_code=400, detail=\"Token could not be verified\")\n    if user[\"is_authenticated\"] is False:\n        raise HTTPException(status_code=401, detail=\"User is not verified.\")\n    return user\ndef role_check(accepted_roles: list[str]):\n    def wrapper(user: dict = Depends(get_user)):\n        if user[\"role\"] not in accepted_roles:",
+        "detail": "app.dependencies.auth",
+        "documentation": {}
+    },
+    {
+        "label": "role_check",
+        "kind": 2,
+        "importPath": "app.dependencies.auth",
+        "description": "app.dependencies.auth",
+        "peekOfCode": "def role_check(accepted_roles: list[str]):\n    def wrapper(user: dict = Depends(get_user)):\n        if user[\"role\"] not in accepted_roles:\n            raise HTTPException(status_code=403, detail=\"Permission denied\")\n        return user\n    return wrapper",
+        "detail": "app.dependencies.auth",
+        "documentation": {}
+    },
+    {
+        "label": "company_user_role_required",
+        "kind": 2,
+        "importPath": "app.dependencies.company",
+        "description": "app.dependencies.company",
+        "peekOfCode": "def company_user_role_required(user_roles: list[str]):\n    def dependency(\n        request: Request,\n        company_id: UUID,\n        user=Depends(get_user),\n        db: Session = Depends(get_db),\n    ):\n        # Check if the company exist or not\n        company = db.query(Company).filter(Company.id == company_id).one_or_none()\n        if company is None:",
+        "detail": "app.dependencies.company",
+        "documentation": {}
+    },
+    {
         "label": "register",
         "kind": 2,
         "importPath": "app.routers.auth",
@@ -2767,7 +3010,7 @@
         "kind": 2,
         "importPath": "app.routers.auth",
         "description": "app.routers.auth",
-        "peekOfCode": "def login(\n    data: UserLogin,\n    db: Session = Depends(get_db),\n):\n    user, error = verify_credentials(data, db)\n    if error:\n        return JSONResponse(\n            status_code=status.HTTP_401_UNAUTHORIZED, content={\"detail\": error}\n        )\n    # Generate the access and refresh token",
+        "peekOfCode": "def login(\n    data: UserLogin,\n    db: Session = Depends(get_db),\n):\n    user, error = verify_credentials(data, db)\n    if error or not user:\n        return JSONResponse(\n            status_code=status.HTTP_401_UNAUTHORIZED, content={\"detail\": error}\n        )\n    # Generate the access and refresh token",
         "detail": "app.routers.auth",
         "documentation": {}
     },
@@ -2803,7 +3046,7 @@
         "kind": 2,
         "importPath": "app.routers.company",
         "description": "app.routers.company",
-        "peekOfCode": "def register_company(\n    request: Request,\n    data: str = Form(...),\n    file: UploadFile | None = File(None),\n    db: Session = Depends(get_db),\n):\n    create_data = CompanyCreate(**json.loads(data))\n    company, error = create_company(create_data, file, db, request)\n    if error:\n        raise HTTPException(status_code=400, detail=error)",
+        "peekOfCode": "def register_company(\n    request: Request,\n    data: str = Form(...),\n    file: UploadFile | None = File(None),\n    db: Session = Depends(get_db),\n    user: dict = Depends(get_user),\n):\n    create_data = CompanyCreate(**json.loads(data))\n    company, error = create_company(create_data, file, db, request)\n    if error:",
         "detail": "app.routers.company",
         "documentation": {}
     },
@@ -2839,7 +3082,16 @@
         "kind": 2,
         "importPath": "app.routers.company",
         "description": "app.routers.company",
-        "peekOfCode": "def DeleteCompany(company_id: UUID, db: Session = Depends(get_db)):\n    deleted, error = delete_company(company_id, db)\n    if error:\n        raise HTTPException(status_code=400, detail=error)\n    return {\"message\": \"Company deleted successfully\"}",
+        "peekOfCode": "def DeleteCompany(company_id: UUID, db: Session = Depends(get_db)):\n    deleted, error = delete_company(company_id, db)\n    if error:\n        raise HTTPException(status_code=400, detail=error)\n    return {\"message\": \"Company deleted successfully\"}\n# Search company by name\n@company_router.get(\"/companies/search\", response_model=list[CompanyReadMultiple])\ndef search_company_by_name(query: str, db: Session = Depends(get_db)):\n    try:\n        return find_company_by_name(query, db)",
+        "detail": "app.routers.company",
+        "documentation": {}
+    },
+    {
+        "label": "search_company_by_name",
+        "kind": 2,
+        "importPath": "app.routers.company",
+        "description": "app.routers.company",
+        "peekOfCode": "def search_company_by_name(query: str, db: Session = Depends(get_db)):\n    try:\n        return find_company_by_name(query, db)\n    except RuntimeError as e:\n        raise HTTPException(status_code=500, detail=str(e))",
         "detail": "app.routers.company",
         "documentation": {}
     },
@@ -2848,7 +3100,7 @@
         "kind": 5,
         "importPath": "app.routers.company",
         "description": "app.routers.company",
-        "peekOfCode": "company_router = APIRouter(prefix=\"/company\", tags=[\"company_endpoints\"])\n# Create the company\n@company_router.post(\"/\", response_model=CompanyReadSingle)\ndef register_company(\n    request: Request,\n    data: str = Form(...),\n    file: UploadFile | None = File(None),\n    db: Session = Depends(get_db),\n):\n    create_data = CompanyCreate(**json.loads(data))",
+        "peekOfCode": "company_router = APIRouter(prefix=\"/company\", tags=[\"company_endpoints\"])\n# Create the company\n@company_router.post(\"/\", response_model=CompanyReadSingle)\ndef register_company(\n    request: Request,\n    data: str = Form(...),\n    file: UploadFile | None = File(None),\n    db: Session = Depends(get_db),\n    user: dict = Depends(get_user),\n):",
         "detail": "app.routers.company",
         "documentation": {}
     },
@@ -2857,7 +3109,7 @@
         "kind": 2,
         "importPath": "app.routers.projects",
         "description": "app.routers.projects",
-        "peekOfCode": "def create_project_endpoint(data: ProjectCreate, db: Session = Depends(get_db)):\n    try:\n        project = create_project(db, data)\n        return project\n    except ValueError as e:\n        raise HTTPException(status_code=400, detail=str(e))\n    except RuntimeError as e:\n        raise HTTPException(status_code=500, detail=str(e))\n# Update endpoint\n@projectRouter.put(\"/{project_id}\", response_model=ProjectReadSingle)",
+        "peekOfCode": "def create_project_endpoint(\n    data: ProjectCreate,\n    company_id: UUID,\n    db: Session = Depends(get_db),\n    company_detail: tuple = Depends(company_user_role_required([\"Admin\", \"Manager\"])),\n):\n    try:\n        project = create_project(db, data)\n        return project\n    except ValueError as e:",
         "detail": "app.routers.projects",
         "documentation": {}
     },
@@ -2866,7 +3118,7 @@
         "kind": 2,
         "importPath": "app.routers.projects",
         "description": "app.routers.projects",
-        "peekOfCode": "def update_project_endpoint(\n    project_id: UUID, data: ProjectUpdate, db: Session = Depends(get_db)\n):\n    try:\n        project = update_project(db, project_id, data)\n        return project\n    except ValueError as e:\n        raise HTTPException(status_code=400, detail=e)\n    except RuntimeError as e:\n        raise HTTPException(status_code=500, detail=e)",
+        "peekOfCode": "def update_project_endpoint(\n    company_id: UUID,\n    project_id: UUID,\n    data: ProjectUpdate,\n    db: Session = Depends(get_db),\n    company_detail: tuple = Depends(company_user_role_required([\"Admin\", \"Manager\"])),\n):\n    try:\n        project = update_project(db, project_id, data)\n        return project",
         "detail": "app.routers.projects",
         "documentation": {}
     },
@@ -2875,7 +3127,7 @@
         "kind": 2,
         "importPath": "app.routers.projects",
         "description": "app.routers.projects",
-        "peekOfCode": "def read_project_endpoint(project_id: UUID, db: Session = Depends(get_db)):\n    try:\n        project = read_project(db, project_id)\n        return project\n    except Exception as e:\n        raise HTTPException(status_code=400, detail=e)\n# Read multiple projects endpoint\n@projectRouter.get(\"/\", response_model=list[ProjectReadMultiple])\ndef read_projects_endpoint(db: Session = Depends(get_db)):\n    projects = read_projects(db)",
+        "peekOfCode": "def read_project_endpoint(\n    company_id: UUID,\n    project_id: UUID,\n    db: Session = Depends(get_db),\n    company_details: tuple = Depends(\n        company_user_role_required([\"Admin\", \"Member\", \"Manager\"])\n    ),\n):\n    project = read_project(db, company_id, project_id)\n    return project",
         "detail": "app.routers.projects",
         "documentation": {}
     },
@@ -2884,7 +3136,7 @@
         "kind": 2,
         "importPath": "app.routers.projects",
         "description": "app.routers.projects",
-        "peekOfCode": "def read_projects_endpoint(db: Session = Depends(get_db)):\n    projects = read_projects(db)\n    return projects\n# Delete the project\n@projectRouter.delete(\"/{project_id}\")\ndef delete_project_endpoint(project_id: UUID, db: Session = Depends(get_db)):\n    try:\n        deleted = delete_project(db, project_id)\n        if deleted:\n            return {\"message\": \"Project deleted successfully\"}",
+        "peekOfCode": "def read_projects_endpoint(\n    company_id: UUID,\n    request: Request,\n    db: Session = Depends(get_db),\n    company_details: tuple = Depends(\n        company_user_role_required([\"Admin\", \"Member\", \"Manager\"])\n    ),\n):\n    projects = read_projects(company_id, request, db)\n    return projects",
         "detail": "app.routers.projects",
         "documentation": {}
     },
@@ -2893,7 +3145,7 @@
         "kind": 2,
         "importPath": "app.routers.projects",
         "description": "app.routers.projects",
-        "peekOfCode": "def delete_project_endpoint(project_id: UUID, db: Session = Depends(get_db)):\n    try:\n        deleted = delete_project(db, project_id)\n        if deleted:\n            return {\"message\": \"Project deleted successfully\"}\n    except ValueError as e:\n        raise HTTPException(status_code=400, detail=e)\n    except RuntimeError as e:\n        raise HTTPException(status_code=500, detail=e)",
+        "peekOfCode": "def delete_project_endpoint(\n    company_id: UUID,\n    project_id: UUID,\n    db: Session = Depends(get_db),\n    company_detail: tuple = Depends(company_user_role_required([\"Admin\", \"Manager\"])),\n):\n    try:\n        deleted = delete_project(db, project_id)\n        if deleted:\n            return {\"message\": \"Project deleted successfully\"}",
         "detail": "app.routers.projects",
         "documentation": {}
     },
@@ -2902,7 +3154,7 @@
         "kind": 5,
         "importPath": "app.routers.projects",
         "description": "app.routers.projects",
-        "peekOfCode": "projectRouter = APIRouter(prefix=\"/project\", tags=[\"project_endpoints\"])\n# Create endpoint\n@projectRouter.post(\"/\", response_model=ProjectReadMultiple)\ndef create_project_endpoint(data: ProjectCreate, db: Session = Depends(get_db)):\n    try:\n        project = create_project(db, data)\n        return project\n    except ValueError as e:\n        raise HTTPException(status_code=400, detail=str(e))\n    except RuntimeError as e:",
+        "peekOfCode": "projectRouter = APIRouter(prefix=\"/project\", tags=[\"project_endpoints\"])\n# Create endpoint\n@projectRouter.post(\"/company/{company_id}\", response_model=ProjectReadMultiple)\ndef create_project_endpoint(\n    data: ProjectCreate,\n    company_id: UUID,\n    db: Session = Depends(get_db),\n    company_detail: tuple = Depends(company_user_role_required([\"Admin\", \"Manager\"])),\n):\n    try:",
         "detail": "app.routers.projects",
         "documentation": {}
     },
@@ -3228,6 +3480,15 @@
         "description": "app.schemas.user",
         "peekOfCode": "class UserReadBasic(BaseModel):\n    id:UUID\n    username:str\n    email:str\n    is_authenticated:bool\n    role:str\n    profile:\"ProfileBasic\"\n    class Config:\n        from_attributes:True",
         "detail": "app.schemas.user",
+        "documentation": {}
+    },
+    {
+        "label": "find_company_by_name",
+        "kind": 2,
+        "importPath": "app.services.company",
+        "description": "app.services.company",
+        "peekOfCode": "def find_company_by_name(query: str, db: Session):\n    try:\n        companies = (\n            db.query(Company).filter(Company.company_name.ilike(f\"%{query}\")).all()\n        )\n        return companies\n    except SQLAlchemyError as e:\n        db.rollback()\n        raise RuntimeError(f\"Error occured: {e}\")",
+        "detail": "app.services.company",
         "documentation": {}
     },
     {

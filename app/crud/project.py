@@ -1,5 +1,7 @@
 from uuid import UUID
 
+from fastapi import Request
+from fastapi.exceptions import HTTPException
 from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm import Session
 
@@ -50,16 +52,32 @@ def create_project(db: Session, data: ProjectCreate):
 
 
 # Read the project detail(Single)
-def read_project(db: Session, project_id: UUID):
-    project = db.query(Project).filter(Project.id == project_id).first()
-    if project is None:
-        raise ValueError("Project doesn't exist")
-    return project
+def read_project(db: Session, c_id, project_id: UUID):
+    try:
+        project = (
+            db.query(Project)
+            .filter(Project.company_id == c_id, Project.id == project_id)
+            .one_or_none()
+        )
+        if project is None:
+            raise HTTPException(status_code=404, detail="Project does not exist")
+        return project
+    except HTTPException as e:
+        raise e
+    except Exception as e:
+        db.rollback()
+        raise HTTPException(status_code=500, detail=str(e) or "Server error")
 
 
 # Read the the project detail(Multiple)
-def read_projects(db: Session):
-    return db.query(Project).all()
+def read_projects(c_id: UUID, request: Request, db: Session):
+    # Check if the company exists or not
+    try:
+        projects = db.query(Project).filter(Project.company_id == c_id).all()
+        return projects
+    except Exception:
+        db.rollback()
+        raise HTTPException(status_code=500, detail="Server error")
 
 
 # Update the project
@@ -84,7 +102,7 @@ def delete_project(db: Session, project_id: UUID):
     try:
         project = db.query(Project).filter(Project.id == project_id).first()
         if project is None:
-            raise ValueError("Project you are trying to delete doesnot exist.")
+            raise ValueError("Project you are trying to delete does not exist.")
         db.delete(project)
         db.commit()
         return True

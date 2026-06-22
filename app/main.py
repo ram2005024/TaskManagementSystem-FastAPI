@@ -6,7 +6,7 @@ from app.routers.company import company_router
 from app.routers.projects import projectRouter
 from app.routers.task import task_router
 
-from .core.security import blacklist_middleware
+from .core.middleware import blacklist_middleware
 
 app = FastAPI()
 app.include_router(authRouter)
