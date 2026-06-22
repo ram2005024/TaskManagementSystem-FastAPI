@@ -1890,6 +1890,22 @@
         "documentation": {}
     },
     {
+        "label": "company_user_role_required",
+        "importPath": "app.dependencies.company",
+        "description": "app.dependencies.company",
+        "isExtraImport": true,
+        "detail": "app.dependencies.company",
+        "documentation": {}
+    },
+    {
+        "label": "company_user_role_required",
+        "importPath": "app.dependencies.company",
+        "description": "app.dependencies.company",
+        "isExtraImport": true,
+        "detail": "app.dependencies.company",
+        "documentation": {}
+    },
+    {
         "label": "find_company_by_name",
         "importPath": "app.services.company",
         "description": "app.services.company",
@@ -1935,14 +1951,6 @@
         "description": "app.crud.project",
         "isExtraImport": true,
         "detail": "app.crud.project",
-        "documentation": {}
-    },
-    {
-        "label": "company_user_role_required",
-        "importPath": "app.dependencies.company",
-        "description": "app.dependencies.company",
-        "isExtraImport": true,
-        "detail": "app.dependencies.company",
         "documentation": {}
     },
     {
@@ -3015,7 +3023,7 @@
         "kind": 2,
         "importPath": "app.routers.company",
         "description": "app.routers.company",
-        "peekOfCode": "def read_list_company(request: Request, db: Session = Depends(get_db)):\n    companies, error = get_company_list(db, request)\n    if error:\n        raise HTTPException(status_code=400, detail=error)\n    return companies\n# Get the single  company\n@company_router.get(\"/{company_id}\", response_model=CompanyReadSingle)\ndef read_single_company(\n    company_id: UUID, request: Request, db: Session = Depends(get_db)\n):",
+        "peekOfCode": "def read_list_company(\n    request: Request, db: Session = Depends(get_db), user: dict = Depends(get_user)\n):\n    companies, error = get_company_list(db, request)\n    if error:\n        raise HTTPException(status_code=400, detail=error)\n    return companies\n# Get the single  company\n@company_router.get(\"/{company_id}\", response_model=CompanyReadSingle)\ndef read_single_company(",
         "detail": "app.routers.company",
         "documentation": {}
     },
@@ -3024,7 +3032,7 @@
         "kind": 2,
         "importPath": "app.routers.company",
         "description": "app.routers.company",
-        "peekOfCode": "def read_single_company(\n    company_id: UUID, request: Request, db: Session = Depends(get_db)\n):\n    company, error = get_company_single(db, request, company_id)\n    if error:\n        raise HTTPException(status_code=400, detail=error)\n    return company\n# Update the   company\n@company_router.put(\"/{company_id}\", response_model=CompanyReadSingle)\ndef UpdateCompany(",
+        "peekOfCode": "def read_single_company(\n    company_id: UUID,\n    request: Request,\n    db: Session = Depends(get_db),\n    company_detail: tuple = Depends(\n        company_user_role_required([\"Member\", \"Admin\", \"Manager\"])\n    ),\n):\n    company, error = get_company_single(db, request, company_id)\n    if error:",
         "detail": "app.routers.company",
         "documentation": {}
     },
@@ -3033,7 +3041,7 @@
         "kind": 2,
         "importPath": "app.routers.company",
         "description": "app.routers.company",
-        "peekOfCode": "def UpdateCompany(\n    company_id: UUID,\n    data: str = Form(...),\n    file: UploadFile = File(None),\n    db: Session = Depends(get_db),\n):\n    company_update = CompanyUpdate(**json.loads(data))\n    company, error = update_company(company_id, db, company_update, file)\n    if error:\n        raise HTTPException(status_code=400, detail=error)",
+        "peekOfCode": "def UpdateCompany(\n    company_id: UUID,\n    data: str = Form(...),\n    file: UploadFile = File(None),\n    db: Session = Depends(get_db),\n    company_detail: tuple = Depends(company_user_role_required([\"Admin\", \"Manager\"])),\n):\n    company_update = CompanyUpdate(**json.loads(data))\n    company, error = update_company(company_id, db, company_update, file)\n    if error:",
         "detail": "app.routers.company",
         "documentation": {}
     },
@@ -3042,7 +3050,7 @@
         "kind": 2,
         "importPath": "app.routers.company",
         "description": "app.routers.company",
-        "peekOfCode": "def DeleteCompany(company_id: UUID, db: Session = Depends(get_db)):\n    deleted, error = delete_company(company_id, db)\n    if error:\n        raise HTTPException(status_code=400, detail=error)\n    return {\"message\": \"Company deleted successfully\"}\n# Search company by name\n@company_router.get(\"/companies/search\", response_model=list[CompanyReadMultiple])\ndef search_company_by_name(query: str, db: Session = Depends(get_db)):\n    try:\n        return find_company_by_name(query, db)",
+        "peekOfCode": "def DeleteCompany(\n    company_id: UUID,\n    db: Session = Depends(get_db),\n    company_detail: tuple = Depends(company_user_role_required([\"Admin\", \"Manager\"])),\n):\n    deleted, error = delete_company(company_id, db)\n    if not deleted and error:\n        raise HTTPException(status_code=400, detail=error)\n    return {\"message\": \"Company deleted successfully\"}\n# Search company by name",
         "detail": "app.routers.company",
         "documentation": {}
     },

@@ -14,6 +14,7 @@ from app.crud.company import (
 )
 from app.database.db import get_db
 from app.dependencies.auth import get_user
+from app.dependencies.company import company_user_role_required
 from app.schemas.company import (
     CompanyCreate,
     CompanyReadMultiple,
@@ -43,7 +44,9 @@ def register_company(
 
 # Get the list of the company
 @company_router.get("/", response_model=list[CompanyReadMultiple])
-def read_list_company(request: Request, db: Session = Depends(get_db)):
+def read_list_company(
+    request: Request, db: Session = Depends(get_db), user: dict = Depends(get_user)
+):
     companies, error = get_company_list(db, request)
     if error:
         raise HTTPException(status_code=400, detail=error)
@@ -53,7 +56,12 @@ def read_list_company(request: Request, db: Session = Depends(get_db)):
 # Get the single  company
 @company_router.get("/{company_id}", response_model=CompanyReadSingle)
 def read_single_company(
-    company_id: UUID, request: Request, db: Session = Depends(get_db)
+    company_id: UUID,
+    request: Request,
+    db: Session = Depends(get_db),
+    company_detail: tuple = Depends(
+        company_user_role_required(["Member", "Admin", "Manager"])
+    ),
 ):
     company, error = get_company_single(db, request, company_id)
     if error:
@@ -68,6 +76,7 @@ def UpdateCompany(
     data: str = Form(...),
     file: UploadFile = File(None),
     db: Session = Depends(get_db),
+    company_detail: tuple = Depends(company_user_role_required(["Admin", "Manager"])),
 ):
     company_update = CompanyUpdate(**json.loads(data))
     company, error = update_company(company_id, db, company_update, file)
@@ -78,9 +87,13 @@ def UpdateCompany(
 
 # Delete the   company
 @company_router.delete("/{company_id}")
-def DeleteCompany(company_id: UUID, db: Session = Depends(get_db)):
+def DeleteCompany(
+    company_id: UUID,
+    db: Session = Depends(get_db),
+    company_detail: tuple = Depends(company_user_role_required(["Admin", "Manager"])),
+):
     deleted, error = delete_company(company_id, db)
-    if error:
+    if not deleted and error:
         raise HTTPException(status_code=400, detail=error)
     return {"message": "Company deleted successfully"}
 
