@@ -182,14 +182,6 @@
         "documentation": {}
     },
     {
-        "label": "Request",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
-        "documentation": {}
-    },
-    {
         "label": "UploadFile",
         "importPath": "fastapi",
         "description": "fastapi",
@@ -438,6 +430,14 @@
         "documentation": {}
     },
     {
+        "label": "settings",
+        "importPath": "app.core.config",
+        "description": "app.core.config",
+        "isExtraImport": true,
+        "detail": "app.core.config",
+        "documentation": {}
+    },
+    {
         "label": "isblacklisted",
         "importPath": "app.core.security",
         "description": "app.core.security",
@@ -507,6 +507,14 @@
         "description": "app.core.security",
         "isExtraImport": true,
         "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "OAuth",
+        "importPath": "authlib.integrations.starlette_client",
+        "description": "authlib.integrations.starlette_client",
+        "isExtraImport": true,
+        "detail": "authlib.integrations.starlette_client",
         "documentation": {}
     },
     {
@@ -864,6 +872,22 @@
     },
     {
         "label": "User",
+        "importPath": "app.database.models.user",
+        "description": "app.database.models.user",
+        "isExtraImport": true,
+        "detail": "app.database.models.user",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.database.models.user",
+        "description": "app.database.models.user",
+        "isExtraImport": true,
+        "detail": "app.database.models.user",
+        "documentation": {}
+    },
+    {
+        "label": "Profile",
         "importPath": "app.database.models.user",
         "description": "app.database.models.user",
         "isExtraImport": true,
@@ -1777,6 +1801,22 @@
         "documentation": {}
     },
     {
+        "label": "Request",
+        "importPath": "starlette.requests",
+        "description": "starlette.requests",
+        "isExtraImport": true,
+        "detail": "starlette.requests",
+        "documentation": {}
+    },
+    {
+        "label": "oauth",
+        "importPath": "app.core.oauth",
+        "description": "app.core.oauth",
+        "isExtraImport": true,
+        "detail": "app.core.oauth",
+        "documentation": {}
+    },
+    {
         "label": "UserLogin",
         "importPath": "app.schemas.user",
         "description": "app.schemas.user",
@@ -1826,6 +1866,14 @@
     },
     {
         "label": "create_user",
+        "importPath": "app.services.user",
+        "description": "app.services.user",
+        "isExtraImport": true,
+        "detail": "app.services.user",
+        "documentation": {}
+    },
+    {
+        "label": "generate_username",
         "importPath": "app.services.user",
         "description": "app.services.user",
         "isExtraImport": true,
@@ -2333,6 +2381,14 @@
         "documentation": {}
     },
     {
+        "label": "SessionMiddleware",
+        "importPath": "starlette.middleware.sessions",
+        "description": "starlette.middleware.sessions",
+        "isExtraImport": true,
+        "detail": "starlette.middleware.sessions",
+        "documentation": {}
+    },
+    {
         "label": "app.schemas.rebuild",
         "kind": 6,
         "isExtraImport": true,
@@ -2555,7 +2611,7 @@
         "kind": 6,
         "importPath": "app.core.config",
         "description": "app.core.config",
-        "peekOfCode": "class Settings(BaseSettings):\n    DATABASE_URL: str\n    CLOUD_NAME: str\n    CLOUD_KEY: int\n    CLOUD_SECRET: str\n    SECRET_KEY: str\n    ALGORITHM: str\n    ACCESS_EXPIRY: int\n    REFRESH_EXPIRY: int\n    model_config = SettingsConfigDict(env_file=\".env\")",
+        "peekOfCode": "class Settings(BaseSettings):\n    DATABASE_URL: str\n    CLOUD_NAME: str\n    CLOUD_KEY: int\n    CLOUD_SECRET: str\n    SECRET_KEY: str\n    ALGORITHM: str\n    ACCESS_EXPIRY: int\n    REFRESH_EXPIRY: int\n    CLIENT_ID_GOOGLE:str",
         "detail": "app.core.config",
         "documentation": {}
     },
@@ -3509,7 +3565,7 @@
         "kind": 5,
         "importPath": "app.main",
         "description": "app.main",
-        "peekOfCode": "app = FastAPI()\napp.include_router(authRouter)\napp.include_router(company_router)\napp.include_router(projectRouter)\napp.include_router(task_router)\napp.middleware(\"http\")(blacklist_middleware)\n@app.get(\"/\")\ndef default():\n    return {\"message\": \"Hello World I am into the world of fastapi\"}",
+        "peekOfCode": "app = FastAPI()\napp.include_router(authRouter)\napp.include_router(company_router)\napp.include_router(projectRouter)\napp.include_router(task_router)\n# app.middleware(\"http\")(blacklist_middleware)\napp.add_middleware(SessionMiddleware, secret_key=settings.SECRET_KEY)\n@app.get(\"/\")\ndef default():\n    return {\"message\": \"Hello World I am into the world of fastapi\"}",
         "detail": "app.main",
         "documentation": {}
     },

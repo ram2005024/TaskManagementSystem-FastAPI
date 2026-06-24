@@ -12,6 +12,16 @@ class Settings(BaseSettings):
     ALGORITHM: str
     ACCESS_EXPIRY: int
     REFRESH_EXPIRY: int
+    CLIENT_ID_GOOGLE:str
+    CLIENT_SECRET_GOOGLE:str
+    CLIENT_ID_FACEBOOK:int
+    CLIENT_SECRET_FACEBOOK:str
+    SERVER_METADATA_URL:str
+    AUTHORIZE_URL_FACEBOOK:str
+    ACCESS_TOKEN_URL_FACEBOOK:str
+    API_BASE_URL_FACEBOOK:str
+    REDIRECT_URL_FACEBOOK:str
+    REDIRECT_URL_GOOGLE:str
     model_config = SettingsConfigDict(env_file=".env")
 
 

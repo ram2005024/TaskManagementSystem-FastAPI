@@ -17,6 +17,8 @@ async def blacklist_middleware(request: Request, call_next):
         "/docs",
         "/redoc",
         "/openapi.json",
+        "/auth/login/google",
+        "auth/google/callback",
     ]
     if request.url.path in pass_path:
         return await call_next(request)
