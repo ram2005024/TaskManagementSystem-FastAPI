@@ -478,22 +478,6 @@
         "documentation": {}
     },
     {
-        "label": "create_access",
-        "importPath": "app.core.security",
-        "description": "app.core.security",
-        "isExtraImport": true,
-        "detail": "app.core.security",
-        "documentation": {}
-    },
-    {
-        "label": "create_refresh",
-        "importPath": "app.core.security",
-        "description": "app.core.security",
-        "isExtraImport": true,
-        "detail": "app.core.security",
-        "documentation": {}
-    },
-    {
         "label": "hashPwd",
         "importPath": "app.core.security",
         "description": "app.core.security",
@@ -903,7 +887,7 @@
         "documentation": {}
     },
     {
-        "label": "User",
+        "label": "Profile",
         "importPath": "app.database.models.user",
         "description": "app.database.models.user",
         "isExtraImport": true,
@@ -911,7 +895,7 @@
         "documentation": {}
     },
     {
-        "label": "Profile",
+        "label": "User",
         "importPath": "app.database.models.user",
         "description": "app.database.models.user",
         "isExtraImport": true,
@@ -2234,6 +2218,38 @@
         "documentation": {}
     },
     {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "BaseModel",
         "importPath": "pydantic",
         "description": "pydantic",
@@ -2502,6 +2518,22 @@
         "documentation": {}
     },
     {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
         "label": "context",
         "importPath": "alembic",
         "description": "alembic",
@@ -2611,7 +2643,7 @@
         "kind": 6,
         "importPath": "app.core.config",
         "description": "app.core.config",
-        "peekOfCode": "class Settings(BaseSettings):\n    DATABASE_URL: str\n    CLOUD_NAME: str\n    CLOUD_KEY: int\n    CLOUD_SECRET: str\n    SECRET_KEY: str\n    ALGORITHM: str\n    ACCESS_EXPIRY: int\n    REFRESH_EXPIRY: int\n    CLIENT_ID_GOOGLE:str",
+        "peekOfCode": "class Settings(BaseSettings):\n    DATABASE_URL: str\n    CLOUD_NAME: str\n    CLOUD_KEY: int\n    CLOUD_SECRET: str\n    SECRET_KEY: str\n    ALGORITHM: str\n    ACCESS_EXPIRY: int\n    REFRESH_EXPIRY: int\n    CLIENT_ID_GOOGLE: str",
         "detail": "app.core.config",
         "documentation": {}
     },
@@ -2631,6 +2663,15 @@
         "description": "app.core.config",
         "peekOfCode": "redis = redis.Redis(host=\"localhost\", port=6379, db=0, decode_responses=True)",
         "detail": "app.core.config",
+        "documentation": {}
+    },
+    {
+        "label": "oauth",
+        "kind": 5,
+        "importPath": "app.core.oauth",
+        "description": "app.core.oauth",
+        "peekOfCode": "oauth = OAuth()\n# Register google oauth\noauth.register(\n    name=\"google\",\n    client_id=settings.CLIENT_ID_GOOGLE,\n    client_secret=settings.CLIENT_SECRET_GOOGLE,\n    server_metadata_url=settings.SERVER_METADATA_URL,\n    client_kwargs={\"scope\": \"openid email profile\"},\n)\n# Register Facebook oauth",
+        "detail": "app.core.oauth",
         "documentation": {}
     },
     {
@@ -3520,7 +3561,7 @@
         "kind": 2,
         "importPath": "app.services.user",
         "description": "app.services.user",
-        "peekOfCode": "def generate_username(fname: str, db: Session):\n    while True:\n        prefix = \"\".join(random.choices(string.digits, k=4))\n        base = fname.lower() + prefix\n        user = db.query(User).filter(User.username == base).first()\n        if not user:\n            return base\n# Create the user\ndef create_user(data: UserRegister, file: UploadFile | None, db: Session):\n    # Check the email is not in database or not",
+        "peekOfCode": "def generate_username(fullname: str, db: Session):\n    while True:\n        prefix = \"\".join(random.choices(string.digits, k=4))\n        base = \"\".join(fullname.split()).lower() + prefix\n        user = db.query(User).filter(User.username == base).first()\n        if not user:\n            return base\n# Create the user\ndef create_user(data: UserRegister, file: UploadFile | None, db: Session):\n    # Check the email is not in database or not",
         "detail": "app.services.user",
         "documentation": {}
     },
@@ -3529,7 +3570,7 @@
         "kind": 2,
         "importPath": "app.services.user",
         "description": "app.services.user",
-        "peekOfCode": "def create_user(data: UserRegister, file: UploadFile | None, db: Session):\n    # Check the email is not in database or not\n    exist = db.query(User).filter(User.email == data.email).first()\n    if exist:\n        return None, \"Email already exists\"\n    # Generate the username for the new user\n    username = generate_username(data.first_name, db)\n    password = hashPwd(data.password)\n    user = User(username=username, email=data.email, hashed_pwd=password)\n    db.add(user)",
+        "peekOfCode": "def create_user(data: UserRegister, file: UploadFile | None, db: Session):\n    # Check the email is not in database or not\n    exist = db.query(User).filter(User.email == data.email).first()\n    if exist:\n        return None, \"Email already exists\"\n    # Generate the username for the new user\n    username = generate_username(f\"{data.first_name} {data.last_name}\", db)\n    password = hashPwd(data.password)\n    user = User(username=username, email=data.email, hashed_pwd=password)\n    db.add(user)",
         "detail": "app.services.user",
         "documentation": {}
     },
@@ -3538,7 +3579,7 @@
         "kind": 2,
         "importPath": "app.services.user",
         "description": "app.services.user",
-        "peekOfCode": "def verify_credentials(userdata: UserLogin, db: Session):\n    exist = db.query(User).filter(User.email == userdata.email).first()\n    if not exist:\n        return None, \"User doesn't exist with this email\"\n    # Verify the password\n    isMatched = verifyPwd(userdata.password, exist.hashed_pwd)\n    if not isMatched:\n        return None, \"Invalid credentials\"\n    return exist, None",
+        "peekOfCode": "def verify_credentials(userdata: UserLogin, db: Session):\n    exist = db.query(User).filter(User.email == userdata.email).first()\n    if not exist:\n        return None, \"User doesn't exist with this email\"\n    # Verify the password\n    isMatched = verifyPwd(userdata.password, str(exist.hashed_pwd))\n    if not isMatched:\n        return None, \"Invalid credentials\"\n    return exist, None",
         "detail": "app.services.user",
         "documentation": {}
     },
@@ -3603,6 +3644,24 @@
         "description": "migrations.versions.0a122c412afe_cascade_delete_on_user_companies_table",
         "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_constraint(None, 'user_companies', type_='foreignkey')\n    op.drop_constraint(None, 'user_companies', type_='foreignkey')\n    op.create_foreign_key(op.f('user_companies_user_id_fkey'), 'user_companies', 'users', ['user_id'], ['id'])\n    op.create_foreign_key(op.f('user_companies_company_id_fkey'), 'user_companies', 'companies', ['company_id'], ['id'])\n    # ### end Alembic commands ###",
         "detail": "migrations.versions.0a122c412afe_cascade_delete_on_user_companies_table",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
+        "importPath": "migrations.versions.27ba9c22ebbb_added_oauthid_in_user_model",
+        "description": "migrations.versions.27ba9c22ebbb_added_oauthid_in_user_model",
+        "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.add_column('users', sa.Column('oauth_id', sa.String(), nullable=True))\n    op.create_unique_constraint(None, 'users', ['oauth_id'])\n    # ### end Alembic commands ###\ndef downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_constraint(None, 'users', type_='unique')",
+        "detail": "migrations.versions.27ba9c22ebbb_added_oauthid_in_user_model",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "migrations.versions.27ba9c22ebbb_added_oauthid_in_user_model",
+        "description": "migrations.versions.27ba9c22ebbb_added_oauthid_in_user_model",
+        "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_constraint(None, 'users', type_='unique')\n    op.drop_column('users', 'oauth_id')\n    # ### end Alembic commands ###",
+        "detail": "migrations.versions.27ba9c22ebbb_added_oauthid_in_user_model",
         "documentation": {}
     },
     {
@@ -3729,6 +3788,24 @@
         "description": "migrations.versions.bfb006db8331_default_value_for_updated_at_inside_the_",
         "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    pass\n    # ### end Alembic commands ###",
         "detail": "migrations.versions.bfb006db8331_default_value_for_updated_at_inside_the_",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
+        "importPath": "migrations.versions.df1ab278c76c_added_oauthprovider_name_in_user_model",
+        "description": "migrations.versions.df1ab278c76c_added_oauthprovider_name_in_user_model",
+        "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.add_column('users', sa.Column('oauth_provider', sa.String(), nullable=True))\n    # ### end Alembic commands ###\ndef downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_column('users', 'oauth_provider')\n    # ### end Alembic commands ###",
+        "detail": "migrations.versions.df1ab278c76c_added_oauthprovider_name_in_user_model",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "migrations.versions.df1ab278c76c_added_oauthprovider_name_in_user_model",
+        "description": "migrations.versions.df1ab278c76c_added_oauthprovider_name_in_user_model",
+        "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_column('users', 'oauth_provider')\n    # ### end Alembic commands ###",
+        "detail": "migrations.versions.df1ab278c76c_added_oauthprovider_name_in_user_model",
         "documentation": {}
     },
     {

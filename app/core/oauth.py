@@ -1,6 +1,8 @@
 from authlib.integrations.starlette_client import OAuth
+
 from .config import settings
-oauth=OAuth()
+
+oauth = OAuth()
 
 # Register google oauth
 oauth.register(
@@ -8,7 +10,7 @@ oauth.register(
     client_id=settings.CLIENT_ID_GOOGLE,
     client_secret=settings.CLIENT_SECRET_GOOGLE,
     server_metadata_url=settings.SERVER_METADATA_URL,
-    client_kwargs={"scope":"openid email profile"}
+    client_kwargs={"scope": "openid email profile"},
 )
 
 # Register Facebook oauth
@@ -19,5 +21,16 @@ oauth.register(
     authorize_url=settings.AUTHORIZE_URL_FACEBOOK,
     access_token_url=settings.ACCESS_TOKEN_URL_FACEBOOK,
     api_base_url=settings.API_BASE_URL_FACEBOOK,
-    client_kwargs={"scope":"email public_profile"}
+    client_kwargs={"scope": "email public_profile "},
+)
+
+# Register Github oauth
+oauth.register(
+    name="github",
+    client_id=settings.CLIENT_ID_GITHUB,
+    client_secret=settings.CLIENT_SECRET_GITHUB,
+    authorize_url=settings.AUTHORIZE_URL_GITHUB,
+    access_token_url=settings.ACCESS_TOKEN_URL_GITHUB,
+    api_base_url=settings.API_BASE_URL_GITHUB,
+    client_kwargs={"scope": "user:email"},
 )

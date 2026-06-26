@@ -41,7 +41,9 @@ class User(Base):
     companies = relationship(
         "Company", secondary=user_companies, back_populates="enrolled_users"
     )
+    oauth_provider = Column(String, nullable=True)
     user_requests = relationship("JoinRequest", back_populates="user")
+    oauth_id = Column(String, unique=True, nullable=True)
 
 
 # Make a profile model for the user

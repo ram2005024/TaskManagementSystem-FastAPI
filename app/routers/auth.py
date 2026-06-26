@@ -167,16 +167,22 @@ def logout(request: Request):
 
 
 # When user logs in through the google
-@authRouter.get("/login/google")
+@authRouter.get("/google/login")
 async def login_google(request: Request):
     redirect_url = settings.REDIRECT_URL_GOOGLE
     return await oauth.google.authorize_redirect(request, redirect_url)
 
 
-@authRouter.get("/login/facebook")
+@authRouter.get("/facebook/login")
 async def facebook_login(request: Request):
     redirect_uri = settings.REDIRECT_URL_FACEBOOK
     return await oauth.facebook.authorize_redirect(request, redirect_uri)
+
+
+@authRouter.get("/github/login")
+async def login_github(request: Request):
+    redirect_uri = settings.REDIRECT_URL_GITHUB
+    return await oauth.github.authorize_redirect(request, redirect_uri)
 
 
 @authRouter.get("/google/callback")
@@ -185,27 +191,45 @@ async def google_callback(request: Request, db: Session = Depends(get_db)):
         token = await oauth.google.authorize_access_token(request)
         user = token["userinfo"]
         if user:
-            username = generate_username(user["name"], db)
-            exist = db.query(User).filter(User.email == user["email"]).one_or_none()
-            if exist:
-                final_user = exist
-            if not exist:
-                new_user = User(
-                    username=username,
-                    email=user["email"],
-                    is_authenticated=True,
-                )
-                db.add(new_user)
-                db.flush()
-                profile = Profile(
-                    user_id=new_user.id,
-                    user_image=user["picture"] if user["picture"] else None,
-                    full_name=user["name"],
-                )
-                db.add(profile)
-                db.commit()
-                final_user = new_user
-            # Generate the access and refresh token
+            existing_user = (
+                db.query(User)
+                .filter(User.oauth_id == str(user.get("sub")))
+                .one_or_none()
+            )
+            if existing_user:
+                final_user = existing_user
+            else:
+                if user.get("email"):
+                    existing_user = (
+                        db.query(User)
+                        .filter(User.email == user.get("email"))
+                        .one_or_none()
+                    )
+                    if existing_user:
+                        existing_user.oauth_id = user.get("sub")
+                        existing_user.oauth_provider = "google"
+                        db.commit()
+                        final_user = existing_user
+                else:
+                    user_name = generate_username(user.get("name"), db)
+                    new_user = User(
+                        email=user.get("email"),
+                        is_authenticated=True,
+                        oauth_provider="google",
+                        username=user_name,
+                        oauth_id=user.get("sub"),
+                    )
+                    db.add(new_user)
+                    db.flush()
+                    # Create profile
+                    profile = Profile(
+                        user_id=new_user.id,
+                        user_image=user.get("picture"),
+                        full_name=user.get("name"),
+                    )
+                    db.add(profile)
+                    db.commit()
+                    final_user = new_user
             token_data = {
                 "id": str(final_user.id),
                 "username": final_user.username,
@@ -218,7 +242,148 @@ async def google_callback(request: Request, db: Session = Depends(get_db)):
                 status_code=201,
                 content={"access": access, "message": "Login successful"},
             )
-            redis.setex(f"token={refresh}", settings.REFRESH_EXPIRY * 24 * 3600, "true")
+            redis.setex(f"token-{refresh}", settings.REFRESH_EXPIRY * 24 * 3600, "true")
+            response.set_cookie(
+                "refresh", refresh, httponly=True, secure=False, samesite="none"
+            )
+            return response
+
+    except Exception as e:
+        print(e)
+        raise
+
+
+@authRouter.get("/facebook/callback")
+async def facebook_callback(request: Request, db: Session = Depends(get_db)):
+    try:
+        token = await oauth.facebook.authorize_access_token(request)
+        resp = await oauth.facebook.get(
+            "me/?fields=name,email,birthday,picture", token=token
+        )
+        user = resp.json()
+        if user:
+            existing_user = (
+                db.query(User)
+                .filter(User.oauth_id == str(user.get("id")))
+                .one_or_none()
+            )
+            if existing_user:
+                final_user = existing_user
+            else:
+                if user.get("email"):
+                    existing_user = (
+                        db.query(User)
+                        .filter(User.email == user.get("email"))
+                        .one_or_none()
+                    )
+                    if existing_user:
+                        existing_user.oauth_id = user.get("id")
+                        existing_user.oauth_provider = "facebook"
+                        db.commit()
+                        final_user = existing_user
+                else:
+                    user_name = generate_username(user.get("name"), db)
+                    new_user = User(
+                        email=user.get("email"),
+                        username=user_name,
+                        is_authenticated=True,
+                        oauth_id=user.get("id"),
+                        oauth_provider="facebook",
+                    )
+                    db.add(new_user)
+                    db.flush()
+                    # Create profile
+                    profile = Profile(
+                        user_id=new_user.id,
+                        user_image=user.get("picture").get("data").get("url"),
+                        full_name=user.get("name"),
+                    )
+                    db.add(profile)
+                    db.commit()
+                    final_user = new_user
+            token_data = {
+                "id": str(final_user.id),
+                "username": final_user.username,
+                "is_authenticated": final_user.is_authenticated,
+                "role": final_user.role,
+            }
+            refresh = create_refresh(token_data)
+            access = create_access(token_data)
+            response = JSONResponse(
+                status_code=201,
+                content={"access": access, "message": "Login successful"},
+            )
+            redis.setex(f"token-{refresh}", settings.REFRESH_EXPIRY * 24 * 3600, "true")
+            response.set_cookie(
+                "refresh", refresh, httponly=True, secure=False, samesite="none"
+            )
+            return response
+
+    except Exception as e:
+        print(e)
+        raise
+
+
+# Github callback
+@authRouter.get("/github/callback")
+async def github_callback(request: Request, db: Session = Depends(get_db)):
+    try:
+        token = await oauth.github.authorize_access_token(request)
+        resp = await oauth.github.get("user", token=token)
+        user = resp.json()
+        if user:
+            existing_user = (
+                db.query(User)
+                .filter(User.oauth_id == str(user.get("id")))
+                .one_or_none()
+            )
+            if existing_user:
+                final_user = existing_user
+            else:
+                if user.get("email"):
+                    existing_user = (
+                        db.query(User)
+                        .filter(User.email == user.get("email"))
+                        .one_or_none()
+                    )
+                    if existing_user:
+                        existing_user.oauth_id = user.get("id")
+                        existing_user.oauth_provider = "github"
+                        db.commit()
+                        final_user = existing_user
+                    else:
+                        user_name = generate_username(user.get("name"), db)
+                        new_user = User(
+                            email=user.get("email"),
+                            username=user_name,
+                            is_authenticated=True,
+                            oauth_id=user.get("id"),
+                            oauth_provider="github",
+                        )
+                        db.add(new_user)
+                        db.flush()
+                        # Create profile
+                        profile = Profile(
+                            user_id=new_user.id,
+                            user_image=user.get("avatar_url"),
+                            full_name=user.get("name"),
+                        )
+                        db.add(profile)
+                        db.commit()
+                        final_user = new_user
+            token_data = {
+                "id": str(final_user.id),
+                "username": final_user.username,
+                "is_authenticated": final_user.is_authenticated,
+                "role": final_user.role,
+            }
+            refresh = create_refresh(token_data)
+            access = create_access(token_data)
+            response = JSONResponse(
+                status_code=201,
+                content={"access": access, "message": "Login successful"},
+            )
+            redis.setex(f"token-{refresh}", settings.REFRESH_EXPIRY * 24 * 3600, "true")
             response.set_cookie(
                 "refresh", refresh, httponly=True, secure=False, samesite="none"
             )
