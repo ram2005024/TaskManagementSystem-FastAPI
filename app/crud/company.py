@@ -46,7 +46,7 @@ def create_company(
         return company, None
     except IntegrityError:
         db.rollback()
-        return None, "Manager already exists for this company"
+        return None, "Company with the same name has already registered"
     except Exception as e:
         db.rollback()
         return None, f"Error occured  {e}"

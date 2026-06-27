@@ -30,7 +30,6 @@ class TaskBase(BaseModel):
 
 # For task create
 class TaskCreate(TaskBase):
-    project_id: UUID
     user_ids: list[UUID]
 
 

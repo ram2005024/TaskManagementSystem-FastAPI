@@ -6,16 +6,22 @@ from sqlalchemy.orm import Session
 
 from app.crud.task import create_task, delete_task, read_task, read_tasks, update_task
 from app.database.db import get_db
+from app.dependencies.task import project_user_required
 from app.schemas.task import TaskCreate, TaskReadMultiple, TaskReadSingle, TaskUpdate
 
 task_router = APIRouter(prefix="/task", tags=["task_endpoints"])
 
 
 # Create task
-@task_router.post("/", response_model=TaskReadMultiple)
-def create_task_endpoint(data: TaskCreate, db: Session = Depends(get_db)):
+@task_router.post("/project/{project_id}", response_model=TaskReadMultiple)
+def create_task_endpoint(
+    data: TaskCreate,
+    project_id: UUID,
+    db: Session = Depends(get_db),
+    project_details: tuple = Depends(project_user_required(["Admin", "Manager"])),
+):
     try:
-        task = create_task(data, db)
+        task = create_task(data, project_id, db)
         return task
     except ValueError as e:
         raise HTTPException(status_code=400, detail=str(e))
@@ -24,8 +30,15 @@ def create_task_endpoint(data: TaskCreate, db: Session = Depends(get_db)):
 
 
 # Read single task
-@task_router.get("/{task_id}", response_model=TaskReadSingle)
-def read_task_endpoint(task_id: UUID, db: Session = Depends(get_db)):
+@task_router.get("/project/{project_id}/task/{task_id}", response_model=TaskReadSingle)
+def read_task_endpoint(
+    task_id: UUID,
+    project_id: UUID,
+    db: Session = Depends(get_db),
+    project_details: tuple = Depends(
+        project_user_required(["Admin", "Manager", "Member"])
+    ),
+):
     try:
         task = read_task(task_id, db)
         return task
@@ -36,8 +49,14 @@ def read_task_endpoint(task_id: UUID, db: Session = Depends(get_db)):
 
 
 # Read multiple tasks task
-@task_router.get("/tasks/{project_id}", response_model=list[TaskReadMultiple])
-def read_tasks_endpoint(project_id: UUID, db: Session = Depends(get_db)):
+@task_router.get("/project/{project_id}/tasks", response_model=list[TaskReadMultiple])
+def read_tasks_endpoint(
+    project_id: UUID,
+    db: Session = Depends(get_db),
+    project_details: tuple = Depends(
+        project_user_required(["Admin", "Manager", "Member"])
+    ),
+):
     try:
         tasks = read_tasks(project_id, db)
         return tasks
@@ -46,9 +65,13 @@ def read_tasks_endpoint(project_id: UUID, db: Session = Depends(get_db)):
 
 
 # Update the basic info of task
-@task_router.put("/{task_id}", response_model=TaskReadSingle)
+@task_router.put("/project/{project_id}/task/{task_id}", response_model=TaskReadSingle)
 def update_task_endpoint(
-    task_id: UUID, data: TaskUpdate, db: Session = Depends(get_db)
+    task_id: UUID,
+    project_id: UUID,
+    data: TaskUpdate,
+    db: Session = Depends(get_db),
+    project_details: tuple = Depends(project_user_required(["Admin", "Manager"])),
 ):
     try:
         task = update_task(db, task_id, data)
@@ -60,8 +83,13 @@ def update_task_endpoint(
 
 
 # Delete the task
-@task_router.delete("/{task_id}")
-def delete_task_endpoint(task_id: UUID, db: Session = Depends(get_db)):
+@task_router.delete("project/{project_id}/task/{task_id}")
+def delete_task_endpoint(
+    task_id: UUID,
+    project_id: UUID,
+    db: Session = Depends(get_db),
+    project_details: tuple = Depends(project_user_required(["Admin", "Manager"])),
+):
     try:
         deleted = delete_task(db, task_id)
         if deleted:

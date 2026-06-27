@@ -150,6 +150,14 @@
         "documentation": {}
     },
     {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
         "label": "APIRouter",
         "importPath": "fastapi",
         "description": "fastapi",
@@ -671,6 +679,14 @@
         "documentation": {}
     },
     {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
         "label": "IntegrityError",
         "importPath": "sqlalchemy.exc",
         "description": "sqlalchemy.exc",
@@ -776,6 +792,14 @@
     },
     {
         "label": "declarative_base",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
         "importPath": "sqlalchemy.orm",
         "description": "sqlalchemy.orm",
         "isExtraImport": true,
@@ -1047,11 +1071,11 @@
         "documentation": {}
     },
     {
-        "label": "Company",
-        "importPath": "app.database.models.company",
-        "description": "app.database.models.company",
+        "label": "HTTPException",
+        "importPath": "fastapi.exceptions",
+        "description": "fastapi.exceptions",
         "isExtraImport": true,
-        "detail": "app.database.models.company",
+        "detail": "fastapi.exceptions",
         "documentation": {}
     },
     {
@@ -1068,6 +1092,22 @@
         "description": "app.database.models.company",
         "isExtraImport": true,
         "detail": "app.database.models.company",
+        "documentation": {}
+    },
+    {
+        "label": "Company",
+        "importPath": "app.database.models.company",
+        "description": "app.database.models.company",
+        "isExtraImport": true,
+        "detail": "app.database.models.company",
+        "documentation": {}
+    },
+    {
+        "label": "Project",
+        "importPath": "app.database.models.project",
+        "description": "app.database.models.project",
+        "isExtraImport": true,
+        "detail": "app.database.models.project",
         "documentation": {}
     },
     {
@@ -1664,6 +1704,14 @@
         "documentation": {}
     },
     {
+        "label": "get_db",
+        "importPath": "app.database.db",
+        "description": "app.database.db",
+        "isExtraImport": true,
+        "detail": "app.database.db",
+        "documentation": {}
+    },
+    {
         "label": "Base",
         "importPath": "app.database.db",
         "description": "app.database.db",
@@ -1761,6 +1809,14 @@
     },
     {
         "label": "get_user",
+        "importPath": "app.dependencies.auth",
+        "description": "app.dependencies.auth",
+        "isExtraImport": true,
+        "detail": "app.dependencies.auth",
+        "documentation": {}
+    },
+    {
+        "label": "role_check",
         "importPath": "app.dependencies.auth",
         "description": "app.dependencies.auth",
         "isExtraImport": true,
@@ -2023,6 +2079,14 @@
         "description": "app.crud.task",
         "isExtraImport": true,
         "detail": "app.crud.task",
+        "documentation": {}
+    },
+    {
+        "label": "project_user_required",
+        "importPath": "app.dependencies.task",
+        "description": "app.dependencies.task",
+        "isExtraImport": true,
+        "detail": "app.dependencies.task",
         "documentation": {}
     },
     {
@@ -2832,7 +2896,7 @@
         "kind": 2,
         "importPath": "app.crud.task",
         "description": "app.crud.task",
-        "peekOfCode": "def create_task(data: TaskCreate, db: Session):\n    try:\n        project = db.query(Project).filter(Project.id == data.project_id).first()\n        if not project:\n            raise ValueError(\"Project doesn't exit for a task\")\n        users = db.query(User).filter(User.id.in_(data.user_ids)).all()\n        if not users:\n            raise ValueError(\"Task must be assigned to atleast one memeber\")\n        invalid_users = [\n            str(user.username) for user in users if user not in project.users",
+        "peekOfCode": "def create_task(data: TaskCreate, project_id: UUID, db: Session):\n    try:\n        project = db.query(Project).filter(Project.id == project_id).first()\n        if not project:\n            raise ValueError(\"Project doesn't exit for a task\")\n        users = db.query(User).filter(User.id.in_(data.user_ids)).all()\n        if not users:\n            raise ValueError(\"Task must be assigned to atleast one memeber\")\n        invalid_users = [\n            str(user.username) for user in users if user not in project.users",
         "detail": "app.crud.task",
         "documentation": {}
     },
@@ -3062,6 +3126,15 @@
         "documentation": {}
     },
     {
+        "label": "project_user_required",
+        "kind": 2,
+        "importPath": "app.dependencies.task",
+        "description": "app.dependencies.task",
+        "peekOfCode": "def project_user_required(user_role: list[str]):\n    def wrapper(\n        project_id: UUID,\n        user=Depends(role_check(user_role)),\n        db: Session = Depends(get_db),\n    ):\n        project = db.query(Project).filter(Project.id == project_id).one_or_none()\n        if project is None:\n            raise HTTPException(status_code=404, detail=\"Project doesn't exist.\")\n        project_user_ids = [str(u.id) for u in project.users]",
+        "detail": "app.dependencies.task",
+        "documentation": {}
+    },
+    {
         "label": "register",
         "kind": 2,
         "importPath": "app.routers.auth",
@@ -3228,7 +3301,7 @@
         "kind": 2,
         "importPath": "app.routers.task",
         "description": "app.routers.task",
-        "peekOfCode": "def create_task_endpoint(data: TaskCreate, db: Session = Depends(get_db)):\n    try:\n        task = create_task(data, db)\n        return task\n    except ValueError as e:\n        raise HTTPException(status_code=400, detail=str(e))\n    except RuntimeError as e:\n        raise HTTPException(status_code=500, detail=str(e))\n# Read single task\n@task_router.get(\"/{task_id}\", response_model=TaskReadSingle)",
+        "peekOfCode": "def create_task_endpoint(\n    data: TaskCreate,\n    project_id: UUID,\n    db: Session = Depends(get_db),\n    project_details: tuple = Depends(project_user_required([\"Admin\", \"Manager\"])),\n):\n    try:\n        task = create_task(data, project_id, db)\n        return task\n    except ValueError as e:",
         "detail": "app.routers.task",
         "documentation": {}
     },
@@ -3237,7 +3310,7 @@
         "kind": 2,
         "importPath": "app.routers.task",
         "description": "app.routers.task",
-        "peekOfCode": "def read_task_endpoint(task_id: UUID, db: Session = Depends(get_db)):\n    try:\n        task = read_task(task_id, db)\n        return task\n    except ValueError as e:\n        raise HTTPException(status_code=400, detail=str(e))\n    except RuntimeError as e:\n        raise HTTPException(status_code=500, detail=str(e))\n# Read multiple tasks task\n@task_router.get(\"/tasks/{project_id}\", response_model=list[TaskReadMultiple])",
+        "peekOfCode": "def read_task_endpoint(\n    task_id: UUID,\n    project_id: UUID,\n    db: Session = Depends(get_db),\n    project_details: tuple = Depends(\n        project_user_required([\"Admin\", \"Manager\", \"Member\"])\n    ),\n):\n    try:\n        task = read_task(task_id, db)",
         "detail": "app.routers.task",
         "documentation": {}
     },
@@ -3246,7 +3319,7 @@
         "kind": 2,
         "importPath": "app.routers.task",
         "description": "app.routers.task",
-        "peekOfCode": "def read_tasks_endpoint(project_id: UUID, db: Session = Depends(get_db)):\n    try:\n        tasks = read_tasks(project_id, db)\n        return tasks\n    except RuntimeError as e:\n        raise HTTPException(status_code=500, detail=str(e))\n# Update the basic info of task\n@task_router.put(\"/{task_id}\", response_model=TaskReadSingle)\ndef update_task_endpoint(\n    task_id: UUID, data: TaskUpdate, db: Session = Depends(get_db)",
+        "peekOfCode": "def read_tasks_endpoint(\n    project_id: UUID,\n    db: Session = Depends(get_db),\n    project_details: tuple = Depends(\n        project_user_required([\"Admin\", \"Manager\", \"Member\"])\n    ),\n):\n    try:\n        tasks = read_tasks(project_id, db)\n        return tasks",
         "detail": "app.routers.task",
         "documentation": {}
     },
@@ -3255,7 +3328,7 @@
         "kind": 2,
         "importPath": "app.routers.task",
         "description": "app.routers.task",
-        "peekOfCode": "def update_task_endpoint(\n    task_id: UUID, data: TaskUpdate, db: Session = Depends(get_db)\n):\n    try:\n        task = update_task(db, task_id, data)\n        return task\n    except ValueError as e:\n        raise HTTPException(status_code=400, detail=str(e))\n    except RuntimeError as e:\n        raise HTTPException(status_code=500, detail=str(e))",
+        "peekOfCode": "def update_task_endpoint(\n    task_id: UUID,\n    project_id: UUID,\n    data: TaskUpdate,\n    db: Session = Depends(get_db),\n    project_details: tuple = Depends(project_user_required([\"Admin\", \"Manager\"])),\n):\n    try:\n        task = update_task(db, task_id, data)\n        return task",
         "detail": "app.routers.task",
         "documentation": {}
     },
@@ -3264,7 +3337,7 @@
         "kind": 2,
         "importPath": "app.routers.task",
         "description": "app.routers.task",
-        "peekOfCode": "def delete_task_endpoint(task_id: UUID, db: Session = Depends(get_db)):\n    try:\n        deleted = delete_task(db, task_id)\n        if deleted:\n            return {\"message\": \"Task deleted successfully\"}\n    except ValueError as e:\n        raise HTTPException(status_code=400, detail=e)\n    except RuntimeError as e:\n        raise HTTPException(status_code=500, detail=e)",
+        "peekOfCode": "def delete_task_endpoint(\n    task_id: UUID,\n    project_id: UUID,\n    db: Session = Depends(get_db),\n    project_details: tuple = Depends(project_user_required([\"Admin\", \"Manager\"])),\n):\n    try:\n        deleted = delete_task(db, task_id)\n        if deleted:\n            return {\"message\": \"Task deleted successfully\"}",
         "detail": "app.routers.task",
         "documentation": {}
     },
@@ -3273,7 +3346,7 @@
         "kind": 5,
         "importPath": "app.routers.task",
         "description": "app.routers.task",
-        "peekOfCode": "task_router = APIRouter(prefix=\"/task\", tags=[\"task_endpoints\"])\n# Create task\n@task_router.post(\"/\", response_model=TaskReadMultiple)\ndef create_task_endpoint(data: TaskCreate, db: Session = Depends(get_db)):\n    try:\n        task = create_task(data, db)\n        return task\n    except ValueError as e:\n        raise HTTPException(status_code=400, detail=str(e))\n    except RuntimeError as e:",
+        "peekOfCode": "task_router = APIRouter(prefix=\"/task\", tags=[\"task_endpoints\"])\n# Create task\n@task_router.post(\"/project/{project_id}\", response_model=TaskReadMultiple)\ndef create_task_endpoint(\n    data: TaskCreate,\n    project_id: UUID,\n    db: Session = Depends(get_db),\n    project_details: tuple = Depends(project_user_required([\"Admin\", \"Manager\"])),\n):\n    try:",
         "detail": "app.routers.task",
         "documentation": {}
     },
@@ -3471,7 +3544,7 @@
         "kind": 6,
         "importPath": "app.schemas.task",
         "description": "app.schemas.task",
-        "peekOfCode": "class TaskCreate(TaskBase):\n    project_id: UUID\n    user_ids: list[UUID]\n# For task read single\nclass TaskReadSingle(TaskBase):\n    id: UUID\n    created_at: datetime\n    updated_at: datetime\n    project: \"ProjectReadMultiple\"\n    status: str",
+        "peekOfCode": "class TaskCreate(TaskBase):\n    user_ids: list[UUID]\n# For task read single\nclass TaskReadSingle(TaskBase):\n    id: UUID\n    created_at: datetime\n    updated_at: datetime\n    project: \"ProjectReadMultiple\"\n    status: str\n    users: list[\"UserReadBasic\"]",
         "detail": "app.schemas.task",
         "documentation": {}
     },
@@ -3606,7 +3679,7 @@
         "kind": 5,
         "importPath": "app.main",
         "description": "app.main",
-        "peekOfCode": "app = FastAPI()\napp.include_router(authRouter)\napp.include_router(company_router)\napp.include_router(projectRouter)\napp.include_router(task_router)\n# app.middleware(\"http\")(blacklist_middleware)\napp.add_middleware(SessionMiddleware, secret_key=settings.SECRET_KEY)\n@app.get(\"/\")\ndef default():\n    return {\"message\": \"Hello World I am into the world of fastapi\"}",
+        "peekOfCode": "app = FastAPI()\napp.include_router(authRouter)\napp.include_router(company_router)\napp.include_router(projectRouter)\napp.include_router(task_router)\napp.middleware(\"http\")(blacklist_middleware)\napp.add_middleware(SessionMiddleware, secret_key=settings.SECRET_KEY)\n@app.get(\"/\")\ndef default():\n    return {\"message\": \"Hello World I am into the world of fastapi\"}",
         "detail": "app.main",
         "documentation": {}
     },

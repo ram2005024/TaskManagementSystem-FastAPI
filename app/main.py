@@ -8,12 +8,14 @@ from app.routers.company import company_router
 from app.routers.projects import projectRouter
 from app.routers.task import task_router
 
+from .core.middleware import blacklist_middleware
+
 app = FastAPI()
 app.include_router(authRouter)
 app.include_router(company_router)
 app.include_router(projectRouter)
 app.include_router(task_router)
-# app.middleware("http")(blacklist_middleware)
+app.middleware("http")(blacklist_middleware)
 app.add_middleware(SessionMiddleware, secret_key=settings.SECRET_KEY)
 
 

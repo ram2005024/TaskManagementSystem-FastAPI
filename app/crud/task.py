@@ -10,9 +10,9 @@ from app.schemas.task import TaskCreate, TaskUpdate
 
 
 # Create task
-def create_task(data: TaskCreate, db: Session):
+def create_task(data: TaskCreate, project_id: UUID, db: Session):
     try:
-        project = db.query(Project).filter(Project.id == data.project_id).first()
+        project = db.query(Project).filter(Project.id == project_id).first()
         if not project:
             raise ValueError("Project doesn't exit for a task")
         users = db.query(User).filter(User.id.in_(data.user_ids)).all()
@@ -29,7 +29,7 @@ def create_task(data: TaskCreate, db: Session):
             task_name=data.task_name,
             task_description=data.task_description,
             task_type=data.task_type,
-            project_id=data.project_id,
+            project_id=project_id,
             users=users,
         )
         db.add(task)
