@@ -1,5 +1,3 @@
-import time
-
 from fastapi import APIRouter, Depends, File, Form, UploadFile, status
 from fastapi.exceptions import HTTPException
 from fastapi.responses import JSONResponse
@@ -10,14 +8,13 @@ from starlette.requests import Request
 from app.core.config import redis, settings
 from app.core.oauth import oauth
 from app.core.security import (
-    blacklist_token,
     create_access,
     create_refresh,
-    isblacklisted,
 )
 from app.database.db import get_db
 from app.database.models.user import Profile, User
-from app.schemas.user import UserLogin, UserRegister
+from app.dependencies.auth import get_user
+from app.schemas.user import UserLogin, UserRead, UserRegister
 from app.services.user import create_user, generate_username, verify_credentials
 
 authRouter = APIRouter(prefix="/auth", tags=["auth_endpoints"])
@@ -68,7 +65,7 @@ def login(
     # Set the refresh token in redis too
     redis.setex(f"token-{refresh_token}", settings.REFRESH_EXPIRY * 24 * 3600, "true")
     response.set_cookie(
-        "refresh", refresh_token, httponly=True, secure=False, samesite="none"
+        "refresh", refresh_token, httponly=True, secure=False, samesite="lax"
     )
 
     return response
@@ -88,12 +85,6 @@ def refresh(request: Request):
             status_code=status.HTTP_401_UNAUTHORIZED,
             content={"detail": "Token revoked"},
         )
-    # Check if token is blacklisted or not
-    if isblacklisted(old_token):
-        return JSONResponse(
-            status_code=status.HTTP_401_UNAUTHORIZED,
-            content={"detail": "Token revoked"},
-        )
     # Verify the token
     try:
         payload = jwt.decode(
@@ -101,21 +92,18 @@ def refresh(request: Request):
         )
         # Create the new access token and refresh token and black list previous refresh token and store new refresh in redis
 
-        data = {"id": payload["id"], "username": payload["username"]}
-        current = int(time.time())
-        ttl = payload["exp"] - current
-        if ttl > 0:
-            blacklist_token(old_token, ttl)
+        data = {
+            "id": payload["id"],
+            "username": payload["username"],
+            "is_authenticated": payload["is_authenticated"],
+            "role": payload["role"],
+        }
         new_access = create_access(data)
-        new_refresh = create_refresh(data)
-        redis.delete(f"token-{old_token}")
-        redis.setex(f"token-{new_refresh}", settings.REFRESH_EXPIRY * 24 * 3600, "true")
+
         response = JSONResponse(
             status_code=status.HTTP_200_OK, content={"access": new_access}
         )
-        response.set_cookie(
-            "refresh", new_refresh, httponly=True, secure=False, samesite="none"
-        )
+        return response
     except ExpiredSignatureError:
         return JSONResponse(
             status_code=status.HTTP_401_UNAUTHORIZED,
@@ -131,38 +119,14 @@ def refresh(request: Request):
 # Logout endpoint
 @authRouter.post("/logout")
 def logout(request: Request):
-    header = request.headers.get("Authorization")
-    if header:
-        access = header.split(" ")[1]
-        refresh = request.cookies.get("refresh")
-        try:
-            payload = jwt.decode(
-                access, settings.SECRET_KEY, algorithms=[settings.ALGORITHM]
-            )
-            ttl = payload["exp"] - int(time.time())
-            if ttl > 0:
-                blacklist_token(access, ttl)
-        except ExpiredSignatureError:
-            pass
-        except JWTError:
-            pass
+    refresh = request.cookies.get("refresh")
     if refresh:
-        try:
-            payload = jwt.decode(
-                refresh, settings.SECRET_KEY, algorithms=[settings.ALGORITHM]
-            )
-            ttl = int(time.time()) - payload["exp"]
-            if ttl > 0:
-                blacklist_token(refresh, ttl)
-            redis.delete(f"token-{refresh}")
-        except ExpiredSignatureError:
-            pass
-        except JWTError:
-            pass
+        redis.delete(f"token-{refresh}")
+
     response = JSONResponse(
         status_code=status.HTTP_200_OK, content={"message": "Logged out"}
     )
-    response.delete_cookie("refresh")
+    response.delete_cookie("refresh", httponly=True, secure=False, samesite="lax")
     return response
 
 
@@ -392,3 +356,11 @@ async def github_callback(request: Request, db: Session = Depends(get_db)):
     except Exception as e:
         print(e)
         raise
+
+
+@authRouter.get("/me", response_model=UserRead)
+def get_me(request: Request, user=Depends(get_user), db: Session = Depends(get_db)):
+    db_user = db.query(User).filter(User.id == user["user_id"]).one_or_none()
+    if user is None:
+        raise HTTPException(status_code=404, detail="User not found")
+    return db_user

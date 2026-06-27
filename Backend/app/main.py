@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from starlette.middleware.sessions import SessionMiddleware
 
 import app.schemas.rebuild
@@ -11,6 +12,14 @@ from app.routers.task import task_router
 from .core.middleware import blacklist_middleware
 
 app = FastAPI()
+# CORS Middleware
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:5173"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 app.include_router(authRouter)
 app.include_router(company_router)
 app.include_router(projectRouter)

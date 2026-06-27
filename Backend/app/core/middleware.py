@@ -20,6 +20,8 @@ async def blacklist_middleware(request: Request, call_next):
         "/auth/login/google",
         "auth/google/callback",
     ]
+    if request.method == "OPTIONS":
+        return await call_next(request)
     if request.url.path in pass_path:
         return await call_next(request)
     auth_header = request.headers.get("Authorization")
@@ -49,6 +51,7 @@ async def blacklist_middleware(request: Request, call_next):
             status_code=status.HTTP_401_UNAUTHORIZED,
             content={"detail": "Invalid token"},
         )
+
     request.state.user = {
         "user_id": payload["id"],
         "username": payload["username"],
