@@ -1,5 +1,4 @@
 from uuid import UUID
-
 from fastapi import Request
 from fastapi.exceptions import HTTPException
 from sqlalchemy.exc import IntegrityError
@@ -9,6 +8,7 @@ from app.database.models.company import Company
 from app.database.models.project import Project
 from app.database.models.user import User
 from app.schemas.project import ProjectCreate, ProjectUpdate
+from app.dependencies.pagination import pagination
 
 
 # Create the project for the company
@@ -70,11 +70,22 @@ def read_project(db: Session, c_id, project_id: UUID):
 
 
 # Read the the project detail(Multiple)
-def read_projects(c_id: UUID, request: Request, db: Session):
+def read_projects(c_id: UUID, request: Request, db: Session,pagination):
     # Check if the company exists or not
     try:
-        projects = db.query(Project).filter(Project.company_id == c_id).all()
-        return projects
+        page=pagination["page"]
+        limit=pagination["limit"]
+        total = db.query(Project).filter(Project.company_id == c_id).count()
+        data=db.query(Project).filter(Project.company_id == c_id).offset((page-1)*limit).limit(limit).all()
+        return {
+            "data":data,
+            "meta":{
+            "total":total,
+            "page":page,
+            "limit":limit,
+            "pages":(total+limit-1)//limit
+            }
+        }
     except Exception:
         db.rollback()
         raise HTTPException(status_code=500, detail="Server error")

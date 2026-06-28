@@ -7,6 +7,7 @@ from app.database.models.project import Project
 from app.database.models.task import Task
 from app.database.models.user import User
 from app.schemas.task import TaskCreate, TaskUpdate
+from app.dependencies.pagination import pagination
 
 
 # Create task
@@ -57,11 +58,22 @@ def read_task(task_id: UUID, db: Session):
 
 
 # Read multiple task
-def read_tasks(project_id: UUID, db: Session):
+def read_tasks(project_id: UUID, db: Session,pagination):
     try:
-        tasks = db.query(Task).filter(Task.project_id == project_id).all()
+        page=pagination["page"]
+        limit=pagination["limit"]
+        total = db.query(Task).filter(Task.project_id == project_id).count()
+        data=db.query(Task).filter(Task.project_id == project_id).offset((page-1)*limit).limit(limit).all()
 
-        return tasks
+        return {
+            "meta":{
+                "total":total,
+                "page":page,
+                "limit":limit,
+                "pages":(total+limit-1)//limit
+            },
+            "data":data
+        }
     except Exception as e:
         raise RuntimeError(f"Error occured: {e}")
 
