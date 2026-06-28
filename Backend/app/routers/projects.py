@@ -13,14 +13,14 @@ from app.crud.project import (
 )
 from app.database.db import get_db
 from app.dependencies.company import company_user_role_required
+from app.dependencies.pagination import pagination
+from app.schemas.pagination import PaginatedResponse
 from app.schemas.project import (
     ProjectCreate,
     ProjectReadMultiple,
     ProjectReadSingle,
     ProjectUpdate,
 )
-from app.dependencies.pagination import pagination
-from app.schemas.pagination import PaginatedResponse
 
 projectRouter = APIRouter(prefix="/project", tags=["project_endpoints"])
 
@@ -80,21 +80,20 @@ def read_project_endpoint(
 
 # Read multiple projects endpoint
 @projectRouter.get(
-    "/company/{company_id}/projects", response_model=PaginatedResponse[ProjectReadMultiple]
+    "/company/{company_id}/projects",
+    response_model=PaginatedResponse[ProjectReadMultiple],
 )
 def read_projects_endpoint(
     company_id: UUID,
-    page:int,
-    limit:int,
     request: Request,
     db: Session = Depends(get_db),
     company_details: tuple = Depends(
         company_user_role_required(["Admin", "Member", "Manager"])
     ),
-    pagination:dict=Depends(pagination)
+    pagination: dict = Depends(pagination),
 ):
 
-    projects = read_projects(company_id, request, db,pagination)
+    projects = read_projects(company_id, request, db, pagination)
     return projects
 
 

@@ -3379,7 +3379,7 @@
         "kind": 2,
         "importPath": "app.routers.projects",
         "description": "app.routers.projects",
-        "peekOfCode": "def read_projects_endpoint(\n    company_id: UUID,\n    page:int,\n    limit:int,\n    request: Request,\n    db: Session = Depends(get_db),\n    company_details: tuple = Depends(\n        company_user_role_required([\"Admin\", \"Member\", \"Manager\"])\n    ),\n    pagination:dict=Depends(pagination)",
+        "peekOfCode": "def read_projects_endpoint(\n    company_id: UUID,\n    request: Request,\n    db: Session = Depends(get_db),\n    company_details: tuple = Depends(\n        company_user_role_required([\"Admin\", \"Member\", \"Manager\"])\n    ),\n    pagination: dict = Depends(pagination),\n):\n    projects = read_projects(company_id, request, db, pagination)",
         "detail": "app.routers.projects",
         "documentation": {}
     },
@@ -3424,7 +3424,7 @@
         "kind": 2,
         "importPath": "app.routers.task",
         "description": "app.routers.task",
-        "peekOfCode": "def read_tasks_endpoint(\n    project_id: UUID,\n    page:int,\n    limit:int,\n    pagination:dict=Depends(pagination),\n    db: Session = Depends(get_db),\n    project_details: tuple = Depends(\n        project_user_required([\"Admin\", \"Manager\", \"Member\"])\n    ),\n):",
+        "peekOfCode": "def read_tasks_endpoint(\n    project_id: UUID,\n    pagination: dict = Depends(pagination),\n    db: Session = Depends(get_db),\n    project_details: tuple = Depends(\n        project_user_required([\"Admin\", \"Manager\", \"Member\"])\n    ),\n):\n    try:\n        tasks = read_tasks(project_id, db, pagination)",
         "detail": "app.routers.task",
         "documentation": {}
     },

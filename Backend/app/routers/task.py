@@ -6,10 +6,10 @@ from sqlalchemy.orm import Session
 
 from app.crud.task import create_task, delete_task, read_task, read_tasks, update_task
 from app.database.db import get_db
-from app.dependencies.task import project_user_required
-from app.schemas.task import TaskCreate, TaskReadMultiple, TaskReadSingle, TaskUpdate
 from app.dependencies.pagination import pagination
+from app.dependencies.task import project_user_required
 from app.schemas.pagination import PaginatedResponse
+from app.schemas.task import TaskCreate, TaskReadMultiple, TaskReadSingle, TaskUpdate
 
 task_router = APIRouter(prefix="/task", tags=["task_endpoints"])
 
@@ -51,19 +51,19 @@ def read_task_endpoint(
 
 
 # Read multiple tasks task
-@task_router.get("/project/{project_id}/tasks", response_model=PaginatedResponse[TaskReadMultiple])
+@task_router.get(
+    "/project/{project_id}/tasks", response_model=PaginatedResponse[TaskReadMultiple]
+)
 def read_tasks_endpoint(
     project_id: UUID,
-    page:int,
-    limit:int,
-    pagination:dict=Depends(pagination),
+    pagination: dict = Depends(pagination),
     db: Session = Depends(get_db),
     project_details: tuple = Depends(
         project_user_required(["Admin", "Manager", "Member"])
     ),
 ):
     try:
-        tasks = read_tasks(project_id, db,pagination)
+        tasks = read_tasks(project_id, db, pagination)
         return tasks
     except RuntimeError as e:
         raise HTTPException(status_code=500, detail=str(e))
