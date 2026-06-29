@@ -3361,6 +3361,15 @@
         "documentation": {}
     },
     {
+        "label": "blocklist_update",
+        "kind": 2,
+        "importPath": "app.crud.task",
+        "description": "app.crud.task",
+        "peekOfCode": "def blocklist_update(\n    project_id: UUID, task_id: UUID, db: Session, block_ids: list[UUID]\n):\n    try:\n        task = (\n            db.query(Task)\n            .filter(Task.id == task_id, Task.project_id == project_id)\n            .one_or_none()\n        )\n        if task is None:",
+        "detail": "app.crud.task",
+        "documentation": {}
+    },
+    {
         "label": "user_tasks",
         "kind": 5,
         "importPath": "app.database.models.association",
@@ -3833,7 +3842,16 @@
         "kind": 2,
         "importPath": "app.routers.task",
         "description": "app.routers.task",
-        "peekOfCode": "def change_user_list_of_task(\n    user_ids: list[UUID],\n    project_id: UUID,\n    task_id: UUID,\n    db: Session = Depends(get_db),\n    project_details: tuple = Depends(project_user_required([\"Admin\", \"Manager\"])),\n):\n    updated_task = change_user_list(user_ids, project_id, db, task_id)\n    return updated_task",
+        "peekOfCode": "def change_user_list_of_task(\n    user_ids: list[UUID],\n    project_id: UUID,\n    task_id: UUID,\n    db: Session = Depends(get_db),\n    project_details: tuple = Depends(project_user_required([\"Admin\", \"Manager\"])),\n):\n    updated_task = change_user_list(user_ids, project_id, db, task_id)\n    return updated_task\n# Update the block list task",
+        "detail": "app.routers.task",
+        "documentation": {}
+    },
+    {
+        "label": "update_blocklist_task",
+        "kind": 2,
+        "importPath": "app.routers.task",
+        "description": "app.routers.task",
+        "peekOfCode": "def update_blocklist_task(\n    project_id: UUID,\n    task_id: UUID,\n    block_task_ids: list[UUID],\n    db: Session = Depends(get_db),\n    project_details: tuple = Depends(project_user_required([\"Admin\", \"Manager\"])),\n):\n    pass",
         "detail": "app.routers.task",
         "documentation": {}
     },

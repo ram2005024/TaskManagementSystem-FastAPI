@@ -127,3 +127,15 @@ def change_user_list_of_task(
 ):
     updated_task = change_user_list(user_ids, project_id, db, task_id)
     return updated_task
+
+
+# Update the block list task
+@task_router.patch("/project/{project_id}/task/{task_id}/blocklist")
+def update_blocklist_task(
+    project_id: UUID,
+    task_id: UUID,
+    block_task_ids: list[UUID],
+    db: Session = Depends(get_db),
+    project_details: tuple = Depends(project_user_required(["Admin", "Manager"])),
+):
+    pass

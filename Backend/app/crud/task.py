@@ -188,9 +188,39 @@ def change_user_list(
             to_add_users = db.query(User).filter(User.id.in_(to_add_ids)).all()
             task.users.extend(to_add_users)
         if to_remove_ids:
-            to_remove_users = db.query(User).filter(User.id.in_(to_remove_ids)).all()
-            task.users([u for u in to_remove_users if u.id not in to_remove_ids])
+            task.users = [u for u in task.users if u.id not in to_remove_ids]
         db.commit()
         return task
     except Exception as e:
+        db.rollback()
+        raise HTTPException(status_code=400, detail=str(e))
+
+
+# Update the block list of task
+def blocklist_update(
+    project_id: UUID, task_id: UUID, db: Session, block_ids: list[UUID]
+):
+    try:
+        task = (
+            db.query(Task)
+            .filter(Task.id == task_id, Task.project_id == project_id)
+            .one_or_none()
+        )
+        if task is None:
+            raise ValueError("Task doesn't exist")
+        if task.is_blocked:
+            raise ValueError("This task is blocked.Please try again")
+        previous_block_ids = {t.id for t in task.blocks}
+        new_block_ids = set(block_ids) - previous_block_ids
+        to_add_ids = new_block_ids - previous_block_ids
+        if to_add_ids:
+            to_add_tasks = db.query(Task).filter(Task.id.in_(to_add_ids)).all()
+            task.blocks.extend(to_add_tasks)
+        to_remove_ids = previous_block_ids - new_block_ids
+        if to_remove_ids:
+            task.blocks = [t for t in task.blocks if t.id not in to_remove_ids]
+        db.commit()
+        return task
+    except Exception as e:
+        db.rollback()
         raise HTTPException(status_code=400, detail=str(e))
