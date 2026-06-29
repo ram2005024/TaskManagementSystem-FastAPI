@@ -13,6 +13,7 @@ from app.crud.project import (
 )
 from app.database.db import get_db
 from app.dependencies.company import company_user_role_required
+from app.dependencies.filters import ProjectFilter
 from app.dependencies.pagination import pagination
 from app.schemas.pagination import PaginatedResponse
 from app.schemas.project import (
@@ -86,6 +87,7 @@ def read_project_endpoint(
 def read_projects_endpoint(
     company_id: UUID,
     request: Request,
+    project_filter: ProjectFilter = Depends(),
     db: Session = Depends(get_db),
     company_details: tuple = Depends(
         company_user_role_required(["Admin", "Member", "Manager"])
@@ -93,7 +95,7 @@ def read_projects_endpoint(
     pagination: dict = Depends(pagination),
 ):
 
-    projects = read_projects(company_id, request, db, pagination)
+    projects = read_projects(company_id, request, db, pagination, project_filter)
     return projects
 
 

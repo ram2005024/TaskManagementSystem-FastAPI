@@ -54,3 +54,13 @@ user_companies = Table(
         primary_key=True,
     ),
 )
+
+# For task-task many--->many
+task_tasks = Table(
+    "task_tasks",
+    Base.metadata,
+    Column("task_id", UUID(as_uuid=True), ForeignKey("tasks.id", ondelete="CASCADE")),
+    Column(
+        "blocked_by_id", UUID(as_uuid=True), ForeignKey("tasks.id", ondelete="CASCADE")
+    ),
+)

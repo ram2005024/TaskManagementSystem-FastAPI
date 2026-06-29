@@ -1,18 +1,27 @@
 import uuid
 from enum import Enum
 
-from sqlalchemy import Column, DateTime, ForeignKey, String, UniqueConstraint, func
+from sqlalchemy import (
+    Column,
+    DateTime,
+    ForeignKey,
+    Integer,
+    String,
+    UniqueConstraint,
+    func,
+)
 from sqlalchemy import Enum as SQLEnum
 from sqlalchemy.dialects.postgresql import UUID
 from sqlalchemy.orm import relationship
 
 from app.database.db import Base
+from app.database.models.association import task_tasks
 
 from .association import user_tasks
 
 
 class TaskStatus(str, Enum):
-    pending = ("Pending",)
+    pending = "Pending"
     completed = "Completed"
 
 
@@ -29,12 +38,46 @@ class Task(Base):
     project_id = Column(
         UUID(as_uuid=True),
         ForeignKey("projects.id", ondelete="CASCADE"),
+        nullable=False,
     )
     project = relationship("Project", back_populates="tasks")
     status = Column(
         SQLEnum(TaskStatus, name="task_status"), default=TaskStatus.pending, index=True
     )
     users = relationship("User", secondary=user_tasks, back_populates="tasks")
+    sub_tasks = relationship("SubTask", back_populates="task")
+    progress = Column(Integer, default=0)
     __table_args__ = (
-        UniqueConstraint("task_name", "project_id", name="unique_task_project"),
+        UniqueConstraint("task_name", "project_id", name="Unique task per project"),
+    )
+    blocked_by = relationship(
+        "Task",
+        secondary=task_tasks,
+        primaryjoin=id == task_tasks.c.task_id,
+        secondaryjoin=id == task_tasks.c.blocked_by_id,
+        backref="blocks",
+    )
+
+    @property
+    def is_blocked(self) -> bool:
+        return any(b.status != TaskStatus.completed for b in self.blocked_by)
+
+
+class SubTask(Base):
+    __tablename__ = "subtasks"
+
+    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    task_id = Column(UUID(as_uuid=True), ForeignKey("tasks.id", ondelete="CASCADE"))
+    task = relationship("Task", back_populates="sub_tasks")
+    status = Column(
+        SQLEnum(TaskStatus, name="Sub-Task status"), default=TaskStatus.pending
+    )
+    sub_task_name = Column(String, nullable=False, unique=True)
+    sub_task_description = Column(String)
+    __table_args__ = (
+        UniqueConstraint(
+            "sub_task_name",
+            "task_id",
+            name="Unique subtask per task",
+        ),
     )

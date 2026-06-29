@@ -158,6 +158,14 @@
         "documentation": {}
     },
     {
+        "label": "Query",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
         "label": "Depends",
         "importPath": "fastapi",
         "description": "fastapi",
@@ -518,6 +526,14 @@
         "documentation": {}
     },
     {
+        "label": "date",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
         "label": "datetime",
         "importPath": "datetime",
         "description": "datetime",
@@ -563,6 +579,14 @@
         "isExtraImport": true,
         "importPath": "uuid",
         "description": "uuid",
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
         "detail": "uuid",
         "documentation": {}
     },
@@ -1071,219 +1095,11 @@
         "documentation": {}
     },
     {
-        "label": "Company",
-        "importPath": "app.database.models.company",
-        "description": "app.database.models.company",
+        "label": "HTTPException",
+        "importPath": "fastapi.exceptions",
+        "description": "fastapi.exceptions",
         "isExtraImport": true,
-        "detail": "app.database.models.company",
-        "documentation": {}
-    },
-    {
-        "label": "Company",
-        "importPath": "app.database.models.company",
-        "description": "app.database.models.company",
-        "isExtraImport": true,
-        "detail": "app.database.models.company",
-        "documentation": {}
-    },
-    {
-        "label": "Company",
-        "importPath": "app.database.models.company",
-        "description": "app.database.models.company",
-        "isExtraImport": true,
-        "detail": "app.database.models.company",
-        "documentation": {}
-    },
-    {
-        "label": "Project",
-        "importPath": "app.database.models.project",
-        "description": "app.database.models.project",
-        "isExtraImport": true,
-        "detail": "app.database.models.project",
-        "documentation": {}
-    },
-    {
-        "label": "Project",
-        "importPath": "app.database.models.project",
-        "description": "app.database.models.project",
-        "isExtraImport": true,
-        "detail": "app.database.models.project",
-        "documentation": {}
-    },
-    {
-        "label": "Project",
-        "importPath": "app.database.models.project",
-        "description": "app.database.models.project",
-        "isExtraImport": true,
-        "detail": "app.database.models.project",
-        "documentation": {}
-    },
-    {
-        "label": "ProjectCreate",
-        "importPath": "app.schemas.project",
-        "description": "app.schemas.project",
-        "isExtraImport": true,
-        "detail": "app.schemas.project",
-        "documentation": {}
-    },
-    {
-        "label": "ProjectUpdate",
-        "importPath": "app.schemas.project",
-        "description": "app.schemas.project",
-        "isExtraImport": true,
-        "detail": "app.schemas.project",
-        "documentation": {}
-    },
-    {
-        "label": "ProjectCreate",
-        "importPath": "app.schemas.project",
-        "description": "app.schemas.project",
-        "isExtraImport": true,
-        "detail": "app.schemas.project",
-        "documentation": {}
-    },
-    {
-        "label": "ProjectReadMultiple",
-        "importPath": "app.schemas.project",
-        "description": "app.schemas.project",
-        "isExtraImport": true,
-        "detail": "app.schemas.project",
-        "documentation": {}
-    },
-    {
-        "label": "ProjectReadSingle",
-        "importPath": "app.schemas.project",
-        "description": "app.schemas.project",
-        "isExtraImport": true,
-        "detail": "app.schemas.project",
-        "documentation": {}
-    },
-    {
-        "label": "ProjectUpdate",
-        "importPath": "app.schemas.project",
-        "description": "app.schemas.project",
-        "isExtraImport": true,
-        "detail": "app.schemas.project",
-        "documentation": {}
-    },
-    {
-        "label": "ProjectReadMultiple",
-        "importPath": "app.schemas.project",
-        "description": "app.schemas.project",
-        "isExtraImport": true,
-        "detail": "app.schemas.project",
-        "documentation": {}
-    },
-    {
-        "label": "ProjectReadSingle",
-        "importPath": "app.schemas.project",
-        "description": "app.schemas.project",
-        "isExtraImport": true,
-        "detail": "app.schemas.project",
-        "documentation": {}
-    },
-    {
-        "label": "pagination",
-        "importPath": "app.dependencies.pagination",
-        "description": "app.dependencies.pagination",
-        "isExtraImport": true,
-        "detail": "app.dependencies.pagination",
-        "documentation": {}
-    },
-    {
-        "label": "pagination",
-        "importPath": "app.dependencies.pagination",
-        "description": "app.dependencies.pagination",
-        "isExtraImport": true,
-        "detail": "app.dependencies.pagination",
-        "documentation": {}
-    },
-    {
-        "label": "pagination",
-        "importPath": "app.dependencies.pagination",
-        "description": "app.dependencies.pagination",
-        "isExtraImport": true,
-        "detail": "app.dependencies.pagination",
-        "documentation": {}
-    },
-    {
-        "label": "pagination",
-        "importPath": "app.dependencies.pagination",
-        "description": "app.dependencies.pagination",
-        "isExtraImport": true,
-        "detail": "app.dependencies.pagination",
-        "documentation": {}
-    },
-    {
-        "label": "Task",
-        "importPath": "app.database.models.task",
-        "description": "app.database.models.task",
-        "isExtraImport": true,
-        "detail": "app.database.models.task",
-        "documentation": {}
-    },
-    {
-        "label": "TaskCreate",
-        "importPath": "app.schemas.task",
-        "description": "app.schemas.task",
-        "isExtraImport": true,
-        "detail": "app.schemas.task",
-        "documentation": {}
-    },
-    {
-        "label": "TaskUpdate",
-        "importPath": "app.schemas.task",
-        "description": "app.schemas.task",
-        "isExtraImport": true,
-        "detail": "app.schemas.task",
-        "documentation": {}
-    },
-    {
-        "label": "TaskCreate",
-        "importPath": "app.schemas.task",
-        "description": "app.schemas.task",
-        "isExtraImport": true,
-        "detail": "app.schemas.task",
-        "documentation": {}
-    },
-    {
-        "label": "TaskReadMultiple",
-        "importPath": "app.schemas.task",
-        "description": "app.schemas.task",
-        "isExtraImport": true,
-        "detail": "app.schemas.task",
-        "documentation": {}
-    },
-    {
-        "label": "TaskReadSingle",
-        "importPath": "app.schemas.task",
-        "description": "app.schemas.task",
-        "isExtraImport": true,
-        "detail": "app.schemas.task",
-        "documentation": {}
-    },
-    {
-        "label": "TaskUpdate",
-        "importPath": "app.schemas.task",
-        "description": "app.schemas.task",
-        "isExtraImport": true,
-        "detail": "app.schemas.task",
-        "documentation": {}
-    },
-    {
-        "label": "TaskReadMultiple",
-        "importPath": "app.schemas.task",
-        "description": "app.schemas.task",
-        "isExtraImport": true,
-        "detail": "app.schemas.task",
-        "documentation": {}
-    },
-    {
-        "label": "TaskReadSingle",
-        "importPath": "app.schemas.task",
-        "description": "app.schemas.task",
-        "isExtraImport": true,
-        "detail": "app.schemas.task",
+        "detail": "fastapi.exceptions",
         "documentation": {}
     },
     {
@@ -1292,6 +1108,22 @@
         "isExtraImport": true,
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "distinct",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "func",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
         "detail": "sqlalchemy",
         "documentation": {}
     },
@@ -1488,6 +1320,14 @@
         "documentation": {}
     },
     {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
         "label": "String",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
@@ -1592,159 +1432,207 @@
         "documentation": {}
     },
     {
-        "label": "UUID",
-        "importPath": "sqlalchemy.dialects.postgresql",
-        "description": "sqlalchemy.dialects.postgresql",
+        "label": "Company",
+        "importPath": "app.database.models.company",
+        "description": "app.database.models.company",
         "isExtraImport": true,
-        "detail": "sqlalchemy.dialects.postgresql",
+        "detail": "app.database.models.company",
         "documentation": {}
     },
     {
-        "label": "UUID",
-        "importPath": "sqlalchemy.dialects.postgresql",
-        "description": "sqlalchemy.dialects.postgresql",
+        "label": "Company",
+        "importPath": "app.database.models.company",
+        "description": "app.database.models.company",
         "isExtraImport": true,
-        "detail": "sqlalchemy.dialects.postgresql",
+        "detail": "app.database.models.company",
         "documentation": {}
     },
     {
-        "label": "UUID",
-        "importPath": "sqlalchemy.dialects.postgresql",
-        "description": "sqlalchemy.dialects.postgresql",
+        "label": "Company",
+        "importPath": "app.database.models.company",
+        "description": "app.database.models.company",
         "isExtraImport": true,
-        "detail": "sqlalchemy.dialects.postgresql",
+        "detail": "app.database.models.company",
         "documentation": {}
     },
     {
-        "label": "UUID",
-        "importPath": "sqlalchemy.dialects.postgresql",
-        "description": "sqlalchemy.dialects.postgresql",
+        "label": "Project",
+        "importPath": "app.database.models.project",
+        "description": "app.database.models.project",
         "isExtraImport": true,
-        "detail": "sqlalchemy.dialects.postgresql",
+        "detail": "app.database.models.project",
         "documentation": {}
     },
     {
-        "label": "UUID",
-        "importPath": "sqlalchemy.dialects.postgresql",
-        "description": "sqlalchemy.dialects.postgresql",
+        "label": "Project",
+        "importPath": "app.database.models.project",
+        "description": "app.database.models.project",
         "isExtraImport": true,
-        "detail": "sqlalchemy.dialects.postgresql",
+        "detail": "app.database.models.project",
         "documentation": {}
     },
     {
-        "label": "UUID",
-        "importPath": "sqlalchemy.dialects.postgresql",
-        "description": "sqlalchemy.dialects.postgresql",
+        "label": "ProjectStatus",
+        "importPath": "app.database.models.project",
+        "description": "app.database.models.project",
         "isExtraImport": true,
-        "detail": "sqlalchemy.dialects.postgresql",
+        "detail": "app.database.models.project",
         "documentation": {}
     },
     {
-        "label": "Base",
-        "importPath": "app.database.db",
-        "description": "app.database.db",
+        "label": "ProjectUrgency",
+        "importPath": "app.database.models.project",
+        "description": "app.database.models.project",
         "isExtraImport": true,
-        "detail": "app.database.db",
+        "detail": "app.database.models.project",
         "documentation": {}
     },
     {
-        "label": "Base",
-        "importPath": "app.database.db",
-        "description": "app.database.db",
+        "label": "Project",
+        "importPath": "app.database.models.project",
+        "description": "app.database.models.project",
         "isExtraImport": true,
-        "detail": "app.database.db",
+        "detail": "app.database.models.project",
         "documentation": {}
     },
     {
-        "label": "Base",
-        "importPath": "app.database.db",
-        "description": "app.database.db",
+        "label": "Task",
+        "importPath": "app.database.models.task",
+        "description": "app.database.models.task",
         "isExtraImport": true,
-        "detail": "app.database.db",
+        "detail": "app.database.models.task",
         "documentation": {}
     },
     {
-        "label": "Base",
-        "importPath": "app.database.db",
-        "description": "app.database.db",
+        "label": "SubTask",
+        "importPath": "app.database.models.task",
+        "description": "app.database.models.task",
         "isExtraImport": true,
-        "detail": "app.database.db",
+        "detail": "app.database.models.task",
         "documentation": {}
     },
     {
-        "label": "Base",
-        "importPath": "app.database.db",
-        "description": "app.database.db",
+        "label": "Task",
+        "importPath": "app.database.models.task",
+        "description": "app.database.models.task",
         "isExtraImport": true,
-        "detail": "app.database.db",
+        "detail": "app.database.models.task",
         "documentation": {}
     },
     {
-        "label": "Base",
-        "importPath": "app.database.db",
-        "description": "app.database.db",
+        "label": "TaskStatus",
+        "importPath": "app.database.models.task",
+        "description": "app.database.models.task",
         "isExtraImport": true,
-        "detail": "app.database.db",
+        "detail": "app.database.models.task",
         "documentation": {}
     },
     {
-        "label": "get_db",
-        "importPath": "app.database.db",
-        "description": "app.database.db",
+        "label": "ProjectFilter",
+        "importPath": "app.dependencies.filters",
+        "description": "app.dependencies.filters",
         "isExtraImport": true,
-        "detail": "app.database.db",
+        "detail": "app.dependencies.filters",
         "documentation": {}
     },
     {
-        "label": "get_db",
-        "importPath": "app.database.db",
-        "description": "app.database.db",
+        "label": "ProjectFilter",
+        "importPath": "app.dependencies.filters",
+        "description": "app.dependencies.filters",
         "isExtraImport": true,
-        "detail": "app.database.db",
+        "detail": "app.dependencies.filters",
         "documentation": {}
     },
     {
-        "label": "get_db",
-        "importPath": "app.database.db",
-        "description": "app.database.db",
+        "label": "ProjectCreate",
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
         "isExtraImport": true,
-        "detail": "app.database.db",
+        "detail": "app.schemas.project",
         "documentation": {}
     },
     {
-        "label": "get_db",
-        "importPath": "app.database.db",
-        "description": "app.database.db",
+        "label": "ProjectUpdate",
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
         "isExtraImport": true,
-        "detail": "app.database.db",
+        "detail": "app.schemas.project",
         "documentation": {}
     },
     {
-        "label": "get_db",
-        "importPath": "app.database.db",
-        "description": "app.database.db",
+        "label": "ProjectCreate",
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
         "isExtraImport": true,
-        "detail": "app.database.db",
+        "detail": "app.schemas.project",
         "documentation": {}
     },
     {
-        "label": "get_db",
-        "importPath": "app.database.db",
-        "description": "app.database.db",
+        "label": "ProjectReadMultiple",
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
         "isExtraImport": true,
-        "detail": "app.database.db",
+        "detail": "app.schemas.project",
         "documentation": {}
     },
     {
-        "label": "Base",
-        "importPath": "app.database.db",
-        "description": "app.database.db",
+        "label": "ProjectReadSingle",
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
         "isExtraImport": true,
-        "detail": "app.database.db",
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectUpdate",
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "isExtraImport": true,
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectReadMultiple",
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "isExtraImport": true,
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectReadSingle",
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "isExtraImport": true,
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "task_tasks",
+        "importPath": "app.database.models.association",
+        "description": "app.database.models.association",
+        "isExtraImport": true,
+        "detail": "app.database.models.association",
+        "documentation": {}
+    },
+    {
+        "label": "user_tasks",
+        "importPath": "app.database.models.association",
+        "description": "app.database.models.association",
+        "isExtraImport": true,
+        "detail": "app.database.models.association",
         "documentation": {}
     },
     {
         "label": "user_companies",
+        "importPath": "app.database.models.association",
+        "description": "app.database.models.association",
+        "isExtraImport": true,
+        "detail": "app.database.models.association",
+        "documentation": {}
+    },
+    {
+        "label": "task_tasks",
         "importPath": "app.database.models.association",
         "description": "app.database.models.association",
         "isExtraImport": true,
@@ -1773,6 +1661,230 @@
         "description": "app.database.models.association",
         "isExtraImport": true,
         "detail": "app.database.models.association",
+        "documentation": {}
+    },
+    {
+        "label": "TaskCreate",
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "isExtraImport": true,
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskUpdate",
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "isExtraImport": true,
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskCreate",
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "isExtraImport": true,
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskReadMultiple",
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "isExtraImport": true,
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskReadSingle",
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "isExtraImport": true,
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskUpdate",
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "isExtraImport": true,
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskReadMultiple",
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "isExtraImport": true,
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskReadSingle",
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "isExtraImport": true,
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "app.database.db",
+        "description": "app.database.db",
+        "isExtraImport": true,
+        "detail": "app.database.db",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "app.database.db",
+        "description": "app.database.db",
+        "isExtraImport": true,
+        "detail": "app.database.db",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "app.database.db",
+        "description": "app.database.db",
+        "isExtraImport": true,
+        "detail": "app.database.db",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "app.database.db",
+        "description": "app.database.db",
+        "isExtraImport": true,
+        "detail": "app.database.db",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "app.database.db",
+        "description": "app.database.db",
+        "isExtraImport": true,
+        "detail": "app.database.db",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "app.database.db",
+        "description": "app.database.db",
+        "isExtraImport": true,
+        "detail": "app.database.db",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "importPath": "app.database.db",
+        "description": "app.database.db",
+        "isExtraImport": true,
+        "detail": "app.database.db",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "importPath": "app.database.db",
+        "description": "app.database.db",
+        "isExtraImport": true,
+        "detail": "app.database.db",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "importPath": "app.database.db",
+        "description": "app.database.db",
+        "isExtraImport": true,
+        "detail": "app.database.db",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "importPath": "app.database.db",
+        "description": "app.database.db",
+        "isExtraImport": true,
+        "detail": "app.database.db",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "importPath": "app.database.db",
+        "description": "app.database.db",
+        "isExtraImport": true,
+        "detail": "app.database.db",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "importPath": "app.database.db",
+        "description": "app.database.db",
+        "isExtraImport": true,
+        "detail": "app.database.db",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "app.database.db",
+        "description": "app.database.db",
+        "isExtraImport": true,
+        "detail": "app.database.db",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
         "documentation": {}
     },
     {
@@ -1861,6 +1973,390 @@
         "description": "app.dependencies.auth",
         "isExtraImport": true,
         "detail": "app.dependencies.auth",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "TYPE_CHECKING",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "TYPE_CHECKING",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Generic",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "TypeVar",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "TYPE_CHECKING",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "TYPE_CHECKING",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "TYPE_CHECKING",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "TYPE_CHECKING",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
         "documentation": {}
     },
     {
@@ -2073,6 +2569,22 @@
         "documentation": {}
     },
     {
+        "label": "pagination",
+        "importPath": "app.dependencies.pagination",
+        "description": "app.dependencies.pagination",
+        "isExtraImport": true,
+        "detail": "app.dependencies.pagination",
+        "documentation": {}
+    },
+    {
+        "label": "pagination",
+        "importPath": "app.dependencies.pagination",
+        "description": "app.dependencies.pagination",
+        "isExtraImport": true,
+        "detail": "app.dependencies.pagination",
+        "documentation": {}
+    },
+    {
         "label": "PaginatedResponse",
         "importPath": "app.schemas.pagination",
         "description": "app.schemas.pagination",
@@ -2086,6 +2598,14 @@
         "description": "app.schemas.pagination",
         "isExtraImport": true,
         "detail": "app.schemas.pagination",
+        "documentation": {}
+    },
+    {
+        "label": "change_user_list",
+        "importPath": "app.crud.task",
+        "description": "app.crud.task",
+        "isExtraImport": true,
+        "detail": "app.crud.task",
         "documentation": {}
     },
     {
@@ -2134,254 +2654,6 @@
         "description": "app.dependencies.task",
         "isExtraImport": true,
         "detail": "app.dependencies.task",
-        "documentation": {}
-    },
-    {
-        "label": "TYPE_CHECKING",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "TYPE_CHECKING",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Generic",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "TypeVar",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "List",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "TYPE_CHECKING",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "TYPE_CHECKING",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "TYPE_CHECKING",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "TYPE_CHECKING",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Sequence",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Union",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Sequence",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Union",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Sequence",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Union",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Sequence",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Union",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Sequence",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Union",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Sequence",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Union",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Sequence",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Union",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Sequence",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Union",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Sequence",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Union",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Sequence",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Union",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Sequence",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Union",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
         "documentation": {}
     },
     {
@@ -2594,6 +2866,62 @@
         "description": "app.routers.task",
         "isExtraImport": true,
         "detail": "app.routers.task",
+        "documentation": {}
+    },
+    {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
         "documentation": {}
     },
     {
@@ -2956,7 +3284,7 @@
         "kind": 2,
         "importPath": "app.crud.project",
         "description": "app.crud.project",
-        "peekOfCode": "def read_projects(c_id: UUID, request: Request, db: Session,pagination):\n    # Check if the company exists or not\n    try:\n        page=pagination[\"page\"]\n        limit=pagination[\"limit\"]\n        total = db.query(Project).filter(Project.company_id == c_id).count()\n        data=db.query(Project).filter(Project.company_id == c_id).offset((page-1)*limit).limit(limit).all()\n        return {\n            \"data\":data,\n            \"meta\":{",
+        "peekOfCode": "def read_projects(\n    c_id: UUID, request: Request, db: Session, pagination, project_filter: ProjectFilter\n):\n    # Check if the company exists or not\n    try:\n        page = pagination[\"page\"]\n        limit = pagination[\"limit\"]\n        query = db.query(Project).filter(Project.company_id == c_id)\n        # Filter for the requested params\n        filter = {",
         "detail": "app.crud.project",
         "documentation": {}
     },
@@ -2983,7 +3311,7 @@
         "kind": 2,
         "importPath": "app.crud.task",
         "description": "app.crud.task",
-        "peekOfCode": "def create_task(data: TaskCreate, project_id: UUID, db: Session):\n    try:\n        project = db.query(Project).filter(Project.id == project_id).first()\n        if not project:\n            raise ValueError(\"Project doesn't exit for a task\")\n        users = db.query(User).filter(User.id.in_(data.user_ids)).all()\n        if not users:\n            raise ValueError(\"Task must be assigned to atleast one memeber\")\n        invalid_users = [\n            str(user.username) for user in users if user not in project.users",
+        "peekOfCode": "def create_task(data: TaskCreate, project_id: UUID, db: Session):\n    try:\n        project = db.query(Project).filter(Project.id == project_id).first()\n        if not project:\n            raise ValueError(\"Project doesn't exit for a task\")\n        insert_data = data.model_dump(exclude_unset=True).copy()\n        for key in [\"user_ids\", \"block_task_ids\", \"subtasks\"]:\n            insert_data.pop(key, None)\n        new_task = Task(project_id=project_id, **insert_data)\n        db.add(new_task)",
         "detail": "app.crud.task",
         "documentation": {}
     },
@@ -3001,7 +3329,7 @@
         "kind": 2,
         "importPath": "app.crud.task",
         "description": "app.crud.task",
-        "peekOfCode": "def read_tasks(project_id: UUID, db: Session,pagination):\n    try:\n        page=pagination[\"page\"]\n        limit=pagination[\"limit\"]\n        total = db.query(Task).filter(Task.project_id == project_id).count()\n        data=db.query(Task).filter(Task.project_id == project_id).offset((page-1)*limit).limit(limit).all()\n        return {\n            \"meta\":{\n                \"total\":total,\n                \"page\":page,",
+        "peekOfCode": "def read_tasks(project_id: UUID, db: Session, pagination):\n    try:\n        page = pagination[\"page\"]\n        limit = pagination[\"limit\"]\n        total = db.query(Task).filter(Task.project_id == project_id).count()\n        data = (\n            db.query(Task)\n            .filter(Task.project_id == project_id)\n            .offset((page - 1) * limit)\n            .limit(limit)",
         "detail": "app.crud.task",
         "documentation": {}
     },
@@ -3020,6 +3348,15 @@
         "importPath": "app.crud.task",
         "description": "app.crud.task",
         "peekOfCode": "def delete_task(db: Session, task_id: UUID):\n    try:\n        task = db.query(Task).filter(Task.id == task_id).first()\n        if not task:\n            raise ValueError(\"Task doesn't exist\")\n        db.delete(task)\n        db.commit()\n        return True\n    except Exception as e:\n        db.rollback()",
+        "detail": "app.crud.task",
+        "documentation": {}
+    },
+    {
+        "label": "change_user_list",
+        "kind": 2,
+        "importPath": "app.crud.task",
+        "description": "app.crud.task",
+        "peekOfCode": "def change_user_list(\n    user_ids: list[UUID], project_id: UUID, db: Session, task_id: UUID\n):\n    try:\n        task = (\n            db.query(Task)\n            .filter(Task.project_id == project_id, Task.id == task_id)\n            .one_or_none()\n        )\n        if task is None:",
         "detail": "app.crud.task",
         "documentation": {}
     },
@@ -3047,6 +3384,15 @@
         "importPath": "app.database.models.association",
         "description": "app.database.models.association",
         "peekOfCode": "user_companies = Table(\n    \"user_companies\",\n    Base.metadata,\n    Column(\n        \"user_id\",\n        UUID(as_uuid=True),\n        ForeignKey(\"users.id\", ondelete=\"CASCADE\"),\n        primary_key=True,\n    ),\n    Column(",
+        "detail": "app.database.models.association",
+        "documentation": {}
+    },
+    {
+        "label": "task_tasks",
+        "kind": 5,
+        "importPath": "app.database.models.association",
+        "description": "app.database.models.association",
+        "peekOfCode": "task_tasks = Table(\n    \"task_tasks\",\n    Base.metadata,\n    Column(\"task_id\", UUID(as_uuid=True), ForeignKey(\"tasks.id\", ondelete=\"CASCADE\")),\n    Column(\n        \"blocked_by_id\", UUID(as_uuid=True), ForeignKey(\"tasks.id\", ondelete=\"CASCADE\")\n    ),\n)",
         "detail": "app.database.models.association",
         "documentation": {}
     },
@@ -3109,7 +3455,7 @@
         "kind": 6,
         "importPath": "app.database.models.task",
         "description": "app.database.models.task",
-        "peekOfCode": "class TaskStatus(str, Enum):\n    pending = (\"Pending\",)\n    completed = \"Completed\"\nclass Task(Base):\n    __tablename__ = \"tasks\"\n    # Fields\n    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    task_type = Column(String)\n    created_at = Column(DateTime, server_default=func.now())\n    updated_at = Column(DateTime, default=func.now(), onupdate=func.now())",
+        "peekOfCode": "class TaskStatus(str, Enum):\n    pending = \"Pending\"\n    completed = \"Completed\"\nclass Task(Base):\n    __tablename__ = \"tasks\"\n    # Fields\n    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    task_type = Column(String)\n    created_at = Column(DateTime, server_default=func.now())\n    updated_at = Column(DateTime, default=func.now(), onupdate=func.now())",
         "detail": "app.database.models.task",
         "documentation": {}
     },
@@ -3119,6 +3465,15 @@
         "importPath": "app.database.models.task",
         "description": "app.database.models.task",
         "peekOfCode": "class Task(Base):\n    __tablename__ = \"tasks\"\n    # Fields\n    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    task_type = Column(String)\n    created_at = Column(DateTime, server_default=func.now())\n    updated_at = Column(DateTime, default=func.now(), onupdate=func.now())\n    task_name = Column(String, nullable=False)\n    task_description = Column(String)\n    project_id = Column(",
+        "detail": "app.database.models.task",
+        "documentation": {}
+    },
+    {
+        "label": "SubTask",
+        "kind": 6,
+        "importPath": "app.database.models.task",
+        "description": "app.database.models.task",
+        "peekOfCode": "class SubTask(Base):\n    __tablename__ = \"subtasks\"\n    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    task_id = Column(UUID(as_uuid=True), ForeignKey(\"tasks.id\", ondelete=\"CASCADE\"))\n    task = relationship(\"Task\", back_populates=\"sub_tasks\")\n    status = Column(\n        SQLEnum(TaskStatus, name=\"Sub-Task status\"), default=TaskStatus.pending\n    )\n    sub_task_name = Column(String, nullable=False, unique=True)\n    sub_task_description = Column(String)",
         "detail": "app.database.models.task",
         "documentation": {}
     },
@@ -3210,6 +3565,33 @@
         "description": "app.dependencies.company",
         "peekOfCode": "def company_user_role_required(user_roles: list[str]):\n    def dependency(\n        request: Request,\n        company_id: UUID,\n        user=Depends(get_user),\n        db: Session = Depends(get_db),\n    ):\n        # Check if the company exist or not\n        company = db.query(Company).filter(Company.id == company_id).one_or_none()\n        if company is None:",
         "detail": "app.dependencies.company",
+        "documentation": {}
+    },
+    {
+        "label": "SubTaskRange",
+        "kind": 6,
+        "importPath": "app.dependencies.filters",
+        "description": "app.dependencies.filters",
+        "peekOfCode": "class SubTaskRange(str, Enum):\n    high = \"High\"\n    low = \"Low\"\n    medium = \"Medium\"\nclass ProjectFilter:\n    def __init__(\n        self,\n        project_type: Optional[str] = Query(None),\n        urgency: Optional[ProjectUrgency] = Query(None),\n        status: Optional[ProjectStatus] = Query(None),",
+        "detail": "app.dependencies.filters",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectFilter",
+        "kind": 6,
+        "importPath": "app.dependencies.filters",
+        "description": "app.dependencies.filters",
+        "peekOfCode": "class ProjectFilter:\n    def __init__(\n        self,\n        project_type: Optional[str] = Query(None),\n        urgency: Optional[ProjectUrgency] = Query(None),\n        status: Optional[ProjectStatus] = Query(None),\n        min_users: Optional[int] = Query(None, ge=0),\n        min_tasks: Optional[int] = Query(None, ge=0),\n        start_date: Optional[date] = Query(None),\n        end_date: Optional[date] = Query(None),",
+        "detail": "app.dependencies.filters",
+        "documentation": {}
+    },
+    {
+        "label": "TaskFilter",
+        "kind": 6,
+        "importPath": "app.dependencies.filters",
+        "description": "app.dependencies.filters",
+        "peekOfCode": "class TaskFilter:\n    def __init__(\n        self,\n        # BASIC FILTERING QUERIES\n        task_name: Optional[str] = Query(None),\n        task_type: Optional[str] = Query(None),\n        start_date: Optional[date] = Query(None),\n        end_date: Optional[date] = Query(None),\n        status: Optional[TaskStatus] = Query(None),\n        user_id: Optional[UUID] = Query(None),",
+        "detail": "app.dependencies.filters",
         "documentation": {}
     },
     {
@@ -3379,7 +3761,7 @@
         "kind": 2,
         "importPath": "app.routers.projects",
         "description": "app.routers.projects",
-        "peekOfCode": "def read_projects_endpoint(\n    company_id: UUID,\n    request: Request,\n    db: Session = Depends(get_db),\n    company_details: tuple = Depends(\n        company_user_role_required([\"Admin\", \"Member\", \"Manager\"])\n    ),\n    pagination: dict = Depends(pagination),\n):\n    projects = read_projects(company_id, request, db, pagination)",
+        "peekOfCode": "def read_projects_endpoint(\n    company_id: UUID,\n    request: Request,\n    project_filter: ProjectFilter = Depends(),\n    db: Session = Depends(get_db),\n    company_details: tuple = Depends(\n        company_user_role_required([\"Admin\", \"Member\", \"Manager\"])\n    ),\n    pagination: dict = Depends(pagination),\n):",
         "detail": "app.routers.projects",
         "documentation": {}
     },
@@ -3443,6 +3825,15 @@
         "importPath": "app.routers.task",
         "description": "app.routers.task",
         "peekOfCode": "def delete_task_endpoint(\n    task_id: UUID,\n    project_id: UUID,\n    db: Session = Depends(get_db),\n    project_details: tuple = Depends(project_user_required([\"Admin\", \"Manager\"])),\n):\n    try:\n        deleted = delete_task(db, task_id)\n        if deleted:\n            return {\"message\": \"Task deleted successfully\"}",
+        "detail": "app.routers.task",
+        "documentation": {}
+    },
+    {
+        "label": "change_user_list_of_task",
+        "kind": 2,
+        "importPath": "app.routers.task",
+        "description": "app.routers.task",
+        "peekOfCode": "def change_user_list_of_task(\n    user_ids: list[UUID],\n    project_id: UUID,\n    task_id: UUID,\n    db: Session = Depends(get_db),\n    project_details: tuple = Depends(project_user_required([\"Admin\", \"Manager\"])),\n):\n    updated_task = change_user_list(user_ids, project_id, db, task_id)\n    return updated_task",
         "detail": "app.routers.task",
         "documentation": {}
     },
@@ -3649,7 +4040,16 @@
         "kind": 6,
         "importPath": "app.schemas.task",
         "description": "app.schemas.task",
-        "peekOfCode": "class TaskStatus(str, Enum):\n    pending = (\"Pending\",)\n    completed = \"Completed\"\n# Base Task MODEL\nclass TaskBase(BaseModel):\n    task_name: str\n    task_type: str | None = None\n    task_description: str | None = None\n    @field_validator(\"task_name\")\n    def check_task_name(cls, v):",
+        "peekOfCode": "class TaskStatus(str, Enum):\n    pending = \"Pending\"\n    completed = \"Completed\"\nclass SubTask(BaseModel):\n    sub_task_name: Optional[str]\n    sub_task_description: Optional[str]\n    status: TaskStatus = TaskStatus.pending\n    id: Optional[UUID] = None\n    @field_validator(\"sub_task_name\")\n    def check_sub_task_name(cls, v):",
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "SubTask",
+        "kind": 6,
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "peekOfCode": "class SubTask(BaseModel):\n    sub_task_name: Optional[str]\n    sub_task_description: Optional[str]\n    status: TaskStatus = TaskStatus.pending\n    id: Optional[UUID] = None\n    @field_validator(\"sub_task_name\")\n    def check_sub_task_name(cls, v):\n        if len(v) < 5:\n            raise ValueError(\"Subtask name should be at least 5 characters\")\n        return v",
         "detail": "app.schemas.task",
         "documentation": {}
     },
@@ -3667,7 +4067,16 @@
         "kind": 6,
         "importPath": "app.schemas.task",
         "description": "app.schemas.task",
-        "peekOfCode": "class TaskCreate(TaskBase):\n    user_ids: list[UUID]\n# For task read single\nclass TaskReadSingle(TaskBase):\n    id: UUID\n    created_at: datetime\n    updated_at: datetime\n    project: \"ProjectReadMultiple\"\n    status: str\n    users: list[\"UserReadBasic\"]",
+        "peekOfCode": "class TaskCreate(TaskBase):\n    user_ids: list[UUID]\n    block_task_ids: Optional[list[UUID]]\n    subtasks: list[SubTask]\nclass TaskBasic(TaskBase):\n    id: UUID\n# For task read single\nclass TaskReadSingle(TaskBase):\n    id: UUID\n    created_at: datetime",
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskBasic",
+        "kind": 6,
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "peekOfCode": "class TaskBasic(TaskBase):\n    id: UUID\n# For task read single\nclass TaskReadSingle(TaskBase):\n    id: UUID\n    created_at: datetime\n    updated_at: datetime\n    project: \"ProjectReadMultiple\"\n    status: str\n    blocks: Optional[list[TaskBasic]]",
         "detail": "app.schemas.task",
         "documentation": {}
     },
@@ -3676,7 +4085,7 @@
         "kind": 6,
         "importPath": "app.schemas.task",
         "description": "app.schemas.task",
-        "peekOfCode": "class TaskReadSingle(TaskBase):\n    id: UUID\n    created_at: datetime\n    updated_at: datetime\n    project: \"ProjectReadMultiple\"\n    status: str\n    users: list[\"UserReadBasic\"]\n    class Config:\n        from_attributes = True\n# For task read single",
+        "peekOfCode": "class TaskReadSingle(TaskBase):\n    id: UUID\n    created_at: datetime\n    updated_at: datetime\n    project: \"ProjectReadMultiple\"\n    status: str\n    blocks: Optional[list[TaskBasic]]\n    blocked_by: Optional[list[TaskBasic]]\n    sub_tasks: list[SubTask]\n    is_blocked: bool",
         "detail": "app.schemas.task",
         "documentation": {}
     },
@@ -3685,7 +4094,7 @@
         "kind": 6,
         "importPath": "app.schemas.task",
         "description": "app.schemas.task",
-        "peekOfCode": "class TaskReadMultiple(TaskBase):\n    id: UUID\n    created_at: datetime\n    status: str\n    users: list[\"UserReadBasic\"]\n    class Config:\n        from_attributes = True\n# For task update\nclass TaskUpdate(BaseModel):\n    id: UUID",
+        "peekOfCode": "class TaskReadMultiple(TaskBase):\n    id: UUID\n    created_at: datetime\n    status: str\n    users: list[\"UserReadBasic\"]\n    sub_tasks: list[SubTask]\n    is_blocked: bool\n    blocks: Optional[list[TaskBasic]]\n    blocked_by: Optional[list[TaskBasic]]\n    class Config:",
         "detail": "app.schemas.task",
         "documentation": {}
     },
@@ -3694,7 +4103,7 @@
         "kind": 6,
         "importPath": "app.schemas.task",
         "description": "app.schemas.task",
-        "peekOfCode": "class TaskUpdate(BaseModel):\n    id: UUID\n    task_type: str | None = None\n    task_name: str | None = None\n    task_description: str | None = None\n    status: TaskStatus | None = None",
+        "peekOfCode": "class TaskUpdate(BaseModel):\n    id: UUID\n    task_type: str | None = None\n    task_name: str | None = None\n    task_description: str | None = None",
         "detail": "app.schemas.task",
         "documentation": {}
     },
@@ -3845,6 +4254,24 @@
     {
         "label": "upgrade",
         "kind": 2,
+        "importPath": "migrations.versions.196756c97c51_added_the_subtask_and_blocked_task_",
+        "description": "migrations.versions.196756c97c51_added_the_subtask_and_blocked_task_",
+        "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.alter_column('tasks', 'project_id',\n               existing_type=sa.UUID(),\n               nullable=False)\n    # ### end Alembic commands ###\ndef downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###",
+        "detail": "migrations.versions.196756c97c51_added_the_subtask_and_blocked_task_",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "migrations.versions.196756c97c51_added_the_subtask_and_blocked_task_",
+        "description": "migrations.versions.196756c97c51_added_the_subtask_and_blocked_task_",
+        "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.alter_column('tasks', 'project_id',\n               existing_type=sa.UUID(),\n               nullable=True)\n    # ### end Alembic commands ###",
+        "detail": "migrations.versions.196756c97c51_added_the_subtask_and_blocked_task_",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
         "importPath": "migrations.versions.27ba9c22ebbb_added_oauthid_in_user_model",
         "description": "migrations.versions.27ba9c22ebbb_added_oauthid_in_user_model",
         "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.add_column('users', sa.Column('oauth_id', sa.String(), nullable=True))\n    op.create_unique_constraint(None, 'users', ['oauth_id'])\n    # ### end Alembic commands ###\ndef downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_constraint(None, 'users', type_='unique')",
@@ -3894,6 +4321,24 @@
         "description": "migrations.versions.7362f21c97aa_initial",
         "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_table('user_tasks')\n    op.drop_table('user_projects')\n    op.drop_index(op.f('ix_tasks_status'), table_name='tasks')\n    op.drop_table('tasks')\n    op.drop_table('user_companies')\n    op.drop_index(op.f('ix_projects_status'), table_name='projects')\n    op.drop_table('projects')",
         "detail": "migrations.versions.7362f21c97aa_initial",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
+        "importPath": "migrations.versions.91e412e8fbfe_added_the_subtask_and_blocked_task_",
+        "description": "migrations.versions.91e412e8fbfe_added_the_subtask_and_blocked_task_",
+        "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table('subtasks',\n    sa.Column('id', sa.UUID(), nullable=False),\n    sa.Column('task_id', sa.UUID(), nullable=True),\n    sa.Column('status', sa.Enum('pending', 'completed', name='Sub-Task status'), nullable=True),\n    sa.Column('sub_task_name', sa.String(), nullable=False),\n    sa.Column('sub_task_description', sa.String(), nullable=True),\n    sa.ForeignKeyConstraint(['task_id'], ['tasks.id'], ),",
+        "detail": "migrations.versions.91e412e8fbfe_added_the_subtask_and_blocked_task_",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "migrations.versions.91e412e8fbfe_added_the_subtask_and_blocked_task_",
+        "description": "migrations.versions.91e412e8fbfe_added_the_subtask_and_blocked_task_",
+        "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_constraint('Unique task per project', 'tasks', type_='unique')\n    op.create_unique_constraint(op.f('unique_task_project'), 'tasks', ['task_name', 'project_id'], postgresql_nulls_not_distinct=False)\n    op.drop_column('tasks', 'is_blocked')\n    op.drop_column('tasks', 'progress')\n    op.drop_table('task_tasks')\n    op.drop_table('subtasks')\n    # ### end Alembic commands ###",
+        "detail": "migrations.versions.91e412e8fbfe_added_the_subtask_and_blocked_task_",
         "documentation": {}
     },
     {
@@ -3953,6 +4398,42 @@
     {
         "label": "upgrade",
         "kind": 2,
+        "importPath": "migrations.versions.b49cd10f9270_added_the_subtask_and_blocked_task_",
+        "description": "migrations.versions.b49cd10f9270_added_the_subtask_and_blocked_task_",
+        "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    pass\n    # ### end Alembic commands ###\ndef downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    pass\n    # ### end Alembic commands ###",
+        "detail": "migrations.versions.b49cd10f9270_added_the_subtask_and_blocked_task_",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "migrations.versions.b49cd10f9270_added_the_subtask_and_blocked_task_",
+        "description": "migrations.versions.b49cd10f9270_added_the_subtask_and_blocked_task_",
+        "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    pass\n    # ### end Alembic commands ###",
+        "detail": "migrations.versions.b49cd10f9270_added_the_subtask_and_blocked_task_",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
+        "importPath": "migrations.versions.b710aeaaf4a1_added_the_subtask_and_blocked_task_",
+        "description": "migrations.versions.b710aeaaf4a1_added_the_subtask_and_blocked_task_",
+        "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    pass\n    # ### end Alembic commands ###\ndef downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    pass\n    # ### end Alembic commands ###",
+        "detail": "migrations.versions.b710aeaaf4a1_added_the_subtask_and_blocked_task_",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "migrations.versions.b710aeaaf4a1_added_the_subtask_and_blocked_task_",
+        "description": "migrations.versions.b710aeaaf4a1_added_the_subtask_and_blocked_task_",
+        "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    pass\n    # ### end Alembic commands ###",
+        "detail": "migrations.versions.b710aeaaf4a1_added_the_subtask_and_blocked_task_",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
         "importPath": "migrations.versions.bdd7bee68d1a_rearranged",
         "description": "migrations.versions.bdd7bee68d1a_rearranged",
         "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    pass\n    # ### end Alembic commands ###\ndef downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    pass\n    # ### end Alembic commands ###",
@@ -3984,6 +4465,24 @@
         "description": "migrations.versions.bfb006db8331_default_value_for_updated_at_inside_the_",
         "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    pass\n    # ### end Alembic commands ###",
         "detail": "migrations.versions.bfb006db8331_default_value_for_updated_at_inside_the_",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
+        "importPath": "migrations.versions.cc573a4cdaee_added_the_subtask_and_blocked_task_",
+        "description": "migrations.versions.cc573a4cdaee_added_the_subtask_and_blocked_task_",
+        "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_unique_constraint(None, 'subtasks', ['sub_task_name'])\n    # ### end Alembic commands ###\ndef downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_constraint(None, 'subtasks', type_='unique')\n    # ### end Alembic commands ###",
+        "detail": "migrations.versions.cc573a4cdaee_added_the_subtask_and_blocked_task_",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "migrations.versions.cc573a4cdaee_added_the_subtask_and_blocked_task_",
+        "description": "migrations.versions.cc573a4cdaee_added_the_subtask_and_blocked_task_",
+        "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_constraint(None, 'subtasks', type_='unique')\n    # ### end Alembic commands ###",
+        "detail": "migrations.versions.cc573a4cdaee_added_the_subtask_and_blocked_task_",
         "documentation": {}
     },
     {
@@ -4002,6 +4501,42 @@
         "description": "migrations.versions.df1ab278c76c_added_oauthprovider_name_in_user_model",
         "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_column('users', 'oauth_provider')\n    # ### end Alembic commands ###",
         "detail": "migrations.versions.df1ab278c76c_added_oauthprovider_name_in_user_model",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
+        "importPath": "migrations.versions.ee9cf98d8ad8_added_the_subtask_and_blocked_task_",
+        "description": "migrations.versions.ee9cf98d8ad8_added_the_subtask_and_blocked_task_",
+        "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_constraint(op.f('subtasks_task_id_fkey'), 'subtasks', type_='foreignkey')\n    op.create_foreign_key(None, 'subtasks', 'tasks', ['task_id'], ['id'], ondelete='CASCADE')\n    # ### end Alembic commands ###\ndef downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_constraint(None, 'subtasks', type_='foreignkey')",
+        "detail": "migrations.versions.ee9cf98d8ad8_added_the_subtask_and_blocked_task_",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "migrations.versions.ee9cf98d8ad8_added_the_subtask_and_blocked_task_",
+        "description": "migrations.versions.ee9cf98d8ad8_added_the_subtask_and_blocked_task_",
+        "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_constraint(None, 'subtasks', type_='foreignkey')\n    op.create_foreign_key(op.f('subtasks_task_id_fkey'), 'subtasks', 'tasks', ['task_id'], ['id'])\n    # ### end Alembic commands ###",
+        "detail": "migrations.versions.ee9cf98d8ad8_added_the_subtask_and_blocked_task_",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
+        "importPath": "migrations.versions.fdc32daefc61_added_the_subtask_and_blocked_task_",
+        "description": "migrations.versions.fdc32daefc61_added_the_subtask_and_blocked_task_",
+        "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_column('tasks', 'is_blocked')\n    # ### end Alembic commands ###\ndef downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.add_column('tasks', sa.Column('is_blocked', sa.BOOLEAN(), autoincrement=False, nullable=True))\n    # ### end Alembic commands ###",
+        "detail": "migrations.versions.fdc32daefc61_added_the_subtask_and_blocked_task_",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "migrations.versions.fdc32daefc61_added_the_subtask_and_blocked_task_",
+        "description": "migrations.versions.fdc32daefc61_added_the_subtask_and_blocked_task_",
+        "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.add_column('tasks', sa.Column('is_blocked', sa.BOOLEAN(), autoincrement=False, nullable=True))\n    # ### end Alembic commands ###",
+        "detail": "migrations.versions.fdc32daefc61_added_the_subtask_and_blocked_task_",
         "documentation": {}
     },
     {

@@ -4,7 +4,14 @@ from fastapi import APIRouter, Depends
 from fastapi.exceptions import HTTPException
 from sqlalchemy.orm import Session
 
-from app.crud.task import create_task, delete_task, read_task, read_tasks, update_task
+from app.crud.task import (
+    change_user_list,
+    create_task,
+    delete_task,
+    read_task,
+    read_tasks,
+    update_task,
+)
 from app.database.db import get_db
 from app.dependencies.pagination import pagination
 from app.dependencies.task import project_user_required
@@ -70,7 +77,9 @@ def read_tasks_endpoint(
 
 
 # Update the basic info of task
-@task_router.put("/project/{project_id}/task/{task_id}", response_model=TaskReadSingle)
+@task_router.patch(
+    "/project/{project_id}/task/{task_id}", response_model=TaskReadSingle
+)
 def update_task_endpoint(
     task_id: UUID,
     project_id: UUID,
@@ -103,3 +112,18 @@ def delete_task_endpoint(
         raise HTTPException(status_code=400, detail=e)
     except RuntimeError as e:
         raise HTTPException(status_code=500, detail=e)
+
+
+# Update the user list for the task
+@task_router.patch(
+    "/project/{project_id}/task/{task_id}/users", response_model=TaskReadSingle
+)
+def change_user_list_of_task(
+    user_ids: list[UUID],
+    project_id: UUID,
+    task_id: UUID,
+    db: Session = Depends(get_db),
+    project_details: tuple = Depends(project_user_required(["Admin", "Manager"])),
+):
+    updated_task = change_user_list(user_ids, project_id, db, task_id)
+    return updated_task
