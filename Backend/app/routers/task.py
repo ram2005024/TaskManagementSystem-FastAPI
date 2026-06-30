@@ -5,6 +5,7 @@ from fastapi.exceptions import HTTPException
 from sqlalchemy.orm import Session
 
 from app.crud.task import (
+    blocklist_update,
     change_user_list,
     create_task,
     delete_task,
@@ -130,7 +131,9 @@ def change_user_list_of_task(
 
 
 # Update the block list task
-@task_router.patch("/project/{project_id}/task/{task_id}/blocklist")
+@task_router.patch(
+    "/project/{project_id}/task/{task_id}/blocklist", response_model=TaskReadSingle
+)
 def update_blocklist_task(
     project_id: UUID,
     task_id: UUID,
@@ -138,4 +141,5 @@ def update_blocklist_task(
     db: Session = Depends(get_db),
     project_details: tuple = Depends(project_user_required(["Admin", "Manager"])),
 ):
-    pass
+    task = blocklist_update(project_id, task_id, db, block_task_ids)
+    return task

@@ -47,15 +47,15 @@ class Task(Base):
     users = relationship("User", secondary=user_tasks, back_populates="tasks")
     sub_tasks = relationship("SubTask", back_populates="task")
     progress = Column(Integer, default=0)
-    __table_args__ = (
-        UniqueConstraint("task_name", "project_id", name="Unique task per project"),
-    )
     blocked_by = relationship(
         "Task",
         secondary=task_tasks,
         primaryjoin=id == task_tasks.c.task_id,
         secondaryjoin=id == task_tasks.c.blocked_by_id,
         backref="blocks",
+    )
+    __table_args__ = (
+        UniqueConstraint("task_name", "project_id", name="Unique task per project"),
     )
 
     @property
@@ -72,7 +72,7 @@ class SubTask(Base):
     status = Column(
         SQLEnum(TaskStatus, name="Sub-Task status"), default=TaskStatus.pending
     )
-    sub_task_name = Column(String, nullable=False, unique=True)
+    sub_task_name = Column(String, nullable=False)
     sub_task_description = Column(String)
     __table_args__ = (
         UniqueConstraint(

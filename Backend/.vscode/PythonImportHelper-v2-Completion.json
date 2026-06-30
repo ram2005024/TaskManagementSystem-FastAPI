@@ -2360,6 +2360,38 @@
         "documentation": {}
     },
     {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "Request",
         "importPath": "starlette.requests",
         "description": "starlette.requests",
@@ -2598,6 +2630,14 @@
         "description": "app.schemas.pagination",
         "isExtraImport": true,
         "detail": "app.schemas.pagination",
+        "documentation": {}
+    },
+    {
+        "label": "blocklist_update",
+        "importPath": "app.crud.task",
+        "description": "app.crud.task",
+        "isExtraImport": true,
+        "detail": "app.crud.task",
         "documentation": {}
     },
     {
@@ -3013,6 +3053,22 @@
         "documentation": {}
     },
     {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
         "label": "context",
         "importPath": "alembic",
         "description": "alembic",
@@ -3041,7 +3097,7 @@
         "kind": 5,
         "importPath": ".venv.Scripts.activate_this",
         "description": ".venv.Scripts.activate_this",
-        "peekOfCode": "bin_dir = os.path.dirname(abs_file)\nbase = bin_dir[: -len(\"Scripts\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"TaskManagementSystem\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))",
+        "peekOfCode": "bin_dir = os.path.dirname(abs_file)\nbase = bin_dir[: -len(\"Scripts\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))",
         "detail": ".venv.Scripts.activate_this",
         "documentation": {}
     },
@@ -3050,7 +3106,7 @@
         "kind": 5,
         "importPath": ".venv.Scripts.activate_this",
         "description": ".venv.Scripts.activate_this",
-        "peekOfCode": "base = bin_dir[: -len(\"Scripts\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"TaskManagementSystem\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)",
+        "peekOfCode": "base = bin_dir[: -len(\"Scripts\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)",
         "detail": ".venv.Scripts.activate_this",
         "documentation": {}
     },
@@ -3059,7 +3115,7 @@
         "kind": 5,
         "importPath": ".venv.Scripts.activate_this",
         "description": ".venv.Scripts.activate_this",
-        "peekOfCode": "os.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"TaskManagementSystem\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix",
+        "peekOfCode": "os.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix",
         "detail": ".venv.Scripts.activate_this",
         "documentation": {}
     },
@@ -3068,7 +3124,7 @@
         "kind": 5,
         "importPath": ".venv.Scripts.activate_this",
         "description": ".venv.Scripts.activate_this",
-        "peekOfCode": "os.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"TaskManagementSystem\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
         "detail": ".venv.Scripts.activate_this",
         "documentation": {}
     },
@@ -3077,7 +3133,7 @@
         "kind": 5,
         "importPath": ".venv.Scripts.activate_this",
         "description": ".venv.Scripts.activate_this",
-        "peekOfCode": "os.environ[\"VIRTUAL_ENV_PROMPT\"] = \"TaskManagementSystem\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV_PROMPT\"] = \"\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
         "detail": ".venv.Scripts.activate_this",
         "documentation": {}
     },
@@ -3482,7 +3538,7 @@
         "kind": 6,
         "importPath": "app.database.models.task",
         "description": "app.database.models.task",
-        "peekOfCode": "class SubTask(Base):\n    __tablename__ = \"subtasks\"\n    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    task_id = Column(UUID(as_uuid=True), ForeignKey(\"tasks.id\", ondelete=\"CASCADE\"))\n    task = relationship(\"Task\", back_populates=\"sub_tasks\")\n    status = Column(\n        SQLEnum(TaskStatus, name=\"Sub-Task status\"), default=TaskStatus.pending\n    )\n    sub_task_name = Column(String, nullable=False, unique=True)\n    sub_task_description = Column(String)",
+        "peekOfCode": "class SubTask(Base):\n    __tablename__ = \"subtasks\"\n    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    task_id = Column(UUID(as_uuid=True), ForeignKey(\"tasks.id\", ondelete=\"CASCADE\"))\n    task = relationship(\"Task\", back_populates=\"sub_tasks\")\n    status = Column(\n        SQLEnum(TaskStatus, name=\"Sub-Task status\"), default=TaskStatus.pending\n    )\n    sub_task_name = Column(String, nullable=False)\n    sub_task_description = Column(String)",
         "detail": "app.database.models.task",
         "documentation": {}
     },
@@ -3851,7 +3907,7 @@
         "kind": 2,
         "importPath": "app.routers.task",
         "description": "app.routers.task",
-        "peekOfCode": "def update_blocklist_task(\n    project_id: UUID,\n    task_id: UUID,\n    block_task_ids: list[UUID],\n    db: Session = Depends(get_db),\n    project_details: tuple = Depends(project_user_required([\"Admin\", \"Manager\"])),\n):\n    pass",
+        "peekOfCode": "def update_blocklist_task(\n    project_id: UUID,\n    task_id: UUID,\n    block_task_ids: list[UUID],\n    db: Session = Depends(get_db),\n    project_details: tuple = Depends(project_user_required([\"Admin\", \"Manager\"])),\n):\n    task = blocklist_update(project_id, task_id, db, block_task_ids)\n    return task",
         "detail": "app.routers.task",
         "documentation": {}
     },
@@ -4272,6 +4328,24 @@
     {
         "label": "upgrade",
         "kind": 2,
+        "importPath": "migrations.versions.12f5f4adafcc_added_the_subtask_and_blocked_task_",
+        "description": "migrations.versions.12f5f4adafcc_added_the_subtask_and_blocked_task_",
+        "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    pass\n    # ### end Alembic commands ###\ndef downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    pass\n    # ### end Alembic commands ###",
+        "detail": "migrations.versions.12f5f4adafcc_added_the_subtask_and_blocked_task_",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "migrations.versions.12f5f4adafcc_added_the_subtask_and_blocked_task_",
+        "description": "migrations.versions.12f5f4adafcc_added_the_subtask_and_blocked_task_",
+        "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    pass\n    # ### end Alembic commands ###",
+        "detail": "migrations.versions.12f5f4adafcc_added_the_subtask_and_blocked_task_",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
         "importPath": "migrations.versions.196756c97c51_added_the_subtask_and_blocked_task_",
         "description": "migrations.versions.196756c97c51_added_the_subtask_and_blocked_task_",
         "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.alter_column('tasks', 'project_id',\n               existing_type=sa.UUID(),\n               nullable=False)\n    # ### end Alembic commands ###\ndef downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###",
@@ -4321,6 +4395,24 @@
         "description": "migrations.versions.52e00db337bc_default_value_for_updated_at_inside_the_",
         "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    pass\n    # ### end Alembic commands ###",
         "detail": "migrations.versions.52e00db337bc_default_value_for_updated_at_inside_the_",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
+        "importPath": "migrations.versions.6182a66a6d7a_unique_subtask_name_removed",
+        "description": "migrations.versions.6182a66a6d7a_unique_subtask_name_removed",
+        "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_constraint(op.f('subtasks_sub_task_name_key'), 'subtasks', type_='unique')\n    # ### end Alembic commands ###\ndef downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_unique_constraint(op.f('subtasks_sub_task_name_key'), 'subtasks', ['sub_task_name'], postgresql_nulls_not_distinct=False)\n    # ### end Alembic commands ###",
+        "detail": "migrations.versions.6182a66a6d7a_unique_subtask_name_removed",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "migrations.versions.6182a66a6d7a_unique_subtask_name_removed",
+        "description": "migrations.versions.6182a66a6d7a_unique_subtask_name_removed",
+        "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_unique_constraint(op.f('subtasks_sub_task_name_key'), 'subtasks', ['sub_task_name'], postgresql_nulls_not_distinct=False)\n    # ### end Alembic commands ###",
+        "detail": "migrations.versions.6182a66a6d7a_unique_subtask_name_removed",
         "documentation": {}
     },
     {

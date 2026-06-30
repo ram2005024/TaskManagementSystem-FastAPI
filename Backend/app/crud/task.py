@@ -74,11 +74,21 @@ def create_task(data: TaskCreate, project_id: UUID, db: Session):
         return new_task
     except IntegrityError as e:
         db.rollback()
-        code = getattr(e.orig, "pgcode", None)
+        orig = getattr(e, "orig", None)
+        code = getattr(orig, "pgcode", None)
+        diag = getattr(orig, "diag", None)
+        unique_contraint = getattr(diag, "constraint_name", None)
+        column = getattr(diag, "column_name", None)
         if code == "23502":
-            raise ValueError("Project ID required but not given")
-        elif code == "23505":  # UNIQUE violation
-            raise ValueError("Task with the same name already exists.")
+            if column == "project_id":
+                raise ValueError("Project ID required to create a task")
+        elif code == "23505":
+            if unique_contraint == "Unique subtask per task":
+                raise ValueError("Same subtask already exist for the given task")
+            elif unique_contraint == "Unique task per project":
+                raise ValueError("Same task exists for the given project")
+            else:
+                raise ValueError(f"Unqiue contraint violation:{unique_contraint}")
         else:
             raise RuntimeError(f"Database integrity error: {e.orig}")
     except Exception as e:
@@ -210,8 +220,15 @@ def blocklist_update(
             raise ValueError("Task doesn't exist")
         if task.is_blocked:
             raise ValueError("This task is blocked.Please try again")
+        blocking_tasks = db.query(Task).filter(Task.id.in_(block_ids)).all()
+        if len(blocking_tasks) != len(block_ids):
+            raise ValueError("Some task doesn't exist")
+        if task.id in block_ids:
+            raise ValueError("Same task can't be blocked by itself")
+        if any(t.project_id != project_id for t in blocking_tasks):
+            raise ValueError("Task doesn't belong to the same project")
         previous_block_ids = {t.id for t in task.blocks}
-        new_block_ids = set(block_ids) - previous_block_ids
+        new_block_ids = set(block_ids)
         to_add_ids = new_block_ids - previous_block_ids
         if to_add_ids:
             to_add_tasks = db.query(Task).filter(Task.id.in_(to_add_ids)).all()
