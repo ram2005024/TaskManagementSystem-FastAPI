@@ -67,7 +67,9 @@ class SubTask(Base):
     __tablename__ = "subtasks"
 
     id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
-    task_id = Column(UUID(as_uuid=True), ForeignKey("tasks.id", ondelete="CASCADE"))
+    task_id = Column(
+        UUID(as_uuid=True), ForeignKey("tasks.id", ondelete="CASCADE"), nullable=False
+    )
     task = relationship("Task", back_populates="sub_tasks")
     status = Column(
         SQLEnum(TaskStatus, name="Sub-Task status"), default=TaskStatus.pending

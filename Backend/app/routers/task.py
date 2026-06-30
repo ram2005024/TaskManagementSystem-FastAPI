@@ -7,17 +7,26 @@ from sqlalchemy.orm import Session
 from app.crud.task import (
     blocklist_update,
     change_user_list,
+    create_subtask,
     create_task,
+    delete_subtask,
     delete_task,
     read_task,
     read_tasks,
+    update_subtask,
     update_task,
 )
 from app.database.db import get_db
 from app.dependencies.pagination import pagination
-from app.dependencies.task import project_user_required
+from app.dependencies.task import project_user_required, task_user_required
 from app.schemas.pagination import PaginatedResponse
-from app.schemas.task import TaskCreate, TaskReadMultiple, TaskReadSingle, TaskUpdate
+from app.schemas.task import (
+    SubTaskSchema,
+    TaskCreate,
+    TaskReadMultiple,
+    TaskReadSingle,
+    TaskUpdate,
+)
 
 task_router = APIRouter(prefix="/task", tags=["task_endpoints"])
 
@@ -143,3 +152,38 @@ def update_blocklist_task(
 ):
     task = blocklist_update(project_id, task_id, db, block_task_ids)
     return task
+
+
+@task_router.post("/{task_id}/subtask", response_model=SubTaskSchema)
+def create_new_subtask(
+    task_id: UUID,
+    data: SubTaskSchema,
+    db: Session = Depends(get_db),
+    task_user: tuple = Depends(task_user_required(["Admin", "Manager"])),
+):
+    subtask = create_subtask(task_id, data, db)
+    return subtask
+
+
+@task_router.patch("/{task_id}/subtask/{subtask_id}", response_model=SubTaskSchema)
+def update_subtask_endpoint(
+    data: SubTaskSchema,
+    task_id: UUID,
+    subtask_id: UUID,
+    db: Session = Depends(get_db),
+    task_user: tuple = Depends(task_user_required(["Admin", "Manager"])),
+):
+    data = update_subtask(task_id, subtask_id, data, db)
+    return data
+
+
+@task_router.delete("/{task_id}/subtask/{subtask_id}")
+def delete_subtask_endpoint(
+    task_id: UUID,
+    subtask_id: UUID,
+    task_user: tuple = Depends(task_user_required(["Admin", "Manager"])),
+    db: Session = Depends(get_db),
+):
+    data = delete_subtask(task_id, subtask_id, db)
+    if data:
+        return {"message": "Deleted subtask "}

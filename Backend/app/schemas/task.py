@@ -15,11 +15,13 @@ class TaskStatus(str, Enum):
     completed = "Completed"
 
 
-class SubTask(BaseModel):
-    sub_task_name: Optional[str]
-    sub_task_description: Optional[str]
-    status: TaskStatus = TaskStatus.pending
-    id: Optional[UUID] = None
+class SubTaskSchema(BaseModel):
+    sub_task_name: Optional[str] = None
+    sub_task_description: Optional[str] = None
+    status: Optional[TaskStatus] = TaskStatus.pending
+
+    class Config:
+        from_attributes = True
 
     @field_validator("sub_task_name")
     def check_sub_task_name(cls, v):
@@ -45,7 +47,7 @@ class TaskBase(BaseModel):
 class TaskCreate(TaskBase):
     user_ids: list[UUID]
     block_task_ids: Optional[list[UUID]]
-    subtasks: list[SubTask]
+    subtasks: list[SubTaskSchema]
 
 
 class TaskBasic(TaskBase):
@@ -59,9 +61,10 @@ class TaskReadSingle(TaskBase):
     updated_at: datetime
     project: "ProjectReadMultiple"
     status: str
+    progress: int
     blocks: Optional[list[TaskBasic]]
     blocked_by: Optional[list[TaskBasic]]
-    sub_tasks: list[SubTask]
+    sub_tasks: list[SubTaskSchema]
     is_blocked: bool
     users: list["UserReadBasic"]
 
@@ -74,8 +77,9 @@ class TaskReadMultiple(TaskBase):
     id: UUID
     created_at: datetime
     status: str
+    progress: int
     users: list["UserReadBasic"]
-    sub_tasks: list[SubTask]
+    sub_tasks: list[SubTaskSchema]
     is_blocked: bool
     blocks: Optional[list[TaskBasic]]
     blocked_by: Optional[list[TaskBasic]]

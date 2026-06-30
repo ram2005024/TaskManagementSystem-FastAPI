@@ -8,7 +8,7 @@ from app.database.models.association import task_tasks, user_tasks
 from app.database.models.project import Project
 from app.database.models.task import SubTask, Task
 from app.database.models.user import User
-from app.schemas.task import TaskCreate, TaskUpdate
+from app.schemas.task import SubTaskSchema, TaskCreate, TaskUpdate
 
 
 # Create task
@@ -241,3 +241,79 @@ def blocklist_update(
     except Exception as e:
         db.rollback()
         raise HTTPException(status_code=400, detail=str(e))
+
+
+# Create subtask
+def create_subtask(task_id: UUID, data: SubTaskSchema, db: Session):
+    try:
+        sub_task = SubTask(task_id=task_id, **data.model_dump(exclude_unset=True))
+        db.add(sub_task)
+        db.commit()
+        return sub_task
+    except IntegrityError as e:
+        db.rollback()
+        orig = getattr(e, "orig", None)
+        diag = getattr(orig, "diag", None)
+        constraint = getattr(diag, "constraint_name", None)
+        column = getattr(diag, "column_name", None)
+        code = getattr(orig, "pgcode", None)
+        if code == "23505":  # Contraint error
+            if constraint == "Unique subtask per task":
+                raise HTTPException(
+                    status_code=400, detail="SubTask already exists for the task"
+                )
+            else:
+                raise HTTPException(
+                    status_code=400, detail=f"Constraint error:{constraint}"
+                )
+        if code == "23502":
+            if column == "task_id":
+                raise HTTPException(status_code=400, detail="Task id is not provided")
+            else:
+                raise HTTPException(
+                    status_code=400, detail=f"Nullable error for column: {column}"
+                )
+        raise HTTPException(status_code=400, detail=f"Integrity error: {e}")
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=str(e))
+
+
+# Update subtask
+def update_subtask(task_id: UUID, sub_task_id, update_data: SubTaskSchema, db: Session):
+    try:
+        sub_task = (
+            db.query(SubTask)
+            .filter(SubTask.task_id == task_id, SubTask.id == sub_task_id)
+            .one_or_none()
+        )
+        if not sub_task:
+            raise HTTPException(status_code=404, detail="Subtask not found")
+        if update_data.status and sub_task.task.is_blocked:
+            raise HTTPException(
+                status_code=400, detail="Can't change the status for the blocked task"
+            )
+        for key, value in update_data.model_dump(exclude_unset=True).items():
+            setattr(sub_task, key, value)
+        db.commit()
+        return sub_task
+    except Exception as e:
+        db.rollback()
+        raise e
+
+    # Delete the subtask
+
+
+def delete_subtask(task_id: UUID, subtask_id: UUID, db: Session):
+    try:
+        sub_task = (
+            db.query(SubTask)
+            .filter(SubTask.task_id == task_id, SubTask.id == subtask_id)
+            .one_or_none()
+        )
+        if sub_task is None:
+            raise HTTPException(status_code=404, detail="SubTask doesn't exist")
+        db.delete(sub_task)
+        db.commit()
+        return True
+    except Exception as e:
+        raise e

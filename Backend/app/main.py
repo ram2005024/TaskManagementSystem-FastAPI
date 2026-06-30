@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from starlette.middleware.sessions import SessionMiddleware
 
+import app.events.task
 import app.schemas.rebuild
 from app.core.config import settings
 from app.routers.auth import authRouter

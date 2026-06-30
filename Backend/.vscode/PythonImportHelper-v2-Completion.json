@@ -879,6 +879,14 @@
         "documentation": {}
     },
     {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
         "label": "Company",
         "importPath": "app.database.models",
         "description": "app.database.models",
@@ -1028,6 +1036,14 @@
         "description": "app.utils.upload_image",
         "isExtraImport": true,
         "detail": "app.utils.upload_image",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi.exceptions",
+        "description": "fastapi.exceptions",
+        "isExtraImport": true,
+        "detail": "fastapi.exceptions",
         "documentation": {}
     },
     {
@@ -1416,6 +1432,14 @@
         "documentation": {}
     },
     {
+        "label": "event",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
         "label": "engine_from_config",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
@@ -1521,6 +1545,30 @@
     },
     {
         "label": "TaskStatus",
+        "importPath": "app.database.models.task",
+        "description": "app.database.models.task",
+        "isExtraImport": true,
+        "detail": "app.database.models.task",
+        "documentation": {}
+    },
+    {
+        "label": "Task",
+        "importPath": "app.database.models.task",
+        "description": "app.database.models.task",
+        "isExtraImport": true,
+        "detail": "app.database.models.task",
+        "documentation": {}
+    },
+    {
+        "label": "SubTask",
+        "importPath": "app.database.models.task",
+        "description": "app.database.models.task",
+        "isExtraImport": true,
+        "detail": "app.database.models.task",
+        "documentation": {}
+    },
+    {
+        "label": "Task",
         "importPath": "app.database.models.task",
         "description": "app.database.models.task",
         "isExtraImport": true,
@@ -1664,6 +1712,14 @@
         "documentation": {}
     },
     {
+        "label": "SubTaskSchema",
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "isExtraImport": true,
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
         "label": "TaskCreate",
         "importPath": "app.schemas.task",
         "description": "app.schemas.task",
@@ -1673,6 +1729,14 @@
     },
     {
         "label": "TaskUpdate",
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "isExtraImport": true,
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "SubTaskSchema",
         "importPath": "app.schemas.task",
         "description": "app.schemas.task",
         "isExtraImport": true,
@@ -2392,6 +2456,22 @@
         "documentation": {}
     },
     {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "Request",
         "importPath": "starlette.requests",
         "description": "starlette.requests",
@@ -2649,7 +2729,23 @@
         "documentation": {}
     },
     {
+        "label": "create_subtask",
+        "importPath": "app.crud.task",
+        "description": "app.crud.task",
+        "isExtraImport": true,
+        "detail": "app.crud.task",
+        "documentation": {}
+    },
+    {
         "label": "create_task",
+        "importPath": "app.crud.task",
+        "description": "app.crud.task",
+        "isExtraImport": true,
+        "detail": "app.crud.task",
+        "documentation": {}
+    },
+    {
+        "label": "delete_subtask",
         "importPath": "app.crud.task",
         "description": "app.crud.task",
         "isExtraImport": true,
@@ -2681,6 +2777,14 @@
         "documentation": {}
     },
     {
+        "label": "update_subtask",
+        "importPath": "app.crud.task",
+        "description": "app.crud.task",
+        "isExtraImport": true,
+        "detail": "app.crud.task",
+        "documentation": {}
+    },
+    {
         "label": "update_task",
         "importPath": "app.crud.task",
         "description": "app.crud.task",
@@ -2690,6 +2794,14 @@
     },
     {
         "label": "project_user_required",
+        "importPath": "app.dependencies.task",
+        "description": "app.dependencies.task",
+        "isExtraImport": true,
+        "detail": "app.dependencies.task",
+        "documentation": {}
+    },
+    {
+        "label": "task_user_required",
         "importPath": "app.dependencies.task",
         "description": "app.dependencies.task",
         "isExtraImport": true,
@@ -2868,6 +2980,15 @@
         "documentation": {}
     },
     {
+        "label": "app.events.task",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "app.events.task",
+        "description": "app.events.task",
+        "detail": "app.events.task",
+        "documentation": {}
+    },
+    {
         "label": "app.schemas.rebuild",
         "kind": 6,
         "isExtraImport": true,
@@ -2906,6 +3027,14 @@
         "description": "app.routers.task",
         "isExtraImport": true,
         "detail": "app.routers.task",
+        "documentation": {}
+    },
+    {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
         "documentation": {}
     },
     {
@@ -3426,6 +3555,33 @@
         "documentation": {}
     },
     {
+        "label": "create_subtask",
+        "kind": 2,
+        "importPath": "app.crud.task",
+        "description": "app.crud.task",
+        "peekOfCode": "def create_subtask(task_id: UUID, data: SubTaskSchema, db: Session):\n    try:\n        sub_task = SubTask(task_id=task_id, **data.model_dump(exclude_unset=True))\n        db.add(sub_task)\n        db.commit()\n        return sub_task\n    except IntegrityError as e:\n        db.rollback()\n        orig = getattr(e, \"orig\", None)\n        diag = getattr(orig, \"diag\", None)",
+        "detail": "app.crud.task",
+        "documentation": {}
+    },
+    {
+        "label": "update_subtask",
+        "kind": 2,
+        "importPath": "app.crud.task",
+        "description": "app.crud.task",
+        "peekOfCode": "def update_subtask(task_id: UUID, sub_task_id, update_data: SubTaskSchema, db: Session):\n    try:\n        sub_task = (\n            db.query(SubTask)\n            .filter(SubTask.task_id == task_id, SubTask.id == sub_task_id)\n            .one_or_none()\n        )\n        if not sub_task:\n            raise HTTPException(status_code=404, detail=\"Subtask not found\")\n        if update_data.status and sub_task.task.is_blocked:",
+        "detail": "app.crud.task",
+        "documentation": {}
+    },
+    {
+        "label": "delete_subtask",
+        "kind": 2,
+        "importPath": "app.crud.task",
+        "description": "app.crud.task",
+        "peekOfCode": "def delete_subtask(task_id: UUID, subtask_id: UUID, db: Session):\n    try:\n        sub_task = (\n            db.query(SubTask)\n            .filter(SubTask.task_id == task_id, SubTask.id == subtask_id)\n            .one_or_none()\n        )\n        if sub_task is None:\n            raise HTTPException(status_code=404, detail=\"SubTask doesn't exist\")\n        db.delete(sub_task)",
+        "detail": "app.crud.task",
+        "documentation": {}
+    },
+    {
         "label": "user_tasks",
         "kind": 5,
         "importPath": "app.database.models.association",
@@ -3538,7 +3694,7 @@
         "kind": 6,
         "importPath": "app.database.models.task",
         "description": "app.database.models.task",
-        "peekOfCode": "class SubTask(Base):\n    __tablename__ = \"subtasks\"\n    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    task_id = Column(UUID(as_uuid=True), ForeignKey(\"tasks.id\", ondelete=\"CASCADE\"))\n    task = relationship(\"Task\", back_populates=\"sub_tasks\")\n    status = Column(\n        SQLEnum(TaskStatus, name=\"Sub-Task status\"), default=TaskStatus.pending\n    )\n    sub_task_name = Column(String, nullable=False)\n    sub_task_description = Column(String)",
+        "peekOfCode": "class SubTask(Base):\n    __tablename__ = \"subtasks\"\n    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    task_id = Column(\n        UUID(as_uuid=True), ForeignKey(\"tasks.id\", ondelete=\"CASCADE\"), nullable=False\n    )\n    task = relationship(\"Task\", back_populates=\"sub_tasks\")\n    status = Column(\n        SQLEnum(TaskStatus, name=\"Sub-Task status\"), default=TaskStatus.pending\n    )",
         "detail": "app.database.models.task",
         "documentation": {}
     },
@@ -3675,6 +3831,24 @@
         "description": "app.dependencies.task",
         "peekOfCode": "def project_user_required(user_role: list[str]):\n    def wrapper(\n        project_id: UUID,\n        user=Depends(role_check(user_role)),\n        db: Session = Depends(get_db),\n    ):\n        project = db.query(Project).filter(Project.id == project_id).one_or_none()\n        if project is None:\n            raise HTTPException(status_code=404, detail=\"Project doesn't exist.\")\n        project_user_ids = [str(u.id) for u in project.users]",
         "detail": "app.dependencies.task",
+        "documentation": {}
+    },
+    {
+        "label": "task_user_required",
+        "kind": 2,
+        "importPath": "app.dependencies.task",
+        "description": "app.dependencies.task",
+        "peekOfCode": "def task_user_required(role: list[str]):\n    def wrapper(\n        task_id: UUID, user=Depends(role_check(role)), db: Session = Depends(get_db)\n    ):\n        task = db.query(Task).filter(Task.id == task_id).one_or_none()\n        if task is None:\n            raise HTTPException(status_code=404, detail=\"Task doesn't exist\")\n        task_user_ids = [u.id for u in task.users]\n        if user[\"role\"] in [\"Admin\", \"Manager\"]:\n            return (user, task)",
+        "detail": "app.dependencies.task",
+        "documentation": {}
+    },
+    {
+        "label": "update_task_status_progress",
+        "kind": 2,
+        "importPath": "app.events.task",
+        "description": "app.events.task",
+        "peekOfCode": "def update_task_status_progress(mapper, connection, target):\n    try:\n        session = Session(bind=connection)\n        task = session.query(Task).filter(Task.id == target.task_id).one_or_none()\n        if not task:\n            raise ValueError(\"Task doesn't exist\")\n        sub_tasks = session.query(SubTask).filter(SubTask.task_id == task.id).all()\n        total = len(sub_tasks)\n        completed = sum(1 for s in sub_tasks if getattr(s, \"status\") == \"Completed\")\n        progress = int((completed / total) * 100) if total > 0 else 0",
+        "detail": "app.events.task",
         "documentation": {}
     },
     {
@@ -3907,7 +4081,34 @@
         "kind": 2,
         "importPath": "app.routers.task",
         "description": "app.routers.task",
-        "peekOfCode": "def update_blocklist_task(\n    project_id: UUID,\n    task_id: UUID,\n    block_task_ids: list[UUID],\n    db: Session = Depends(get_db),\n    project_details: tuple = Depends(project_user_required([\"Admin\", \"Manager\"])),\n):\n    task = blocklist_update(project_id, task_id, db, block_task_ids)\n    return task",
+        "peekOfCode": "def update_blocklist_task(\n    project_id: UUID,\n    task_id: UUID,\n    block_task_ids: list[UUID],\n    db: Session = Depends(get_db),\n    project_details: tuple = Depends(project_user_required([\"Admin\", \"Manager\"])),\n):\n    task = blocklist_update(project_id, task_id, db, block_task_ids)\n    return task\n@task_router.post(\"/{task_id}/subtask\", response_model=SubTaskSchema)",
+        "detail": "app.routers.task",
+        "documentation": {}
+    },
+    {
+        "label": "create_new_subtask",
+        "kind": 2,
+        "importPath": "app.routers.task",
+        "description": "app.routers.task",
+        "peekOfCode": "def create_new_subtask(\n    task_id: UUID,\n    data: SubTaskSchema,\n    db: Session = Depends(get_db),\n    task_user: tuple = Depends(task_user_required([\"Admin\", \"Manager\"])),\n):\n    subtask = create_subtask(task_id, data, db)\n    return subtask\n@task_router.patch(\"/{task_id}/subtask/{subtask_id}\", response_model=SubTaskSchema)\ndef update_subtask_endpoint(",
+        "detail": "app.routers.task",
+        "documentation": {}
+    },
+    {
+        "label": "update_subtask_endpoint",
+        "kind": 2,
+        "importPath": "app.routers.task",
+        "description": "app.routers.task",
+        "peekOfCode": "def update_subtask_endpoint(\n    data: SubTaskSchema,\n    task_id: UUID,\n    subtask_id: UUID,\n    db: Session = Depends(get_db),\n    task_user: tuple = Depends(task_user_required([\"Admin\", \"Manager\"])),\n):\n    data = update_subtask(task_id, subtask_id, data, db)\n    return data\n@task_router.delete(\"/{task_id}/subtask/{subtask_id}\")",
+        "detail": "app.routers.task",
+        "documentation": {}
+    },
+    {
+        "label": "delete_subtask_endpoint",
+        "kind": 2,
+        "importPath": "app.routers.task",
+        "description": "app.routers.task",
+        "peekOfCode": "def delete_subtask_endpoint(\n    task_id: UUID,\n    subtask_id: UUID,\n    task_user: tuple = Depends(task_user_required([\"Admin\", \"Manager\"])),\n    db: Session = Depends(get_db),\n):\n    data = delete_subtask(task_id, subtask_id, db)\n    if data:\n        return {\"message\": \"Deleted subtask \"}",
         "detail": "app.routers.task",
         "documentation": {}
     },
@@ -4114,16 +4315,16 @@
         "kind": 6,
         "importPath": "app.schemas.task",
         "description": "app.schemas.task",
-        "peekOfCode": "class TaskStatus(str, Enum):\n    pending = \"Pending\"\n    completed = \"Completed\"\nclass SubTask(BaseModel):\n    sub_task_name: Optional[str]\n    sub_task_description: Optional[str]\n    status: TaskStatus = TaskStatus.pending\n    id: Optional[UUID] = None\n    @field_validator(\"sub_task_name\")\n    def check_sub_task_name(cls, v):",
+        "peekOfCode": "class TaskStatus(str, Enum):\n    pending = \"Pending\"\n    completed = \"Completed\"\nclass SubTaskSchema(BaseModel):\n    sub_task_name: Optional[str] = None\n    sub_task_description: Optional[str] = None\n    status: Optional[TaskStatus] = TaskStatus.pending\n    class Config:\n        from_attributes = True\n    @field_validator(\"sub_task_name\")",
         "detail": "app.schemas.task",
         "documentation": {}
     },
     {
-        "label": "SubTask",
+        "label": "SubTaskSchema",
         "kind": 6,
         "importPath": "app.schemas.task",
         "description": "app.schemas.task",
-        "peekOfCode": "class SubTask(BaseModel):\n    sub_task_name: Optional[str]\n    sub_task_description: Optional[str]\n    status: TaskStatus = TaskStatus.pending\n    id: Optional[UUID] = None\n    @field_validator(\"sub_task_name\")\n    def check_sub_task_name(cls, v):\n        if len(v) < 5:\n            raise ValueError(\"Subtask name should be at least 5 characters\")\n        return v",
+        "peekOfCode": "class SubTaskSchema(BaseModel):\n    sub_task_name: Optional[str] = None\n    sub_task_description: Optional[str] = None\n    status: Optional[TaskStatus] = TaskStatus.pending\n    class Config:\n        from_attributes = True\n    @field_validator(\"sub_task_name\")\n    def check_sub_task_name(cls, v):\n        if len(v) < 5:\n            raise ValueError(\"Subtask name should be at least 5 characters\")",
         "detail": "app.schemas.task",
         "documentation": {}
     },
@@ -4141,7 +4342,7 @@
         "kind": 6,
         "importPath": "app.schemas.task",
         "description": "app.schemas.task",
-        "peekOfCode": "class TaskCreate(TaskBase):\n    user_ids: list[UUID]\n    block_task_ids: Optional[list[UUID]]\n    subtasks: list[SubTask]\nclass TaskBasic(TaskBase):\n    id: UUID\n# For task read single\nclass TaskReadSingle(TaskBase):\n    id: UUID\n    created_at: datetime",
+        "peekOfCode": "class TaskCreate(TaskBase):\n    user_ids: list[UUID]\n    block_task_ids: Optional[list[UUID]]\n    subtasks: list[SubTaskSchema]\nclass TaskBasic(TaskBase):\n    id: UUID\n# For task read single\nclass TaskReadSingle(TaskBase):\n    id: UUID\n    created_at: datetime",
         "detail": "app.schemas.task",
         "documentation": {}
     },
@@ -4150,7 +4351,7 @@
         "kind": 6,
         "importPath": "app.schemas.task",
         "description": "app.schemas.task",
-        "peekOfCode": "class TaskBasic(TaskBase):\n    id: UUID\n# For task read single\nclass TaskReadSingle(TaskBase):\n    id: UUID\n    created_at: datetime\n    updated_at: datetime\n    project: \"ProjectReadMultiple\"\n    status: str\n    blocks: Optional[list[TaskBasic]]",
+        "peekOfCode": "class TaskBasic(TaskBase):\n    id: UUID\n# For task read single\nclass TaskReadSingle(TaskBase):\n    id: UUID\n    created_at: datetime\n    updated_at: datetime\n    project: \"ProjectReadMultiple\"\n    status: str\n    progress: int",
         "detail": "app.schemas.task",
         "documentation": {}
     },
@@ -4159,7 +4360,7 @@
         "kind": 6,
         "importPath": "app.schemas.task",
         "description": "app.schemas.task",
-        "peekOfCode": "class TaskReadSingle(TaskBase):\n    id: UUID\n    created_at: datetime\n    updated_at: datetime\n    project: \"ProjectReadMultiple\"\n    status: str\n    blocks: Optional[list[TaskBasic]]\n    blocked_by: Optional[list[TaskBasic]]\n    sub_tasks: list[SubTask]\n    is_blocked: bool",
+        "peekOfCode": "class TaskReadSingle(TaskBase):\n    id: UUID\n    created_at: datetime\n    updated_at: datetime\n    project: \"ProjectReadMultiple\"\n    status: str\n    progress: int\n    blocks: Optional[list[TaskBasic]]\n    blocked_by: Optional[list[TaskBasic]]\n    sub_tasks: list[SubTaskSchema]",
         "detail": "app.schemas.task",
         "documentation": {}
     },
@@ -4168,7 +4369,7 @@
         "kind": 6,
         "importPath": "app.schemas.task",
         "description": "app.schemas.task",
-        "peekOfCode": "class TaskReadMultiple(TaskBase):\n    id: UUID\n    created_at: datetime\n    status: str\n    users: list[\"UserReadBasic\"]\n    sub_tasks: list[SubTask]\n    is_blocked: bool\n    blocks: Optional[list[TaskBasic]]\n    blocked_by: Optional[list[TaskBasic]]\n    class Config:",
+        "peekOfCode": "class TaskReadMultiple(TaskBase):\n    id: UUID\n    created_at: datetime\n    status: str\n    progress: int\n    users: list[\"UserReadBasic\"]\n    sub_tasks: list[SubTaskSchema]\n    is_blocked: bool\n    blocks: Optional[list[TaskBasic]]\n    blocked_by: Optional[list[TaskBasic]]",
         "detail": "app.schemas.task",
         "documentation": {}
     },
@@ -4629,6 +4830,24 @@
         "description": "migrations.versions.ee9cf98d8ad8_added_the_subtask_and_blocked_task_",
         "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_constraint(None, 'subtasks', type_='foreignkey')\n    op.create_foreign_key(op.f('subtasks_task_id_fkey'), 'subtasks', 'tasks', ['task_id'], ['id'])\n    # ### end Alembic commands ###",
         "detail": "migrations.versions.ee9cf98d8ad8_added_the_subtask_and_blocked_task_",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
+        "importPath": "migrations.versions.f03dd03c10d3_nullable_false_for_task_id_in_subtask",
+        "description": "migrations.versions.f03dd03c10d3_nullable_false_for_task_id_in_subtask",
+        "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.alter_column('subtasks', 'task_id',\n               existing_type=sa.UUID(),\n               nullable=False)\n    # ### end Alembic commands ###\ndef downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###",
+        "detail": "migrations.versions.f03dd03c10d3_nullable_false_for_task_id_in_subtask",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "migrations.versions.f03dd03c10d3_nullable_false_for_task_id_in_subtask",
+        "description": "migrations.versions.f03dd03c10d3_nullable_false_for_task_id_in_subtask",
+        "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.alter_column('subtasks', 'task_id',\n               existing_type=sa.UUID(),\n               nullable=True)\n    # ### end Alembic commands ###",
+        "detail": "migrations.versions.f03dd03c10d3_nullable_false_for_task_id_in_subtask",
         "documentation": {}
     },
     {
