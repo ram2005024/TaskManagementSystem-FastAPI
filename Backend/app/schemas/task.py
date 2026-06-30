@@ -19,6 +19,7 @@ class SubTaskSchema(BaseModel):
     sub_task_name: Optional[str] = None
     sub_task_description: Optional[str] = None
     status: Optional[TaskStatus] = TaskStatus.pending
+    id: Optional[UUID] = None
 
     class Config:
         from_attributes = True

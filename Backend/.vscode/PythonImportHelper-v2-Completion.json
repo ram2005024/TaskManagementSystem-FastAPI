@@ -4315,7 +4315,7 @@
         "kind": 6,
         "importPath": "app.schemas.task",
         "description": "app.schemas.task",
-        "peekOfCode": "class TaskStatus(str, Enum):\n    pending = \"Pending\"\n    completed = \"Completed\"\nclass SubTaskSchema(BaseModel):\n    sub_task_name: Optional[str] = None\n    sub_task_description: Optional[str] = None\n    status: Optional[TaskStatus] = TaskStatus.pending\n    class Config:\n        from_attributes = True\n    @field_validator(\"sub_task_name\")",
+        "peekOfCode": "class TaskStatus(str, Enum):\n    pending = \"Pending\"\n    completed = \"Completed\"\nclass SubTaskSchema(BaseModel):\n    sub_task_name: Optional[str] = None\n    sub_task_description: Optional[str] = None\n    status: Optional[TaskStatus] = TaskStatus.pending\n    id: Optional[UUID] = None\n    class Config:\n        from_attributes = True",
         "detail": "app.schemas.task",
         "documentation": {}
     },
@@ -4324,7 +4324,7 @@
         "kind": 6,
         "importPath": "app.schemas.task",
         "description": "app.schemas.task",
-        "peekOfCode": "class SubTaskSchema(BaseModel):\n    sub_task_name: Optional[str] = None\n    sub_task_description: Optional[str] = None\n    status: Optional[TaskStatus] = TaskStatus.pending\n    class Config:\n        from_attributes = True\n    @field_validator(\"sub_task_name\")\n    def check_sub_task_name(cls, v):\n        if len(v) < 5:\n            raise ValueError(\"Subtask name should be at least 5 characters\")",
+        "peekOfCode": "class SubTaskSchema(BaseModel):\n    sub_task_name: Optional[str] = None\n    sub_task_description: Optional[str] = None\n    status: Optional[TaskStatus] = TaskStatus.pending\n    id: Optional[UUID] = None\n    class Config:\n        from_attributes = True\n    @field_validator(\"sub_task_name\")\n    def check_sub_task_name(cls, v):\n        if len(v) < 5:",
         "detail": "app.schemas.task",
         "documentation": {}
     },
