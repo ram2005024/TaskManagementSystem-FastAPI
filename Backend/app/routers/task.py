@@ -40,7 +40,8 @@ def create_task_endpoint(
     project_details: tuple = Depends(project_user_required(["Admin", "Manager"])),
 ):
     try:
-        task = create_task(data, project_id, db)
+        user, project = project_details
+        task = create_task(data, project_id, db, project)
         return task
     except ValueError as e:
         raise HTTPException(status_code=400, detail=str(e))

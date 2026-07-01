@@ -3,7 +3,6 @@ from enum import Enum
 
 from sqlalchemy import (
     Column,
-    Date,
     DateTime,
     ForeignKey,
     String,
@@ -44,7 +43,7 @@ class Project(Base):
         index=True,
     )
     created_at = Column(DateTime, server_default=func.now())
-    end_on = Column(Date, nullable=False)
+    end_on = Column(DateTime, nullable=False)
     updated_at = Column(DateTime, default=func.now(), onupdate=func.now())
     project_description = Column(String)
     users = relationship("User", secondary=user_projects, back_populates="projects")

@@ -4,6 +4,9 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
 class Settings(BaseSettings):
+    POSTGRES_USER: str
+    POSTGRES_PASSWORD: str
+    POSTGRES_DB: str
     DATABASE_URL: str
     CLOUD_NAME: str
     CLOUD_KEY: int
@@ -28,6 +31,8 @@ class Settings(BaseSettings):
     REDIRECT_URL_FACEBOOK: str
     REDIRECT_URL_GOOGLE: str
     REDIRECT_URL_GITHUB: str
+    REDIS_BROKER_URL: str
+    REDIS_BACKEND_URL: str
     model_config = SettingsConfigDict(env_file=".env")
 
 
@@ -41,4 +46,4 @@ cloudinary.config(
 )
 
 # Redis settings
-redis = redis.Redis(host="localhost", port=6379, db=0, decode_responses=True)
+redis = redis.Redis(host="redis", port=6379, db=0, decode_responses=True)

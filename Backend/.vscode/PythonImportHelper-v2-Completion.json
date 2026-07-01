@@ -1,46 +1,10 @@
 [
     {
-        "label": "runpy",
-        "kind": 6,
+        "label": "Celery",
+        "importPath": "celery",
+        "description": "celery",
         "isExtraImport": true,
-        "importPath": "runpy",
-        "description": "runpy",
-        "detail": "runpy",
-        "documentation": {}
-    },
-    {
-        "label": "annotations",
-        "importPath": "__future__",
-        "description": "__future__",
-        "isExtraImport": true,
-        "detail": "__future__",
-        "documentation": {}
-    },
-    {
-        "label": "os",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "os",
-        "description": "os",
-        "detail": "os",
-        "documentation": {}
-    },
-    {
-        "label": "site",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "site",
-        "description": "site",
-        "detail": "site",
-        "documentation": {}
-    },
-    {
-        "label": "sys",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "sys",
-        "description": "sys",
-        "detail": "sys",
+        "detail": "celery",
         "documentation": {}
     },
     {
@@ -526,6 +490,14 @@
         "documentation": {}
     },
     {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
         "label": "date",
         "importPath": "datetime",
         "description": "datetime",
@@ -542,7 +514,7 @@
         "documentation": {}
     },
     {
-        "label": "date",
+        "label": "datetime",
         "importPath": "datetime",
         "description": "datetime",
         "isExtraImport": true,
@@ -579,6 +551,14 @@
         "isExtraImport": true,
         "importPath": "uuid",
         "description": "uuid",
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
         "detail": "uuid",
         "documentation": {}
     },
@@ -808,6 +788,14 @@
     },
     {
         "label": "declarative_base",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
         "importPath": "sqlalchemy.orm",
         "description": "sqlalchemy.orm",
         "isExtraImport": true,
@@ -1119,6 +1107,14 @@
         "documentation": {}
     },
     {
+        "label": "HTTPException",
+        "importPath": "fastapi.exceptions",
+        "description": "fastapi.exceptions",
+        "isExtraImport": true,
+        "detail": "fastapi.exceptions",
+        "documentation": {}
+    },
+    {
         "label": "sqlalchemy",
         "kind": 6,
         "isExtraImport": true,
@@ -1249,14 +1245,6 @@
     },
     {
         "label": "Column",
-        "importPath": "sqlalchemy",
-        "description": "sqlalchemy",
-        "isExtraImport": true,
-        "detail": "sqlalchemy",
-        "documentation": {}
-    },
-    {
-        "label": "Date",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
         "isExtraImport": true,
@@ -1505,6 +1493,14 @@
     },
     {
         "label": "ProjectUrgency",
+        "importPath": "app.database.models.project",
+        "description": "app.database.models.project",
+        "isExtraImport": true,
+        "detail": "app.database.models.project",
+        "documentation": {}
+    },
+    {
+        "label": "Project",
         "importPath": "app.database.models.project",
         "description": "app.database.models.project",
         "isExtraImport": true,
@@ -1789,6 +1785,14 @@
         "description": "app.schemas.task",
         "isExtraImport": true,
         "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "due_date_check",
+        "importPath": "app.services.task",
+        "description": "app.services.task",
+        "isExtraImport": true,
+        "detail": "app.services.task",
         "documentation": {}
     },
     {
@@ -2472,6 +2476,54 @@
         "documentation": {}
     },
     {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "Request",
         "importPath": "starlette.requests",
         "description": "starlette.requests",
@@ -2565,6 +2617,14 @@
         "description": "app.services.user",
         "isExtraImport": true,
         "detail": "app.services.user",
+        "documentation": {}
+    },
+    {
+        "label": "update_task_status",
+        "importPath": "app.workers.tasks.task_status",
+        "description": "app.workers.tasks.task_status",
+        "isExtraImport": true,
+        "detail": "app.workers.tasks.task_status",
         "documentation": {}
     },
     {
@@ -2964,6 +3024,14 @@
         "documentation": {}
     },
     {
+        "label": "celery_app",
+        "importPath": "app.core.celery",
+        "description": "app.core.celery",
+        "isExtraImport": true,
+        "detail": "app.core.celery",
+        "documentation": {}
+    },
+    {
         "label": "CORSMiddleware",
         "importPath": "fastapi.middleware.cors",
         "description": "fastapi.middleware.cors",
@@ -3198,6 +3266,30 @@
         "documentation": {}
     },
     {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
         "label": "context",
         "importPath": "alembic",
         "description": "alembic",
@@ -3222,84 +3314,38 @@
         "documentation": {}
     },
     {
-        "label": "bin_dir",
-        "kind": 5,
-        "importPath": ".venv.Scripts.activate_this",
-        "description": ".venv.Scripts.activate_this",
-        "peekOfCode": "bin_dir = os.path.dirname(abs_file)\nbase = bin_dir[: -len(\"Scripts\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))",
-        "detail": ".venv.Scripts.activate_this",
+        "label": "subprocess",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "subprocess",
+        "description": "subprocess",
+        "detail": "subprocess",
         "documentation": {}
     },
     {
-        "label": "base",
-        "kind": 5,
-        "importPath": ".venv.Scripts.activate_this",
-        "description": ".venv.Scripts.activate_this",
-        "peekOfCode": "base = bin_dir[: -len(\"Scripts\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)",
-        "detail": ".venv.Scripts.activate_this",
+        "label": "run_process",
+        "importPath": "watchfiles",
+        "description": "watchfiles",
+        "isExtraImport": true,
+        "detail": "watchfiles",
         "documentation": {}
     },
     {
-        "label": "os.environ[\"PATH\"]",
+        "label": "celery_app",
         "kind": 5,
-        "importPath": ".venv.Scripts.activate_this",
-        "description": ".venv.Scripts.activate_this",
-        "peekOfCode": "os.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix",
-        "detail": ".venv.Scripts.activate_this",
+        "importPath": "app.core.celery",
+        "description": "app.core.celery",
+        "peekOfCode": "celery_app = Celery(\n    name=\"task-management-system\",\n    broker=settings.REDIS_BROKER_URL,\n    backend=settings.REDIS_BACKEND_URL,\n)\ncelery_app.conf.update(\n    task_serializer=\"json\",\n    result_serializer=\"json\",\n    accept_content=[\"json\"],\n    timezone=\"UTC\",",
+        "detail": "app.core.celery",
         "documentation": {}
     },
     {
-        "label": "os.environ[\"VIRTUAL_ENV\"]",
+        "label": "celery_app.conf.beat_schedule",
         "kind": 5,
-        "importPath": ".venv.Scripts.activate_this",
-        "description": ".venv.Scripts.activate_this",
-        "peekOfCode": "os.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
-        "detail": ".venv.Scripts.activate_this",
-        "documentation": {}
-    },
-    {
-        "label": "os.environ[\"VIRTUAL_ENV_PROMPT\"]",
-        "kind": 5,
-        "importPath": ".venv.Scripts.activate_this",
-        "description": ".venv.Scripts.activate_this",
-        "peekOfCode": "os.environ[\"VIRTUAL_ENV_PROMPT\"] = \"\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
-        "detail": ".venv.Scripts.activate_this",
-        "documentation": {}
-    },
-    {
-        "label": "prev_length",
-        "kind": 5,
-        "importPath": ".venv.Scripts.activate_this",
-        "description": ".venv.Scripts.activate_this",
-        "peekOfCode": "prev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
-        "detail": ".venv.Scripts.activate_this",
-        "documentation": {}
-    },
-    {
-        "label": "sys.path[:]",
-        "kind": 5,
-        "importPath": ".venv.Scripts.activate_this",
-        "description": ".venv.Scripts.activate_this",
-        "peekOfCode": "sys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
-        "detail": ".venv.Scripts.activate_this",
-        "documentation": {}
-    },
-    {
-        "label": "sys.real_prefix",
-        "kind": 5,
-        "importPath": ".venv.Scripts.activate_this",
-        "description": ".venv.Scripts.activate_this",
-        "peekOfCode": "sys.real_prefix = sys.prefix\nsys.prefix = base",
-        "detail": ".venv.Scripts.activate_this",
-        "documentation": {}
-    },
-    {
-        "label": "sys.prefix",
-        "kind": 5,
-        "importPath": ".venv.Scripts.activate_this",
-        "description": ".venv.Scripts.activate_this",
-        "peekOfCode": "sys.prefix = base",
-        "detail": ".venv.Scripts.activate_this",
+        "importPath": "app.core.celery",
+        "description": "app.core.celery",
+        "peekOfCode": "celery_app.conf.beat_schedule = {\n    \"update_task_status_every_5mins\": {\n        \"task\": \"app.workers.tasks.task_status.update_task_status\",\n        \"schedule\": 20.0,\n    }\n}\ncelery_app.autodiscover_tasks([\"app.workers.tasks\"])",
+        "detail": "app.core.celery",
         "documentation": {}
     },
     {
@@ -3307,7 +3353,7 @@
         "kind": 6,
         "importPath": "app.core.config",
         "description": "app.core.config",
-        "peekOfCode": "class Settings(BaseSettings):\n    DATABASE_URL: str\n    CLOUD_NAME: str\n    CLOUD_KEY: int\n    CLOUD_SECRET: str\n    SECRET_KEY: str\n    ALGORITHM: str\n    ACCESS_EXPIRY: int\n    REFRESH_EXPIRY: int\n    CLIENT_ID_GOOGLE: str",
+        "peekOfCode": "class Settings(BaseSettings):\n    POSTGRES_USER: str\n    POSTGRES_PASSWORD: str\n    POSTGRES_DB: str\n    DATABASE_URL: str\n    CLOUD_NAME: str\n    CLOUD_KEY: int\n    CLOUD_SECRET: str\n    SECRET_KEY: str\n    ALGORITHM: str",
         "detail": "app.core.config",
         "documentation": {}
     },
@@ -3316,7 +3362,7 @@
         "kind": 5,
         "importPath": "app.core.config",
         "description": "app.core.config",
-        "peekOfCode": "settings = Settings()\n# Cloudinary Setting\ncloudinary.config(\n    cloud_name=settings.CLOUD_NAME,\n    api_key=settings.CLOUD_KEY,\n    api_secret=settings.CLOUD_SECRET,\n)\n# Redis settings\nredis = redis.Redis(host=\"localhost\", port=6379, db=0, decode_responses=True)",
+        "peekOfCode": "settings = Settings()\n# Cloudinary Setting\ncloudinary.config(\n    cloud_name=settings.CLOUD_NAME,\n    api_key=settings.CLOUD_KEY,\n    api_secret=settings.CLOUD_SECRET,\n)\n# Redis settings\nredis = redis.Redis(host=\"redis\", port=6379, db=0, decode_responses=True)",
         "detail": "app.core.config",
         "documentation": {}
     },
@@ -3325,7 +3371,7 @@
         "kind": 5,
         "importPath": "app.core.config",
         "description": "app.core.config",
-        "peekOfCode": "redis = redis.Redis(host=\"localhost\", port=6379, db=0, decode_responses=True)",
+        "peekOfCode": "redis = redis.Redis(host=\"redis\", port=6379, db=0, decode_responses=True)",
         "detail": "app.core.config",
         "documentation": {}
     },
@@ -3496,7 +3542,7 @@
         "kind": 2,
         "importPath": "app.crud.task",
         "description": "app.crud.task",
-        "peekOfCode": "def create_task(data: TaskCreate, project_id: UUID, db: Session):\n    try:\n        project = db.query(Project).filter(Project.id == project_id).first()\n        if not project:\n            raise ValueError(\"Project doesn't exit for a task\")\n        insert_data = data.model_dump(exclude_unset=True).copy()\n        for key in [\"user_ids\", \"block_task_ids\", \"subtasks\"]:\n            insert_data.pop(key, None)\n        new_task = Task(project_id=project_id, **insert_data)\n        db.add(new_task)",
+        "peekOfCode": "def create_task(data: TaskCreate, project_id: UUID, db: Session, project: Project):\n    try:\n        insert_data = data.model_dump(exclude_unset=True).copy()\n        due_date = project.end_on\n        if data.due_date:\n            due_date = due_date_check(project_id, db, data.due_date)\n        for key in [\"user_ids\", \"block_task_ids\", \"subtasks\", \"due_date\"]:\n            insert_data.pop(key, None)\n        new_task = Task(project_id=project_id, due_date=due_date, **insert_data)\n        db.add(new_task)",
         "detail": "app.crud.task",
         "documentation": {}
     },
@@ -3523,7 +3569,7 @@
         "kind": 2,
         "importPath": "app.crud.task",
         "description": "app.crud.task",
-        "peekOfCode": "def update_task(db: Session, task_id: UUID, data: TaskUpdate):\n    try:\n        task = db.query(Task).filter(Task.id == task_id).first()\n        if not task:\n            raise ValueError(\"Task doesn't exist\")\n        to_update_data = data.model_dump(exclude_unset=True)\n        for key, value in to_update_data.items():\n            setattr(task, key, value)\n        db.add(task)\n        db.commit()",
+        "peekOfCode": "def update_task(db: Session, task_id: UUID, data: TaskUpdate):\n    try:\n        task = db.query(Task).filter(Task.id == task_id).first()\n        if not task:\n            raise ValueError(\"Task doesn't exist\")\n        is_valid_due_date = due_date_check(task.project_id, db, datetime.utcnow())\n        if is_valid_due_date:\n            to_update_data = data.model_dump(exclude_unset=True)\n            for key, value in to_update_data.items():\n                setattr(task, key, value)",
         "detail": "app.crud.task",
         "documentation": {}
     },
@@ -3676,7 +3722,7 @@
         "kind": 6,
         "importPath": "app.database.models.task",
         "description": "app.database.models.task",
-        "peekOfCode": "class TaskStatus(str, Enum):\n    pending = \"Pending\"\n    completed = \"Completed\"\nclass Task(Base):\n    __tablename__ = \"tasks\"\n    # Fields\n    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    task_type = Column(String)\n    created_at = Column(DateTime, server_default=func.now())\n    updated_at = Column(DateTime, default=func.now(), onupdate=func.now())",
+        "peekOfCode": "class TaskStatus(str, Enum):\n    pending = \"Pending\"\n    completed = \"Completed\"\n    failed = \"Failed\"\nclass Task(Base):\n    __tablename__ = \"tasks\"\n    # Fields\n    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    task_type = Column(String)\n    created_at = Column(DateTime, server_default=func.now())",
         "detail": "app.database.models.task",
         "documentation": {}
     },
@@ -4027,7 +4073,7 @@
         "kind": 2,
         "importPath": "app.routers.task",
         "description": "app.routers.task",
-        "peekOfCode": "def create_task_endpoint(\n    data: TaskCreate,\n    project_id: UUID,\n    db: Session = Depends(get_db),\n    project_details: tuple = Depends(project_user_required([\"Admin\", \"Manager\"])),\n):\n    try:\n        task = create_task(data, project_id, db)\n        return task\n    except ValueError as e:",
+        "peekOfCode": "def create_task_endpoint(\n    data: TaskCreate,\n    project_id: UUID,\n    db: Session = Depends(get_db),\n    project_details: tuple = Depends(project_user_required([\"Admin\", \"Manager\"])),\n):\n    try:\n        user, project = project_details\n        task = create_task(data, project_id, db, project)\n        return task",
         "detail": "app.routers.task",
         "documentation": {}
     },
@@ -4261,7 +4307,7 @@
         "kind": 6,
         "importPath": "app.schemas.project",
         "description": "app.schemas.project",
-        "peekOfCode": "class ProjectBase(BaseModel):\n    project_name: str\n    project_type: str | None = None\n    project_description: str | None = None\n    company_id: UUID\n    @field_validator(\"project_name\")\n    def check_project_name(cls, v):\n        if len(v) < 5:\n            raise ValueError(\"Project name should have atleast 5 characters\")\n        return v",
+        "peekOfCode": "class ProjectBase(BaseModel):\n    project_name: str\n    project_type: str | None = None\n    project_description: str | None = None\n    company_id: UUID\n    end_on: datetime\n    @field_validator(\"project_name\")\n    def check_project_name(cls, v):\n        if len(v) < 5:\n            raise ValueError(\"Project name should have atleast 5 characters\")",
         "detail": "app.schemas.project",
         "documentation": {}
     },
@@ -4270,7 +4316,7 @@
         "kind": 6,
         "importPath": "app.schemas.project",
         "description": "app.schemas.project",
-        "peekOfCode": "class ProjectCreate(ProjectBase):\n    end_on: date\n    user_ids: list[UUID]\n    urgency: ProjectUrgency\n# For reading the single project\nclass ProjectReadSingle(ProjectBase):\n    tasks: list[\"TaskReadSingle\"] = []\n    users: list[\"UserReadBasic\"] = []\n    company: \"CompanyReadSingle\"\n    urgency: str",
+        "peekOfCode": "class ProjectCreate(ProjectBase):\n    user_ids: list[UUID]\n    urgency: ProjectUrgency\n# For reading the single project\nclass ProjectReadSingle(ProjectBase):\n    tasks: list[\"TaskReadSingle\"] = []\n    users: list[\"UserReadBasic\"] = []\n    company: \"CompanyReadSingle\"\n    urgency: str\n    updated_at: datetime",
         "detail": "app.schemas.project",
         "documentation": {}
     },
@@ -4279,7 +4325,7 @@
         "kind": 6,
         "importPath": "app.schemas.project",
         "description": "app.schemas.project",
-        "peekOfCode": "class ProjectReadSingle(ProjectBase):\n    tasks: list[\"TaskReadSingle\"] = []\n    users: list[\"UserReadBasic\"] = []\n    company: \"CompanyReadSingle\"\n    urgency: str\n    updated_at: datetime\n    created_at: datetime\n    status: str\n    id: UUID\n    class Config:",
+        "peekOfCode": "class ProjectReadSingle(ProjectBase):\n    tasks: list[\"TaskReadSingle\"] = []\n    users: list[\"UserReadBasic\"] = []\n    company: \"CompanyReadSingle\"\n    urgency: str\n    updated_at: datetime\n    created_at: datetime\n    end_on: datetime\n    status: str\n    id: UUID",
         "detail": "app.schemas.project",
         "documentation": {}
     },
@@ -4288,7 +4334,7 @@
         "kind": 6,
         "importPath": "app.schemas.project",
         "description": "app.schemas.project",
-        "peekOfCode": "class ProjectReadMultiple(ProjectBase):\n    id: UUID\n    urgency: str\n    created_at: datetime\n    updated_at: datetime\n    class Config:\n        from_attributes = True\n# For updating the project\nclass ProjectUpdate(BaseModel):\n    project_name: str | None = None",
+        "peekOfCode": "class ProjectReadMultiple(ProjectBase):\n    id: UUID\n    urgency: str\n    created_at: datetime\n    end_on: datetime\n    updated_at: datetime\n    class Config:\n        from_attributes = True\n# For updating the project\nclass ProjectUpdate(BaseModel):",
         "detail": "app.schemas.project",
         "documentation": {}
     },
@@ -4297,7 +4343,7 @@
         "kind": 6,
         "importPath": "app.schemas.project",
         "description": "app.schemas.project",
-        "peekOfCode": "class ProjectUpdate(BaseModel):\n    project_name: str | None = None\n    project_type: str | None = None\n    project_description: str | None = None\n    status: str | None = None\n    end_on: date | None = None\n    urgency: str | None = None\n    class Config:\n        from_attributes = True\nclass ProjectDelete(BaseModel):",
+        "peekOfCode": "class ProjectUpdate(BaseModel):\n    project_name: str | None = None\n    project_type: str | None = None\n    project_description: str | None = None\n    status: str | None = None\n    end_on: datetime | None = None\n    urgency: str | None = None\n    class Config:\n        from_attributes = True\nclass ProjectDelete(BaseModel):",
         "detail": "app.schemas.project",
         "documentation": {}
     },
@@ -4333,7 +4379,7 @@
         "kind": 6,
         "importPath": "app.schemas.task",
         "description": "app.schemas.task",
-        "peekOfCode": "class TaskBase(BaseModel):\n    task_name: str\n    task_type: str | None = None\n    task_description: str | None = None\n    @field_validator(\"task_name\")\n    def check_task_name(cls, v):\n        if len(v) < 5:\n            raise ValueError(\"Task name should have atleast 5 characters\")\n        return v\n# For task create",
+        "peekOfCode": "class TaskBase(BaseModel):\n    task_name: str\n    task_type: str | None = None\n    task_description: str | None = None\n    due_date: Optional[datetime] = None\n    @field_validator(\"task_name\")\n    def check_task_name(cls, v):\n        if len(v) < 5:\n            raise ValueError(\"Task name should have atleast 5 characters\")\n        return v",
         "detail": "app.schemas.task",
         "documentation": {}
     },
@@ -4437,6 +4483,15 @@
         "documentation": {}
     },
     {
+        "label": "due_date_check",
+        "kind": 2,
+        "importPath": "app.services.task",
+        "description": "app.services.task",
+        "peekOfCode": "def due_date_check(project_id: UUID, db: Session, due_date: datetime):\n    try:\n        project = db.query(Project).filter(Project.id == project_id).one_or_none()\n        if project is not None:\n            end_on = project.end_on\n            created_at = project.created_at\n            if due_date > end_on or due_date < created_at:\n                raise HTTPException(\n                    status_code=400, detail=\"Due date has been exceeded\"\n                )",
+        "detail": "app.services.task",
+        "documentation": {}
+    },
+    {
         "label": "generate_username",
         "kind": 2,
         "importPath": "app.services.user",
@@ -4470,6 +4525,15 @@
         "description": "app.utils.upload_image",
         "peekOfCode": "def upload_image(file: UploadFile, type: str, type_id: str):\n    upload = cloudinary.uploader.upload(\n        file.file, folder=f\"{type}/{type_id}\", public_id=f\"{type}\", overwrite=True\n    )\n    return upload[\"secure_url\"]",
         "detail": "app.utils.upload_image",
+        "documentation": {}
+    },
+    {
+        "label": "update_task_status",
+        "kind": 2,
+        "importPath": "app.workers.tasks.task_status",
+        "description": "app.workers.tasks.task_status",
+        "peekOfCode": "def update_task_status(name):\n    print(\"helloooooooooooooooooooooooooooooo\")\n    return {\"message\": f\"Hello {name} welcome bro0000\"}",
+        "detail": "app.workers.tasks.task_status",
         "documentation": {}
     },
     {
@@ -4529,6 +4593,24 @@
     {
         "label": "upgrade",
         "kind": 2,
+        "importPath": "migrations.versions.1086b7230ae0_datetime_type_in_endon_for_project_model",
+        "description": "migrations.versions.1086b7230ae0_datetime_type_in_endon_for_project_model",
+        "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    pass\n    # ### end Alembic commands ###\ndef downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    pass\n    # ### end Alembic commands ###",
+        "detail": "migrations.versions.1086b7230ae0_datetime_type_in_endon_for_project_model",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "migrations.versions.1086b7230ae0_datetime_type_in_endon_for_project_model",
+        "description": "migrations.versions.1086b7230ae0_datetime_type_in_endon_for_project_model",
+        "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    pass\n    # ### end Alembic commands ###",
+        "detail": "migrations.versions.1086b7230ae0_datetime_type_in_endon_for_project_model",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
         "importPath": "migrations.versions.12f5f4adafcc_added_the_subtask_and_blocked_task_",
         "description": "migrations.versions.12f5f4adafcc_added_the_subtask_and_blocked_task_",
         "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    pass\n    # ### end Alembic commands ###\ndef downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    pass\n    # ### end Alembic commands ###",
@@ -4578,6 +4660,24 @@
         "description": "migrations.versions.27ba9c22ebbb_added_oauthid_in_user_model",
         "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_constraint(None, 'users', type_='unique')\n    op.drop_column('users', 'oauth_id')\n    # ### end Alembic commands ###",
         "detail": "migrations.versions.27ba9c22ebbb_added_oauthid_in_user_model",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
+        "importPath": "migrations.versions.28f92d899655_datetime_type_in_endon_for_project_model",
+        "description": "migrations.versions.28f92d899655_datetime_type_in_endon_for_project_model",
+        "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.alter_column('projects', 'end_on',\n               existing_type=sa.DATE(),\n               type_=sa.DateTime(),\n               existing_nullable=False)\n    # ### end Alembic commands ###\ndef downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"",
+        "detail": "migrations.versions.28f92d899655_datetime_type_in_endon_for_project_model",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "migrations.versions.28f92d899655_datetime_type_in_endon_for_project_model",
+        "description": "migrations.versions.28f92d899655_datetime_type_in_endon_for_project_model",
+        "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.alter_column('projects', 'end_on',\n               existing_type=sa.DateTime(),\n               type_=sa.DATE(),\n               existing_nullable=False)\n    # ### end Alembic commands ###",
+        "detail": "migrations.versions.28f92d899655_datetime_type_in_endon_for_project_model",
         "documentation": {}
     },
     {
@@ -4799,6 +4899,24 @@
     {
         "label": "upgrade",
         "kind": 2,
+        "importPath": "migrations.versions.d5dff2e8d483_added_due_date_for_task_model",
+        "description": "migrations.versions.d5dff2e8d483_added_due_date_for_task_model",
+        "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.add_column('tasks', sa.Column('due_date', sa.DateTime(), nullable=True))\n    # ### end Alembic commands ###\ndef downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_column('tasks', 'due_date')\n    # ### end Alembic commands ###",
+        "detail": "migrations.versions.d5dff2e8d483_added_due_date_for_task_model",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "migrations.versions.d5dff2e8d483_added_due_date_for_task_model",
+        "description": "migrations.versions.d5dff2e8d483_added_due_date_for_task_model",
+        "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_column('tasks', 'due_date')\n    # ### end Alembic commands ###",
+        "detail": "migrations.versions.d5dff2e8d483_added_due_date_for_task_model",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
         "importPath": "migrations.versions.df1ab278c76c_added_oauthprovider_name_in_user_model",
         "description": "migrations.versions.df1ab278c76c_added_oauthprovider_name_in_user_model",
         "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.add_column('users', sa.Column('oauth_provider', sa.String(), nullable=True))\n    # ### end Alembic commands ###\ndef downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_column('users', 'oauth_provider')\n    # ### end Alembic commands ###",
@@ -4902,6 +5020,15 @@
         "description": "migrations.env",
         "peekOfCode": "target_metadata = Base.metadata\n# other values from the config, defined by the needs of env.py,\n# can be acquired:\n# my_important_option = config.get_main_option(\"my_important_option\")\n# ... etc.\ndef run_migrations_offline() -> None:\n    \"\"\"Run migrations in 'offline' mode.\n    This configures the context with just a URL\n    and not an Engine, though an Engine is acceptable\n    here as well.  By skipping the Engine creation",
         "detail": "migrations.env",
+        "documentation": {}
+    },
+    {
+        "label": "start_worker",
+        "kind": 2,
+        "importPath": "scripts.celery_reload",
+        "description": "scripts.celery_reload",
+        "peekOfCode": "def start_worker():\n    subprocess.run(\n        [\n            \"uv\",\n            \"run\",\n            \"celery\",\n            \"-A\",\n            \"app.core.celery.celery_app\",\n            \"worker\",\n            \"-l\",",
+        "detail": "scripts.celery_reload",
         "documentation": {}
     }
 ]

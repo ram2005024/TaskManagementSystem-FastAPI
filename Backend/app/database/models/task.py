@@ -23,6 +23,7 @@ from .association import user_tasks
 class TaskStatus(str, Enum):
     pending = "Pending"
     completed = "Completed"
+    failed = "Failed"
 
 
 class Task(Base):
@@ -47,6 +48,7 @@ class Task(Base):
     users = relationship("User", secondary=user_tasks, back_populates="tasks")
     sub_tasks = relationship("SubTask", back_populates="task")
     progress = Column(Integer, default=0)
+    due_date = Column(DateTime)
     blocked_by = relationship(
         "Task",
         secondary=task_tasks,

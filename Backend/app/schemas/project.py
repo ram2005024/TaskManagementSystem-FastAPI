@@ -1,4 +1,4 @@
-from datetime import date, datetime
+from datetime import datetime
 from enum import Enum
 from typing import TYPE_CHECKING
 from uuid import UUID
@@ -23,6 +23,7 @@ class ProjectBase(BaseModel):
     project_type: str | None = None
     project_description: str | None = None
     company_id: UUID
+    end_on: datetime
 
     @field_validator("project_name")
     def check_project_name(cls, v):
@@ -33,7 +34,6 @@ class ProjectBase(BaseModel):
 
 # For Creating the project
 class ProjectCreate(ProjectBase):
-    end_on: date
     user_ids: list[UUID]
     urgency: ProjectUrgency
 
@@ -46,6 +46,7 @@ class ProjectReadSingle(ProjectBase):
     urgency: str
     updated_at: datetime
     created_at: datetime
+    end_on: datetime
     status: str
     id: UUID
 
@@ -58,6 +59,7 @@ class ProjectReadMultiple(ProjectBase):
     id: UUID
     urgency: str
     created_at: datetime
+    end_on: datetime
     updated_at: datetime
 
     class Config:
@@ -70,7 +72,7 @@ class ProjectUpdate(BaseModel):
     project_type: str | None = None
     project_description: str | None = None
     status: str | None = None
-    end_on: date | None = None
+    end_on: datetime | None = None
     urgency: str | None = None
 
     class Config:

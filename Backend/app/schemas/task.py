@@ -36,6 +36,7 @@ class TaskBase(BaseModel):
     task_name: str
     task_type: str | None = None
     task_description: str | None = None
+    due_date: Optional[datetime] = None
 
     @field_validator("task_name")
     def check_task_name(cls, v):

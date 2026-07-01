@@ -1,0 +1,79 @@
+services:
+  fastapi_app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    restart: always
+
+    volumes:
+      - .:/code
+      - /code/.venv
+    command: uv run uvicorn app.main:app --reload --port 8000 --host 0.0.0.0
+    container_name: fastapi_app
+    depends_on:
+      - postgres
+    env_file:
+      - .env
+
+  # Postgres image
+  postgres:
+    image: postgres:17
+    container_name: postgres_container
+    restart: always
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+    env_file:
+      - .env
+
+    ports:
+      - "5473:5432"
+
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+
+  redis:
+    image: redis:8
+    container_name: redis_container
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+
+  celery:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/code
+      - /code/.venv
+    command: uv run python scripts/celery_reload.py
+
+    depends_on:
+      - redis
+    container_name: celery_container
+    env_file:
+      - .env
+
+  celery_beat:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/code
+      - /code/.venv
+    command: uv run celery -A app.core.celery.celery_app beat -l info
+
+    depends_on:
+      - redis
+    container_name: celery_beat_container
+    env_file:
+      - .env
+
+volumes:
+  postgres_data:
+  redis_data:

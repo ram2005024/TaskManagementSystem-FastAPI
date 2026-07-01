@@ -1,3 +1,4 @@
+from datetime import datetime
 from uuid import UUID
 
 from fastapi.exceptions import HTTPException
@@ -9,18 +10,19 @@ from app.database.models.project import Project
 from app.database.models.task import SubTask, Task
 from app.database.models.user import User
 from app.schemas.task import SubTaskSchema, TaskCreate, TaskUpdate
+from app.services.task import due_date_check
 
 
 # Create task
-def create_task(data: TaskCreate, project_id: UUID, db: Session):
+def create_task(data: TaskCreate, project_id: UUID, db: Session, project: Project):
     try:
-        project = db.query(Project).filter(Project.id == project_id).first()
-        if not project:
-            raise ValueError("Project doesn't exit for a task")
         insert_data = data.model_dump(exclude_unset=True).copy()
-        for key in ["user_ids", "block_task_ids", "subtasks"]:
+        due_date = project.end_on
+        if data.due_date:
+            due_date = due_date_check(project_id, db, data.due_date)
+        for key in ["user_ids", "block_task_ids", "subtasks", "due_date"]:
             insert_data.pop(key, None)
-        new_task = Task(project_id=project_id, **insert_data)
+        new_task = Task(project_id=project_id, due_date=due_date, **insert_data)
         db.add(new_task)
         db.flush()
         # 1. Handle user ids
@@ -91,6 +93,8 @@ def create_task(data: TaskCreate, project_id: UUID, db: Session):
                 raise ValueError(f"Unqiue contraint violation:{unique_contraint}")
         else:
             raise RuntimeError(f"Database integrity error: {e.orig}")
+    except HTTPException as e:
+        raise e
     except Exception as e:
         db.rollback()
         raise RuntimeError(f"Error occured: {e}")
@@ -121,7 +125,6 @@ def read_tasks(project_id: UUID, db: Session, pagination):
             .limit(limit)
             .all()
         )
-
         return {
             "meta": {
                 "total": total,
@@ -141,13 +144,15 @@ def update_task(db: Session, task_id: UUID, data: TaskUpdate):
         task = db.query(Task).filter(Task.id == task_id).first()
         if not task:
             raise ValueError("Task doesn't exist")
-        to_update_data = data.model_dump(exclude_unset=True)
-        for key, value in to_update_data.items():
-            setattr(task, key, value)
-        db.add(task)
-        db.commit()
-        db.refresh(task)
-        return task
+        is_valid_due_date = due_date_check(task.project_id, db, datetime.utcnow())
+        if is_valid_due_date:
+            to_update_data = data.model_dump(exclude_unset=True)
+            for key, value in to_update_data.items():
+                setattr(task, key, value)
+            db.add(task)
+            db.commit()
+            db.refresh(task)
+            return task
     except Exception as e:
         db.rollback()
         raise RuntimeError(f"Error occured: {e}")
