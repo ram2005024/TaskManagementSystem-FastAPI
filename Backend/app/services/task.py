@@ -11,7 +11,6 @@ from app.database.models.project import Project
 def due_date_check(project_id: UUID, db: Session, due_date: datetime):
     try:
         project = db.query(Project).filter(Project.id == project_id).one_or_none()
-
         if project is not None:
             end_on = project.end_on
             created_at = project.created_at

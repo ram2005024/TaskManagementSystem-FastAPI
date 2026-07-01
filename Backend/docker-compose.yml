@@ -35,7 +35,7 @@ services:
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
       POSTGRES_DB: ${POSTGRES_DB}
-
+      TZ: UTC
   redis:
     image: redis:8
     container_name: redis_container
@@ -51,7 +51,7 @@ services:
     volumes:
       - .:/code
       - /code/.venv
-    command: uv run celery -A app.core.celery.celery_app worker -l info
+    command: uv run celery -A app.core.celery.celery_app worker --concurrency=4 -l info
 
     depends_on:
       - redis

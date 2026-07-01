@@ -3375,7 +3375,7 @@
         "kind": 5,
         "importPath": "app.core.celery",
         "description": "app.core.celery",
-        "peekOfCode": "celery_app.conf.beat_schedule = {\n    \"update_task_status_every_5mins\": {\n        \"task\": \"app.workers.tasks.task_status.update_task_status\",\n        \"schedule\": 300.0,\n    }\n}\ncelery_app.autodiscover_tasks([\"app.workers.tasks\"])",
+        "peekOfCode": "celery_app.conf.beat_schedule = {\n    \"update_task_status_every_5mins\": {\n        \"task\": \"app.workers.tasks.task_status.update_task_status\",\n        \"schedule\": 3600.0,\n    }\n}\ncelery_app.autodiscover_tasks([\"app.workers.tasks\"])",
         "detail": "app.core.celery",
         "documentation": {}
     },
