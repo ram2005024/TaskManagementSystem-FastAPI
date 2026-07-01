@@ -1346,7 +1346,6 @@ dependencies = [
     { name = "python-multipart" },
     { name = "redis" },
     { name = "sqlalchemy" },
-    { name = "watchfiles" },
 ]
 
 [package.metadata]
@@ -1364,7 +1363,6 @@ requires-dist = [
     { name = "python-multipart", specifier = ">=0.0.32" },
     { name = "redis", specifier = ">=6.4.0" },
     { name = "sqlalchemy", specifier = ">=2.0.50" },
-    { name = "watchfiles", specifier = ">=1.2.0" },
 ]
 
 [[package]]

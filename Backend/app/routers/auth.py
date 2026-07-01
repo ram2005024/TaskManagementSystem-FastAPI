@@ -16,7 +16,6 @@ from app.database.models.user import Profile, User
 from app.dependencies.auth import get_user
 from app.schemas.user import UserLogin, UserRead, UserRegister
 from app.services.user import create_user, generate_username, verify_credentials
-from app.workers.tasks.task_status import update_task_status
 
 authRouter = APIRouter(prefix="/auth", tags=["auth_endpoints"])
 
@@ -34,10 +33,8 @@ def register(
         email=email, password=password, first_name=first_name, last_name=last_name
     )
     user, error = create_user(userdata, user_image, db)
-    redis.setex("token", 3600, "2y3r9823gfbcuwh3f23b")
     if error or not user:
         raise HTTPException(status_code=400, detail=error or "Failed to create user")
-    update_task_status.delay(user.username)
     return {"message": "User created successfully", "username": user.username}
 
 

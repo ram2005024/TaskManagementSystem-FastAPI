@@ -17,7 +17,7 @@ celery_app.conf.update(
 celery_app.conf.beat_schedule = {
     "update_task_status_every_5mins": {
         "task": "app.workers.tasks.task_status.update_task_status",
-        "schedule": 20.0,
+        "schedule": 300.0,
     }
 }
 celery_app.autodiscover_tasks(["app.workers.tasks"])

@@ -51,7 +51,7 @@ services:
     volumes:
       - .:/code
       - /code/.venv
-    command: uv run python scripts/celery_reload.py
+    command: uv run celery -A app.core.celery.celery_app worker -l info
 
     depends_on:
       - redis

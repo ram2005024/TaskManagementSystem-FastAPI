@@ -1428,6 +1428,14 @@
         "documentation": {}
     },
     {
+        "label": "func",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
         "label": "engine_from_config",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
@@ -1565,6 +1573,22 @@
     },
     {
         "label": "Task",
+        "importPath": "app.database.models.task",
+        "description": "app.database.models.task",
+        "isExtraImport": true,
+        "detail": "app.database.models.task",
+        "documentation": {}
+    },
+    {
+        "label": "Task",
+        "importPath": "app.database.models.task",
+        "description": "app.database.models.task",
+        "isExtraImport": true,
+        "detail": "app.database.models.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskStatus",
         "importPath": "app.database.models.task",
         "description": "app.database.models.task",
         "isExtraImport": true,
@@ -1933,6 +1957,14 @@
     },
     {
         "label": "get_db",
+        "importPath": "app.database.db",
+        "description": "app.database.db",
+        "isExtraImport": true,
+        "detail": "app.database.db",
+        "documentation": {}
+    },
+    {
+        "label": "SessionHandler",
         "importPath": "app.database.db",
         "description": "app.database.db",
         "isExtraImport": true,
@@ -2524,6 +2556,22 @@
         "documentation": {}
     },
     {
+        "label": "Sequence",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "Request",
         "importPath": "starlette.requests",
         "description": "starlette.requests",
@@ -2617,14 +2665,6 @@
         "description": "app.services.user",
         "isExtraImport": true,
         "detail": "app.services.user",
-        "documentation": {}
-    },
-    {
-        "label": "update_task_status",
-        "importPath": "app.workers.tasks.task_status",
-        "description": "app.workers.tasks.task_status",
-        "isExtraImport": true,
-        "detail": "app.workers.tasks.task_status",
         "documentation": {}
     },
     {
@@ -3290,6 +3330,14 @@
         "documentation": {}
     },
     {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
         "label": "context",
         "importPath": "alembic",
         "description": "alembic",
@@ -3314,23 +3362,6 @@
         "documentation": {}
     },
     {
-        "label": "subprocess",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "subprocess",
-        "description": "subprocess",
-        "detail": "subprocess",
-        "documentation": {}
-    },
-    {
-        "label": "run_process",
-        "importPath": "watchfiles",
-        "description": "watchfiles",
-        "isExtraImport": true,
-        "detail": "watchfiles",
-        "documentation": {}
-    },
-    {
         "label": "celery_app",
         "kind": 5,
         "importPath": "app.core.celery",
@@ -3344,7 +3375,7 @@
         "kind": 5,
         "importPath": "app.core.celery",
         "description": "app.core.celery",
-        "peekOfCode": "celery_app.conf.beat_schedule = {\n    \"update_task_status_every_5mins\": {\n        \"task\": \"app.workers.tasks.task_status.update_task_status\",\n        \"schedule\": 20.0,\n    }\n}\ncelery_app.autodiscover_tasks([\"app.workers.tasks\"])",
+        "peekOfCode": "celery_app.conf.beat_schedule = {\n    \"update_task_status_every_5mins\": {\n        \"task\": \"app.workers.tasks.task_status.update_task_status\",\n        \"schedule\": 300.0,\n    }\n}\ncelery_app.autodiscover_tasks([\"app.workers.tasks\"])",
         "detail": "app.core.celery",
         "documentation": {}
     },
@@ -4532,7 +4563,7 @@
         "kind": 2,
         "importPath": "app.workers.tasks.task_status",
         "description": "app.workers.tasks.task_status",
-        "peekOfCode": "def update_task_status(name):\n    print(\"helloooooooooooooooooooooooooooooo\")\n    return {\"message\": f\"Hello {name} welcome bro0000\"}",
+        "peekOfCode": "def update_task_status():\n    db = SessionHandler()\n    try:\n        tasks = (\n            db.query(Task)\n            .filter(Task.due_date < func.now(), Task.status != TaskStatus.failed)\n            .all()\n        )\n        for task in tasks:\n            task.status = TaskStatus.failed",
         "detail": "app.workers.tasks.task_status",
         "documentation": {}
     },
@@ -4683,6 +4714,24 @@
     {
         "label": "upgrade",
         "kind": 2,
+        "importPath": "migrations.versions.32b7ebf769c3_added_extra_enum_in_the_task_status",
+        "description": "migrations.versions.32b7ebf769c3_added_extra_enum_in_the_task_status",
+        "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    pass\n    # ### end Alembic commands ###\ndef downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    pass\n    # ### end Alembic commands ###",
+        "detail": "migrations.versions.32b7ebf769c3_added_extra_enum_in_the_task_status",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "migrations.versions.32b7ebf769c3_added_extra_enum_in_the_task_status",
+        "description": "migrations.versions.32b7ebf769c3_added_extra_enum_in_the_task_status",
+        "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    pass\n    # ### end Alembic commands ###",
+        "detail": "migrations.versions.32b7ebf769c3_added_extra_enum_in_the_task_status",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
         "importPath": "migrations.versions.52e00db337bc_default_value_for_updated_at_inside_the_",
         "description": "migrations.versions.52e00db337bc_default_value_for_updated_at_inside_the_",
         "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    pass\n    # ### end Alembic commands ###\ndef downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    pass\n    # ### end Alembic commands ###",
@@ -4721,7 +4770,7 @@
         "kind": 2,
         "importPath": "migrations.versions.7362f21c97aa_initial",
         "description": "migrations.versions.7362f21c97aa_initial",
-        "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table('users',\n    sa.Column('id', sa.UUID(), nullable=False),\n    sa.Column('username', sa.String(), nullable=True),\n    sa.Column('email', sa.String(), nullable=True),\n    sa.Column('hashed_pwd', sa.String(), nullable=True),\n    sa.Column('is_authenticated', sa.Boolean(), nullable=True),\n    sa.Column('role', sa.Enum('member', 'admin', 'manager', name='user_roles'), nullable=True),",
+        "peekOfCode": "def upgrade() -> None:\n    \"\"\"Upgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table(\n        \"users\",\n        sa.Column(\"id\", sa.UUID(), nullable=False),\n        sa.Column(\"username\", sa.String(), nullable=True),\n        sa.Column(\"email\", sa.String(), nullable=True),\n        sa.Column(\"hashed_pwd\", sa.String(), nullable=True),\n        sa.Column(\"is_authenticated\", sa.Boolean(), nullable=True),",
         "detail": "migrations.versions.7362f21c97aa_initial",
         "documentation": {}
     },
@@ -4730,7 +4779,7 @@
         "kind": 2,
         "importPath": "migrations.versions.7362f21c97aa_initial",
         "description": "migrations.versions.7362f21c97aa_initial",
-        "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_table('user_tasks')\n    op.drop_table('user_projects')\n    op.drop_index(op.f('ix_tasks_status'), table_name='tasks')\n    op.drop_table('tasks')\n    op.drop_table('user_companies')\n    op.drop_index(op.f('ix_projects_status'), table_name='projects')\n    op.drop_table('projects')",
+        "peekOfCode": "def downgrade() -> None:\n    \"\"\"Downgrade schema.\"\"\"\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_table(\"user_tasks\")\n    op.drop_table(\"user_projects\")\n    op.drop_index(op.f(\"ix_tasks_status\"), table_name=\"tasks\")\n    op.drop_table(\"tasks\")\n    op.drop_table(\"user_companies\")\n    op.drop_index(op.f(\"ix_projects_status\"), table_name=\"projects\")\n    op.drop_table(\"projects\")",
         "detail": "migrations.versions.7362f21c97aa_initial",
         "documentation": {}
     },
@@ -5020,15 +5069,6 @@
         "description": "migrations.env",
         "peekOfCode": "target_metadata = Base.metadata\n# other values from the config, defined by the needs of env.py,\n# can be acquired:\n# my_important_option = config.get_main_option(\"my_important_option\")\n# ... etc.\ndef run_migrations_offline() -> None:\n    \"\"\"Run migrations in 'offline' mode.\n    This configures the context with just a URL\n    and not an Engine, though an Engine is acceptable\n    here as well.  By skipping the Engine creation",
         "detail": "migrations.env",
-        "documentation": {}
-    },
-    {
-        "label": "start_worker",
-        "kind": 2,
-        "importPath": "scripts.celery_reload",
-        "description": "scripts.celery_reload",
-        "peekOfCode": "def start_worker():\n    subprocess.run(\n        [\n            \"uv\",\n            \"run\",\n            \"celery\",\n            \"-A\",\n            \"app.core.celery.celery_app\",\n            \"worker\",\n            \"-l\",",
-        "detail": "scripts.celery_reload",
         "documentation": {}
     }
 ]
